@@ -1,0 +1,657 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<HorizontalAlign>Center</HorizontalAlign>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаВыравнивание" id="55">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа выравнивание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа выравнивание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<HorizontalAlign>Left</HorizontalAlign>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаВыравниваниеРасширеннаяПодсказка" id="56"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаСпискаПолей" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа списка полей</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа списка полей</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаСпискаПолейРасширеннаяПодсказка" id="27"/>
+					<ChildItems>
+						<Table name="СписокДоступныхПолей" id="2">
+							<Representation>List</Representation>
+							<TitleLocation>Top</TitleLocation>
+							<CommandBarLocation>None</CommandBarLocation>
+							<ReadOnly>true</ReadOnly>
+							<Width>25</Width>
+							<RowSelectionMode>Cell</RowSelectionMode>
+							<Header>false</Header>
+							<HorizontalLinesBWA>false</HorizontalLinesBWA>
+							<VerticalLinesBWA>false</VerticalLinesBWA>
+							<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>СписокДоступныхПолей</DataPath>
+							<RowPictureDataPath>СписокДоступныхПолей.Picture</RowPictureDataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Доступные поля</v8:content>
+								</v8:item>
+							</Title>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<ContextMenu name="СписокДоступныхПолейКонтекстноеМеню" id="3">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<ButtonGroup name="СписокКонтекстноеМенюГруппаСоздание" id="81">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа создание</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа создание</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="СписокКонтекстноеМенюГруппаСозданиеРасширеннаяПодсказка" id="82"/>
+										<ChildItems>
+											<Button name="СписокКонтекстноеМенюКнопкаСоздать" id="83">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.СписокДоступныхПолей.StandardCommand.Add</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.Добавить</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаСоздатьРасширеннаяПодсказка" id="84"/>
+											</Button>
+											<Button name="СписокКонтекстноеМенюКнопкаСкопировать" id="87">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.СписокДоступныхПолей.StandardCommand.Copy</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.ДобавитьКопированием</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаСкопироватьРасширеннаяПодсказка" id="88"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<ButtonGroup name="СписокКонтекстноеМенюГруппаРедактирование" id="75">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа редактирование</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа редактирование</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="СписокКонтекстноеМенюГруппаРедактированиеРасширеннаяПодсказка" id="76"/>
+										<ChildItems>
+											<Button name="СписокКонтекстноеМенюКнопкаИзменить" id="77">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.СписокДоступныхПолей.StandardCommand.Change</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.Редактировать</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаИзменитьРасширеннаяПодсказка" id="78"/>
+											</Button>
+											<Button name="СписокКонтекстноеМенюКнопкаУдалить" id="79">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.СписокДоступныхПолей.StandardCommand.Delete</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.ВКорзину</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Удалить</v8:content>
+													</v8:item>
+												</Title>
+												<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаУдалитьРасширеннаяПодсказка" id="80"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<Button name="СписокКонтекстноеМенюКнопкаУстановитьФлажки" id="89">
+										<Type>CommandBarButton</Type>
+										<SkipOnInput>false</SkipOnInput>
+										<CommandName>Form.Item.СписокДоступныхПолей.StandardCommand.CheckAll</CommandName>
+										<Picture>
+											<xr:Ref>CommonPicture.МножественныйВыборВыбрано</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ShapeRepresentation>None</ShapeRepresentation>
+										<ButtonImportance>Supplementary</ButtonImportance>
+										<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаУстановитьФлажкиРасширеннаяПодсказка" id="90"/>
+									</Button>
+									<Button name="СписокКонтекстноеМенюКнопкаСнятьФлажки" id="91">
+										<Type>CommandBarButton</Type>
+										<SkipOnInput>false</SkipOnInput>
+										<CommandName>Form.Item.СписокДоступныхПолей.StandardCommand.UncheckAll</CommandName>
+										<Picture>
+											<xr:Ref>CommonPicture.МножественныйВыбор</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ShapeRepresentation>None</ShapeRepresentation>
+										<ButtonImportance>Supplementary</ButtonImportance>
+										<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаСнятьФлажкиРасширеннаяПодсказка" id="92"/>
+									</Button>
+									<Button name="СписокКонтекстноеМенюКнопкаВывестиНастройкаФормы" id="71">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+										<Picture>
+											<xr:Ref>CommonPicture.НастройкаФормы</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ShapeRepresentation>None</ShapeRepresentation>
+										<PictureLocation>Left</PictureLocation>
+										<ButtonImportance>Supplementary</ButtonImportance>
+										<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаВывестиНастройкаФормыРасширеннаяПодсказка" id="72"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="СписокДоступныхПолейКоманднаяПанель" id="4"/>
+							<ExtendedTooltip name="СписокДоступныхПолейРасширеннаяПодсказка" id="28"/>
+							<SearchStringAddition name="СписокДоступныхПолейСтрокаПоиска" id="29">
+								<AdditionSource>
+									<Item>СписокДоступныхПолей</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокДоступныхПолейСтрокаПоискаКонтекстноеМеню" id="30"/>
+								<ExtendedTooltip name="СписокДоступныхПолейСтрокаПоискаРасширеннаяПодсказка" id="31"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокДоступныхПолейСостояниеПросмотра" id="32">
+								<AdditionSource>
+									<Item>СписокДоступныхПолей</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокДоступныхПолейСостояниеПросмотраКонтекстноеМеню" id="33"/>
+								<ExtendedTooltip name="СписокДоступныхПолейСостояниеПросмотраРасширеннаяПодсказка" id="34"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокДоступныхПолейУправлениеПоиском" id="35">
+								<AdditionSource>
+									<Item>СписокДоступныхПолей</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокДоступныхПолейУправлениеПоискомКонтекстноеМеню" id="36"/>
+								<ExtendedTooltip name="СписокДоступныхПолейУправлениеПоискомРасширеннаяПодсказка" id="37"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">СписокДоступныхПолейВыбор</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="СписокДоступныхПолейЗначение" id="5">
+									<DataPath>СписокДоступныхПолей.Value</DataPath>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="СписокДоступныхПолейЗначениеКонтекстноеМеню" id="6"/>
+									<ExtendedTooltip name="СписокДоступныхПолейЗначениеРасширеннаяПодсказка" id="38"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<UsualGroup name="ГруппаКнопокРегулирования" id="12">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа кнопок регулирования</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа кнопок регулирования</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаКнопокРегулированияРасширеннаяПодсказка" id="39"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияВыравниваниеКнопокВверх" id="19">
+									<VerticalStretch>true</VerticalStretch>
+									<ContextMenu name="ДекорацияВыравниваниеКнопокВверхКонтекстноеМеню" id="20"/>
+									<ExtendedTooltip name="ДекорацияВыравниваниеКнопокВверхРасширеннаяПодсказка" id="40"/>
+								</LabelDecoration>
+								<Button name="ДобавитьВВыбранные" id="13">
+									<Type>UsualButton</Type>
+									<Representation>Picture</Representation>
+									<Width>4</Width>
+									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+									<CommandName>Form.Command.ДобавитьВВыбранные</CommandName>
+									<Picture>
+										<xr:Ref>CommonPicture.СтрелкаНаправо</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>--&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ButtonImportance>Supplementary</ButtonImportance>
+									<ExtendedTooltip name="ДобавитьВВыбранныеРасширеннаяПодсказка" id="41"/>
+								</Button>
+								<Button name="УдалитьИзВЫбранных" id="18">
+									<Type>UsualButton</Type>
+									<Representation>Picture</Representation>
+									<Width>4</Width>
+									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+									<CommandName>Form.Command.УдалитьИзВыбранных</CommandName>
+									<Picture>
+										<xr:Ref>CommonPicture.СтрелкаНалево</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;--</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ButtonImportance>Supplementary</ButtonImportance>
+									<ExtendedTooltip name="УдалитьИзВЫбранныхРасширеннаяПодсказка" id="42"/>
+								</Button>
+								<LabelDecoration name="ДекорацияВыравниваниеКнопокВниз" id="21">
+									<VerticalStretch>true</VerticalStretch>
+									<ContextMenu name="ДекорацияВыравниваниеКнопокВнизКонтекстноеМеню" id="22"/>
+									<ExtendedTooltip name="ДекорацияВыравниваниеКнопокВнизРасширеннаяПодсказка" id="43"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="СписокВыбранныхПолей" id="7">
+							<Representation>List</Representation>
+							<TitleLocation>Top</TitleLocation>
+							<CommandBarLocation>None</CommandBarLocation>
+							<ReadOnly>true</ReadOnly>
+							<Width>25</Width>
+							<RowSelectionMode>Cell</RowSelectionMode>
+							<Header>false</Header>
+							<HorizontalLinesBWA>false</HorizontalLinesBWA>
+							<VerticalLinesBWA>false</VerticalLinesBWA>
+							<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>СписокВыбранныхПолей</DataPath>
+							<RowPictureDataPath>СписокВыбранныхПолей.Picture</RowPictureDataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Контролируемые поля</v8:content>
+								</v8:item>
+							</Title>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<ContextMenu name="СписокВыбранныхПолейКонтекстноеМеню" id="8">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<ButtonGroup name="СписокВыбрПоляКонтекстноеМенюГруппаСоздание" id="93">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа создание</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа создание</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="СписокВыбрПоляКонтекстноеМенюГруппаСозданиеРасширеннаяПодсказка" id="94"/>
+										<ChildItems>
+											<Button name="СписокВыбрПоляКонтекстноеМенюКнопкаСоздать" id="95">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.СписокВыбранныхПолей.StandardCommand.Add</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.Добавить</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="СписокВыбрПоляКонтекстноеМенюКнопкаСоздатьРасширеннаяПодсказка" id="96"/>
+											</Button>
+											<Button name="СписокВыбрПоляКонтекстноеМенюКнопкаСкопировать" id="97">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.СписокВыбранныхПолей.StandardCommand.Copy</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.ДобавитьКопированием</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="СписокВыбрПоляКонтекстноеМенюКнопкаСкопироватьРасширеннаяПодсказка" id="98"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<ButtonGroup name="СписокВыбрПоляКонтекстноеМенюГруппаРедактирование" id="99">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа редактирование</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа редактирование</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="СписокВыбрПоляКонтекстноеМенюГруппаРедактированиеРасширеннаяПодсказка" id="100"/>
+										<ChildItems>
+											<Button name="СписокВыбрПоляКонтекстноеМенюКнопкаИзменить" id="101">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.СписокВыбранныхПолей.StandardCommand.Change</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.Редактировать</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="СписокВыбрПоляКонтекстноеМенюКнопкаИзменитьРасширеннаяПодсказка" id="102"/>
+											</Button>
+											<Button name="СписокВыбрПоляКонтекстноеМенюКнопкаУдалить" id="103">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.СписокВыбранныхПолей.StandardCommand.Delete</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.ВКорзину</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Удалить</v8:content>
+													</v8:item>
+												</Title>
+												<ExtendedTooltip name="СписокВыбрПоляКонтекстноеМенюКнопкаУдалитьРасширеннаяПодсказка" id="104"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<Button name="СписокВыбрПоляКонтекстноеМенюКнопкаУстановитьФлажки" id="107">
+										<Type>CommandBarButton</Type>
+										<SkipOnInput>false</SkipOnInput>
+										<CommandName>Form.Item.СписокВыбранныхПолей.StandardCommand.CheckAll</CommandName>
+										<Picture>
+											<xr:Ref>CommonPicture.МножественныйВыборВыбрано</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ShapeRepresentation>None</ShapeRepresentation>
+										<ButtonImportance>Supplementary</ButtonImportance>
+										<ExtendedTooltip name="СписокВыбрПоляКонтекстноеМенюКнопкаУстановитьФлажкиРасширеннаяПодсказка" id="108"/>
+									</Button>
+									<Button name="СписокВыбрПоляКонтекстноеМенюКнопкаСнятьФлажки" id="109">
+										<Type>CommandBarButton</Type>
+										<SkipOnInput>false</SkipOnInput>
+										<CommandName>Form.Item.СписокВыбранныхПолей.StandardCommand.UncheckAll</CommandName>
+										<Picture>
+											<xr:Ref>CommonPicture.МножественныйВыбор</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ShapeRepresentation>None</ShapeRepresentation>
+										<ButtonImportance>Supplementary</ButtonImportance>
+										<ExtendedTooltip name="СписокВыбрПоляКонтекстноеМенюКнопкаСнятьФлажкиРасширеннаяПодсказка" id="110"/>
+									</Button>
+									<Button name="СписокВыбрПоляКонтекстноеМенюКнопкаВывестиНастройкаФормы" id="105">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+										<Picture>
+											<xr:Ref>CommonPicture.НастройкаФормы</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ShapeRepresentation>None</ShapeRepresentation>
+										<PictureLocation>Left</PictureLocation>
+										<ButtonImportance>Supplementary</ButtonImportance>
+										<ExtendedTooltip name="СписокВыбрПоляКонтекстноеМенюКнопкаВывестиНастройкаФормыРасширеннаяПодсказка" id="106"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="СписокВыбранныхПолейКоманднаяПанель" id="9"/>
+							<ExtendedTooltip name="СписокВыбранныхПолейРасширеннаяПодсказка" id="44"/>
+							<SearchStringAddition name="СписокВыбранныхПолейСтрокаПоиска" id="45">
+								<AdditionSource>
+									<Item>СписокВыбранныхПолей</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокВыбранныхПолейСтрокаПоискаКонтекстноеМеню" id="46"/>
+								<ExtendedTooltip name="СписокВыбранныхПолейСтрокаПоискаРасширеннаяПодсказка" id="47"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокВыбранныхПолейСостояниеПросмотра" id="48">
+								<AdditionSource>
+									<Item>СписокВыбранныхПолей</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокВыбранныхПолейСостояниеПросмотраКонтекстноеМеню" id="49"/>
+								<ExtendedTooltip name="СписокВыбранныхПолейСостояниеПросмотраРасширеннаяПодсказка" id="50"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокВыбранныхПолейУправлениеПоиском" id="51">
+								<AdditionSource>
+									<Item>СписокВыбранныхПолей</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокВыбранныхПолейУправлениеПоискомКонтекстноеМеню" id="52"/>
+								<ExtendedTooltip name="СписокВыбранныхПолейУправлениеПоискомРасширеннаяПодсказка" id="53"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">СписокВыбранныхПолейВыбор</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="СписокВыбранныхПолейЗначение" id="10">
+									<DataPath>СписокВыбранныхПолей.Value</DataPath>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="СписокВыбранныхПолейЗначениеКонтекстноеМеню" id="11"/>
+									<ExtendedTooltip name="СписокВыбранныхПолейЗначениеРасширеннаяПодсказка" id="54"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаКоманднаяПанель" id="65">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа командная панель</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа командная панель</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<Group>HorizontalIfPossible</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаКоманднаяПанельРасширеннаяПодсказка" id="66"/>
+					<ChildItems>
+						<Button name="ФормаЗакрыть" id="24">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<CommandName>Form.Command.Закрыть</CommandName>
+							<Picture>
+								<xr:Ref>CommonPicture.Отмена</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ShapeRepresentation>None</ShapeRepresentation>
+							<ButtonImportance>Supplementary</ButtonImportance>
+							<ExtendedTooltip name="ФормаЗакрытьРасширеннаяПодсказка" id="26"/>
+						</Button>
+						<UsualGroup name="ГруппаКнопкаСохранить" id="67">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа кнопка сохранить</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа кнопка сохранить</v8:content>
+								</v8:item>
+							</ToolTip>
+							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+							<Group>HorizontalIfPossible</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<BackColor>style:ImportantColor</BackColor>
+							<ExtendedTooltip name="ГруппаКнопкаСохранитьРасширеннаяПодсказка" id="68"/>
+							<ChildItems>
+								<Button name="ФормаВыбратьИЗакрыть" id="23">
+									<Type>UsualButton</Type>
+									<Representation>Text</Representation>
+									<DefaultButton>true</DefaultButton>
+									<DefaultItem>true</DefaultItem>
+									<Width>10</Width>
+									<CommandName>Form.Command.ВыбратьИЗакрыть</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сохранить</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ButtonImportance>Main</ButtonImportance>
+									<ExtendedTooltip name="ФормаВыбратьИЗакрытьРасширеннаяПодсказка" id="25"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="СписокДоступныхПолей" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список доступных полей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокВыбранныхПолей" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список доступных полей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ДобавитьВВыбранные" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить в выбранные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить в выбранные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьВВыбранные</Action>
+		</Command>
+		<Command name="УдалитьИзВыбранных" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить из выбранных</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить из выбранных</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьИзВыбранных</Action>
+		</Command>
+		<Command name="ВыбратьИЗакрыть" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать и закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать и закрыть</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.EndEdit</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВыбратьИЗакрыть</Action>
+		</Command>
+		<Command name="Закрыть" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Close</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаЗакрыть</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,544 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<HorizontalAlign>Center</HorizontalAlign>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаВыравнивание" id="64">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа выравнивание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа выравнивание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Vertical</Group>
+			<HorizontalAlign>Left</HorizontalAlign>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаВыравниваниеРасширеннаяПодсказка" id="65"/>
+			<ChildItems>
+				<InputField name="Наименование" id="1">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<UsualGroup name="КлючевыеОперацииКоманднаяПанель" id="231">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ключевые операции командная панель</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ключевые операции командная панель</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>HorizontalIfPossible</Group>
+					<Representation>WeakSeparation</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="КлючевыеОперацииКоманднаяПанельРасширеннаяПодсказка" id="232"/>
+					<ChildItems>
+						<Button name="ДобавитьВидыИЗначенияДоступа" id="233">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<CommandName>Form.Item.КлючевыеОперацииПрофиля.StandardCommand.Add</CommandName>
+							<Picture>
+								<xr:Ref>CommonPicture.Добавить</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Добавить</v8:content>
+								</v8:item>
+							</Title>
+							<ShapeRepresentation>None</ShapeRepresentation>
+							<PictureLocation>Left</PictureLocation>
+							<ButtonImportance>Supplementary</ButtonImportance>
+							<ExtendedTooltip name="ДобавитьВидыИЗначенияДоступаРасширеннаяПодсказка" id="234"/>
+						</Button>
+						<Button name="ПереместитьВверх" id="265">
+							<Type>UsualButton</Type>
+							<Representation>Picture</Representation>
+							<CommandName>Form.Item.КлючевыеОперацииПрофиля.StandardCommand.MoveUp</CommandName>
+							<Picture>
+								<xr:Ref>CommonPicture.НоваяСтрелкаВверх</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ShapeRepresentation>None</ShapeRepresentation>
+							<ButtonImportance>Supplementary</ButtonImportance>
+							<ExtendedTooltip name="ПереместитьВверхРасширеннаяПодсказка" id="266"/>
+						</Button>
+						<Button name="ПереместитьВниз" id="263">
+							<Type>UsualButton</Type>
+							<Representation>Picture</Representation>
+							<CommandName>Form.Item.КлючевыеОперацииПрофиля.StandardCommand.MoveDown</CommandName>
+							<Picture>
+								<xr:Ref>CommonPicture.НоваяСтрелкаВниз</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ShapeRepresentation>None</ShapeRepresentation>
+							<ButtonImportance>Supplementary</ButtonImportance>
+							<ExtendedTooltip name="ПереместитьВнизРасширеннаяПодсказка" id="264"/>
+						</Button>
+						<Button name="КлючевыеОперацииПрофиляСортироватьСписокПоВозрастанию" id="37">
+							<Type>UsualButton</Type>
+							<Representation>Picture</Representation>
+							<CommandName>Form.Item.КлючевыеОперацииПрофиля.StandardCommand.SortListAsc</CommandName>
+							<Picture>
+								<xr:Ref>CommonPicture.УпорядочитьПоВозрастанию</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ShapeRepresentation>None</ShapeRepresentation>
+							<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+							<ButtonImportance>Supplementary</ButtonImportance>
+							<ExtendedTooltip name="КлючевыеОперацииПрофиляСортироватьСписокПоВозрастаниюРасширеннаяПодсказка" id="38"/>
+						</Button>
+						<Button name="КлючевыеОперацииПрофиляСортироватьСписокПоУбыванию" id="39">
+							<Type>UsualButton</Type>
+							<Representation>Picture</Representation>
+							<CommandName>Form.Item.КлючевыеОперацииПрофиля.StandardCommand.SortListDesc</CommandName>
+							<Picture>
+								<xr:Ref>CommonPicture.УпорядочитьПоУбыванию</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ShapeRepresentation>None</ShapeRepresentation>
+							<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+							<ButtonImportance>Supplementary</ButtonImportance>
+							<ExtendedTooltip name="КлючевыеОперацииПрофиляСортироватьСписокПоУбываниюРасширеннаяПодсказка" id="40"/>
+						</Button>
+						<Button name="КлючевыеОперацииПрофиляЗаполнить" id="62">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<CommandName>Form.Command.Заполнить</CommandName>
+							<Picture>
+								<xr:Ref>CommonPicture.ЗаполнитьПоля</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ShapeRepresentation>None</ShapeRepresentation>
+							<ButtonImportance>Supplementary</ButtonImportance>
+							<ExtendedTooltip name="КлючевыеОперацииПрофиляЗаполнитьРасширеннаяПодсказка" id="63"/>
+						</Button>
+						<SearchStringAddition name="СтрокаПоиска" id="267">
+							<AdditionSource>
+								<Item>КлючевыеОперацииПрофиля</Item>
+								<Type>SearchStringRepresentation</Type>
+							</AdditionSource>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Строка поиска</v8:content>
+								</v8:item>
+							</Title>
+							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+							<Width>20</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="СтрокаПоискаКонтекстноеМеню" id="268"/>
+							<ExtendedTooltip name="СтрокаПоискаРасширеннаяПодсказка" id="269"/>
+						</SearchStringAddition>
+					</ChildItems>
+				</UsualGroup>
+				<Table name="КлючевыеОперацииПрофиля" id="6">
+					<RowSelectionMode>Cell</RowSelectionMode>
+					<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>Объект.КлючевыеОперацииПрофиля</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ключевые операции профиля</v8:content>
+						</v8:item>
+					</Title>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="КлючевыеОперацииПрофиляКонтекстноеМеню" id="7">
+						<Autofill>false</Autofill>
+						<ChildItems>
+							<ButtonGroup name="СписокКонтекстноеМенюГруппаСоздание" id="255">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Список контекстное меню группа создание</v8:content>
+									</v8:item>
+								</Title>
+								<ToolTip>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Список контекстное меню группа создание</v8:content>
+									</v8:item>
+								</ToolTip>
+								<ExtendedTooltip name="СписокКонтекстноеМенюГруппаСозданиеРасширеннаяПодсказка" id="256"/>
+								<ChildItems>
+									<Button name="СписокКонтекстноеМенюКнопкаСоздать" id="257">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.КлючевыеОперацииПрофиля.StandardCommand.Add</CommandName>
+										<Picture>
+											<xr:Ref>CommonPicture.Добавить</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаСоздатьРасширеннаяПодсказка" id="258"/>
+									</Button>
+									<Button name="СписокКонтекстноеМенюКнопкаСкопировать" id="261">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.КлючевыеОперацииПрофиля.StandardCommand.Copy</CommandName>
+										<Picture>
+											<xr:Ref>CommonPicture.ДобавитьКопированием</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаСкопироватьРасширеннаяПодсказка" id="262"/>
+									</Button>
+								</ChildItems>
+							</ButtonGroup>
+							<ButtonGroup name="СписокКонтекстноеМенюГруппаРедактирование" id="235">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Список контекстное меню группа редактирование</v8:content>
+									</v8:item>
+								</Title>
+								<ToolTip>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Список контекстное меню группа редактирование</v8:content>
+									</v8:item>
+								</ToolTip>
+								<ExtendedTooltip name="СписокКонтекстноеМенюГруппаРедактированиеРасширеннаяПодсказка" id="236"/>
+								<ChildItems>
+									<Button name="СписокКонтекстноеМенюКнопкаИзменить" id="237">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.КлючевыеОперацииПрофиля.StandardCommand.Change</CommandName>
+										<Picture>
+											<xr:Ref>CommonPicture.Редактировать</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаИзменитьРасширеннаяПодсказка" id="238"/>
+									</Button>
+									<Button name="СписокКонтекстноеМенюКнопкаУдалить" id="239">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.КлючевыеОперацииПрофиля.StandardCommand.Delete</CommandName>
+										<Picture>
+											<xr:Ref>CommonPicture.ВКорзину</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Удалить</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаУдалитьРасширеннаяПодсказка" id="240"/>
+									</Button>
+								</ChildItems>
+							</ButtonGroup>
+							<Button name="СписокКонтекстноеМенюКнопкаВывестиСписок" id="251">
+								<Type>CommandBarButton</Type>
+								<Representation>Picture</Representation>
+								<CommandName>Form.Item.КлючевыеОперацииПрофиля.StandardCommand.OutputList</CommandName>
+								<Picture>
+									<xr:Ref>CommonPicture.НаПечать</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<ShapeRepresentation>None</ShapeRepresentation>
+								<PictureLocation>Left</PictureLocation>
+								<ButtonImportance>Supplementary</ButtonImportance>
+								<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаВывестиСписокРасширеннаяПодсказка" id="252"/>
+							</Button>
+							<Button name="СписокКонтекстноеМенюКнопкаВывестиНастройкаФормы" id="253">
+								<Type>CommandBarButton</Type>
+								<Representation>Picture</Representation>
+								<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+								<Picture>
+									<xr:Ref>CommonPicture.НастройкаФормы</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<ShapeRepresentation>None</ShapeRepresentation>
+								<PictureLocation>Left</PictureLocation>
+								<ButtonImportance>Supplementary</ButtonImportance>
+								<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаВывестиНастройкаФормыРасширеннаяПодсказка" id="254"/>
+							</Button>
+						</ChildItems>
+					</ContextMenu>
+					<AutoCommandBar name="КлючевыеОперацииПрофиляКоманднаяПанель" id="8">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="КлючевыеОперацииПрофиляРасширеннаяПодсказка" id="9"/>
+					<SearchStringAddition name="КлючевыеОперацииПрофиляСтрокаПоиска" id="10">
+						<AdditionSource>
+							<Item>КлючевыеОперацииПрофиля</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="КлючевыеОперацииПрофиляСтрокаПоискаКонтекстноеМеню" id="11"/>
+						<ExtendedTooltip name="КлючевыеОперацииПрофиляСтрокаПоискаРасширеннаяПодсказка" id="12"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="КлючевыеОперацииПрофиляСостояниеПросмотра" id="13">
+						<AdditionSource>
+							<Item>КлючевыеОперацииПрофиля</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="КлючевыеОперацииПрофиляСостояниеПросмотраКонтекстноеМеню" id="14"/>
+						<ExtendedTooltip name="КлючевыеОперацииПрофиляСостояниеПросмотраРасширеннаяПодсказка" id="15"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="КлючевыеОперацииПрофиляУправлениеПоиском" id="16">
+						<AdditionSource>
+							<Item>КлючевыеОперацииПрофиля</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="КлючевыеОперацииПрофиляУправлениеПоискомКонтекстноеМеню" id="17"/>
+						<ExtendedTooltip name="КлючевыеОперацииПрофиляУправлениеПоискомРасширеннаяПодсказка" id="18"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="КлючевыеОперацииПрофиляКлючеваяОперация" id="59">
+							<DataPath>Объект.КлючевыеОперацииПрофиля.КлючеваяОперация</DataPath>
+							<TitleBackColor>style:FormBackColor</TitleBackColor>
+							<HorizontalAlign>Left</HorizontalAlign>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="КлючевыеОперацииПрофиляКлючеваяОперацияКонтекстноеМеню" id="60"/>
+							<ExtendedTooltip name="КлючевыеОперацииПрофиляКлючеваяОперацияРасширеннаяПодсказка" id="61"/>
+						</InputField>
+						<InputField name="КлючевыеОперацииПрофиляЦелевоеВремя" id="28">
+							<DataPath>Объект.КлючевыеОперацииПрофиля.ЦелевоеВремя</DataPath>
+							<TitleBackColor>style:FormBackColor</TitleBackColor>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="КлючевыеОперацииПрофиляЦелевоеВремяКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="КлючевыеОперацииПрофиляЦелевоеВремяРасширеннаяПодсказка" id="30"/>
+						</InputField>
+						<InputField name="КлючевыеОперацииПрофиляВажность" id="31">
+							<DataPath>Объект.КлючевыеОперацииПрофиля.Приоритет</DataPath>
+							<TitleBackColor>style:FormBackColor</TitleBackColor>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="КлючевыеОперацииПрофиляВажностьКонтекстноеМеню" id="32"/>
+							<ExtendedTooltip name="КлючевыеОперацииПрофиляВажностьРасширеннаяПодсказка" id="33"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<UsualGroup name="ГруппаКомманднаяПанель" id="221">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа коммандная панель</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа коммандная панель</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<Group>HorizontalIfPossible</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаКомманднаяПанельРасширеннаяПодсказка" id="222"/>
+					<ChildItems>
+						<Button name="Удалить" id="223">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<CommandName>Form.StandardCommand.SetDeletionMark</CommandName>
+							<Picture>
+								<xr:Ref>CommonPicture.ВКорзину</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Удалить</v8:content>
+								</v8:item>
+							</Title>
+							<ShapeRepresentation>None</ShapeRepresentation>
+							<PictureLocation>Left</PictureLocation>
+							<ButtonImportance>Supplementary</ButtonImportance>
+							<ExtendedTooltip name="УдалитьРасширеннаяПодсказка" id="224"/>
+						</Button>
+						<Button name="КнопкаВывестиНастройкаФормы" id="225">
+							<Type>UsualButton</Type>
+							<Representation>Picture</Representation>
+							<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+							<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+							<Picture>
+								<xr:Ref>CommonPicture.НастройкаФормы</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ShapeRepresentation>None</ShapeRepresentation>
+							<PictureLocation>Left</PictureLocation>
+							<ButtonImportance>Supplementary</ButtonImportance>
+							<ExtendedTooltip name="КнопкаВывестиНастройкаФормыРасширеннаяПодсказка" id="226"/>
+						</Button>
+						<Button name="ФормаСохранитьПрофильКлючевыхОпераций" id="49">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<CommandName>Form.Command.СохранитьПрофильКлючевыхОпераций</CommandName>
+							<Picture>
+								<xr:Ref>CommonPicture.СохранитьНовая</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ShapeRepresentation>None</ShapeRepresentation>
+							<ButtonImportance>Supplementary</ButtonImportance>
+							<ExtendedTooltip name="ФормаСохранитьПрофильКлючевыхОперацийРасширеннаяПодсказка" id="50"/>
+						</Button>
+						<Button name="ФормаЗагрузитьПрофильКлючевыхОпераций" id="4">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<CommandName>Form.Command.ЗагрузитьПрофильКлючевыхОпераций</CommandName>
+							<Picture>
+								<xr:Ref>CommonPicture.ОткрытьЗагрузить</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ShapeRepresentation>None</ShapeRepresentation>
+							<ButtonImportance>Supplementary</ButtonImportance>
+							<ExtendedTooltip name="ФормаЗагрузитьПрофильКлючевыхОперацийРасширеннаяПодсказка" id="5"/>
+						</Button>
+						<UsualGroup name="ГруппаКнопкаСохранить" id="227">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа кнопка сохранить</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа кнопка сохранить</v8:content>
+								</v8:item>
+							</ToolTip>
+							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+							<Group>HorizontalIfPossible</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<BackColor>style:ImportantColor</BackColor>
+							<ExtendedTooltip name="ГруппаКнопкаСохранитьРасширеннаяПодсказка" id="228"/>
+							<ChildItems>
+								<Button name="ФормаКнопкаСохранитьИЗакрыть" id="229">
+									<Type>UsualButton</Type>
+									<Width>10</Width>
+									<CommandName>Form.StandardCommand.WriteAndClose</CommandName>
+									<TextColor>style:FormBackColor</TextColor>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сохранить</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ButtonImportance>Supplementary</ButtonImportance>
+									<ExtendedTooltip name="ФормаКнопкаСохранитьИЗакрытьРасширеннаяПодсказка" id="230"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ПрофилиКлючевыхОпераций</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<Columns>
+				<AdditionalColumns table="Объект.КлючевыеОперацииПрофиля"/>
+			</Columns>
+		</Attribute>
+		<Attribute name="ЕстьБазоваяФункциональность" id="2">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗаданВопросОбУстановкеРасширения" id="3">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗагрузитьПрофильКлючевыхОпераций" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить профиль</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить профиль ключевых операций</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.LoadReportSettings</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗагрузитьПрофильКлючевыхОпераций</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СохранитьПрофильКлючевыхОпераций" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить профиль</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить профиль ключевых операций</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Write</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СохранитьПрофильКлючевыхОпераций</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Заполнить" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Заполнить</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

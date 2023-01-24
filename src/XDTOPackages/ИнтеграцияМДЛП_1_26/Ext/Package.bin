@@ -1,0 +1,1401 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://nalog.ru/MarkInfo/med/1.26" elementFormQualified="true" attributeFormQualified="false">
+	<property name="documents">
+		<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+			<property name="version" type="xs:string" lowerBound="1" fixed="true" default="1.26" form="Attribute"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="session_ui" type="d4p1:string200_type" lowerBound="0" form="Attribute"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="original_id" type="d4p1:string200_type" lowerBound="0" form="Attribute"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="client_identifier" type="d4p1:string200_type" lowerBound="0" form="Attribute"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="result" type="d4p1:result" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="result_service" type="d4p1:result_service" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="query_kiz_info" type="d4p1:query_kiz_info" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="kiz_info" type="d4p1:kiz_info" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="edit_counterparty_list" type="d4p1:edit_counterparty_list" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="booking_sscc" type="d4p1:booking_sscc" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="recall" type="d4p1:recall" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="refusal_sender" type="d4p1:refusal_sender" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="refusal_receiver" type="d4p1:refusal_receiver" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="register_end_packing" type="d4p1:register_end_packing" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="register_control_samples" type="d4p1:register_control_samples" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="register_product_emission" type="d4p1:register_product_emission" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="foreign_emission" type="d4p1:foreign_emission" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="foreign_shipment" type="d4p1:foreign_shipment" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="foreign_import" type="d4p1:foreign_import" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="custom_move" type="d4p1:custom_move" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="fts_data" type="d4p1:fts_data" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="receive_importer" type="d4p1:receive_importer" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="change_owner" type="d4p1:change_owner" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="eeu_shipment" type="d4p1:eeu_shipment" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="eeu_import" type="d4p1:eeu_import" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="eeu_release" type="d4p1:eeu_release" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="move_owner" type="d4p1:move_owner" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="return_to_circulation" type="d4p1:return_to_circulation" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="move_order" type="d4p1:move_order" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="receive_order" type="d4p1:receive_order" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="move_return" type="d4p1:move_return" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="move_place" type="d4p1:move_place" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="move_unregistered_order" type="d4p1:move_unregistered_order" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="receive_unregistered_order" type="d4p1:receive_unregistered_order" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="move_eeu" type="d4p1:move_eeu" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="state_dispatch" type="d4p1:state_dispatch" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="retail_sale" type="d4p1:retail_sale" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="recipe" type="d4p1:recipe" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="health_care" type="d4p1:health_care" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="move_destruction" type="d4p1:move_destruction" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="destruction" type="d4p1:destruction" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="withdrawal" type="d4p1:withdrawal" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="move_order_notification" type="d4p1:move_order_notification" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="receive_order_notification" type="d4p1:receive_order_notification" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="move_owner_notification" type="d4p1:move_owner_notification" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="refusal_sender_notification" type="d4p1:refusal_sender_notification" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="refusal_receiver_notification" type="d4p1:refusal_receiver_notification" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="accept_notification" type="d4p1:accept_notification" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="retail_kkt_notification" type="d4p1:retail_kkt_notification" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="change_owner_notification" type="d4p1:change_owner_notification" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="move_return_notification" type="d4p1:move_return_notification" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="receive_unregistered_notification" type="d4p1:receive_unregistered_notification" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="state_dispatch_notification" type="d4p1:state_dispatch_notification" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="accept" type="d4p1:accept" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="relabeling" type="d4p1:relabeling" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="unit_pack" type="d4p1:unit_pack" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="unit_unpack" type="d4p1:unit_unpack" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="unit_extract" type="d4p1:unit_extract" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="unit_append" type="d4p1:unit_append" lowerBound="0"/>
+			<property xmlns:d4p1="http://nalog.ru/MarkInfo/med/1.26" name="multi_pack" type="d4p1:multi_pack" lowerBound="0"/>
+		</typeDef>
+	</property>
+	<valueType name="code_country_type" base="xs:string" variety="Atomic">
+		<pattern>[A-Z]{2}</pattern>
+	</valueType>
+	<valueType name="confirm_doc_type_enum" base="xs:int" variety="Atomic">
+		<enumeration>1</enumeration>
+		<enumeration>2</enumeration>
+	</valueType>
+	<valueType name="contract_type_enum" base="xs:int" variety="Atomic">
+		<enumeration>1</enumeration>
+		<enumeration>2</enumeration>
+		<enumeration>3</enumeration>
+		<enumeration>4</enumeration>
+		<enumeration>5</enumeration>
+		<enumeration>6</enumeration>
+		<enumeration>7</enumeration>
+	</valueType>
+	<valueType name="control_samples_type_enum" base="xs:int" variety="Atomic">
+		<enumeration>1</enumeration>
+		<enumeration>2</enumeration>
+		<enumeration>3</enumeration>
+	</valueType>
+	<valueType name="custom_procedure_code_enum" base="xs:int" variety="Atomic">
+		<enumeration>40</enumeration>
+		<enumeration>93</enumeration>
+		<enumeration>94</enumeration>
+		<enumeration>31</enumeration>
+		<enumeration>10</enumeration>
+	</valueType>
+	<valueType name="date_type" base="xs:string" variety="Atomic" length="10">
+		<pattern>((((0[1-9]|1[0-9]|2[0-8])[\.](0[1-9]|1[012]))|((29|30|31)[\.](0[13578]|1[02]))|((29|30)[\.](0[4,6,9]|11)))[\.](19|[2-9][0-9])\d\d)|(29[\.]02[\.](19|[2-9][0-9])(00|04|08|12|16|20|24|28|32|36|40|44|48|52|56|60|64|68|72|76|80|84|88|92|96))</pattern>
+	</valueType>
+	<valueType name="datetimeoffset" base="xs:dateTime" variety="Atomic" minInclusive="0001-01-01T00:00:00Z">
+		<pattern>((000[1-9])|(00[1-9][0-9])|(0[1-9][0-9]{2})|([1-9][0-9]{3}))-((0[1-9])|(1[012]))-((0[1-9])|([12][0-9])|(3[01]))T(([01][0-9])|(2[0-3]))(:[0-5][0-9]){2}(\.[0-9]+)?(([+-]((((0[0-9])|(1[0-3]))(:[0-5][0-9]))|14:00))|Z)</pattern>
+	</valueType>
+	<valueType name="decimal_type" base="xs:decimal" variety="Atomic" minInclusive="0.01" maxInclusive="0.99" totalDigits="3" fractionDigits="2"/>
+	<valueType name="destruction_method_enum" base="xs:int" variety="Atomic">
+		<enumeration>1</enumeration>
+		<enumeration>2</enumeration>
+		<enumeration>3</enumeration>
+	</valueType>
+	<valueType name="destruction_type_enum" base="xs:int" variety="Atomic">
+		<enumeration>1</enumeration>
+		<enumeration>2</enumeration>
+		<enumeration>3</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://nalog.ru/MarkInfo/med/1.26" name="document_number_200_type" base="d2p1:string_clear_type" variety="Atomic" minLength="1" maxLength="200"/>
+	<valueType name="edit_type_enum" base="xs:int" variety="Atomic">
+		<enumeration>1</enumeration>
+		<enumeration>2</enumeration>
+	</valueType>
+	<valueType name="fts_customs_code_type" base="xs:token" variety="Atomic">
+		<pattern>[0-9]{2}|[0-9]{5}|[0-9]{8}</pattern>
+	</valueType>
+	<valueType name="gs1_gtin_type" base="xs:string" variety="Atomic" length="14">
+		<pattern>[0-9]{14}</pattern>
+	</valueType>
+	<valueType name="guid_type" base="xs:string" variety="Atomic" length="36">
+		<pattern>([a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12})</pattern>
+	</valueType>
+	<valueType name="inn_fl_type" base="xs:string" variety="Atomic" length="12">
+		<pattern>([0-9]{1}[1-9]{1}|[1-9]{1}[0-9]{1})[0-9]{10}</pattern>
+	</valueType>
+	<valueType name="inn_ul_type" base="xs:string" variety="Atomic" length="10">
+		<pattern>([0-9]{1}[1-9]{1}|[1-9]{1}[0-9]{1})[0-9]{8}</pattern>
+	</valueType>
+	<valueType name="kpp_type" base="xs:string" variety="Atomic" length="9">
+		<pattern>([0-9]{1}[1-9]{1}|[1-9]{1}[0-9]{1})[0-9]{7}</pattern>
+	</valueType>
+	<valueType name="operation_result_type_enum" base="xs:string" variety="Atomic">
+		<enumeration>Accepted</enumeration>
+		<enumeration>Rejected</enumeration>
+		<enumeration>Partial</enumeration>
+	</valueType>
+	<valueType name="order_type_enum" base="xs:int" variety="Atomic">
+		<enumeration>1</enumeration>
+		<enumeration>2</enumeration>
+	</valueType>
+	<valueType name="price_type" base="xs:decimal" variety="Atomic" minExclusive="0" totalDigits="16" fractionDigits="4"/>
+	<valueType name="recall_type_enum" base="xs:int" variety="Atomic">
+		<enumeration>313</enumeration>
+		<enumeration>331</enumeration>
+		<enumeration>332</enumeration>
+		<enumeration>334</enumeration>
+		<enumeration>335</enumeration>
+		<enumeration>341</enumeration>
+		<enumeration>361</enumeration>
+		<enumeration>362</enumeration>
+		<enumeration>363</enumeration>
+		<enumeration>431</enumeration>
+		<enumeration>541</enumeration>
+	</valueType>
+	<valueType name="receive_type_enum" base="xs:int" variety="Atomic">
+		<enumeration>1</enumeration>
+		<enumeration>2</enumeration>
+	</valueType>
+	<valueType name="sale_doc_type_enum" base="xs:int" variety="Atomic">
+		<enumeration>1</enumeration>
+		<enumeration>2</enumeration>
+		<enumeration>3</enumeration>
+		<enumeration>4</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://nalog.ru/MarkInfo/med/1.26" name="series_number_type" base="d2p1:string_clear_type" variety="Atomic" minLength="1" maxLength="20"/>
+	<valueType name="sign_sgtin_type" base="xs:string" variety="Atomic" length="27">
+		<pattern>[0-9]{14}[a-zA-Z0-9]{13}</pattern>
+	</valueType>
+	<valueType name="source_type" base="xs:int" variety="Atomic">
+		<enumeration>1</enumeration>
+		<enumeration>2</enumeration>
+		<enumeration>3</enumeration>
+	</valueType>
+	<valueType name="sscc_type" base="xs:string" variety="Atomic">
+		<pattern>[0-9]{18}</pattern>
+	</valueType>
+	<valueType xmlns:d2p1="http://nalog.ru/MarkInfo/med/1.26" name="string1000_type" base="d2p1:string_clear_type" variety="Atomic" minLength="1" maxLength="1000"/>
+	<valueType xmlns:d2p1="http://nalog.ru/MarkInfo/med/1.26" name="string128_type" base="d2p1:string_clear_type" variety="Atomic" minLength="1" maxLength="128"/>
+	<valueType xmlns:d2p1="http://nalog.ru/MarkInfo/med/1.26" name="string200_type" base="d2p1:string_clear_type" variety="Atomic" minLength="1" maxLength="200"/>
+	<valueType xmlns:d2p1="http://nalog.ru/MarkInfo/med/1.26" name="string4000_type" base="d2p1:string_clear_type" variety="Atomic" minLength="1" maxLength="4000"/>
+	<valueType xmlns:d2p1="http://nalog.ru/MarkInfo/med/1.26" name="string500_type" base="d2p1:string_clear_type" variety="Atomic" minLength="1" maxLength="500"/>
+	<valueType xmlns:d2p1="http://nalog.ru/MarkInfo/med/1.26" name="string64_type" base="d2p1:string_clear_type" variety="Atomic" minLength="1" maxLength="64"/>
+	<valueType name="string_clear_at_begin_type" base="xs:string" variety="Atomic" minLength="1">
+		<pattern>\S.*</pattern>
+	</valueType>
+	<valueType xmlns:d2p1="http://nalog.ru/MarkInfo/med/1.26" name="string_clear_type" base="d2p1:string_clear_at_begin_type" variety="Atomic" minLength="1">
+		<pattern>.*\S</pattern>
+	</valueType>
+	<valueType name="subject_any_type" base="xs:string" variety="Atomic" minLength="14" maxLength="36">
+		<pattern>[0-9]{14}|([a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12})</pattern>
+	</valueType>
+	<valueType name="subject_id_type" base="xs:string" variety="Atomic" length="14">
+		<pattern>[0-9]{14}</pattern>
+	</valueType>
+	<valueType name="system_subject_type" base="xs:string" variety="Atomic" length="36">
+		<pattern>([a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12})</pattern>
+	</valueType>
+	<valueType name="tnved4_type" base="xs:string" variety="Atomic" length="4">
+		<pattern>[0-9]{4}</pattern>
+	</valueType>
+	<valueType name="turnover_type_enum" base="xs:int" variety="Atomic">
+		<enumeration>1</enumeration>
+		<enumeration>2</enumeration>
+	</valueType>
+	<valueType name="withdrawal_reason_enum" base="xs:int" variety="Atomic">
+		<enumeration>1</enumeration>
+		<enumeration>2</enumeration>
+		<enumeration>3</enumeration>
+	</valueType>
+	<valueType name="withdrawal_type_enum" base="xs:int" variety="Atomic">
+		<enumeration>6</enumeration>
+		<enumeration>7</enumeration>
+		<enumeration>8</enumeration>
+		<enumeration>9</enumeration>
+		<enumeration>10</enumeration>
+		<enumeration>11</enumeration>
+		<enumeration>12</enumeration>
+		<enumeration>13</enumeration>
+		<enumeration>14</enumeration>
+	</valueType>
+	<objectType name="confnum_info_type">
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="confirm_doc" type="d3p1:confirm_doc_type_enum"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_date" type="d3p1:date_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_num" type="d3p1:document_number_200_type"/>
+	</objectType>
+	<objectType name="fias_addr_type">
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="aoguid" type="d3p1:guid_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="houseguid" type="d3p1:guid_type" lowerBound="0"/>
+		<property name="flat" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="1" maxLength="20"/>
+		</property>
+	</objectType>
+	<objectType name="fts_gtd_info_type">
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="customs_code" type="d3p1:fts_customs_code_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="registration_date" type="d3p1:date_type"/>
+		<property name="gtd_number">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="1" maxLength="7"/>
+		</property>
+	</objectType>
+	<objectType name="info_org_eeu_type">
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="itin" type="d3p1:string64_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="code_country" type="d3p1:code_country_type"/>
+	</objectType>
+	<objectType name="org_address_type" ordered="false" sequenced="true">
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="address" type="d3p1:fias_addr_type"/>
+		<property name="ul" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="inn" type="d5p1:inn_ul_type"/>
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="kpp" type="d5p1:kpp_type"/>
+			</typeDef>
+		</property>
+		<property name="fl" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="inn" type="d5p1:inn_fl_type"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="short_org_info_type" ordered="false" sequenced="true">
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="organisation_name" type="d3p1:string500_type"/>
+		<property name="ul" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="inn" type="d5p1:inn_ul_type"/>
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="kpp" type="d5p1:kpp_type"/>
+			</typeDef>
+		</property>
+		<property name="fl" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="inn" type="d5p1:inn_fl_type"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="sign_ids_type" ordered="false" sequenced="true">
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d3p1:sign_sgtin_type" lowerBound="0" upperBound="2"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d3p1:sscc_type" lowerBound="0" upperBound="2"/>
+	</objectType>
+	<objectType name="result">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="200" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="session_ui" type="d3p1:string200_type" lowerBound="1" form="Attribute"/>
+		<property name="accept_time" type="xs:dateTime" lowerBound="1" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation" type="d3p1:string1000_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_comment" type="d3p1:string1000_type" lowerBound="0"/>
+		<property name="errors" lowerBound="0" upperBound="-1">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="error_code" type="d5p1:string200_type"/>
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="error_desc" type="d5p1:string4000_type"/>
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="object_id" type="d5p1:string128_type" lowerBound="0"/>
+			</typeDef>
+		</property>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_result" type="d3p1:operation_result_type_enum"/>
+	</objectType>
+	<objectType name="result_service">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="201" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="session_ui" type="d3p1:string200_type" lowerBound="1" form="Attribute"/>
+		<property name="accept_time" type="xs:dateTime" lowerBound="1" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation" type="d3p1:string1000_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_result" type="d3p1:operation_result_type_enum"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_comment" type="d3p1:string1000_type" lowerBound="0"/>
+		<property name="errors" lowerBound="0" upperBound="-1">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="error_code" type="d5p1:string200_type"/>
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="error_desc" type="d5p1:string4000_type"/>
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="object_id" type="d5p1:string128_type" lowerBound="0"/>
+			</typeDef>
+		</property>
+		<property name="success" lowerBound="0" upperBound="-1">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="success_desc" type="d5p1:string4000_type"/>
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="object_id" type="d5p1:string128_type"/>
+				<property name="object_info">
+					<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="inn_ul" type="d7p1:inn_ul_type" lowerBound="0"/>
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="inn_fl" type="d7p1:inn_fl_type" lowerBound="0"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="query_kiz_info" ordered="false" sequenced="true">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="210" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:subject_any_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d3p1:sign_sgtin_type" lowerBound="0"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc_down" type="d3p1:sscc_type" lowerBound="0"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc_up" type="d3p1:sscc_type" lowerBound="0"/>
+	</objectType>
+	<objectType name="kiz_info" ordered="false" sequenced="true">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="211" form="Attribute"/>
+		<property name="result">
+			<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+				<property name="found" type="xs:boolean"/>
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d5p1:sscc_type" lowerBound="0"/>
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d5p1:sign_sgtin_type" lowerBound="0"/>
+			</typeDef>
+		</property>
+		<property name="sgtin" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property name="info_sgtin">
+					<typeDef xsi:type="ObjectType">
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="status" type="d7p1:string200_type"/>
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d7p1:sscc_type" lowerBound="0"/>
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="gtin" type="d7p1:gs1_gtin_type"/>
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="series_number" type="d7p1:series_number_type"/>
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="expiration_date" type="d7p1:date_type"/>
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="tnved_code" type="d7p1:tnved4_type"/>
+					</typeDef>
+				</property>
+				<property name="info_decision" lowerBound="0">
+					<typeDef xsi:type="ObjectType">
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="id_decision" type="d7p1:guid_type"/>
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_num" type="d7p1:document_number_200_type"/>
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_date" type="d7p1:date_type"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+		<property name="sscc_down" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property name="tree" upperBound="-1">
+					<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d7p1:sscc_type" lowerBound="0"/>
+						<property name="sgtin" lowerBound="0">
+							<typeDef xsi:type="ObjectType">
+								<property name="info_sgtin">
+									<typeDef xsi:type="ObjectType">
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d11p1:sign_sgtin_type"/>
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="status" type="d11p1:string200_type"/>
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d11p1:sscc_type" lowerBound="0"/>
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="gtin" type="d11p1:gs1_gtin_type"/>
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="series_number" type="d11p1:series_number_type"/>
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="expiration_date" type="d11p1:date_type"/>
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="tnved_code" type="d11p1:tnved4_type"/>
+									</typeDef>
+								</property>
+								<property name="info_decision" lowerBound="0">
+									<typeDef xsi:type="ObjectType">
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="id_decision" type="d11p1:guid_type"/>
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_num" type="d11p1:document_number_200_type"/>
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_date" type="d11p1:date_type"/>
+									</typeDef>
+								</property>
+							</typeDef>
+						</property>
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="parent_sscc" type="d7p1:sscc_type" lowerBound="0"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+		<property name="sscc_up" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property name="info" upperBound="-1">
+					<typeDef xsi:type="ObjectType">
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d7p1:sscc_type"/>
+						<property name="level" type="xs:int"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="edit_counterparty_list">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="212" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:system_subject_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="edit_type" type="d3p1:edit_type_enum"/>
+		<property name="counterparty">
+			<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="counterparty_id" type="d5p1:system_subject_type" lowerBound="0" upperBound="150"/>
+				<property name="counterparty_info" lowerBound="0" upperBound="150">
+					<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="inn_ul" type="d7p1:inn_ul_type" lowerBound="0"/>
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="inn_fl" type="d7p1:inn_fl_type" lowerBound="0"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="booking_sscc">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="213" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:system_subject_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_type" type="d3p1:edit_type_enum"/>
+		<property name="signs">
+			<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d5p1:sscc_type" lowerBound="0" upperBound="300"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="recall">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="250" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:subject_any_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="session_ui" type="d3p1:string200_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="recall_action_id" type="d3p1:recall_type_enum"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="reason" type="d3p1:string500_type" lowerBound="0"/>
+	</objectType>
+	<objectType name="refusal_sender">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="251" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:subject_any_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="receiver_id" type="d3p1:subject_any_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="reason" type="d3p1:string1000_type"/>
+		<property name="confirm_paused" type="xs:boolean" lowerBound="0"/>
+		<property name="order_details">
+			<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d5p1:sign_sgtin_type" lowerBound="0" upperBound="25000"/>
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d5p1:sscc_type" lowerBound="0" upperBound="25000"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="refusal_receiver">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="252" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:subject_any_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="shipper_id" type="d3p1:subject_any_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="reason" type="d3p1:string1000_type"/>
+		<property name="confirm_paused" type="xs:boolean" lowerBound="0"/>
+		<property name="order_details">
+			<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d5p1:sign_sgtin_type" lowerBound="0" upperBound="25000"/>
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d5p1:sscc_type" lowerBound="0" upperBound="25000"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="register_end_packing">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="311" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:subject_id_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="order_type" type="d3p1:order_type_enum"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="owner_id" type="d3p1:system_subject_type" lowerBound="0"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="series_number" type="d3p1:series_number_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="expiration_date" type="d3p1:date_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="gtin" type="d3p1:gs1_gtin_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="tnved_code" type="d3p1:tnved4_type"/>
+		<property name="signs">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d5p1:sign_sgtin_type" upperBound="150000"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="register_control_samples">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="312" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:subject_id_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="control_samples_type" type="d3p1:control_samples_type_enum"/>
+		<property name="signs">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d5p1:sign_sgtin_type" upperBound="25000"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="register_product_emission">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="313" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:subject_id_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="confirm_doc" type="d3p1:confirm_doc_type_enum"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_num" type="d3p1:document_number_200_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_date" type="d3p1:date_type"/>
+		<property name="signs">
+			<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d5p1:sign_sgtin_type" lowerBound="0" upperBound="25000"/>
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d5p1:sscc_type" lowerBound="0" upperBound="25000"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="foreign_emission">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="321" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:system_subject_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="packing_id" type="d3p1:system_subject_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="control_id" type="d3p1:system_subject_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="series_number" type="d3p1:series_number_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="expiration_date" type="d3p1:date_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="gtin" type="d3p1:gs1_gtin_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="tnved_code" type="d3p1:tnved4_type"/>
+		<property name="signs">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d5p1:sign_sgtin_type" upperBound="150000"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="foreign_shipment">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="331" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:system_subject_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="seller_id" type="d3p1:system_subject_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="receiver_id" type="d3p1:system_subject_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_num" type="d3p1:document_number_200_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_date" type="d3p1:date_type"/>
+		<property name="order_details">
+			<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d5p1:sign_sgtin_type" lowerBound="0" upperBound="25000"/>
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d5p1:sscc_type" lowerBound="0" upperBound="25000"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="foreign_import">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="332" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:system_subject_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="seller_id" type="d3p1:system_subject_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="custom_receiver_id" type="d3p1:system_subject_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="contract_type" type="d3p1:contract_type_enum"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_num" type="d3p1:document_number_200_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_date" type="d3p1:date_type"/>
+		<property name="order_details">
+			<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d5p1:sign_sgtin_type" lowerBound="0" upperBound="25000"/>
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d5p1:sscc_type" lowerBound="0" upperBound="25000"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="custom_move">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="334" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:system_subject_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="custom_shipper_id" type="d3p1:system_subject_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="custom_receiver_id" type="d3p1:system_subject_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property name="order_details">
+			<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d5p1:sign_sgtin_type" lowerBound="0" upperBound="25000"/>
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d5p1:sscc_type" lowerBound="0" upperBound="25000"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="fts_data">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="335" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:system_subject_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="fts_info" type="d3p1:fts_gtd_info_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="custom_procedure_code" type="d3p1:custom_procedure_code_enum"/>
+		<property name="order_details">
+			<typeDef xsi:type="ObjectType">
+				<property name="union" upperBound="25000">
+					<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d7p1:sign_sgtin_type" lowerBound="0"/>
+						<property name="sscc_detail" lowerBound="0">
+							<typeDef xsi:type="ObjectType">
+								<property xmlns:d9p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d9p1:sscc_type"/>
+								<property name="detail" lowerBound="0" upperBound="100">
+									<typeDef xsi:type="ObjectType">
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="gtin" type="d11p1:gs1_gtin_type"/>
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="series_number" type="d11p1:series_number_type"/>
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="customs_value" type="d11p1:price_type"/>
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="confnum_info" type="d11p1:confnum_info_type" lowerBound="0"/>
+									</typeDef>
+								</property>
+							</typeDef>
+						</property>
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="customs_value" type="d7p1:price_type"/>
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="confnum_info" type="d7p1:confnum_info_type" lowerBound="0"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="receive_importer">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="341" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:subject_id_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="custom_shipper_id" type="d3p1:system_subject_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_date" type="d3p1:date_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_num" type="d3p1:document_number_200_type"/>
+		<property name="order_details">
+			<typeDef xsi:type="ObjectType">
+				<property name="union" upperBound="25000">
+					<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d7p1:sign_sgtin_type" lowerBound="0"/>
+						<property name="sscc_detail" lowerBound="0">
+							<typeDef xsi:type="ObjectType">
+								<property xmlns:d9p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d9p1:sscc_type"/>
+								<property name="detail" lowerBound="0" upperBound="100">
+									<typeDef xsi:type="ObjectType">
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="gtin" type="d11p1:gs1_gtin_type"/>
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="series_number" type="d11p1:series_number_type"/>
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="cost_taxes" type="d11p1:price_type"/>
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="vat_value" type="d11p1:price_type" lowerBound="0"/>
+									</typeDef>
+								</property>
+							</typeDef>
+						</property>
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="cost_taxes" type="d7p1:price_type"/>
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="vat_value" type="d7p1:price_type" lowerBound="0"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="change_owner">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="351" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:system_subject_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="receiver_id" type="d3p1:system_subject_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_num" type="d3p1:document_number_200_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_date" type="d3p1:date_type"/>
+		<property name="order_details">
+			<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d5p1:sign_sgtin_type" lowerBound="0" upperBound="25000"/>
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d5p1:sscc_type" lowerBound="0" upperBound="25000"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="eeu_shipment">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="361" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:system_subject_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="seller_id" type="d3p1:system_subject_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="receiver_id" type="d3p1:subject_id_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_num" type="d3p1:document_number_200_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_date" type="d3p1:date_type"/>
+		<property name="order_details">
+			<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d5p1:sign_sgtin_type" lowerBound="0" upperBound="25000"/>
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d5p1:sscc_type" lowerBound="0" upperBound="25000"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="eeu_import">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="362" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:subject_id_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="seller_id" type="d3p1:system_subject_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="contract_type" type="d3p1:contract_type_enum"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_num" type="d3p1:document_number_200_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_date" type="d3p1:date_type"/>
+		<property name="order_details">
+			<typeDef xsi:type="ObjectType">
+				<property name="union" upperBound="25000">
+					<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d7p1:sign_sgtin_type" lowerBound="0"/>
+						<property name="sscc_detail" lowerBound="0">
+							<typeDef xsi:type="ObjectType">
+								<property xmlns:d9p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d9p1:sscc_type"/>
+								<property name="detail" lowerBound="0" upperBound="100">
+									<typeDef xsi:type="ObjectType">
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="gtin" type="d11p1:gs1_gtin_type"/>
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="series_number" type="d11p1:series_number_type"/>
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="cost" type="d11p1:price_type"/>
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="vat_value" type="d11p1:price_type" lowerBound="0"/>
+									</typeDef>
+								</property>
+							</typeDef>
+						</property>
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="cost" type="d7p1:price_type"/>
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="vat_value" type="d7p1:price_type" lowerBound="0"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="eeu_release">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="363" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:subject_id_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property name="order_details">
+			<typeDef xsi:type="ObjectType">
+				<property name="union" upperBound="25000">
+					<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d7p1:sign_sgtin_type" lowerBound="0"/>
+						<property name="sscc_detail" lowerBound="0">
+							<typeDef xsi:type="ObjectType">
+								<property xmlns:d9p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d9p1:sscc_type"/>
+								<property name="detail" lowerBound="0" upperBound="100">
+									<typeDef xsi:type="ObjectType">
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="gtin" type="d11p1:gs1_gtin_type"/>
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="series_number" type="d11p1:series_number_type"/>
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="confnum_info" type="d11p1:confnum_info_type"/>
+									</typeDef>
+								</property>
+							</typeDef>
+						</property>
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="confnum_info" type="d7p1:confnum_info_type"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="move_owner">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="381" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:subject_id_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="owner_id" type="d3p1:subject_id_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_date" type="d3p1:date_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_num" type="d3p1:document_number_200_type"/>
+		<property name="order_details" nillable="false">
+			<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d5p1:sign_sgtin_type" lowerBound="0" upperBound="25000"/>
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d5p1:sscc_type" lowerBound="0" upperBound="25000"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="return_to_circulation">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="391" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:subject_any_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="withdrawal_reason" type="d3p1:withdrawal_reason_enum"/>
+		<property name="order_details">
+			<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d5p1:sign_sgtin_type" lowerBound="0" upperBound="25000"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="move_order">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="415" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:subject_id_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="receiver_id" type="d3p1:subject_id_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_num" type="d3p1:document_number_200_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_date" type="d3p1:date_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="turnover_type" type="d3p1:turnover_type_enum"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="source" type="d3p1:source_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="contract_type" type="d3p1:contract_type_enum"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="contract_num" type="d3p1:document_number_200_type" lowerBound="0"/>
+		<property name="order_details">
+			<typeDef xsi:type="ObjectType">
+				<property name="union" upperBound="25000">
+					<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d7p1:sign_sgtin_type" lowerBound="0"/>
+						<property name="sscc_detail" lowerBound="0">
+							<typeDef xsi:type="ObjectType">
+								<property xmlns:d9p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d9p1:sscc_type"/>
+								<property name="detail" lowerBound="0" upperBound="100">
+									<typeDef xsi:type="ObjectType">
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="gtin" type="d11p1:gs1_gtin_type"/>
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="series_number" type="d11p1:series_number_type"/>
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="cost" type="d11p1:price_type"/>
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="vat_value" type="d11p1:price_type" lowerBound="0"/>
+									</typeDef>
+								</property>
+							</typeDef>
+						</property>
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="cost" type="d7p1:price_type"/>
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="vat_value" type="d7p1:price_type" lowerBound="0"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="receive_order">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="416" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:subject_id_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="shipper_id" type="d3p1:subject_id_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_num" type="d3p1:document_number_200_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_date" type="d3p1:date_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="receive_type" type="d3p1:receive_type_enum"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="source" type="d3p1:source_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="contract_type" type="d3p1:contract_type_enum"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="contract_num" type="d3p1:document_number_200_type" lowerBound="0"/>
+		<property name="order_details">
+			<typeDef xsi:type="ObjectType">
+				<property name="union" upperBound="25000">
+					<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d7p1:sign_sgtin_type" lowerBound="0"/>
+						<property name="sscc_detail" lowerBound="0">
+							<typeDef xsi:type="ObjectType">
+								<property xmlns:d9p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d9p1:sscc_type"/>
+								<property name="detail" lowerBound="0" upperBound="100">
+									<typeDef xsi:type="ObjectType">
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="gtin" type="d11p1:gs1_gtin_type"/>
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="series_number" type="d11p1:series_number_type"/>
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="cost" type="d11p1:price_type"/>
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="vat_value" type="d11p1:price_type" lowerBound="0"/>
+									</typeDef>
+								</property>
+							</typeDef>
+						</property>
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="cost" type="d7p1:price_type"/>
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="vat_value" type="d7p1:price_type" lowerBound="0"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="move_return">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="417" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:subject_id_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="receiver_id" type="d3p1:subject_id_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property name="order_details">
+			<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d5p1:sign_sgtin_type" lowerBound="0" upperBound="25000"/>
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d5p1:sscc_type" lowerBound="0" upperBound="25000"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="move_place">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="431" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:subject_id_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="receiver_id" type="d3p1:subject_id_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_num" type="d3p1:document_number_200_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_date" type="d3p1:date_type"/>
+		<property name="order_details">
+			<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d5p1:sign_sgtin_type" lowerBound="0" upperBound="25000"/>
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d5p1:sscc_type" lowerBound="0" upperBound="25000"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="move_unregistered_order">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="441" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:subject_id_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property name="receiver_info">
+			<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+				<property name="receiver_inn" lowerBound="0">
+					<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+						<property name="ul" lowerBound="0">
+							<typeDef xsi:type="ObjectType">
+								<property xmlns:d9p1="http://nalog.ru/MarkInfo/med/1.26" name="inn" type="d9p1:inn_ul_type"/>
+								<property xmlns:d9p1="http://nalog.ru/MarkInfo/med/1.26" name="kpp" type="d9p1:kpp_type"/>
+							</typeDef>
+						</property>
+						<property name="fl" lowerBound="0">
+							<typeDef xsi:type="ObjectType">
+								<property xmlns:d9p1="http://nalog.ru/MarkInfo/med/1.26" name="inn" type="d9p1:inn_fl_type"/>
+							</typeDef>
+						</property>
+					</typeDef>
+				</property>
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="receiver_id" type="d5p1:system_subject_type" lowerBound="0"/>
+			</typeDef>
+		</property>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="contract_type" type="d3p1:contract_type_enum"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_num" type="d3p1:document_number_200_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_date" type="d3p1:date_type"/>
+		<property name="order_details">
+			<typeDef xsi:type="ObjectType">
+				<property name="union" upperBound="25000">
+					<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d7p1:sign_sgtin_type" lowerBound="0"/>
+						<property name="sscc_detail" lowerBound="0">
+							<typeDef xsi:type="ObjectType">
+								<property xmlns:d9p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d9p1:sscc_type"/>
+								<property name="detail" lowerBound="0" upperBound="100">
+									<typeDef xsi:type="ObjectType">
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="gtin" type="d11p1:gs1_gtin_type"/>
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="series_number" type="d11p1:series_number_type"/>
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="cost" type="d11p1:price_type"/>
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="vat_value" type="d11p1:price_type" lowerBound="0"/>
+									</typeDef>
+								</property>
+							</typeDef>
+						</property>
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="cost" type="d7p1:price_type"/>
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="vat_value" type="d7p1:price_type" lowerBound="0"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="receive_unregistered_order">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="442" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:subject_id_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="shipper_id" type="d3p1:subject_id_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_num" type="d3p1:document_number_200_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_date" type="d3p1:date_type"/>
+		<property name="order_details">
+			<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d5p1:sign_sgtin_type" lowerBound="0" upperBound="25000"/>
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d5p1:sscc_type" lowerBound="0" upperBound="25000"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="move_eeu">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="461" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:subject_id_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="info_org_eeu" type="d3p1:info_org_eeu_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_num" type="d3p1:document_number_200_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_date" type="d3p1:date_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="contract_type" type="d3p1:contract_type_enum"/>
+		<property name="order_details">
+			<typeDef xsi:type="ObjectType">
+				<property name="union" upperBound="25000">
+					<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d7p1:sign_sgtin_type" lowerBound="0"/>
+						<property name="sscc_detail" lowerBound="0">
+							<typeDef xsi:type="ObjectType">
+								<property xmlns:d9p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d9p1:sscc_type"/>
+								<property name="detail" lowerBound="0" upperBound="100">
+									<typeDef xsi:type="ObjectType">
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="gtin" type="d11p1:gs1_gtin_type"/>
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="series_number" type="d11p1:series_number_type"/>
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="cost" type="d11p1:price_type"/>
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="vat_value" type="d11p1:price_type" lowerBound="0"/>
+									</typeDef>
+								</property>
+							</typeDef>
+						</property>
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="cost" type="d7p1:price_type"/>
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="vat_value" type="d7p1:price_type" lowerBound="0"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="state_dispatch">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="471" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:subject_id_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="receiver_id" type="d3p1:subject_id_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_num" type="d3p1:document_number_200_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_date" type="d3p1:date_type"/>
+		<property name="order_details">
+			<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d5p1:sign_sgtin_type" lowerBound="0" upperBound="25000"/>
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d5p1:sscc_type" lowerBound="0" upperBound="25000"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="retail_sale">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="511" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:subject_id_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property name="sales">
+			<typeDef xsi:type="ObjectType">
+				<property name="detail" upperBound="25000">
+					<typeDef xsi:type="ObjectType">
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d7p1:sign_sgtin_type"/>
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="cost" type="d7p1:price_type"/>
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="vat_value" type="d7p1:price_type" lowerBound="0"/>
+						<property name="sale_docs">
+							<typeDef xsi:type="ObjectType">
+								<property name="doc" upperBound="100">
+									<typeDef xsi:type="ObjectType">
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_type" type="d11p1:sale_doc_type_enum"/>
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_name" type="d11p1:string200_type" lowerBound="0"/>
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_number" type="d11p1:string200_type"/>
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_date" type="d11p1:date_type"/>
+									</typeDef>
+								</property>
+							</typeDef>
+						</property>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="recipe">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="521" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:subject_id_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_date" type="d3p1:date_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_series" type="d3p1:document_number_200_type" lowerBound="0"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_num" type="d3p1:document_number_200_type"/>
+		<property name="order_details">
+			<typeDef xsi:type="ObjectType">
+				<property name="union" upperBound="25000">
+					<typeDef xsi:type="ObjectType">
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d7p1:sign_sgtin_type"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="health_care">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="531" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:subject_id_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_date" type="d3p1:date_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_num" type="d3p1:document_number_200_type"/>
+		<property name="order_details">
+			<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d5p1:sign_sgtin_type" lowerBound="0" upperBound="25000"/>
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d5p1:sscc_type" lowerBound="0" upperBound="25000"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="move_destruction">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="541" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:subject_id_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property name="destruction_org">
+			<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="addres" type="d5p1:fias_addr_type"/>
+				<property name="ul" lowerBound="0">
+					<typeDef xsi:type="ObjectType">
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="inn" type="d7p1:inn_ul_type"/>
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="kpp" type="d7p1:kpp_type"/>
+					</typeDef>
+				</property>
+				<property name="fl" lowerBound="0">
+					<typeDef xsi:type="ObjectType">
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="inn" type="d7p1:inn_fl_type"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_num" type="d3p1:document_number_200_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_date" type="d3p1:date_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="act_number" type="d3p1:document_number_200_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="act_date" type="d3p1:date_type"/>
+		<property name="order_details" nillable="false">
+			<typeDef xsi:type="ObjectType">
+				<property name="detail" upperBound="25000">
+					<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d7p1:sign_sgtin_type" lowerBound="0"/>
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d7p1:sscc_type" lowerBound="0"/>
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="decision" type="d7p1:document_number_200_type" lowerBound="0"/>
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="destruction_type" type="d7p1:destruction_type_enum"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="destruction">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="542" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:subject_id_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="destruction_method" type="d3p1:destruction_method_enum"/>
+		<property name="destruction_org">
+			<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+				<property name="ul" lowerBound="0">
+					<typeDef xsi:type="ObjectType">
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="inn" type="d7p1:inn_ul_type"/>
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="kpp" type="d7p1:kpp_type"/>
+					</typeDef>
+				</property>
+				<property name="fl" lowerBound="0">
+					<typeDef xsi:type="ObjectType">
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="inn" type="d7p1:inn_fl_type"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_num" type="d3p1:document_number_200_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_date" type="d3p1:date_type"/>
+		<property name="order_details">
+			<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d5p1:sign_sgtin_type" lowerBound="0" upperBound="25000"/>
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d5p1:sscc_type" lowerBound="0" upperBound="25000"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="withdrawal">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="552" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:subject_any_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_num" type="d3p1:document_number_200_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_date" type="d3p1:date_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="withdrawal_type" type="d3p1:withdrawal_type_enum"/>
+		<property name="order_details">
+			<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d5p1:sign_sgtin_type" lowerBound="0" upperBound="25000"/>
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d5p1:sscc_type" lowerBound="0" upperBound="25000"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="move_order_notification">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="601" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:subject_id_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="receiver_id" type="d3p1:subject_id_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_num" type="d3p1:document_number_200_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_date" type="d3p1:date_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="turnover_type" type="d3p1:turnover_type_enum"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="source" type="d3p1:source_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="contract_type" type="d3p1:contract_type_enum"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="contract_num" type="d3p1:document_number_200_type" lowerBound="0"/>
+		<property name="order_details">
+			<typeDef xsi:type="ObjectType">
+				<property name="union" upperBound="25000">
+					<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d7p1:sign_sgtin_type" lowerBound="0"/>
+						<property name="sscc_detail" lowerBound="0">
+							<typeDef xsi:type="ObjectType">
+								<property xmlns:d9p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d9p1:sscc_type"/>
+								<property name="detail" lowerBound="0" upperBound="100">
+									<typeDef xsi:type="ObjectType">
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="gtin" type="d11p1:gs1_gtin_type"/>
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="series_number" type="d11p1:series_number_type"/>
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="cost" type="d11p1:price_type"/>
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="vat_value" type="d11p1:price_type" lowerBound="0"/>
+									</typeDef>
+								</property>
+							</typeDef>
+						</property>
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="cost" type="d7p1:price_type"/>
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="vat_value" type="d7p1:price_type" lowerBound="0"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="receive_order_notification">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="602" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:subject_id_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="shipper_id" type="d3p1:subject_id_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_num" type="d3p1:document_number_200_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_date" type="d3p1:date_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="receive_type" type="d3p1:receive_type_enum"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="source" type="d3p1:source_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="contract_type" type="d3p1:contract_type_enum"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="contract_num" type="d3p1:document_number_200_type" lowerBound="0"/>
+		<property name="order_details">
+			<typeDef xsi:type="ObjectType">
+				<property name="union" upperBound="25000">
+					<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d7p1:sign_sgtin_type" lowerBound="0"/>
+						<property name="sscc_detail" lowerBound="0">
+							<typeDef xsi:type="ObjectType">
+								<property xmlns:d9p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d9p1:sscc_type"/>
+								<property name="detail" lowerBound="0" upperBound="100">
+									<typeDef xsi:type="ObjectType">
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="gtin" type="d11p1:gs1_gtin_type"/>
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="series_number" type="d11p1:series_number_type"/>
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="cost" type="d11p1:price_type"/>
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="vat_value" type="d11p1:price_type" lowerBound="0"/>
+									</typeDef>
+								</property>
+							</typeDef>
+						</property>
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="cost" type="d7p1:price_type"/>
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="vat_value" type="d7p1:price_type" lowerBound="0"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="move_owner_notification">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="603" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:subject_id_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="owner_id" type="d3p1:subject_id_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_date" type="d3p1:date_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_num" type="d3p1:document_number_200_type"/>
+		<property name="order_details" nillable="false">
+			<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d5p1:sign_sgtin_type" lowerBound="0" upperBound="25000"/>
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d5p1:sscc_type" lowerBound="0" upperBound="25000"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="refusal_sender_notification">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="605" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:subject_any_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="receiver_id" type="d3p1:subject_any_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="reason" type="d3p1:string1000_type"/>
+		<property name="confirm_paused" type="xs:boolean" lowerBound="0"/>
+		<property name="order_details">
+			<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d5p1:sign_sgtin_type" lowerBound="0" upperBound="25000"/>
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d5p1:sscc_type" lowerBound="0" upperBound="25000"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="refusal_receiver_notification">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="606" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:subject_any_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="shipper_id" type="d3p1:subject_any_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="reason" type="d3p1:string1000_type"/>
+		<property name="confirm_paused" type="xs:boolean" lowerBound="0"/>
+		<property name="order_details">
+			<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d5p1:sign_sgtin_type" lowerBound="0" upperBound="25000"/>
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d5p1:sscc_type" lowerBound="0" upperBound="25000"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="accept_notification">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="607" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:subject_any_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="counterparty_id" type="d3p1:subject_any_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property name="confirm_paused" type="xs:boolean" lowerBound="0"/>
+		<property name="order_details" nillable="false">
+			<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d5p1:sign_sgtin_type" lowerBound="0" upperBound="25000"/>
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d5p1:sscc_type" lowerBound="0" upperBound="25000"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="retail_kkt_notification">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="608" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:subject_id_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property name="sales">
+			<typeDef xsi:type="ObjectType">
+				<property name="detail" upperBound="25000">
+					<typeDef xsi:type="ObjectType">
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d7p1:sign_sgtin_type"/>
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="cost" type="d7p1:price_type"/>
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="vat_value" type="d7p1:price_type" lowerBound="0"/>
+						<property name="sale_docs">
+							<typeDef xsi:type="ObjectType">
+								<property name="doc" upperBound="100">
+									<typeDef xsi:type="ObjectType">
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_type" type="d11p1:sale_doc_type_enum"/>
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_name" type="d11p1:string200_type" lowerBound="0"/>
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_number" type="d11p1:string200_type"/>
+										<property xmlns:d11p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_date" type="d11p1:date_type"/>
+									</typeDef>
+								</property>
+							</typeDef>
+						</property>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="change_owner_notification">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="609" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:system_subject_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="receiver_id" type="d3p1:system_subject_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_num" type="d3p1:document_number_200_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_date" type="d3p1:date_type"/>
+		<property name="order_details">
+			<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d5p1:sign_sgtin_type" lowerBound="0" upperBound="25000"/>
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d5p1:sscc_type" lowerBound="0" upperBound="25000"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="move_return_notification">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="610" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:subject_id_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="receiver_id" type="d3p1:subject_id_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property name="order_details">
+			<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d5p1:sign_sgtin_type" lowerBound="0" upperBound="25000"/>
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d5p1:sscc_type" lowerBound="0" upperBound="25000"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="receive_unregistered_notification">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="611" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:subject_id_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="shipper_id" type="d3p1:subject_id_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_num" type="d3p1:document_number_200_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_date" type="d3p1:date_type"/>
+		<property name="order_details">
+			<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d5p1:sign_sgtin_type" lowerBound="0" upperBound="25000"/>
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d5p1:sscc_type" lowerBound="0" upperBound="25000"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="state_dispatch_notification">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="612" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:subject_id_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="receiver_id" type="d3p1:subject_id_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_num" type="d3p1:document_number_200_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="doc_date" type="d3p1:date_type"/>
+		<property name="order_details">
+			<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d5p1:sign_sgtin_type" lowerBound="0" upperBound="25000"/>
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d5p1:sscc_type" lowerBound="0" upperBound="25000"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="accept">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="701" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:subject_any_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="counterparty_id" type="d3p1:subject_any_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property name="confirm_paused" type="xs:boolean" lowerBound="0"/>
+		<property name="order_details" nillable="false">
+			<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d5p1:sign_sgtin_type" lowerBound="0" upperBound="25000"/>
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d5p1:sscc_type" lowerBound="0" upperBound="25000"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="relabeling">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="811" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:subject_any_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property name="relabeling_detail">
+			<typeDef xsi:type="ObjectType">
+				<property name="detail" upperBound="25000">
+					<typeDef xsi:type="ObjectType">
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="new_sgtin" type="d7p1:sign_sgtin_type"/>
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="old_sgtin" type="d7p1:sign_sgtin_type"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="unit_pack">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="911" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:subject_any_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d3p1:sscc_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property name="content">
+			<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d5p1:sign_sgtin_type" lowerBound="0" upperBound="25000"/>
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d5p1:sscc_type" lowerBound="0" upperBound="25000"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="unit_unpack">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="912" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:subject_any_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d3p1:sscc_type"/>
+		<property name="is_recursive" type="xs:boolean" lowerBound="0" fixed="true" default="true"/>
+	</objectType>
+	<objectType name="unit_extract">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="913" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:subject_any_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property name="content">
+			<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d5p1:sign_sgtin_type" lowerBound="0" upperBound="25000"/>
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d5p1:sscc_type" lowerBound="0" upperBound="25000"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="unit_append">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="914" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:subject_any_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d3p1:sscc_type"/>
+		<property name="content">
+			<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d5p1:sign_sgtin_type" lowerBound="0" upperBound="25000"/>
+				<property xmlns:d5p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d5p1:sscc_type" lowerBound="0" upperBound="25000"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="multi_pack" ordered="false" sequenced="true">
+		<property name="action_id" type="xs:int" lowerBound="1" fixed="true" default="915" form="Attribute"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="subject_id" type="d3p1:subject_any_type"/>
+		<property xmlns:d3p1="http://nalog.ru/MarkInfo/med/1.26" name="operation_date" type="d3p1:datetimeoffset"/>
+		<property name="by_sgtin" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property name="detail" upperBound="1000">
+					<typeDef xsi:type="ObjectType">
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d7p1:sscc_type"/>
+						<property name="content">
+							<typeDef xsi:type="ObjectType">
+								<property xmlns:d9p1="http://nalog.ru/MarkInfo/med/1.26" name="sgtin" type="d9p1:sign_sgtin_type" upperBound="25000"/>
+							</typeDef>
+						</property>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+		<property name="by_sscc" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property name="detail" upperBound="1000">
+					<typeDef xsi:type="ObjectType">
+						<property xmlns:d7p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d7p1:sscc_type"/>
+						<property name="content">
+							<typeDef xsi:type="ObjectType">
+								<property xmlns:d9p1="http://nalog.ru/MarkInfo/med/1.26" name="sscc" type="d9p1:sscc_type" upperBound="25000"/>
+							</typeDef>
+						</property>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+	</objectType>
+</package>

@@ -1,0 +1,1289 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаВыравнивание" id="105">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа выравнивание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа выравнивание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Vertical</Group>
+			<VerticalSpacing>Single</VerticalSpacing>
+			<HorizontalAlign>Left</HorizontalAlign>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаВыравниваниеРасширеннаяПодсказка" id="106"/>
+			<ChildItems>
+				<InputField name="Наименование" id="1">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Родитель" id="4">
+					<DataPath>Объект.Parent</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="РодительКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="Отчет" id="7">
+					<DataPath>Объект.Отчет</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="ОтчетКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ОтчетРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<InputField name="КлючВарианта" id="10">
+					<DataPath>Объект.КлючВарианта</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="КлючВариантаКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="КлючВариантаРасширеннаяПодсказка" id="12"/>
+				</InputField>
+				<InputField name="Описание" id="22">
+					<DataPath>Объект.Описание</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="ОписаниеКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="24"/>
+				</InputField>
+				<InputField name="ХешНастроек" id="25">
+					<DataPath>Объект.ХешНастроек</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="ХешНастроекКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ХешНастроекРасширеннаяПодсказка" id="27"/>
+				</InputField>
+				<InputField name="КлючевыеСлова" id="34">
+					<DataPath>Объект.КлючевыеСлова</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="КлючевыеСловаКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="КлючевыеСловаРасширеннаяПодсказка" id="36"/>
+				</InputField>
+				<InputField name="КлючЗамеров" id="37">
+					<DataPath>Объект.КлючЗамеров</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="КлючЗамеровКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="КлючЗамеровРасширеннаяПодсказка" id="39"/>
+				</InputField>
+				<UsualGroup name="ГруппаБулевскиеРеквизиты" id="127">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа булевские реквизиты</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа булевские реквизиты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>HorizontalIfPossible</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаБулевскиеРеквизитыРасширеннаяПодсказка" id="128"/>
+					<ChildItems>
+						<CheckBoxField name="ВидимостьПоУмолчанию" id="19">
+							<DataPath>Объект.ВидимостьПоУмолчанию</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<CheckBoxType>Switcher</CheckBoxType>
+							<ContextMenu name="ВидимостьПоУмолчаниюКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="ВидимостьПоУмолчаниюРасширеннаяПодсказка" id="21"/>
+						</CheckBoxField>
+						<CheckBoxField name="ГруппироватьПоОтчету" id="16">
+							<DataPath>Объект.ГруппироватьПоОтчету</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<CheckBoxType>Switcher</CheckBoxType>
+							<ContextMenu name="ГруппироватьПоОтчетуКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="ГруппироватьПоОтчетуРасширеннаяПодсказка" id="18"/>
+						</CheckBoxField>
+						<CheckBoxField name="Включен" id="13">
+							<DataPath>Объект.Включен</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<CheckBoxType>Switcher</CheckBoxType>
+							<ContextMenu name="ВключенКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="ВключенРасширеннаяПодсказка" id="15"/>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="НаименованияПолей" id="28">
+					<DataPath>Объект.НаименованияПолей</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="НаименованияПолейКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="НаименованияПолейРасширеннаяПодсказка" id="30"/>
+				</InputField>
+				<InputField name="НаименованияПараметровИОтборов" id="31">
+					<DataPath>Объект.НаименованияПараметровИОтборов</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="НаименованияПараметровИОтборовКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="НаименованияПараметровИОтборовРасширеннаяПодсказка" id="33"/>
+				</InputField>
+				<Pages name="Страницы" id="40">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страницы</v8:content>
+						</v8:item>
+					</Title>
+					<PagesRepresentation>TabsOnTop</PagesRepresentation>
+					<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="41"/>
+					<ChildItems>
+						<Page name="ГруппаРазмещение" id="42">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Размещение</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<ScrollOnCompress>false</ScrollOnCompress>
+							<ExtendedTooltip name="ГруппаРазмещениеРасширеннаяПодсказка" id="43"/>
+							<ChildItems>
+								<UsualGroup name="КоманднаяПанельКоманды" id="427">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Командная панель команды</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Командная панель команды</v8:content>
+										</v8:item>
+									</ToolTip>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Group>HorizontalIfPossible</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="КоманднаяПанельКомандыРасширеннаяПодсказка" id="428"/>
+									<ChildItems>
+										<Button name="ОбъектыКомандыДобавить" id="429">
+											<Type>UsualButton</Type>
+											<Representation>PictureAndText</Representation>
+											<CommandName>Form.Item.Размещение.StandardCommand.Add</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.Добавить</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+											<ButtonImportance>Supplementary</ButtonImportance>
+											<ExtendedTooltip name="ОбъектыКомандыДобавитьРасширеннаяПодсказка" id="430"/>
+										</Button>
+										<Button name="ОбъектыКомандыВверх" id="431">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Item.Размещение.StandardCommand.MoveUp</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.НоваяСтрелкаВверх</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<ButtonImportance>Supplementary</ButtonImportance>
+											<ExtendedTooltip name="ОбъектыКомандыВверхРасширеннаяПодсказка" id="432"/>
+										</Button>
+										<Button name="ОбъектыКомандыВниз" id="433">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Item.Размещение.StandardCommand.MoveDown</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.НоваяСтрелкаВниз</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<ButtonImportance>Supplementary</ButtonImportance>
+											<ExtendedTooltip name="ОбъектыКомандыВнизРасширеннаяПодсказка" id="434"/>
+										</Button>
+										<SearchStringAddition name="ДополнениеСтрокаПоиска" id="435">
+											<AdditionSource>
+												<Item>Размещение</Item>
+												<Type>SearchStringRepresentation</Type>
+											</AdditionSource>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Дополнение строка поиска</v8:content>
+												</v8:item>
+											</Title>
+											<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+											<Width>20</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="ДополнениеСтрокаПоискаКонтекстноеМеню" id="436"/>
+											<ExtendedTooltip name="ДополнениеСтрокаПоискаРасширеннаяПодсказка" id="437"/>
+										</SearchStringAddition>
+										<CommandBar name="ГруппаКоманднаяПанельКоманды" id="438">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа командная панель команды</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Еще возможности</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Width>4</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+											<GroupVerticalAlign>Center</GroupVerticalAlign>
+											<HorizontalLocation>Right</HorizontalLocation>
+											<ExtendedTooltip name="ГруппаКоманднаяПанельКомандыРасширеннаяПодсказка" id="439"/>
+											<ChildItems>
+												<Popup name="ГруппаПодменю" id="440">
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Еще возможности</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Picture>
+														<xr:Ref>CommonPicture.МенюДополнительныеФункции</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<Representation>Picture</Representation>
+													<ShapeRepresentation>None</ShapeRepresentation>
+													<ExtendedTooltip name="ГруппаПодменюРасширеннаяПодсказка" id="441"/>
+													<ChildItems>
+														<ButtonGroup name="ГруппаКнопокСоздать" id="442">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа кнопок создать</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа кнопок создать</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ExtendedTooltip name="ГруппаКнопокСоздатьРасширеннаяПодсказка" id="443"/>
+															<ChildItems>
+																<Button name="ОбъектыКомандыДобавить1" id="444">
+																	<Type>CommandBarButton</Type>
+																	<Representation>PictureAndText</Representation>
+																	<CommandName>Form.Item.Размещение.StandardCommand.Add</CommandName>
+																	<Picture>
+																		<xr:Ref>CommonPicture.Добавить</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<ShapeRepresentation>None</ShapeRepresentation>
+																	<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+																	<ButtonImportance>Supplementary</ButtonImportance>
+																	<ExtendedTooltip name="ОбъектыКомандыДобавить1РасширеннаяПодсказка" id="445"/>
+																</Button>
+																<Button name="ОбъектыКомандыКопировать" id="446">
+																	<Type>CommandBarButton</Type>
+																	<Representation>Picture</Representation>
+																	<CommandName>Form.Item.Размещение.StandardCommand.Copy</CommandName>
+																	<Picture>
+																		<xr:Ref>CommonPicture.ДобавитьКопированием</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<ShapeRepresentation>None</ShapeRepresentation>
+																	<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+																	<ButtonImportance>Supplementary</ButtonImportance>
+																	<ExtendedTooltip name="ОбъектыКомандыКопироватьРасширеннаяПодсказка" id="447"/>
+																</Button>
+																<Button name="ОбъектыКомандыИзменить" id="448">
+																	<Type>CommandBarButton</Type>
+																	<Representation>Picture</Representation>
+																	<CommandName>Form.Item.Размещение.StandardCommand.Change</CommandName>
+																	<Picture>
+																		<xr:Ref>CommonPicture.Редактировать</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<ShapeRepresentation>None</ShapeRepresentation>
+																	<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+																	<ButtonImportance>Supplementary</ButtonImportance>
+																	<ExtendedTooltip name="ОбъектыКомандыИзменитьРасширеннаяПодсказка" id="449"/>
+																</Button>
+																<Button name="ОбъектыКомандыУдалить" id="450">
+																	<Type>CommandBarButton</Type>
+																	<Representation>Picture</Representation>
+																	<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+																	<CommandName>Form.Item.Размещение.StandardCommand.Delete</CommandName>
+																	<Picture>
+																		<xr:Ref>CommonPicture.ВКорзину</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<ShapeRepresentation>None</ShapeRepresentation>
+																	<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+																	<ButtonImportance>Supplementary</ButtonImportance>
+																	<ExtendedTooltip name="ОбъектыКомандыУдалитьРасширеннаяПодсказка" id="451"/>
+																</Button>
+															</ChildItems>
+														</ButtonGroup>
+														<Button name="ОбъектыСортироватьПоВозрастанию" id="452">
+															<Type>CommandBarButton</Type>
+															<Representation>Picture</Representation>
+															<CommandName>Form.Item.Размещение.StandardCommand.SortListAsc</CommandName>
+															<Picture>
+																<xr:Ref>CommonPicture.УпорядочитьПоВозрастанию</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<ShapeRepresentation>None</ShapeRepresentation>
+															<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+															<ButtonImportance>Supplementary</ButtonImportance>
+															<ExtendedTooltip name="ОбъектыСортироватьПоВозрастаниюРасширеннаяПодсказка" id="453"/>
+														</Button>
+														<Button name="ОбъектыСортироватьПоУбыванию" id="454">
+															<Type>CommandBarButton</Type>
+															<Representation>Picture</Representation>
+															<CommandName>Form.Item.Размещение.StandardCommand.SortListDesc</CommandName>
+															<Picture>
+																<xr:Ref>CommonPicture.УпорядочитьПоУбыванию</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<ShapeRepresentation>None</ShapeRepresentation>
+															<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+															<ButtonImportance>Supplementary</ButtonImportance>
+															<ExtendedTooltip name="ОбъектыСортироватьПоУбываниюРасширеннаяПодсказка" id="455"/>
+														</Button>
+														<Button name="ОбъектыКомандыВверх1" id="456">
+															<Type>CommandBarButton</Type>
+															<Representation>Picture</Representation>
+															<CommandName>Form.Item.Размещение.StandardCommand.MoveUp</CommandName>
+															<Picture>
+																<xr:Ref>CommonPicture.НоваяСтрелкаВверх</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<ShapeRepresentation>None</ShapeRepresentation>
+															<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+															<ButtonImportance>Supplementary</ButtonImportance>
+															<ExtendedTooltip name="ОбъектыКомандыВверх1РасширеннаяПодсказка" id="457"/>
+														</Button>
+														<Button name="ОбъектыКомандыВниз1" id="458">
+															<Type>CommandBarButton</Type>
+															<Representation>Picture</Representation>
+															<CommandName>Form.Item.Размещение.StandardCommand.MoveDown</CommandName>
+															<Picture>
+																<xr:Ref>CommonPicture.НоваяСтрелкаВниз</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<ShapeRepresentation>None</ShapeRepresentation>
+															<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+															<ButtonImportance>Supplementary</ButtonImportance>
+															<ExtendedTooltip name="ОбъектыКомандыВниз1РасширеннаяПодсказка" id="459"/>
+														</Button>
+														<Button name="КнопкаВывести" id="460">
+															<Type>CommandBarButton</Type>
+															<CommandName>Form.Item.Размещение.StandardCommand.OutputList</CommandName>
+															<Picture>
+																<xr:Ref>CommonPicture.НаПечать</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+															<ExtendedTooltip name="КнопкаВывестиРасширеннаяПодсказка" id="461"/>
+														</Button>
+													</ChildItems>
+												</Popup>
+											</ChildItems>
+										</CommandBar>
+									</ChildItems>
+								</UsualGroup>
+								<ViewStatusAddition name="ДополнениеСостояниеПросмотра" id="462">
+									<AdditionSource>
+										<Item>РазмещениеСостояниеПросмотраРасширеннаяПодсказка</Item>
+										<Type>ViewStatusRepresentation</Type>
+									</AdditionSource>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дополнение состояние просмотра</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДополнениеСостояниеПросмотраКонтекстноеМеню" id="463"/>
+									<ExtendedTooltip name="ДополнениеСостояниеПросмотраРасширеннаяПодсказка" id="464"/>
+								</ViewStatusAddition>
+								<Table name="Размещение" id="44">
+									<Representation>List</Representation>
+									<RowSelectionMode>Cell</RowSelectionMode>
+									<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>Объект.Размещение</DataPath>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="РазмещениеКонтекстноеМеню" id="45">
+										<Autofill>false</Autofill>
+										<ChildItems>
+											<ButtonGroup name="ГруппаКнопокСоздать1" id="465">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Группа кнопок создать</v8:content>
+													</v8:item>
+												</Title>
+												<ToolTip>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Группа кнопок создать</v8:content>
+													</v8:item>
+												</ToolTip>
+												<ExtendedTooltip name="ГруппаКнопокСоздать1РасширеннаяПодсказка" id="466"/>
+												<ChildItems>
+													<Button name="ОбъектыКомандыДобавить2" id="467">
+														<Type>CommandBarButton</Type>
+														<Representation>PictureAndText</Representation>
+														<CommandName>Form.Item.Размещение.StandardCommand.Add</CommandName>
+														<Picture>
+															<xr:Ref>CommonPicture.Добавить</xr:Ref>
+															<xr:LoadTransparent>true</xr:LoadTransparent>
+														</Picture>
+														<ShapeRepresentation>None</ShapeRepresentation>
+														<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+														<ButtonImportance>Supplementary</ButtonImportance>
+														<ExtendedTooltip name="ОбъектыКомандыДобавить2РасширеннаяПодсказка" id="468"/>
+													</Button>
+													<Button name="ОбъектыКомандыКопировать1" id="469">
+														<Type>CommandBarButton</Type>
+														<Representation>Picture</Representation>
+														<CommandName>Form.Item.Размещение.StandardCommand.Copy</CommandName>
+														<Picture>
+															<xr:Ref>CommonPicture.ДобавитьКопированием</xr:Ref>
+															<xr:LoadTransparent>true</xr:LoadTransparent>
+														</Picture>
+														<ShapeRepresentation>None</ShapeRepresentation>
+														<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+														<ButtonImportance>Supplementary</ButtonImportance>
+														<ExtendedTooltip name="ОбъектыКомандыКопировать1РасширеннаяПодсказка" id="470"/>
+													</Button>
+													<Button name="ОбъектыКомандыИзменить1" id="471">
+														<Type>CommandBarButton</Type>
+														<Representation>Picture</Representation>
+														<CommandName>Form.Item.Размещение.StandardCommand.Change</CommandName>
+														<Picture>
+															<xr:Ref>CommonPicture.Редактировать</xr:Ref>
+															<xr:LoadTransparent>true</xr:LoadTransparent>
+														</Picture>
+														<ShapeRepresentation>None</ShapeRepresentation>
+														<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+														<ButtonImportance>Supplementary</ButtonImportance>
+														<ExtendedTooltip name="ОбъектыКомандыИзменить1РасширеннаяПодсказка" id="472"/>
+													</Button>
+													<Button name="ОбъектыКомандыУдалить1" id="473">
+														<Type>CommandBarButton</Type>
+														<Representation>Picture</Representation>
+														<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+														<CommandName>Form.Item.Размещение.StandardCommand.Delete</CommandName>
+														<Picture>
+															<xr:Ref>CommonPicture.ВКорзину</xr:Ref>
+															<xr:LoadTransparent>true</xr:LoadTransparent>
+														</Picture>
+														<ShapeRepresentation>None</ShapeRepresentation>
+														<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+														<ButtonImportance>Supplementary</ButtonImportance>
+														<ExtendedTooltip name="ОбъектыКомандыУдалить1РасширеннаяПодсказка" id="474"/>
+													</Button>
+												</ChildItems>
+											</ButtonGroup>
+											<Button name="ОбъектыСортироватьПоВозрастанию1" id="475">
+												<Type>CommandBarButton</Type>
+												<Representation>Picture</Representation>
+												<CommandName>Form.Item.Размещение.StandardCommand.SortListAsc</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.УпорядочитьПоВозрастанию</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ShapeRepresentation>None</ShapeRepresentation>
+												<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+												<ButtonImportance>Supplementary</ButtonImportance>
+												<ExtendedTooltip name="ОбъектыСортироватьПоВозрастанию1РасширеннаяПодсказка" id="476"/>
+											</Button>
+											<Button name="ОбъектыСортироватьПоУбыванию1" id="477">
+												<Type>CommandBarButton</Type>
+												<Representation>Picture</Representation>
+												<CommandName>Form.Item.Размещение.StandardCommand.SortListDesc</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.УпорядочитьПоУбыванию</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ShapeRepresentation>None</ShapeRepresentation>
+												<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+												<ButtonImportance>Supplementary</ButtonImportance>
+												<ExtendedTooltip name="ОбъектыСортироватьПоУбыванию1РасширеннаяПодсказка" id="478"/>
+											</Button>
+											<Button name="ОбъектыКомандыВверх2" id="479">
+												<Type>CommandBarButton</Type>
+												<Representation>Picture</Representation>
+												<CommandName>Form.Item.Размещение.StandardCommand.MoveUp</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.НоваяСтрелкаВверх</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ShapeRepresentation>None</ShapeRepresentation>
+												<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+												<ButtonImportance>Supplementary</ButtonImportance>
+												<ExtendedTooltip name="ОбъектыКомандыВверх2РасширеннаяПодсказка" id="480"/>
+											</Button>
+											<Button name="ОбъектыКомандыВниз2" id="481">
+												<Type>CommandBarButton</Type>
+												<Representation>Picture</Representation>
+												<CommandName>Form.Item.Размещение.StandardCommand.MoveDown</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.НоваяСтрелкаВниз</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ShapeRepresentation>None</ShapeRepresentation>
+												<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+												<ButtonImportance>Supplementary</ButtonImportance>
+												<ExtendedTooltip name="ОбъектыКомандыВниз2РасширеннаяПодсказка" id="482"/>
+											</Button>
+											<Button name="КнопкаВывести1" id="483">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.Размещение.StandardCommand.OutputList</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.НаПечать</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+												<ExtendedTooltip name="КнопкаВывести1РасширеннаяПодсказка" id="484"/>
+											</Button>
+										</ChildItems>
+									</ContextMenu>
+									<AutoCommandBar name="РазмещениеКоманднаяПанель" id="46">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="РазмещениеРасширеннаяПодсказка" id="47"/>
+									<SearchStringAddition name="РазмещениеСтрокаПоиска" id="48">
+										<AdditionSource>
+											<Item>Размещение</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="РазмещениеСтрокаПоискаКонтекстноеМеню" id="49"/>
+										<ExtendedTooltip name="РазмещениеСтрокаПоискаРасширеннаяПодсказка" id="50"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="РазмещениеСостояниеПросмотра" id="51">
+										<AdditionSource>
+											<Item>Размещение</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="РазмещениеСостояниеПросмотраКонтекстноеМеню" id="52"/>
+										<ExtendedTooltip name="РазмещениеСостояниеПросмотраРасширеннаяПодсказка" id="53"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="РазмещениеУправлениеПоиском" id="54">
+										<AdditionSource>
+											<Item>Размещение</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="РазмещениеУправлениеПоискомКонтекстноеМеню" id="55"/>
+										<ExtendedTooltip name="РазмещениеУправлениеПоискомРасширеннаяПодсказка" id="56"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<LabelField name="РазмещениеНомерСтроки" id="57">
+											<DataPath>Объект.Размещение.LineNumber</DataPath>
+											<TitleBackColor>style:FormBackColor</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<ContextMenu name="РазмещениеНомерСтрокиКонтекстноеМеню" id="58"/>
+											<ExtendedTooltip name="РазмещениеНомерСтрокиРасширеннаяПодсказка" id="59"/>
+										</LabelField>
+										<InputField name="РазмещениеПодсистема" id="60">
+											<DataPath>Объект.Размещение.Подсистема</DataPath>
+											<TitleBackColor>style:FormBackColor</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<ContextMenu name="РазмещениеПодсистемаКонтекстноеМеню" id="61"/>
+											<ExtendedTooltip name="РазмещениеПодсистемаРасширеннаяПодсказка" id="62"/>
+										</InputField>
+										<CheckBoxField name="РазмещениеВажный" id="63">
+											<DataPath>Объект.Размещение.Важный</DataPath>
+											<TitleBackColor>style:FormBackColor</TitleBackColor>
+											<HorizontalAlign>Center</HorizontalAlign>
+											<EditMode>EnterOnInput</EditMode>
+											<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+											<AutoEditMode>true</AutoEditMode>
+											<ContextMenu name="РазмещениеВажныйКонтекстноеМеню" id="64"/>
+											<ExtendedTooltip name="РазмещениеВажныйРасширеннаяПодсказка" id="65"/>
+										</CheckBoxField>
+										<CheckBoxField name="РазмещениеСмТакже" id="66">
+											<DataPath>Объект.Размещение.СмТакже</DataPath>
+											<TitleBackColor>style:FormBackColor</TitleBackColor>
+											<HorizontalAlign>Center</HorizontalAlign>
+											<EditMode>EnterOnInput</EditMode>
+											<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+											<AutoEditMode>true</AutoEditMode>
+											<ContextMenu name="РазмещениеСмТакжеКонтекстноеМеню" id="67"/>
+											<ExtendedTooltip name="РазмещениеСмТакжеРасширеннаяПодсказка" id="68"/>
+										</CheckBoxField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</Page>
+						<Page name="ГруппаПредставления" id="69">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Представления</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<ScrollOnCompress>false</ScrollOnCompress>
+							<ExtendedTooltip name="ГруппаПредставленияРасширеннаяПодсказка" id="70"/>
+							<ChildItems>
+								<UsualGroup name="КоманднаяПанельКоманды1" id="485">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Командная панель команды</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Командная панель команды</v8:content>
+										</v8:item>
+									</ToolTip>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Group>HorizontalIfPossible</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="КоманднаяПанельКоманды1РасширеннаяПодсказка" id="486"/>
+									<ChildItems>
+										<Button name="ОбъектыКомандыДобавить3" id="487">
+											<Type>UsualButton</Type>
+											<Representation>PictureAndText</Representation>
+											<CommandName>Form.Item.Представления.StandardCommand.Add</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.Добавить</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+											<ButtonImportance>Supplementary</ButtonImportance>
+											<ExtendedTooltip name="ОбъектыКомандыДобавить3РасширеннаяПодсказка" id="488"/>
+										</Button>
+										<Button name="ОбъектыКомандыВверх3" id="489">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Item.Представления.StandardCommand.MoveUp</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.НоваяСтрелкаВверх</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<ButtonImportance>Supplementary</ButtonImportance>
+											<ExtendedTooltip name="ОбъектыКомандыВверх3РасширеннаяПодсказка" id="490"/>
+										</Button>
+										<Button name="ОбъектыКомандыВниз3" id="491">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Item.Представления.StandardCommand.MoveDown</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.НоваяСтрелкаВниз</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<ButtonImportance>Supplementary</ButtonImportance>
+											<ExtendedTooltip name="ОбъектыКомандыВниз3РасширеннаяПодсказка" id="492"/>
+										</Button>
+										<SearchStringAddition name="ДополнениеСтрокаПоиска1" id="493">
+											<AdditionSource>
+												<Item>Представления</Item>
+												<Type>SearchStringRepresentation</Type>
+											</AdditionSource>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Дополнение строка поиска</v8:content>
+												</v8:item>
+											</Title>
+											<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+											<Width>20</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="ДополнениеСтрокаПоиска1КонтекстноеМеню" id="494"/>
+											<ExtendedTooltip name="ДополнениеСтрокаПоиска1РасширеннаяПодсказка" id="495"/>
+										</SearchStringAddition>
+										<CommandBar name="ГруппаКоманднаяПанельКоманды1" id="496">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа командная панель команды</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Еще возможности</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Width>4</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+											<GroupVerticalAlign>Center</GroupVerticalAlign>
+											<HorizontalLocation>Right</HorizontalLocation>
+											<ExtendedTooltip name="ГруппаКоманднаяПанельКоманды1РасширеннаяПодсказка" id="497"/>
+											<ChildItems>
+												<Popup name="ГруппаПодменю1" id="498">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа подменю</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Еще возможности</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Picture>
+														<xr:Ref>CommonPicture.МенюДополнительныеФункции</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<Representation>Picture</Representation>
+													<ShapeRepresentation>None</ShapeRepresentation>
+													<ExtendedTooltip name="ГруппаПодменю1РасширеннаяПодсказка" id="499"/>
+													<ChildItems>
+														<ButtonGroup name="ГруппаКнопокСоздать2" id="500">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа кнопок создать</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа кнопок создать</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ExtendedTooltip name="ГруппаКнопокСоздать2РасширеннаяПодсказка" id="501"/>
+															<ChildItems>
+																<Button name="ОбъектыКомандыДобавить4" id="502">
+																	<Type>CommandBarButton</Type>
+																	<Representation>PictureAndText</Representation>
+																	<CommandName>Form.Item.Представления.StandardCommand.Add</CommandName>
+																	<Picture>
+																		<xr:Ref>CommonPicture.Добавить</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<ShapeRepresentation>None</ShapeRepresentation>
+																	<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+																	<ButtonImportance>Supplementary</ButtonImportance>
+																	<ExtendedTooltip name="ОбъектыКомандыДобавить4РасширеннаяПодсказка" id="503"/>
+																</Button>
+																<Button name="ОбъектыКомандыКопировать2" id="504">
+																	<Type>CommandBarButton</Type>
+																	<Representation>Picture</Representation>
+																	<CommandName>Form.Item.Представления.StandardCommand.Copy</CommandName>
+																	<Picture>
+																		<xr:Ref>CommonPicture.ДобавитьКопированием</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<ShapeRepresentation>None</ShapeRepresentation>
+																	<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+																	<ButtonImportance>Supplementary</ButtonImportance>
+																	<ExtendedTooltip name="ОбъектыКомандыКопировать2РасширеннаяПодсказка" id="505"/>
+																</Button>
+																<Button name="ОбъектыКомандыИзменить2" id="506">
+																	<Type>CommandBarButton</Type>
+																	<Representation>Picture</Representation>
+																	<CommandName>Form.Item.Представления.StandardCommand.Change</CommandName>
+																	<Picture>
+																		<xr:Ref>CommonPicture.Редактировать</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<ShapeRepresentation>None</ShapeRepresentation>
+																	<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+																	<ButtonImportance>Supplementary</ButtonImportance>
+																	<ExtendedTooltip name="ОбъектыКомандыИзменить2РасширеннаяПодсказка" id="507"/>
+																</Button>
+																<Button name="ОбъектыКомандыУдалить2" id="508">
+																	<Type>CommandBarButton</Type>
+																	<Representation>Picture</Representation>
+																	<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+																	<CommandName>Form.Item.Представления.StandardCommand.Delete</CommandName>
+																	<Picture>
+																		<xr:Ref>CommonPicture.ВКорзину</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<ShapeRepresentation>None</ShapeRepresentation>
+																	<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+																	<ButtonImportance>Supplementary</ButtonImportance>
+																	<ExtendedTooltip name="ОбъектыКомандыУдалить2РасширеннаяПодсказка" id="509"/>
+																</Button>
+															</ChildItems>
+														</ButtonGroup>
+														<Button name="ОбъектыСортироватьПоВозрастанию2" id="510">
+															<Type>CommandBarButton</Type>
+															<Representation>Picture</Representation>
+															<CommandName>Form.Item.Представления.StandardCommand.SortListAsc</CommandName>
+															<Picture>
+																<xr:Ref>CommonPicture.УпорядочитьПоВозрастанию</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<ShapeRepresentation>None</ShapeRepresentation>
+															<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+															<ButtonImportance>Supplementary</ButtonImportance>
+															<ExtendedTooltip name="ОбъектыСортироватьПоВозрастанию2РасширеннаяПодсказка" id="511"/>
+														</Button>
+														<Button name="ОбъектыСортироватьПоУбыванию2" id="512">
+															<Type>CommandBarButton</Type>
+															<Representation>Picture</Representation>
+															<CommandName>Form.Item.Представления.StandardCommand.SortListDesc</CommandName>
+															<Picture>
+																<xr:Ref>CommonPicture.УпорядочитьПоУбыванию</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<ShapeRepresentation>None</ShapeRepresentation>
+															<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+															<ButtonImportance>Supplementary</ButtonImportance>
+															<ExtendedTooltip name="ОбъектыСортироватьПоУбыванию2РасширеннаяПодсказка" id="513"/>
+														</Button>
+														<Button name="ОбъектыКомандыВверх4" id="514">
+															<Type>CommandBarButton</Type>
+															<Representation>Picture</Representation>
+															<CommandName>Form.Item.Представления.StandardCommand.MoveUp</CommandName>
+															<Picture>
+																<xr:Ref>CommonPicture.НоваяСтрелкаВверх</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<ShapeRepresentation>None</ShapeRepresentation>
+															<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+															<ButtonImportance>Supplementary</ButtonImportance>
+															<ExtendedTooltip name="ОбъектыКомандыВверх4РасширеннаяПодсказка" id="515"/>
+														</Button>
+														<Button name="ОбъектыКомандыВниз4" id="516">
+															<Type>CommandBarButton</Type>
+															<Representation>Picture</Representation>
+															<CommandName>Form.Item.Представления.StandardCommand.MoveDown</CommandName>
+															<Picture>
+																<xr:Ref>CommonPicture.НоваяСтрелкаВниз</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<ShapeRepresentation>None</ShapeRepresentation>
+															<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+															<ButtonImportance>Supplementary</ButtonImportance>
+															<ExtendedTooltip name="ОбъектыКомандыВниз4РасширеннаяПодсказка" id="517"/>
+														</Button>
+														<Button name="КнопкаВывести2" id="518">
+															<Type>CommandBarButton</Type>
+															<CommandName>Form.Item.Представления.StandardCommand.OutputList</CommandName>
+															<Picture>
+																<xr:Ref>CommonPicture.НаПечать</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+															<ExtendedTooltip name="КнопкаВывести2РасширеннаяПодсказка" id="519"/>
+														</Button>
+													</ChildItems>
+												</Popup>
+											</ChildItems>
+										</CommandBar>
+									</ChildItems>
+								</UsualGroup>
+								<ViewStatusAddition name="ДополнениеСостояниеПросмотра1" id="520">
+									<AdditionSource>
+										<Item>РазмещениеСостояниеПросмотраРасширеннаяПодсказка</Item>
+										<Type>ViewStatusRepresentation</Type>
+									</AdditionSource>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дополнение состояние просмотра</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДополнениеСостояниеПросмотра1КонтекстноеМеню" id="521"/>
+									<ExtendedTooltip name="ДополнениеСостояниеПросмотра1РасширеннаяПодсказка" id="522"/>
+								</ViewStatusAddition>
+								<Table name="Представления" id="71">
+									<Representation>List</Representation>
+									<RowSelectionMode>Cell</RowSelectionMode>
+									<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>Объект.Представления</DataPath>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ПредставленияКонтекстноеМеню" id="72">
+										<Autofill>false</Autofill>
+										<ChildItems>
+											<ButtonGroup name="ГруппаКнопокСоздать3" id="523">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Группа кнопок создать</v8:content>
+													</v8:item>
+												</Title>
+												<ToolTip>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Группа кнопок создать</v8:content>
+													</v8:item>
+												</ToolTip>
+												<ExtendedTooltip name="ГруппаКнопокСоздать3РасширеннаяПодсказка" id="524"/>
+												<ChildItems>
+													<Button name="ОбъектыКомандыДобавить5" id="525">
+														<Type>CommandBarButton</Type>
+														<Representation>PictureAndText</Representation>
+														<CommandName>Form.Item.Представления.StandardCommand.Add</CommandName>
+														<Picture>
+															<xr:Ref>CommonPicture.Добавить</xr:Ref>
+															<xr:LoadTransparent>true</xr:LoadTransparent>
+														</Picture>
+														<ShapeRepresentation>None</ShapeRepresentation>
+														<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+														<ButtonImportance>Supplementary</ButtonImportance>
+														<ExtendedTooltip name="ОбъектыКомандыДобавить5РасширеннаяПодсказка" id="526"/>
+													</Button>
+													<Button name="ОбъектыКомандыКопировать3" id="527">
+														<Type>CommandBarButton</Type>
+														<Representation>Picture</Representation>
+														<CommandName>Form.Item.Представления.StandardCommand.Copy</CommandName>
+														<Picture>
+															<xr:Ref>CommonPicture.ДобавитьКопированием</xr:Ref>
+															<xr:LoadTransparent>true</xr:LoadTransparent>
+														</Picture>
+														<ShapeRepresentation>None</ShapeRepresentation>
+														<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+														<ButtonImportance>Supplementary</ButtonImportance>
+														<ExtendedTooltip name="ОбъектыКомандыКопировать3РасширеннаяПодсказка" id="528"/>
+													</Button>
+													<Button name="ОбъектыКомандыИзменить3" id="529">
+														<Type>CommandBarButton</Type>
+														<Representation>Picture</Representation>
+														<CommandName>Form.Item.Представления.StandardCommand.Change</CommandName>
+														<Picture>
+															<xr:Ref>CommonPicture.Редактировать</xr:Ref>
+															<xr:LoadTransparent>true</xr:LoadTransparent>
+														</Picture>
+														<ShapeRepresentation>None</ShapeRepresentation>
+														<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+														<ButtonImportance>Supplementary</ButtonImportance>
+														<ExtendedTooltip name="ОбъектыКомандыИзменить3РасширеннаяПодсказка" id="530"/>
+													</Button>
+													<Button name="ОбъектыКомандыУдалить3" id="531">
+														<Type>CommandBarButton</Type>
+														<Representation>Picture</Representation>
+														<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+														<CommandName>Form.Item.Представления.StandardCommand.Delete</CommandName>
+														<Picture>
+															<xr:Ref>CommonPicture.ВКорзину</xr:Ref>
+															<xr:LoadTransparent>true</xr:LoadTransparent>
+														</Picture>
+														<ShapeRepresentation>None</ShapeRepresentation>
+														<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+														<ButtonImportance>Supplementary</ButtonImportance>
+														<ExtendedTooltip name="ОбъектыКомандыУдалить3РасширеннаяПодсказка" id="532"/>
+													</Button>
+												</ChildItems>
+											</ButtonGroup>
+											<Button name="ОбъектыСортироватьПоВозрастанию3" id="533">
+												<Type>CommandBarButton</Type>
+												<Representation>Picture</Representation>
+												<CommandName>Form.Item.Представления.StandardCommand.SortListAsc</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.УпорядочитьПоВозрастанию</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ShapeRepresentation>None</ShapeRepresentation>
+												<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+												<ButtonImportance>Supplementary</ButtonImportance>
+												<ExtendedTooltip name="ОбъектыСортироватьПоВозрастанию3РасширеннаяПодсказка" id="534"/>
+											</Button>
+											<Button name="ОбъектыСортироватьПоУбыванию3" id="535">
+												<Type>CommandBarButton</Type>
+												<Representation>Picture</Representation>
+												<CommandName>Form.Item.Представления.StandardCommand.SortListDesc</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.УпорядочитьПоУбыванию</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ShapeRepresentation>None</ShapeRepresentation>
+												<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+												<ButtonImportance>Supplementary</ButtonImportance>
+												<ExtendedTooltip name="ОбъектыСортироватьПоУбыванию3РасширеннаяПодсказка" id="536"/>
+											</Button>
+											<Button name="ОбъектыКомандыВверх5" id="537">
+												<Type>CommandBarButton</Type>
+												<Representation>Picture</Representation>
+												<CommandName>Form.Item.Представления.StandardCommand.MoveUp</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.НоваяСтрелкаВверх</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ShapeRepresentation>None</ShapeRepresentation>
+												<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+												<ButtonImportance>Supplementary</ButtonImportance>
+												<ExtendedTooltip name="ОбъектыКомандыВверх5РасширеннаяПодсказка" id="538"/>
+											</Button>
+											<Button name="ОбъектыКомандыВниз5" id="539">
+												<Type>CommandBarButton</Type>
+												<Representation>Picture</Representation>
+												<CommandName>Form.Item.Представления.StandardCommand.MoveDown</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.НоваяСтрелкаВниз</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ShapeRepresentation>None</ShapeRepresentation>
+												<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+												<ButtonImportance>Supplementary</ButtonImportance>
+												<ExtendedTooltip name="ОбъектыКомандыВниз5РасширеннаяПодсказка" id="540"/>
+											</Button>
+											<Button name="КнопкаВывести3" id="541">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.Представления.StandardCommand.OutputList</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.НаПечать</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+												<ExtendedTooltip name="КнопкаВывести3РасширеннаяПодсказка" id="542"/>
+											</Button>
+										</ChildItems>
+									</ContextMenu>
+									<AutoCommandBar name="ПредставленияКоманднаяПанель" id="73">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ПредставленияРасширеннаяПодсказка" id="74"/>
+									<SearchStringAddition name="ПредставленияСтрокаПоиска" id="75">
+										<AdditionSource>
+											<Item>Представления</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ПредставленияСтрокаПоискаКонтекстноеМеню" id="76"/>
+										<ExtendedTooltip name="ПредставленияСтрокаПоискаРасширеннаяПодсказка" id="77"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ПредставленияСостояниеПросмотра" id="78">
+										<AdditionSource>
+											<Item>Представления</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ПредставленияСостояниеПросмотраКонтекстноеМеню" id="79"/>
+										<ExtendedTooltip name="ПредставленияСостояниеПросмотраРасширеннаяПодсказка" id="80"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ПредставленияУправлениеПоиском" id="81">
+										<AdditionSource>
+											<Item>Представления</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ПредставленияУправлениеПоискомКонтекстноеМеню" id="82"/>
+										<ExtendedTooltip name="ПредставленияУправлениеПоискомРасширеннаяПодсказка" id="83"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<LabelField name="ПредставленияНомерСтроки" id="84">
+											<DataPath>Объект.Представления.LineNumber</DataPath>
+											<TitleBackColor>style:FormBackColor</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<ContextMenu name="ПредставленияНомерСтрокиКонтекстноеМеню" id="85"/>
+											<ExtendedTooltip name="ПредставленияНомерСтрокиРасширеннаяПодсказка" id="86"/>
+										</LabelField>
+										<InputField name="ПредставленияКодЯзыка" id="87">
+											<DataPath>Объект.Представления.КодЯзыка</DataPath>
+											<TitleBackColor>style:FormBackColor</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<ContextMenu name="ПредставленияКодЯзыкаКонтекстноеМеню" id="88"/>
+											<ExtendedTooltip name="ПредставленияКодЯзыкаРасширеннаяПодсказка" id="89"/>
+										</InputField>
+										<InputField name="ПредставленияНаименование" id="90">
+											<DataPath>Объект.Представления.Наименование</DataPath>
+											<TitleBackColor>style:FormBackColor</TitleBackColor>
+											<HorizontalAlign>Center</HorizontalAlign>
+											<EditMode>EnterOnInput</EditMode>
+											<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+											<AutoEditMode>true</AutoEditMode>
+											<ContextMenu name="ПредставленияНаименованиеКонтекстноеМеню" id="91"/>
+											<ExtendedTooltip name="ПредставленияНаименованиеРасширеннаяПодсказка" id="92"/>
+										</InputField>
+										<InputField name="ПредставленияОписание" id="93">
+											<DataPath>Объект.Представления.Описание</DataPath>
+											<TitleBackColor>style:FormBackColor</TitleBackColor>
+											<HorizontalAlign>Center</HorizontalAlign>
+											<EditMode>EnterOnInput</EditMode>
+											<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+											<AutoEditMode>true</AutoEditMode>
+											<ContextMenu name="ПредставленияОписаниеКонтекстноеМеню" id="94"/>
+											<ExtendedTooltip name="ПредставленияОписаниеРасширеннаяПодсказка" id="95"/>
+										</InputField>
+										<InputField name="ПредставленияНаименованияПолей" id="96">
+											<DataPath>Объект.Представления.НаименованияПолей</DataPath>
+											<TitleBackColor>style:FormBackColor</TitleBackColor>
+											<HorizontalAlign>Center</HorizontalAlign>
+											<EditMode>EnterOnInput</EditMode>
+											<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+											<AutoEditMode>true</AutoEditMode>
+											<ContextMenu name="ПредставленияНаименованияПолейКонтекстноеМеню" id="97"/>
+											<ExtendedTooltip name="ПредставленияНаименованияПолейРасширеннаяПодсказка" id="98"/>
+										</InputField>
+										<InputField name="ПредставленияНаименованияПараметровИОтборов" id="99">
+											<DataPath>Объект.Представления.НаименованияПараметровИОтборов</DataPath>
+											<TitleBackColor>style:FormBackColor</TitleBackColor>
+											<HorizontalAlign>Center</HorizontalAlign>
+											<EditMode>EnterOnInput</EditMode>
+											<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+											<AutoEditMode>true</AutoEditMode>
+											<ContextMenu name="ПредставленияНаименованияПараметровИОтборовКонтекстноеМеню" id="100"/>
+											<ExtendedTooltip name="ПредставленияНаименованияПараметровИОтборовРасширеннаяПодсказка" id="101"/>
+										</InputField>
+										<InputField name="ПредставленияКлючевыеСлова" id="102">
+											<DataPath>Объект.Представления.КлючевыеСлова</DataPath>
+											<TitleBackColor>style:FormBackColor</TitleBackColor>
+											<HorizontalAlign>Center</HorizontalAlign>
+											<EditMode>EnterOnInput</EditMode>
+											<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+											<AutoEditMode>true</AutoEditMode>
+											<ContextMenu name="ПредставленияКлючевыеСловаКонтекстноеМеню" id="103"/>
+											<ExtendedTooltip name="ПредставленияКлючевыеСловаРасширеннаяПодсказка" id="104"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</Page>
+					</ChildItems>
+				</Pages>
+				<UsualGroup name="ГруппаКомманднаяПанель" id="417">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа коммандная панель</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа коммандная панель</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<Group>HorizontalIfPossible</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаКомманднаяПанельРасширеннаяПодсказка" id="418"/>
+					<ChildItems>
+						<Button name="Удалить" id="419">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<CommandName>Form.StandardCommand.SetDeletionMark</CommandName>
+							<Picture>
+								<xr:Ref>CommonPicture.ВКорзину</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Удалить</v8:content>
+								</v8:item>
+							</Title>
+							<ShapeRepresentation>None</ShapeRepresentation>
+							<PictureLocation>Left</PictureLocation>
+							<ButtonImportance>Supplementary</ButtonImportance>
+							<ExtendedTooltip name="УдалитьРасширеннаяПодсказка" id="420"/>
+						</Button>
+						<Button name="КнопкаВывестиНастройкаФормы" id="421">
+							<Type>UsualButton</Type>
+							<Representation>Picture</Representation>
+							<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+							<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+							<Picture>
+								<xr:Ref>CommonPicture.НастройкаФормы</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ShapeRepresentation>None</ShapeRepresentation>
+							<PictureLocation>Left</PictureLocation>
+							<ButtonImportance>Supplementary</ButtonImportance>
+							<ExtendedTooltip name="КнопкаВывестиНастройкаФормыРасширеннаяПодсказка" id="422"/>
+						</Button>
+						<UsualGroup name="ГруппаКнопкаСохранить" id="423">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа кнопка сохранить</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа кнопка сохранить</v8:content>
+								</v8:item>
+							</ToolTip>
+							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+							<Group>HorizontalIfPossible</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<BackColor>style:ImportantColor</BackColor>
+							<ExtendedTooltip name="ГруппаКнопкаСохранитьРасширеннаяПодсказка" id="424"/>
+							<ChildItems>
+								<Button name="ФормаКнопкаСохранитьИЗакрыть" id="425">
+									<Type>UsualButton</Type>
+									<Width>10</Width>
+									<CommandName>Form.StandardCommand.WriteAndClose</CommandName>
+									<TextColor>style:FormBackColor</TextColor>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сохранить</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ButtonImportance>Supplementary</ButtonImportance>
+									<ExtendedTooltip name="ФормаКнопкаСохранитьИЗакрытьРасширеннаяПодсказка" id="426"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ПредопределенныеВариантыОтчетовРасширений</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

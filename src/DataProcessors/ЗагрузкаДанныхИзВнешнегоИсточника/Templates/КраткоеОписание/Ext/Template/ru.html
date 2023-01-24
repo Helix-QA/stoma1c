@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta content="text/html;charset=utf-8" http-equiv="content-type"></meta><link rel="stylesheet" type="text/css" href="__STYLE__"></link><meta name="GENERATOR" content="MSHTML 11.00.10570.1001"></meta></head><body>
+<p style="MARGIN: 0cm 0cm 0pt"> </p>
+<p style="MARGIN: 0cm 0cm 0pt"><strong><font size="5" face="Arial">ЗАГРУЗКА ДАННЫХ ИЗ ВНЕШНЕГО ИСТОЧНИКА</font></strong></p>
+<p style="MARGIN: 0cm 0cm 0pt"><font face="Arial"></font> </p>
+<p style="MARGIN: 0cm 0cm 0pt"><strong><font size="4"><font face="Arial"><u>Какие данные можно загружать и куда?<o:p></o:p></u></font></font></strong></p>
+<p style="MARGIN: 0cm 0cm 0pt"><font face="Arial"></font> </p>
+<p style="MARGIN: 0cm 0cm 0pt"><font face="Arial">Поддерживается импорт из форматов xlsx, mxl, csv. Загружать можно в:</font></p>
+<ul><li>
+<div style="MARGIN: 0cm 0cm 0pt"><font face="Arial">Табличные части документов Заказ поставщику, </font><span style="font-family: Arial;">Заказ покупателю, Ввод начальных остатков</span><span style="font-family: Arial;">;</span></div>
+</li>
+<li>
+<div style="MARGIN: 0cm 0cm 0pt"><font face="Arial">Справочники Номенклатура, Контрагенты, Сотрудники; </font></div>
+</li>
+<li>
+<div style="MARGIN: 0cm 0cm 0pt"><font face="Arial">Регистр сведений Цены номенклатуры;</font></div></li></ul><p style="MARGIN: 0cm 0cm 0pt"><font face="Arial"><strong><font color="#ff0000">ВНИМАНИЕ!</font></strong> Операции загрузки данных в справочники и регистр сведений являются необратимыми! Т.е. в случае загрузки ошибочных данных (неактуальной информации) справочник, или регистр сведений, придется вычищать самостоятельно.<o:p></o:p></font></p>
+<p style="MARGIN: 0cm 0cm 0pt"><font face="Arial"></font> </p>
+<p style="MARGIN: 0cm 0cm 0pt"><font face="Arial"></font> </p>
+<p style="MARGIN: 0cm 0cm 0pt"><strong><font size="4"><font face="Arial"><u>Как воспользоваться загрузкой?<o:p></o:p></u></font></font></strong></p>
+<p style="MARGIN: 0cm 0cm 0pt"><font face="Arial"></font> </p>
+<p style="MARGIN: 0cm 0cm 0pt"><font face="Arial">Команды начала работы с механизмами доступны пользователям непосредственно из объектов. Так, например, что бы загрузить данные в табличную часть достаточно открыть соответствующий документ, а для загрузки элементов справочников вам необходимо перейти в форму списка.</font></p>
+<p style="MARGIN: 0cm 0cm 0pt"><o:p><font face="Arial"> </font></o:p></p>
+<p style="MARGIN: 0cm 0cm 0pt"><font face="Arial">Ссылки для быстрого перехода:</font></p>
+<ul dir="ltr"><li>
+<div id="Контрагенты" style="MARGIN: 0cm 0cm 0pt"><font face="Arial"><img src="CommonPicture.ЗагрузкаИзФайла" width="16" height="16"></img> </font><font id="Контрагенты" face="Arial"><a id="Справочник.Контрагенты.ФормаСписка" href="Catalog.Контрагенты.Form.ФормаСписка/Help">Справочник "Контрагенты"</a></font></div>
+<div id="Контрагенты" style="MARGIN: 0cm 0cm 0pt"></div></li>
+<li><font face="Arial"><img src="CommonPicture.ЗагрузкаИзФайла" width="16" height="16"></img> </font><font id="Номенклатура" face="Arial"><a id="Справочник.Номенклатура.ФормаСписка" href="Catalog.Номенклатура.Form.ФормаСписка/Help">Справочник "Номенклатура"</a></font></li></ul><p style="MARGIN: 0cm 0cm 0pt"><font face="Arial"><strong><font color="#ff0000">ВНИМАНИЕ!</font></strong> Загрузка данных доступна только пользователям с правами администратора приложения.</font></p>
+<p style="MARGIN: 0cm 0cm 0pt"><font face="Arial"></font> </p>
+<p style="MARGIN: 0cm 0cm 0pt"><font face="Arial" size="4" color="#ff0000"><b>Типы данных.</b></font></p>
+<p style="MARGIN: 0cm 0cm 0pt"><font face="Arial" size="4" color="#ff0000"><b><br></b></font></p>
+<p style="MARGIN: 0cm 0cm 0pt"><font face="Arial">Что бы успешно сопоставить ссылочные данные  (например: "Номенклатура, Клиент, Сотрудник, № партии и др."), в файле следует указать название в виде строки.</font></p>
+<p style="MARGIN: 0cm 0cm 0pt"><font face="Arial">Данные типа "Булево", на формах обычно выглядит в виде флажка или переключателя. Можно указать в виде (+, -, ИСТИНА, ЛОЖЬ, Да, Нет, 0 , 1).</font></p>
+<p style="MARGIN: 0cm 0cm 0pt"><font face="Arial">Дату необходимо указывать в виде строки 02.03.1999 или 02/03/1999.</font></p>
+<p style="MARGIN: 0cm 0cm 0pt"><font face="Arial">Остальные типы можно передавать в виде строкового наименования.</font></p>
+<p style="MARGIN: 0cm 0cm 0pt"><br></p>
+<p style="MARGIN: 0cm 0cm 0pt"><font face="Arial">Бывают случаи, когда некоторые элементы по типу партии номенклатуры, могут быть по несколько штук у одной номенклатуры. Для этого нужно продублировать ключевые поля для поиска номенклатуры и для каждой строки указать нужную партию. Получится что несколько строк с одинаковой номенклатурой, но разными партиями. Это касается и других аналогичных элементов.</font></p>
+<p style="MARGIN: 0cm 0cm 0pt"><font face="Arial"></font> </p>
+<p style="MARGIN: 0cm 0cm 0pt"><font size="4" face="Arial"><strong><u>Пример загрузки данных в табличную часть документа Заказ поставщику.</u></strong></font></p>
+<p style="MARGIN: 0cm 0cm 0pt"><font size="4"><font size="3" face="Arial"></font></font> </p>
+<p style="MARGIN: 0cm 0cm 0pt"><font face="Arial"><font size="4">1. Для загрузки данных из внешенго источника необходимо открыть документ и</font><font size="4"> выбрать соответствующую команду</font></font></p>
+<p style="MARGIN: 0cm 0cm 0pt"><font size="4"></font><br><img alt="1" src="_files/1.png" border="1"></img></p>
+<p style="MARGIN: 0cm 0cm 0pt"><font size="4" face="Arial"></font> </p>
+<p style="MARGIN: 0cm 0cm 0pt"><font size="4" face="Arial">2. Указать файл</font></p>
+<p style="MARGIN: 0cm 0cm 0pt"><br><img alt="2" src="_files/21.png" border="1"></img></p>
+<p style="MARGIN: 0cm 0cm 0pt"><font face="Arial"></font> </p>
+<p style="MARGIN: 0cm 0cm 0pt"><font size="4" face="Arial">3. Для данных из файла необходимо указать каким колонкам они соответствуют</font></p>
+<p style="MARGIN: 0cm 0cm 0pt"><font size="4"></font><br><img alt="3" src="_files/31.png" border="1"></img></p>
+<p style="MARGIN: 0cm 0cm 0pt"><font face="Arial"></font> </p>
+<p style="MARGIN: 0cm 0cm 0pt"><font size="4" face="Arial">4. Проверить результат сопоставления, возможно, поправить данные</font></p>
+<p style="MARGIN: 0cm 0cm 0pt"><br><img alt="4" src="_files/41.png" border="1"></img></p>
+<p style="MARGIN: 0cm 0cm 0pt"><font face="Arial"></font> </p>
+<p style="MARGIN: 0cm 0cm 0pt"><font size="4" face="Arial">5. Загрузить данные в табличную часть документа</font></p>
+<p style="MARGIN: 0cm 0cm 0pt"><font size="4"></font><br><img alt="5" src="_files/51.png" border="1"></img></p>
+<p style="MARGIN: 0cm 0cm 0pt"><font size="4" face="Arial"></font> </p>
+<p style="MARGIN: 0cm 0cm 0pt"><br></p>
+<p style="MARGIN: 0cm 0cm 0pt"><font size="4" face="Arial"></font><br></p>
+<p style="MARGIN: 0cm 0cm 0pt"></p></body></html>

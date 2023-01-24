@@ -1,0 +1,971 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<Group>Vertical</Group>
+	<HorizontalAlign>Center</HorizontalAlign>
+	<Customizable>false</Customizable>
+	<CommandBarLocation>None</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<CommandSet>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+	</CommandSet>
+	<ShowCommandBar>false</ShowCommandBar>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаВыравнивание" id="379">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа выравнивание</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group alignment</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа выравнивание</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group alignment</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<HorizontalAlign>Left</HorizontalAlign>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаВыравниваниеРасширеннаяПодсказка" id="380"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаКоманднаяПанель" id="391">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа командная панель</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа командная панель</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>HorizontalIfPossible</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаКоманднаяПанельРасширеннаяПодсказка" id="392"/>
+					<ChildItems>
+						<Button name="ВыборРабочегоМеста" id="317">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<SkipOnInput>false</SkipOnInput>
+							<CommandName>Form.Command.ВыборРабочегоМеста</CommandName>
+							<Picture>
+								<xr:Ref>CommonPicture.ПодобратьПунктыСписок</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ShapeRepresentation>None</ShapeRepresentation>
+							<ButtonImportance>Supplementary</ButtonImportance>
+							<ExtendedTooltip name="ВыборРабочегоМестаРасширеннаяПодсказка" id="337"/>
+						</Button>
+						<Button name="СписокРабочихМест" id="333">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<SkipOnInput>false</SkipOnInput>
+							<CommandName>Form.Command.СписокРабочихМест</CommandName>
+							<Picture>
+								<xr:Ref>CommonPicture.ВыбранныеЭлементыСписка</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ShapeRepresentation>None</ShapeRepresentation>
+							<ButtonImportance>Supplementary</ButtonImportance>
+							<ExtendedTooltip name="СписокРабочихМестExtendedTooltip" id="338"/>
+						</Button>
+						<Button name="ФормаДрайверыОборудования" id="358">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<CommandName>Form.Command.ДрайверыОборудования</CommandName>
+							<Picture>
+								<xr:Ref>CommonPicture.НастройкиНовая</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ShapeRepresentation>None</ShapeRepresentation>
+							<ButtonImportance>Supplementary</ButtonImportance>
+							<ExtendedTooltip name="ФормаДрайверыОборудованияРасширеннаяПодсказка" id="359"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<CommandBar name="КоманднаяПанельФорма" id="381">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Командная панель форма</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Command panel form</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Командная панель форма</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Command panel form</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ExtendedTooltip name="КоманднаяПанельФормаРасширеннаяПодсказка" id="382"/>
+					<ChildItems>
+						<Popup name="УправлениеРабочимиМестами" id="319">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Управление рабочими местами</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Control workers in places</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Управление рабочими местами</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Control workers in places</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="УправлениеРабочимиМестамиExtendedTooltip" id="336"/>
+						</Popup>
+					</ChildItems>
+				</CommandBar>
+				<UsualGroup name="ПанелиФормы" id="71">
+					<EnableContentChange>true</EnableContentChange>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование текущей страницы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>FullName current pages</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ПанелиФормыExtendedTooltip" id="340"/>
+					<ChildItems>
+						<UsualGroup name="ЛеваяПанель" id="325">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Левая панель</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Left panel</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Левая панель</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Left panel</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ЛеваяПанельExtendedTooltip" id="341"/>
+							<ChildItems>
+								<CheckBoxField name="ВсеТипыОборудования" id="323">
+									<DataPath>ВсеТипыОборудования</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<ContextMenu name="ВсеТипыОборудованияКонтекстноеМеню" id="324"/>
+									<ExtendedTooltip name="ВсеТипыОборудованияExtendedTooltip" id="342"/>
+									<Events>
+										<Event name="OnChange">ВсеТипыОборудованияПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<UsualGroup name="ГруппаПереключателейТиповПО" id="308">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа переключателей типов ПО</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Group of software type switches</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа переключателей типов ПО</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Group of software type switches</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>25</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ThroughAlign>Use</ThroughAlign>
+									<ExtendedTooltip name="ГруппаПереключателейТиповПОExtendedTooltip" id="343"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаКартинокПО" id="322">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа картинок ПО</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Group pictures BY</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа картинок ПО</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Group pictures BY</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<VerticalSpacing>None</VerticalSpacing>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ThroughAlign>Use</ThroughAlign>
+											<ExtendedTooltip name="ГруппаКартинокПОExtendedTooltip" id="344"/>
+										</UsualGroup>
+										<UsualGroup name="ГруппаПереключателейТипов" id="387">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа переключателей типов</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Group type switches</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа картинок ПО</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Group pictures BY</v8:content>
+												</v8:item>
+											</ToolTip>
+											<HorizontalStretch>true</HorizontalStretch>
+											<Group>Vertical</Group>
+											<VerticalSpacing>Double</VerticalSpacing>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ThroughAlign>Use</ThroughAlign>
+											<ExtendedTooltip name="ГруппаПереключателейТиповРасширеннаяПодсказка" id="388"/>
+											<ChildItems>
+												<RadioButtonField name="ПереключательТиповПО" id="290">
+													<DataPath>ПереключательТиповПО</DataPath>
+													<TitleFont ref="sys:DefaultGUIFont" bold="false" italic="false" underline="true" strikeout="false" kind="WindowsFont"/>
+													<TitleLocation>None</TitleLocation>
+													<TitleHeight>7</TitleHeight>
+													<RadioButtonType>Auto</RadioButtonType>
+													<ItemHeight>2</ItemHeight>
+													<ItemTitleHeight>2</ItemTitleHeight>
+													<ColumnsCount>1</ColumnsCount>
+													<EqualColumnsWidth>true</EqualColumnsWidth>
+													<ContextMenu name="ПереключательТиповПОКонтекстноеМеню" id="291"/>
+													<ExtendedTooltip name="ПереключательТиповПОExtendedTooltip" id="345"/>
+													<Events>
+														<Event name="OnChange">ПереключательСтраницПриИзменении</Event>
+													</Events>
+												</RadioButtonField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа" id="332">
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ExtendedTooltip name="ГруппаExtendedTooltip" id="346"/>
+									<ChildItems>
+										<CheckBoxField name="ВсеРабочиеМеста" id="330">
+											<DataPath>ВсеРабочиеМеста</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<ContextMenu name="ВсеРабочиеМестаКонтекстноеМеню" id="331"/>
+											<ExtendedTooltip name="ВсеРабочиеМестаExtendedTooltip" id="347"/>
+											<Events>
+												<Event name="OnChange">ВсеРабочиеМестаПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+										<CheckBoxField name="ГруппироватьПоРабочемуМесту" id="328">
+											<DataPath>ГруппироватьПоРабочемуМесту</DataPath>
+											<Enabled>false</Enabled>
+											<TitleLocation>Right</TitleLocation>
+											<ContextMenu name="ГруппироватьПоРабочемуМестуКонтекстноеМеню" id="329"/>
+											<ExtendedTooltip name="ГруппироватьПоРабочемуМестуExtendedTooltip" id="348"/>
+											<Events>
+												<Event name="OnChange">ГруппироватьПоРабочемуМестуПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаСписокУстройств" id="383">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа список устройств</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group list of devices</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа список устройств</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group list of devices</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаСписокУстройствРасширеннаяПодсказка" id="384"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаСписокУстройствКоманднаяПанель" id="389">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа список устройств командная панель</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа список устройств командная панель</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>120</Width>
+									<Group>AlwaysHorizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаСписокУстройствКоманднаяПанельРасширеннаяПодсказка" id="390"/>
+									<ChildItems>
+										<Button name="СписокСоздать" id="371">
+											<Type>UsualButton</Type>
+											<Representation>PictureAndText</Representation>
+											<CommandName>Form.Item.СписокУстройств.StandardCommand.Create</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.Добавить</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<ButtonImportance>Supplementary</ButtonImportance>
+											<ExtendedTooltip name="СписокСоздатьРасширеннаяПодсказка" id="372"/>
+										</Button>
+										<Button name="СписокИзменить" id="375">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Item.СписокУстройств.StandardCommand.Change</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.Редактировать</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<ButtonImportance>Supplementary</ButtonImportance>
+											<ExtendedTooltip name="СписокИзменитьРасширеннаяПодсказка" id="376"/>
+										</Button>
+										<Button name="СписокСкопировать" id="373">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Item.СписокУстройств.StandardCommand.Copy</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.ДобавитьКопированием</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<ButtonImportance>Supplementary</ButtonImportance>
+											<ExtendedTooltip name="СписокСкопироватьРасширеннаяПодсказка" id="374"/>
+										</Button>
+										<Button name="СписокУстановитьПометкуУдаления" id="377">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Item.СписокУстройств.StandardCommand.SetDeletionMark</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.ВКорзину</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<ButtonImportance>Supplementary</ButtonImportance>
+											<ExtendedTooltip name="СписокУстановитьПометкуУдаленияРасширеннаяПодсказка" id="378"/>
+										</Button>
+										<Button name="Настроить" id="305">
+											<Type>UsualButton</Type>
+											<Representation>PictureAndText</Representation>
+											<SkipOnInput>false</SkipOnInput>
+											<CommandName>Form.Command.Настроить</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.НастройкиНовая</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Настроить...</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Tune</v8:content>
+												</v8:item>
+											</Title>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<ButtonImportance>Supplementary</ButtonImportance>
+											<ExtendedTooltip name="НастроитьExtendedTooltip" id="349"/>
+										</Button>
+										<SearchStringAddition name="СтрокаПоиска" id="393">
+											<AdditionSource>
+												<Item>СписокУстройств</Item>
+												<Type>SearchStringRepresentation</Type>
+											</AdditionSource>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Строка поиска</v8:content>
+												</v8:item>
+											</Title>
+											<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+											<Width>20</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="СтрокаПоискаКонтекстноеМеню" id="394"/>
+											<ExtendedTooltip name="СтрокаПоискаРасширеннаяПодсказка" id="395"/>
+										</SearchStringAddition>
+									</ChildItems>
+								</UsualGroup>
+								<Table name="СписокУстройств" id="292">
+									<Representation>Tree</Representation>
+									<CommandBarLocation>None</CommandBarLocation>
+									<SkipOnInput>false</SkipOnInput>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>120</MaxWidth>
+									<SelectionMode>SingleRow</SelectionMode>
+									<RowSelectionMode>Cell</RowSelectionMode>
+									<InitialTreeView>ExpandAllLevels</InitialTreeView>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>СписокУстройств</DataPath>
+									<RowPictureDataPath>СписокУстройств.DefaultPicture</RowPictureDataPath>
+									<CommandSet>
+										<ExcludedCommand>CancelSearch</ExcludedCommand>
+										<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+										<ExcludedCommand>Delete</ExcludedCommand>
+										<ExcludedCommand>DynamicListStandardSettings</ExcludedCommand>
+										<ExcludedCommand>Find</ExcludedCommand>
+										<ExcludedCommand>ListSettings</ExcludedCommand>
+										<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
+										<ExcludedCommand>OutputList</ExcludedCommand>
+										<ExcludedCommand>Refresh</ExcludedCommand>
+										<ExcludedCommand>SaveDynamicListSettings</ExcludedCommand>
+									</CommandSet>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<AutoRefresh>false</AutoRefresh>
+									<AutoRefreshPeriod>60</AutoRefreshPeriod>
+									<Period>
+										<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+										<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+										<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+									</Period>
+									<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+									<RestoreCurrentRow>false</RestoreCurrentRow>
+									<TopLevelParent xsi:nil="true"/>
+									<ShowRoot>false</ShowRoot>
+									<AllowRootChoice>false</AllowRootChoice>
+									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+									<ContextMenu name="СписокУстройствКонтекстноеМеню" id="293">
+										<Autofill>false</Autofill>
+										<ChildItems>
+											<ButtonGroup name="СписокКонтекстноеМенюГруппаСоздание" id="416">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Список контекстное меню группа создание</v8:content>
+													</v8:item>
+												</Title>
+												<ToolTip>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Список контекстное меню группа создание</v8:content>
+													</v8:item>
+												</ToolTip>
+												<ExtendedTooltip name="СписокКонтекстноеМенюГруппаСозданиеРасширеннаяПодсказка" id="417"/>
+												<ChildItems>
+													<Button name="СписокКонтекстноеМенюКнопкаСоздать" id="418">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Item.СписокУстройств.StandardCommand.Create</CommandName>
+														<Picture>
+															<xr:Ref>CommonPicture.Добавить</xr:Ref>
+															<xr:LoadTransparent>true</xr:LoadTransparent>
+														</Picture>
+														<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаСоздатьРасширеннаяПодсказка" id="419"/>
+													</Button>
+													<Button name="СписокКонтекстноеМенюКнопкаСкопировать" id="422">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Item.СписокУстройств.StandardCommand.Copy</CommandName>
+														<Picture>
+															<xr:Ref>CommonPicture.ДобавитьКопированием</xr:Ref>
+															<xr:LoadTransparent>true</xr:LoadTransparent>
+														</Picture>
+														<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаСкопироватьРасширеннаяПодсказка" id="423"/>
+													</Button>
+												</ChildItems>
+											</ButtonGroup>
+											<ButtonGroup name="СписокКонтекстноеМенюГруппаРедактирование" id="396">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Список контекстное меню группа редактирование</v8:content>
+													</v8:item>
+												</Title>
+												<ToolTip>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Список контекстное меню группа редактирование</v8:content>
+													</v8:item>
+												</ToolTip>
+												<ExtendedTooltip name="СписокКонтекстноеМенюГруппаРедактированиеРасширеннаяПодсказка" id="397"/>
+												<ChildItems>
+													<Button name="СписокКонтекстноеМенюКнопкаИзменить" id="398">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Item.СписокУстройств.StandardCommand.Change</CommandName>
+														<Picture>
+															<xr:Ref>CommonPicture.Редактировать</xr:Ref>
+															<xr:LoadTransparent>true</xr:LoadTransparent>
+														</Picture>
+														<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаИзменитьРасширеннаяПодсказка" id="399"/>
+													</Button>
+													<Button name="СписокКонтекстноеМенюКнопкаУдалить" id="400">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Item.СписокУстройств.StandardCommand.SetDeletionMark</CommandName>
+														<Picture>
+															<xr:Ref>CommonPicture.ВКорзину</xr:Ref>
+															<xr:LoadTransparent>true</xr:LoadTransparent>
+														</Picture>
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Удалить</v8:content>
+															</v8:item>
+														</Title>
+														<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаУдалитьРасширеннаяПодсказка" id="401"/>
+													</Button>
+												</ChildItems>
+											</ButtonGroup>
+											<Button name="СписокКонтекстноеМенюКнопкаНайтиПоЗначению" id="424">
+												<Type>CommandBarButton</Type>
+												<Representation>PictureAndText</Representation>
+												<CommandName>Form.Item.СписокУстройств.StandardCommand.FindByCurrentValue</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.НайтиПоТекущемуЗначению</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаНайтиПоЗначениюРасширеннаяПодсказка" id="425"/>
+											</Button>
+										</ChildItems>
+									</ContextMenu>
+									<AutoCommandBar name="СписокУстройствКоманднаяПанель" id="294">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="СписокУстройствExtendedTooltip" id="350"/>
+									<SearchStringAddition name="СписокУстройствСтрокаПоиска" id="360">
+										<AdditionSource>
+											<Item>СписокУстройств</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="СписокУстройствСтрокаПоискаКонтекстноеМеню" id="361"/>
+										<ExtendedTooltip name="СписокУстройствСтрокаПоискаРасширеннаяПодсказка" id="362"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="СписокУстройствСостояниеПросмотра" id="363">
+										<AdditionSource>
+											<Item>СписокУстройств</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="СписокУстройствСостояниеПросмотраКонтекстноеМеню" id="364"/>
+										<ExtendedTooltip name="СписокУстройствСостояниеПросмотраРасширеннаяПодсказка" id="365"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="СписокУстройствУправлениеПоиском" id="366">
+										<AdditionSource>
+											<Item>СписокУстройств</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="СписокУстройствУправлениеПоискомКонтекстноеМеню" id="367"/>
+										<ExtendedTooltip name="СписокУстройствУправлениеПоискомРасширеннаяПодсказка" id="368"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="Selection">СписокУстройствВыбор</Event>
+										<Event name="OnActivateRow">СписокУстройствПриАктивизацииСтроки</Event>
+										<Event name="NewWriteProcessing">СписокУстройствОбработкаЗаписиНового</Event>
+										<Event name="AfterDeleteRow">СписокУстройствПослеУдаления</Event>
+									</Events>
+									<ChildItems>
+										<CheckBoxField name="Используется" id="311">
+											<DataPath>СписокУстройств.Используется</DataPath>
+											<TitleBackColor>style:FormBackColor</TitleBackColor>
+											<TitleLocation>None</TitleLocation>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Устройство используется</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Device used by</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ContextMenu name="ИспользуетсяКонтекстноеМеню" id="312"/>
+											<ExtendedTooltip name="ИспользуетсяExtendedTooltip" id="351"/>
+										</CheckBoxField>
+										<LabelField name="Ссылка" id="309">
+											<DataPath>СписокУстройств.Ref</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Наименование</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>FullName</v8:content>
+												</v8:item>
+											</Title>
+											<TitleBackColor>style:FormBackColor</TitleBackColor>
+											<HorizontalAlign>Left</HorizontalAlign>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<MaxWidth>30</MaxWidth>
+											<ContextMenu name="СсылкаКонтекстноеМеню" id="310"/>
+											<ExtendedTooltip name="СсылкаExtendedTooltip" id="352"/>
+										</LabelField>
+										<LabelField name="ДрайверОборудования" id="355">
+											<DataPath>СписокУстройств.ДрайверОборудования</DataPath>
+											<TitleBackColor>style:FormBackColor</TitleBackColor>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<MaxWidth>25</MaxWidth>
+											<ContextMenu name="ДрайверОборудованияКонтекстноеМеню" id="356"/>
+											<ExtendedTooltip name="ДрайверОборудованияРасширеннаяПодсказка" id="357"/>
+										</LabelField>
+										<LabelField name="РабочееМесто" id="326">
+											<DataPath>СписокУстройств.РабочееМесто</DataPath>
+											<TitleBackColor>style:FormBackColor</TitleBackColor>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<MaxWidth>25</MaxWidth>
+											<ContextMenu name="РабочееМестоКонтекстноеМеню" id="327"/>
+											<ExtendedTooltip name="РабочееМестоExtendedTooltip" id="354"/>
+										</LabelField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ПереключательТиповПО" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поддерживаемые типы оборудования</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Supported equipment types</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ТипыПодключаемогоОборудования</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокУстройств" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список устройств</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>List devices</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>~СписокУстройств.ВстроенныйДрайвер</Field>
+				<Field>~СписокУстройств.ИмяКомпьютера</Field>
+				<Field>~СписокУстройств.ОбработчикДрайвера</Field>
+				<Field>СписокУстройств.Description</Field>
+				<Field>СписокУстройств.Ref</Field>
+				<Field>СписокУстройств.ДрайверОборудования</Field>
+				<Field>СписокУстройств.Используется</Field>
+				<Field>СписокУстройств.РабочееМесто</Field>
+				<Field>СписокУстройств.ТипОборудования</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СправочникПодключаемоеОборудование.Ссылка,
+	СправочникПодключаемоеОборудование.Наименование,
+	СправочникПодключаемоеОборудование.УстройствоИспользуется КАК Используется,
+	СправочникПодключаемоеОборудование.ДрайверОборудования,
+	СправочникПодключаемоеОборудование.РабочееМесто,
+	СправочникПодключаемоеОборудование.ТипОборудования
+ИЗ
+	Справочник.ПодключаемоеОборудование КАК СправочникПодключаемоеОборудование</QueryText>
+				<MainTable>Catalog.ПодключаемоеОборудование</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>РабочееМесто</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ТипОборудования</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Наименование</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ВсеТипыОборудования" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Все типы оборудования</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>All types of equipments</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ГруппироватьПоРабочемуМесту" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группировать по рабочему месту</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group by workplace</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВсеРабочиеМеста" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Все рабочие места</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>All the workplaces</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекущееРабочееМесто" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущее рабочее место</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Current working place</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.РабочиеМеста</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокТиповПО" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список типов ПО</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>List types BY</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КоличествоПодключенногоВО" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество подключенного ВО</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Настроить" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Tune</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Tune</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НастроитьВыполнить</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВыборРабочегоМеста" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбор рабочего места</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Selection of a workplace</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбор рабочего места</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Selection of a workplace</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыборРабочегоМеста</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СписокРабочихМест" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список рабочих мест</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>List workers places</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список рабочих мест</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>List workers places</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СписокРабочихМест</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ДрайверыОборудования" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Драйверы оборудования</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Drivers equipment</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Драйверы оборудования</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Drivers equipment</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДрайверыОборудования</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

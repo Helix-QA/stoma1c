@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<HorizontalAlign>Center</HorizontalAlign>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаВыравнивание" id="61">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа выравнивание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа выравнивание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Vertical</Group>
+			<VerticalSpacing>Single</VerticalSpacing>
+			<HorizontalAlign>Left</HorizontalAlign>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаВыравниваниеРасширеннаяПодсказка" id="62"/>
+			<ChildItems>
+				<InputField name="Наименование" id="1">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Идентификатор" id="4">
+					<DataPath>Объект.Идентификатор</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ИдентификаторКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ИдентификаторРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="Версия" id="7">
+					<DataPath>Объект.Версия</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ВерсияКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ВерсияРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<InputField name="ДатаВерсии" id="10">
+					<DataPath>Объект.ДатаВерсии</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ДатаВерсииКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ДатаВерсииРасширеннаяПодсказка" id="12"/>
+				</InputField>
+				<UsualGroup name="ГруппаДляВерсий" id="55">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа для версий</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа для версий</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДляВерсийРасширеннаяПодсказка" id="56"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаЛеваяПоловина" id="57">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа левая половина</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа левая половина</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаЛеваяПоловинаРасширеннаяПодсказка" id="58"/>
+							<ChildItems>
+								<CheckBoxField name="Windows_x86" id="13">
+									<DataPath>Объект.Windows_x86</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<CheckBoxType>Switcher</CheckBoxType>
+									<ContextMenu name="Windows_x86КонтекстноеМеню" id="14"/>
+									<ExtendedTooltip name="Windows_x86РасширеннаяПодсказка" id="15"/>
+								</CheckBoxField>
+								<CheckBoxField name="Windows_x86_64" id="16">
+									<DataPath>Объект.Windows_x86_64</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<CheckBoxType>Switcher</CheckBoxType>
+									<ContextMenu name="Windows_x86_64КонтекстноеМеню" id="17"/>
+									<ExtendedTooltip name="Windows_x86_64РасширеннаяПодсказка" id="18"/>
+								</CheckBoxField>
+								<CheckBoxField name="Windows_x86_Firefox" id="25">
+									<DataPath>Объект.Windows_x86_Firefox</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<CheckBoxType>Switcher</CheckBoxType>
+									<ContextMenu name="Windows_x86_FirefoxКонтекстноеМеню" id="26"/>
+									<ExtendedTooltip name="Windows_x86_FirefoxРасширеннаяПодсказка" id="27"/>
+								</CheckBoxField>
+								<CheckBoxField name="Windows_x86_64_MSIE" id="37">
+									<DataPath>Объект.Windows_x86_64_MSIE</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<CheckBoxType>Switcher</CheckBoxType>
+									<ContextMenu name="Windows_x86_64_MSIEКонтекстноеМеню" id="38"/>
+									<ExtendedTooltip name="Windows_x86_64_MSIEРасширеннаяПодсказка" id="39"/>
+								</CheckBoxField>
+								<CheckBoxField name="Windows_x86_MSIE" id="34">
+									<DataPath>Объект.Windows_x86_MSIE</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<CheckBoxType>Switcher</CheckBoxType>
+									<ContextMenu name="Windows_x86_MSIEКонтекстноеМеню" id="35"/>
+									<ExtendedTooltip name="Windows_x86_MSIEРасширеннаяПодсказка" id="36"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаЦентр" id="59">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа центр</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа центр</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаЦентрРасширеннаяПодсказка" id="60"/>
+							<ChildItems>
+								<CheckBoxField name="Linux_x86" id="19">
+									<DataPath>Объект.Linux_x86</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<CheckBoxType>Switcher</CheckBoxType>
+									<ContextMenu name="Linux_x86КонтекстноеМеню" id="20"/>
+									<ExtendedTooltip name="Linux_x86РасширеннаяПодсказка" id="21"/>
+								</CheckBoxField>
+								<CheckBoxField name="Linux_x86_64" id="22">
+									<DataPath>Объект.Linux_x86_64</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<CheckBoxType>Switcher</CheckBoxType>
+									<ContextMenu name="Linux_x86_64КонтекстноеМеню" id="23"/>
+									<ExtendedTooltip name="Linux_x86_64РасширеннаяПодсказка" id="24"/>
+								</CheckBoxField>
+								<CheckBoxField name="Linux_x86_Firefox" id="28">
+									<DataPath>Объект.Linux_x86_Firefox</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<CheckBoxType>Switcher</CheckBoxType>
+									<ContextMenu name="Linux_x86_FirefoxКонтекстноеМеню" id="29"/>
+									<ExtendedTooltip name="Linux_x86_FirefoxРасширеннаяПодсказка" id="30"/>
+								</CheckBoxField>
+								<CheckBoxField name="Linux_x86_64_Firefox" id="31">
+									<DataPath>Объект.Linux_x86_64_Firefox</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<CheckBoxType>Switcher</CheckBoxType>
+									<ContextMenu name="Linux_x86_64_FirefoxКонтекстноеМеню" id="32"/>
+									<ExtendedTooltip name="Linux_x86_64_FirefoxРасширеннаяПодсказка" id="33"/>
+								</CheckBoxField>
+								<CheckBoxField name="Linux_x86_64_Chrome" id="46">
+									<DataPath>Объект.Linux_x86_64_Chrome</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<CheckBoxType>Switcher</CheckBoxType>
+									<ContextMenu name="Linux_x86_64_ChromeКонтекстноеМеню" id="47"/>
+									<ExtendedTooltip name="Linux_x86_64_ChromeРасширеннаяПодсказка" id="48"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПраваяПоловина" id="117">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа правая половина</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа правая половина</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПраваяПоловинаРасширеннаяПодсказка" id="118"/>
+							<ChildItems>
+								<CheckBoxField name="Windows_x86_Chrome" id="40">
+									<DataPath>Объект.Windows_x86_Chrome</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<CheckBoxType>Switcher</CheckBoxType>
+									<ContextMenu name="Windows_x86_ChromeКонтекстноеМеню" id="41"/>
+									<ExtendedTooltip name="Windows_x86_ChromeРасширеннаяПодсказка" id="42"/>
+								</CheckBoxField>
+								<CheckBoxField name="Linux_x86_Chrome" id="43">
+									<DataPath>Объект.Linux_x86_Chrome</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<CheckBoxType>Switcher</CheckBoxType>
+									<ContextMenu name="Linux_x86_ChromeКонтекстноеМеню" id="44"/>
+									<ExtendedTooltip name="Linux_x86_ChromeРасширеннаяПодсказка" id="45"/>
+								</CheckBoxField>
+								<CheckBoxField name="MacOS_x86_64" id="49">
+									<DataPath>Объект.MacOS_x86_64</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<CheckBoxType>Switcher</CheckBoxType>
+									<ContextMenu name="MacOS_x86_64КонтекстноеМеню" id="50"/>
+									<ExtendedTooltip name="MacOS_x86_64РасширеннаяПодсказка" id="51"/>
+								</CheckBoxField>
+								<CheckBoxField name="MacOS_x86_64_Safari" id="52">
+									<DataPath>Объект.MacOS_x86_64_Safari</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<CheckBoxType>Switcher</CheckBoxType>
+									<ContextMenu name="MacOS_x86_64_SafariКонтекстноеМеню" id="53"/>
+									<ExtendedTooltip name="MacOS_x86_64_SafariРасширеннаяПодсказка" id="54"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаКомманднаяПанель" id="105">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа коммандная панель</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа коммандная панель</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<Group>HorizontalIfPossible</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаКомманднаяПанельРасширеннаяПодсказка" id="106"/>
+					<ChildItems>
+						<Button name="Удалить" id="107">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<CommandName>Form.StandardCommand.SetDeletionMark</CommandName>
+							<Picture>
+								<xr:Ref>CommonPicture.ВКорзину</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Удалить</v8:content>
+								</v8:item>
+							</Title>
+							<ShapeRepresentation>None</ShapeRepresentation>
+							<PictureLocation>Left</PictureLocation>
+							<ButtonImportance>Supplementary</ButtonImportance>
+							<ExtendedTooltip name="УдалитьРасширеннаяПодсказка" id="108"/>
+						</Button>
+						<Button name="КнопкаВывестиНастройкаФормы" id="109">
+							<Type>UsualButton</Type>
+							<Representation>Picture</Representation>
+							<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+							<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+							<Picture>
+								<xr:Ref>CommonPicture.НастройкаФормы</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ShapeRepresentation>None</ShapeRepresentation>
+							<PictureLocation>Left</PictureLocation>
+							<ButtonImportance>Supplementary</ButtonImportance>
+							<ExtendedTooltip name="КнопкаВывестиНастройкаФормыРасширеннаяПодсказка" id="110"/>
+						</Button>
+						<UsualGroup name="ГруппаКнопкаСохранить" id="113">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа кнопка сохранить</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа кнопка сохранить</v8:content>
+								</v8:item>
+							</ToolTip>
+							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+							<Group>HorizontalIfPossible</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<BackColor>style:ImportantColor</BackColor>
+							<ExtendedTooltip name="ГруппаКнопкаСохранитьРасширеннаяПодсказка" id="114"/>
+							<ChildItems>
+								<Button name="ФормаКнопкаСохранитьИЗакрыть" id="115">
+									<Type>UsualButton</Type>
+									<Width>10</Width>
+									<CommandName>Form.StandardCommand.WriteAndClose</CommandName>
+									<TextColor>style:FormBackColor</TextColor>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сохранить</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ButtonImportance>Supplementary</ButtonImportance>
+									<ExtendedTooltip name="ФормаКнопкаСохранитьИЗакрытьРасширеннаяПодсказка" id="116"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ОбщиеВнешниеКомпоненты</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

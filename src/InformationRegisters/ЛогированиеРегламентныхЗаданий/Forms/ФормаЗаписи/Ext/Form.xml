@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа4" id="46">
+			<Width>70</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>HorizontalIfPossible</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="47"/>
+			<ChildItems>
+				<UsualGroup name="Группа2" id="42">
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="43"/>
+					<ChildItems>
+						<InputField name="ОбластьДанныхВспомогательныеДанные" id="1">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Область</v8:content>
+								</v8:item>
+							</Title>
+							<BackColor>#FFF2E0</BackColor>
+							<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<ContextMenu name="ОбластьДанныхВспомогательныеДанныеКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="ОбластьДанныхВспомогательныеДанныеРасширеннаяПодсказка" id="3"/>
+						</InputField>
+						<InputField name="СтатусВыполнения" id="13">
+							<DataPath>Запись.СтатусВыполнения</DataPath>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ContextMenu name="СтатусВыполненияКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="СтатусВыполненияРасширеннаяПодсказка" id="15"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="ИмяРегламентногоЗадания" id="4">
+					<DataPath>Запись.ИмяРегламентногоЗадания</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя задания</v8:content>
+						</v8:item>
+					</Title>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="ИмяРегламентногоЗаданияКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ИмяРегламентногоЗаданияРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="ИмяВарианта" id="50">
+					<DataPath>Запись.ИмяВарианта</DataPath>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="ИмяВариантаКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="ИмяВариантаРасширеннаяПодсказка" id="52"/>
+				</InputField>
+				<InputField name="Пользователь" id="53">
+					<DataPath>Запись.Пользователь</DataPath>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="ПользовательКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="ПользовательРасширеннаяПодсказка" id="55"/>
+				</InputField>
+				<UsualGroup name="Группа1" id="40">
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="41"/>
+					<ChildItems>
+						<InputField name="ДатаНачала" id="7">
+							<DataPath>Запись.ДатаНачала</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Начало</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДатаНачалаКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="ДатаНачалаРасширеннаяПодсказка" id="9"/>
+						</InputField>
+						<InputField name="ДатаОкончания" id="10">
+							<DataPath>Запись.ДатаОкончания</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Окончание</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДатаОкончанияКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="ДатаОкончанияРасширеннаяПодсказка" id="12"/>
+						</InputField>
+						<InputField name="Миллисекунды" id="16">
+							<DataPath>Запись.Миллисекунды</DataPath>
+							<Width>4</Width>
+							<EditFormat>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ЧДЦ=2; ЧН=0,00</v8:content>
+								</v8:item>
+							</EditFormat>
+							<ContextMenu name="МиллисекундыКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="МиллисекундыРасширеннаяПодсказка" id="18"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа3" id="44">
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="45"/>
+					<ChildItems>
+						<InputField name="НомерПопытки" id="19">
+							<DataPath>Запись.НомерПопытки</DataPath>
+							<ContextMenu name="НомерПопыткиКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="НомерПопыткиРасширеннаяПодсказка" id="21"/>
+						</InputField>
+						<InputField name="КоличествоПовторовПриАварийномЗавершении" id="22">
+							<DataPath>Запись.КоличествоПовторовПриАварийномЗавершении</DataPath>
+							<ContextMenu name="КоличествоПовторовПриАварийномЗавершенииКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="КоличествоПовторовПриАварийномЗавершенииРасширеннаяПодсказка" id="24"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа5" id="48">
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="49"/>
+					<ChildItems>
+						<CheckBoxField name="ЭксклюзивноеВыполнение" id="25">
+							<DataPath>Запись.ЭксклюзивноеВыполнение</DataPath>
+							<ContextMenu name="ЭксклюзивноеВыполнениеКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="ЭксклюзивноеВыполнениеРасширеннаяПодсказка" id="27"/>
+						</CheckBoxField>
+						<CheckBoxField name="ВыполнятьЧерезРегламентноеЗадание" id="28">
+							<DataPath>Запись.ВыполнятьЧерезРегламентноеЗадание</DataPath>
+							<ContextMenu name="ВыполнятьЧерезРегламентноеЗаданиеКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="ВыполнятьЧерезРегламентноеЗаданиеРасширеннаяПодсказка" id="30"/>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="ОписаниеОшибки" id="31">
+					<DataPath>Запись.ОписаниеОшибки</DataPath>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Height>8</Height>
+					<MultiLine>true</MultiLine>
+					<ContextMenu name="ОписаниеОшибкиКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="ОписаниеОшибкиРасширеннаяПодсказка" id="33"/>
+				</InputField>
+				<InputField name="ДатаНачалаУниверсальная" id="34">
+					<DataPath>Запись.ДатаНачалаУниверсальная</DataPath>
+					<Visible>false</Visible>
+					<ContextMenu name="ДатаНачалаУниверсальнаяКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ДатаНачалаУниверсальнаяРасширеннаяПодсказка" id="36"/>
+				</InputField>
+				<InputField name="ДатаОкончанияУниверсальная" id="37">
+					<DataPath>Запись.ДатаОкончанияУниверсальная</DataPath>
+					<Visible>false</Visible>
+					<ContextMenu name="ДатаОкончанияУниверсальнаяКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="ДатаОкончанияУниверсальнаяРасширеннаяПодсказка" id="39"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.ЛогированиеРегламентныхЗаданий</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СтатусВыполнения</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Запись.СтатусВыполнения</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.СостоянияЗаданий.ОшибкаВыполнения</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+</Form>

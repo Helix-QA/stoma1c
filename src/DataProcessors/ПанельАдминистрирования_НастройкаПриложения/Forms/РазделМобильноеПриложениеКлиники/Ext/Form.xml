@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Мобильное приложение клиники</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<Group>Vertical</Group>
+	<HorizontalAlign>Center</HorizontalAlign>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="ДекорацияВертикальныйОтступ" id="9">
+			<ContextMenu name="ДекорацияВертикальныйОтступКонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="ДекорацияВертикальныйОтступРасширеннаяПодсказка" id="11"/>
+		</LabelDecoration>
+		<UsualGroup name="НастройкаМобильногоПриложения" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки мобильного приложения стоматологии</v8:content>
+				</v8:item>
+			</Title>
+			<TitleFont ref="style:NormalTextFont" height="11" kind="StyleItem"/>
+			<Group>Vertical</Group>
+			<HorizontalAlign>Left</HorizontalAlign>
+			<Representation>None</Representation>
+			<ExtendedTooltip name="НастройкаМобильногоПриложенияРасширеннаяПодсказка" id="5"/>
+			<ChildItems>
+				<CheckBoxField name="РазрешитьРедактированиеПриемовВрачом" id="91">
+					<DataPath>РазрешитьРедактированиеПриемовВрачом</DataPath>
+					<CheckBoxType>Switcher</CheckBoxType>
+					<ContextMenu name="РазрешитьРедактированиеПриемовВрачомКонтекстноеМеню" id="92"/>
+					<ExtendedTooltip name="РазрешитьРедактированиеПриемовВрачомРасширеннаяПодсказка" id="93"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВыводитьТелефонКлиентаВрачу" id="85">
+					<DataPath>ВыводитьТелефонКлиентаВрачу</DataPath>
+					<CheckBoxType>Switcher</CheckBoxType>
+					<ContextMenu name="ВыводитьТелефонКлиентаВрачуКонтекстноеМеню" id="86"/>
+					<ExtendedTooltip name="ВыводитьТелефонКлиентаВрачуРасширеннаяПодсказка" id="87"/>
+				</CheckBoxField>
+				<CheckBoxField name="НеВыводитьИсториюПриемовПоКлиенту" id="100">
+					<DataPath>НеВыводитьИсториюПриемовПоКлиенту</DataPath>
+					<CheckBoxType>Switcher</CheckBoxType>
+					<ContextMenu name="НеВыводитьИсториюПриемовПоКлиентуКонтекстноеМеню" id="101"/>
+					<ExtendedTooltip name="НеВыводитьИсториюПриемовПоКлиентуРасширеннаяПодсказка" id="102"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВыводитьВрачуКомментарий" id="97">
+					<DataPath>ВыводитьВрачуКомментарий</DataPath>
+					<CheckBoxType>Switcher</CheckBoxType>
+					<ContextMenu name="ВыводитьВрачуКомментарийКонтекстноеМеню" id="98"/>
+					<ExtendedTooltip name="ВыводитьВрачуКомментарийРасширеннаяПодсказка" id="99"/>
+				</CheckBoxField>
+				<UsualGroup name="ГруппаУведомления" id="40">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Уведомления врача</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont ref="style:NormalTextFont" height="11" kind="StyleItem"/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Разрешить отправлять push-уведомления мастерам через приложение на мобильное устройство</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ExtendedTooltip name="ГруппаУведомленияРасширеннаяПодсказка" id="41"/>
+					<ChildItems>
+						<CheckBoxField name="УведомлятьВрачаОбИзмененииПриемов" id="94">
+							<DataPath>УведомлятьВрачаОбИзмененииПриемов</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Разрешить присылать push-уведомления врачу на мобильный телефон когда клиент пришел, при создании, изменении времени и отмене приема.</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<CheckBoxType>Switcher</CheckBoxType>
+							<ContextMenu name="УведомлятьВрачаОбИзмененииПриемовКонтекстноеМеню" id="95"/>
+							<ExtendedTooltip name="УведомлятьВрачаОбИзмененииПриемовРасширеннаяПодсказка" id="96"/>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="РазрешитьРедактированиеПриемовВрачом" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разрешить редактирование приемов врачом</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="УведомлятьВрачаОбИзмененииПриемов" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уведомлять врача об изменении приемов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="НеВыводитьИсториюПриемовПоКлиенту" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Не выводить историю приемов по клиенту</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВыводитьВрачуКомментарий" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выводить врачу комментарий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВыводитьТелефонКлиентаВрачу" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выводить телефон клиента врачу</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

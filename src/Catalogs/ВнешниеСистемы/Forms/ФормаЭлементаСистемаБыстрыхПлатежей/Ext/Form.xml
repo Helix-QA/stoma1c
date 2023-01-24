@@ -1,0 +1,1049 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<HorizontalAlign>Center</HorizontalAlign>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаВыравнивание" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа выравнивание</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group alignment</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа выравнивание</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group alignment</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>false</HorizontalStretch>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>AlwaysHorizontal</Group>
+			<VerticalSpacing>Single</VerticalSpacing>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаВыравниваниеРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаЛеваяКолонка" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа левая колонка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа левая колонка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>25</Width>
+					<VerticalStretch>true</VerticalStretch>
+					<Group>Vertical</Group>
+					<VerticalSpacing>Double</VerticalSpacing>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<BackColor>style:БудущиеПодпискиЦвет</BackColor>
+					<ExtendedTooltip name="ГруппаЛеваяКолонкаРасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<PictureDecoration name="Логотип" id="5">
+							<Width>25</Width>
+							<Height>5</Height>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Логотип</v8:content>
+								</v8:item>
+							</Title>
+							<PictureSize>Proportionally</PictureSize>
+							<Zoomable>true</Zoomable>
+							<Picture>
+								<xr:Ref>CommonPicture.СсылкиНаОплату_СБП_256</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="ЛоготипКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="ЛоготипРасширеннаяПодсказка" id="7"/>
+						</PictureDecoration>
+						<LabelDecoration name="НазваниеИнтеграции" id="8">
+							<Width>25</Width>
+							<Font ref="style:ExtraLargeTextFont" kind="StyleItem"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Система быстрых платежей</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="НазваниеИнтеграцииКонтекстноеМеню" id="9"/>
+							<ExtendedTooltip name="НазваниеИнтеграцииРасширеннаяПодсказка" id="10"/>
+						</LabelDecoration>
+						<LabelDecoration name="ОписаниеИнтеграции" id="11">
+							<Width>25</Width>
+							<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Внешняя система для быстрых платежей</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ОписаниеИнтеграцииКонтекстноеМеню" id="12"/>
+							<ExtendedTooltip name="ОписаниеИнтеграцииРасширеннаяПодсказка" id="13"/>
+						</LabelDecoration>
+						<CheckBoxField name="Используется" id="14">
+							<DataPath>Объект.Используется</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Используется</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+							<CheckBoxType>Switcher</CheckBoxType>
+							<ContextMenu name="ИспользуетсяКонтекстноеМеню" id="15"/>
+							<ExtendedTooltip name="ИспользуетсяРасширеннаяПодсказка" id="16"/>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаПраваяКолонка" id="54">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основная информация</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Main information</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Group left speaker</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа правая колонка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>50</Width>
+					<Group>Vertical</Group>
+					<HorizontalAlign>Left</HorizontalAlign>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПраваяКолонкаРасширеннаяПодсказка" id="55"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаКлючПриложения" id="287">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа ключ приложения</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаКлючПриложенияРасширеннаяПодсказка" id="288"/>
+							<ChildItems>
+								<InputField name="КлючПриложения" id="289">
+									<DataPath>Объект.КлючПриложения</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>37</MaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="КлючПриложенияКонтекстноеМеню" id="290"/>
+									<ExtendedTooltip name="КлючПриложенияРасширеннаяПодсказка" id="291"/>
+									<Events>
+										<Event name="OnChange">КлючПриложенияWalletПриИзменении</Event>
+									</Events>
+								</InputField>
+								<Button name="СоздатьКлюч" id="292">
+									<Type>UsualButton</Type>
+									<Visible>false</Visible>
+									<Representation>Picture</Representation>
+									<CommandName>Form.Command.СоздатьКлюч</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.DataCompositionSettingsWizard</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="СоздатьКлючРасширеннаяПодсказка" id="293"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаВебхук" id="348">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа вебхук</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа вебхук</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВебхукРасширеннаяПодсказка" id="349"/>
+							<ChildItems>
+								<InputField name="Webhook" id="350">
+									<DataPath>Webhook</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>52</MaxWidth>
+									<ContextMenu name="WebhookКонтекстноеМеню" id="351"/>
+									<ExtendedTooltip name="WebhookРасширеннаяПодсказка" id="352"/>
+								</InputField>
+								<UsualGroup name="ГруппаКнопкаСкопировать" id="353">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа кнопка скопировать</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа кнопка скопировать</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>HorizontalIfPossible</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<BackColor>style:AccentColor</BackColor>
+									<ExtendedTooltip name="ГруппаКнопкаСкопироватьРасширеннаяПодсказка" id="354"/>
+									<ChildItems>
+										<Button name="СкопироватьАдресОбработчика" id="355">
+											<Type>UsualButton</Type>
+											<Representation>Text</Representation>
+											<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+											<CommandName>Form.Command.СкопироватьАдресОбработчика</CommandName>
+											<TextColor>style:FormBackColor</TextColor>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Копировать</v8:content>
+												</v8:item>
+											</Title>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<ButtonImportance>Supplementary</ButtonImportance>
+											<ExtendedTooltip name="СкопироватьАдресОбработчикаРасширеннаяПодсказка" id="356"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаСтруктурноЭквайринговыеСоответствия" id="302">
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа структурно эквайринговые соответствия</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group structurally acquiring matching</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа структурно эквайринговые соответствия</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group structurally acquiring matching</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>StrongSeparation</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаСтруктурноЭквайринговыеСоответствияРасширеннаяПодсказка" id="303"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияСтруктурныеЕдиницы" id="304">
+									<TextColor>#4CC1FC</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Структурные единицы:</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Structural units:</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияСтруктурныеЕдиницыКонтекстноеМеню" id="305"/>
+									<ExtendedTooltip name="ДекорацияСтруктурныеЕдиницыРасширеннаяПодсказка" id="306"/>
+								</LabelDecoration>
+								<UsualGroup name="ГруппаСтрокаСтруктурнойЕдиницы_ДляКопирпования" id="307">
+									<Visible>false</Visible>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа строка структурной единицы для копирпования</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Group line structural unit for copying</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа строка структурной единицы для копирпования</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Group line structural unit for copying</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>HorizontalIfPossible</Group>
+									<HorizontalSpacing>Half</HorizontalSpacing>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаСтрокаСтруктурнойЕдиницы_ДляКопирпованияРасширеннаяПодсказка" id="308"/>
+									<ChildItems>
+										<InputField name="СтруктурнаяЕдиница_ДляКопирования" id="309">
+											<DataPath>СтруктурноЭквайринговыеСоответствия[0].СтруктурнаяЕдиница</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<MaxWidth>28</MaxWidth>
+											<ContextMenu name="СтруктурнаяЕдиница_ДляКопированияКонтекстноеМеню" id="310"/>
+											<ExtendedTooltip name="СтруктурнаяЕдиница_ДляКопированияРасширеннаяПодсказка" id="311"/>
+											<Events>
+												<Event name="OnChange">СтруктурнаяЕдиница_ДляКопированияПриИзменении</Event>
+											</Events>
+										</InputField>
+										<UsualGroup name="ГруппаЭквайринговыеТерминалыВсплывающая_ДляКопирования" id="312">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content> </v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content> </v8:content>
+												</v8:item>
+											</Title>
+											<TitleFont ref="style:NormalTextFont" height="721225475" kind="StyleItem"/>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа эквайринговые терминалы всплывающая для копирования</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Group acquiring terminals popup for copy</v8:content>
+												</v8:item>
+											</ToolTip>
+											<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+											<Group>Vertical</Group>
+											<Behavior>PopUp</Behavior>
+											<Representation>None</Representation>
+											<ExtendedTooltip name="ГруппаЭквайринговыеТерминалыВсплывающая_ДляКопированияРасширеннаяПодсказка" id="313"/>
+											<ChildItems>
+												<UsualGroup name="ГруппаОбщаяЭквайринговыеТерминалы_ДляКопирования" id="314">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа общая эквайринговые терминалы для копирования</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Group common acquiring terminals for copy</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа общая эквайринговые терминалы для копирования</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Group common acquiring terminals for copy</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Representation>StrongSeparation</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаОбщаяЭквайринговыеТерминалы_ДляКопированияРасширеннаяПодсказка" id="315"/>
+													<ChildItems>
+														<LabelDecoration name="ДекорацияЭквайринговыйТерминалы_ДляКопирования" id="316">
+															<TextColor>#4CC1FC</TextColor>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Эквайринговые терминалы:</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Acquiring Terminals:</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ДекорацияЭквайринговыйТерминалы_ДляКопированияКонтекстноеМеню" id="317"/>
+															<ExtendedTooltip name="ДекорацияЭквайринговыйТерминалы_ДляКопированияРасширеннаяПодсказка" id="318"/>
+														</LabelDecoration>
+														<UsualGroup name="ГруппаСписокЭквайринговыхТерминалов_ДляКопирования" id="319">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа список эквайринговых терминалов для копирования</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Group list of acquiring terminals for copy</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа список эквайринговых терминалов для копирования</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Group list of acquiring terminals for copy</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>Vertical</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаСписокЭквайринговыхТерминалов_ДляКопированияРасширеннаяПодсказка" id="320"/>
+															<ChildItems>
+																<UsualGroup name="ГруппаЭквайринговыйТерминалОрганизация_ДляКопирования" id="321">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Группа эквайринговый терминал организация для копирования</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Group acquiring terminal organization for copying</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Группа эквайринговый терминал организация для копирования</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Group acquiring terminal organization for copying</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<Group>HorizontalIfPossible</Group>
+																	<HorizontalSpacing>Half</HorizontalSpacing>
+																	<Representation>None</Representation>
+																	<ShowTitle>false</ShowTitle>
+																	<ExtendedTooltip name="ГруппаЭквайринговыйТерминалОрганизация_ДляКопированияРасширеннаяПодсказка" id="322"/>
+																	<ChildItems>
+																		<InputField name="ЭквайринговыйТерминал_ДляКопирования" id="323">
+																			<DataPath>СтруктурноЭквайринговыеСоответствия[0].ЭквайринговыйТерминал</DataPath>
+																			<TitleLocation>None</TitleLocation>
+																			<AutoMaxWidth>false</AutoMaxWidth>
+																			<MaxWidth>26</MaxWidth>
+																			<ContextMenu name="ЭквайринговыйТерминал_ДляКопированияКонтекстноеМеню" id="324"/>
+																			<ExtendedTooltip name="ЭквайринговыйТерминал_ДляКопированияРасширеннаяПодсказка" id="325"/>
+																			<Events>
+																				<Event name="OnChange">ЭквайринговыйТерминал_ДляКопированияПриИзменении</Event>
+																			</Events>
+																		</InputField>
+																		<LabelDecoration name="ДекорацияОрганизация_ДляКопирования" id="326">
+																			<ContextMenu name="ДекорацияОрганизация_ДляКопированияКонтекстноеМеню" id="327"/>
+																			<ExtendedTooltip name="ДекорацияОрганизация_ДляКопированияРасширеннаяПодсказка" id="328"/>
+																		</LabelDecoration>
+																		<PictureDecoration name="ДекорацияУдалитьСтрокуЭТ_ДляКопипрования" id="329">
+																			<Title formatted="false">
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Декорация удалить строку с е для копипрования</v8:content>
+																				</v8:item>
+																				<v8:item>
+																					<v8:lang>en</v8:lang>
+																					<v8:content>Decoration delete line with e for copying</v8:content>
+																				</v8:item>
+																			</Title>
+																			<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+																			<GroupVerticalAlign>Center</GroupVerticalAlign>
+																			<Hyperlink>true</Hyperlink>
+																			<Picture>
+																				<xr:Ref>CommonPicture.Крестик</xr:Ref>
+																				<xr:LoadTransparent>true</xr:LoadTransparent>
+																			</Picture>
+																			<ContextMenu name="ДекорацияУдалитьСтрокуЭТ_ДляКопипрованияКонтекстноеМеню" id="330"/>
+																			<ExtendedTooltip name="ДекорацияУдалитьСтрокуЭТ_ДляКопипрованияРасширеннаяПодсказка" id="331"/>
+																			<Events>
+																				<Event name="Click">ДекорацияУдалитьСтрокуЭТ_ДляКопипрованияНажатие</Event>
+																			</Events>
+																		</PictureDecoration>
+																	</ChildItems>
+																</UsualGroup>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="ГруппаДобавлениеЭквайринговогоТерминала_ДляКопирования" id="332">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа добавление эквайрингового терминала для копирования</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Group adding an acquiring for copy terminal</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа добавление эквайрингового терминала для копирования</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Group adding an acquiring for copy terminal</v8:content>
+																</v8:item>
+															</ToolTip>
+															<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+															<Group>AlwaysHorizontal</Group>
+															<HorizontalSpacing>None</HorizontalSpacing>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаДобавлениеЭквайринговогоТерминала_ДляКопированияРасширеннаяПодсказка" id="333"/>
+															<ChildItems>
+																<Button name="ДобавитьЭквайринговыйТерминал_ДляКопирования" id="334">
+																	<Type>UsualButton</Type>
+																	<CommandName>Form.Command.ДобавитьЭквайринговыйТерминал</CommandName>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>+ Добавить</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>+ Add</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ShapeRepresentation>None</ShapeRepresentation>
+																	<ButtonImportance>Supplementary</ButtonImportance>
+																	<ExtendedTooltip name="ДобавитьЭквайринговыйТерминал_ДляКопированияРасширеннаяПодсказка" id="335"/>
+																</Button>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+										<LabelDecoration name="ДекорацияНажатиеЭквайриговыеТерминалы_ДляКопирования" id="336">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Эквайринговые терминалы(0)</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Acquiring terminals (0)</v8:content>
+												</v8:item>
+											</Title>
+											<Hyperlink>true</Hyperlink>
+											<ContextMenu name="ДекорацияНажатиеЭквайриговыеТерминалы_ДляКопированияКонтекстноеМеню" id="337"/>
+											<ExtendedTooltip name="ДекорацияНажатиеЭквайриговыеТерминалы_ДляКопированияРасширеннаяПодсказка" id="338"/>
+											<Events>
+												<Event name="Click">ДекорацияЭквайриговыеТерминалы_ДляКопированияНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<PictureDecoration name="ДекорацияУдалитьСтрокуСЕ_ДляКопипрования" id="339">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Декорация удалить строку с е для копипрования</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Decoration delete line with e for copying</v8:content>
+												</v8:item>
+											</Title>
+											<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+											<GroupVerticalAlign>Center</GroupVerticalAlign>
+											<Hyperlink>true</Hyperlink>
+											<Picture>
+												<xr:Ref>CommonPicture.Крестик</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="ДекорацияУдалитьСтрокуСЕ_ДляКопипрованияКонтекстноеМеню" id="340"/>
+											<ExtendedTooltip name="ДекорацияУдалитьСтрокуСЕ_ДляКопипрованияРасширеннаяПодсказка" id="341"/>
+											<Events>
+												<Event name="Click">ДекорацияУдалитьСтрокуСЕ_ДляКопипрованияНажатие</Event>
+											</Events>
+										</PictureDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаОбщаяДляСтруктурныхЕдиниц" id="342">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа общая для структурных единиц</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Group total for structural units</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа общая для структурных единиц</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Group total for structural units</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаОбщаяДляСтруктурныхЕдиницРасширеннаяПодсказка" id="343"/>
+								</UsualGroup>
+								<UsualGroup name="ГруппаДобавитьДобавитьСтруктурную" id="344">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа добавить добавить структурную</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Group add add structural</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа добавить добавить структурную</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Group add add structural</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>50</Width>
+									<Group>AlwaysHorizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаДобавитьДобавитьСтруктурнуюРасширеннаяПодсказка" id="345"/>
+									<ChildItems>
+										<Button name="ДобавитьСтруктурнуюЕдиницу" id="346">
+											<Type>UsualButton</Type>
+											<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+											<CommandName>Form.Command.ДобавитьСтруктурнуюЕдиницу</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>+ Добавить</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>+ Add</v8:content>
+												</v8:item>
+											</Title>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<ButtonImportance>Supplementary</ButtonImportance>
+											<ExtendedTooltip name="ДобавитьСтруктурнуюЕдиницуРасширеннаяПодсказка" id="347"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаТипВнешнейСистемы" id="56">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа тип внешней системы</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group typeof external systems</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа тип внешней системы</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group typeof external systems</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<HorizontalSpacing>Half</HorizontalSpacing>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаТипВнешнейСистемыРасширеннаяПодсказка" id="57"/>
+							<ChildItems>
+								<InputField name="ТипВнешнейСистемы" id="58">
+									<DataPath>Объект.ТипВнешнейСистемы</DataPath>
+									<Visible>false</Visible>
+									<MaxWidth>36</MaxWidth>
+									<TextEdit>false</TextEdit>
+									<ContextMenu name="ТипВнешнейСистемыКонтекстноеМеню" id="59"/>
+									<ExtendedTooltip name="ТипВнешнейСистемыРасширеннаяПодсказка" id="60"/>
+									<Events>
+										<Event name="OnChange">ТипВнешнейСистемыПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<LabelDecoration name="ДекорацияВысота" id="239">
+							<Height>1</Height>
+							<VerticalStretch>true</VerticalStretch>
+							<ContextMenu name="ДекорацияВысотаКонтекстноеМеню" id="240"/>
+							<ExtendedTooltip name="ДекорацияВысотаРасширеннаяПодсказка" id="241"/>
+						</LabelDecoration>
+						<UsualGroup name="ГруппаПодвал" id="294">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа подвал</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа подвал</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>HorizontalIfPossible</Group>
+							<Representation>WeakSeparation</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПодвалРасширеннаяПодсказка" id="295"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаУдалить" id="296">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа удалить</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа удалить</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>15</Width>
+									<GroupVerticalAlign>Center</GroupVerticalAlign>
+									<Group>HorizontalIfPossible</Group>
+									<Representation>WeakSeparation</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаУдалитьРасширеннаяПодсказка" id="297"/>
+									<ChildItems>
+										<Button name="Удалить" id="298">
+											<Type>UsualButton</Type>
+											<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+											<CommandName>Form.Command.УдалитьИЗакрыть</CommandName>
+											<TextColor>style:SpecialTextColor</TextColor>
+											<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Удалить</v8:content>
+												</v8:item>
+											</Title>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<ButtonImportance>Supplementary</ButtonImportance>
+											<ExtendedTooltip name="УдалитьРасширеннаяПодсказка" id="299"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаСохранитьИЗакрыть" id="248">
+									<Title>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Group card toadd</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа сохранить текст заметки</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Group save text notes</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>15</Width>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<BackColor>style:AccentColor</BackColor>
+									<ExtendedTooltip name="ГруппаСохранитьИЗакрытьРасширеннаяПодсказка" id="249"/>
+									<ChildItems>
+										<Button name="Сохранить" id="250">
+											<Type>UsualButton</Type>
+											<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+											<CommandName>Form.StandardCommand.WriteAndClose</CommandName>
+											<TextColor>#FFFFFF</TextColor>
+											<Font ref="style:NormalTextFont" height="11" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Сохранить</v8:content>
+												</v8:item>
+											</Title>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<ButtonImportance>Supplementary</ButtonImportance>
+											<ExtendedTooltip name="СохранитьРасширеннаяПодсказка" id="251"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="СтраницаСтруктурныеЕдиницы" id="300">
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Структурные единицы</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Structural units</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страница публикация</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Page publication</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>WeakSeparation</Representation>
+							<ExtendedTooltip name="СтраницаСтруктурныеЕдиницыРасширеннаяПодсказка" id="301"/>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ВнешниеСистемы</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="СтруктурноЭквайринговыеСоответствия" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Структурно эквайринговые соответствия</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Structurally Acquiring Compliance</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="СтруктурнаяЕдиница" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Структурная единица</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Structural unit</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.СтруктурныеЕдиницы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЭквайринговыйТерминал" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Эквайринговый терминал</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Acquiring terminal</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ЭквайринговыеТерминалы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КлючСтроки" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ключ строки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Line key</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:UUID</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Webhook" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Webhook</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СоздатьКлюч" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать ключ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сгенерировать ключ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьКлюч</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ДобавитьЭквайринговыйТерминал" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить эквайринговый терминал</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Add an acquiring terminal</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить эквайринговый терминал</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Add an acquiring terminal</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьЭквайринговыйТерминал</Action>
+		</Command>
+		<Command name="ДобавитьСтруктурнуюЕдиницу" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить структурную единицу</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Add a structural unit</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить структурную единицу</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Add a structural unit</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьСтруктурнуюЕдиницу</Action>
+		</Command>
+		<Command name="СкопироватьАдресОбработчика" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скопировать адрес обработчика</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скопировать адрес обработчика</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Копировать</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СкопироватьURL</Action>
+		</Command>
+		<Command name="УдалитьИЗакрыть" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить и закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить и закрыть</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьИЗакрыть</Action>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>CommonCommand.ПрисоединенныеФайлыКОбъекту</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

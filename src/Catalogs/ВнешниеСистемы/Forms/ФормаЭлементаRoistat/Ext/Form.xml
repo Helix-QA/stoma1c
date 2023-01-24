@@ -1,0 +1,702 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<HorizontalAlign>Center</HorizontalAlign>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаВыравнивание" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа выравнивание</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group alignment</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа выравнивание</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group alignment</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>false</HorizontalStretch>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>AlwaysHorizontal</Group>
+			<VerticalSpacing>Single</VerticalSpacing>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаВыравниваниеРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаЛеваяКолонка" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа левая колонка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа левая колонка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>25</Width>
+					<VerticalStretch>true</VerticalStretch>
+					<Group>Vertical</Group>
+					<VerticalSpacing>Double</VerticalSpacing>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<BackColor>style:БудущиеПодпискиЦвет</BackColor>
+					<ExtendedTooltip name="ГруппаЛеваяКолонкаРасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<PictureDecoration name="Логотип" id="5">
+							<Width>25</Width>
+							<Height>5</Height>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Логотип</v8:content>
+								</v8:item>
+							</Title>
+							<PictureSize>Proportionally</PictureSize>
+							<Zoomable>true</Zoomable>
+							<Picture>
+								<xr:Ref>CommonPicture.ЛоготипRoistat</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="ЛоготипКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="ЛоготипРасширеннаяПодсказка" id="7"/>
+						</PictureDecoration>
+						<LabelDecoration name="НазваниеИнтеграции" id="8">
+							<Width>25</Width>
+							<Font ref="style:ExtraLargeTextFont" kind="StyleItem"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Roistat</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="НазваниеИнтеграцииКонтекстноеМеню" id="9"/>
+							<ExtendedTooltip name="НазваниеИнтеграцииРасширеннаяПодсказка" id="10"/>
+						</LabelDecoration>
+						<LabelDecoration name="ОписаниеИнтеграции" id="11">
+							<Width>25</Width>
+							<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сервис сквозной аналитики</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ОписаниеИнтеграцииКонтекстноеМеню" id="12"/>
+							<ExtendedTooltip name="ОписаниеИнтеграцииРасширеннаяПодсказка" id="13"/>
+						</LabelDecoration>
+						<CheckBoxField name="Используется" id="14">
+							<DataPath>Объект.Используется</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Используется</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+							<CheckBoxType>Switcher</CheckBoxType>
+							<ContextMenu name="ИспользуетсяКонтекстноеМеню" id="15"/>
+							<ExtendedTooltip name="ИспользуетсяРасширеннаяПодсказка" id="16"/>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаПраваяКолонка" id="54">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основная информация</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Main information</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Group left speaker</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа правая колонка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>50</Width>
+					<Group>Vertical</Group>
+					<HorizontalAlign>Left</HorizontalAlign>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПраваяКолонкаРасширеннаяПодсказка" id="55"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаТипВнешнейСистемы" id="56">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа тип внешней системы</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group typeof external systems</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа тип внешней системы</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group typeof external systems</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<HorizontalSpacing>Half</HorizontalSpacing>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаТипВнешнейСистемыРасширеннаяПодсказка" id="57"/>
+							<ChildItems>
+								<InputField name="ТипВнешнейСистемы" id="58">
+									<DataPath>Объект.ТипВнешнейСистемы</DataPath>
+									<Visible>false</Visible>
+									<MaxWidth>36</MaxWidth>
+									<TextEdit>false</TextEdit>
+									<ContextMenu name="ТипВнешнейСистемыКонтекстноеМеню" id="59"/>
+									<ExtendedTooltip name="ТипВнешнейСистемыРасширеннаяПодсказка" id="60"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаОбщая" id="80">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа общая</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОбщаяРасширеннаяПодсказка" id="81"/>
+							<ChildItems>
+								<InputField name="СтруктурнаяЕдиница" id="82">
+									<DataPath>Объект.СтруктурнаяЕдиница</DataPath>
+									<ContextMenu name="СтруктурнаяЕдиницаКонтекстноеМеню" id="83"/>
+									<ExtendedTooltip name="СтруктурнаяЕдиницаРасширеннаяПодсказка" id="84"/>
+								</InputField>
+								<InputField name="НомерПроекта" id="262">
+									<DataPath>НомерПроекта</DataPath>
+									<ContextMenu name="НомерПроектаКонтекстноеМеню" id="263"/>
+									<ExtendedTooltip name="НомерПроектаРасширеннаяПодсказка" id="264"/>
+								</InputField>
+								<InputField name="АпиКлючRoistat" id="265">
+									<DataPath>АпиКлючRoistat</DataPath>
+									<ContextMenu name="АпиКлючRoistatКонтекстноеМеню" id="266"/>
+									<ExtendedTooltip name="АпиКлючRoistatРасширеннаяПодсказка" id="267"/>
+								</InputField>
+								<UsualGroup name="ГруппаURL" id="271">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа URL</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа URL</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаURLРасширеннаяПодсказка" id="272"/>
+									<ChildItems>
+										<InputField name="URLСтраницы" id="268">
+											<DataPath>URLСтраницы</DataPath>
+											<ContextMenu name="URLСтраницыКонтекстноеМеню" id="269"/>
+											<ExtendedTooltip name="URLСтраницыРасширеннаяПодсказка" id="270"/>
+										</InputField>
+										<UsualGroup name="ГруппаКнопкаСкопировать" id="276">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа кнопка скопировать</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа кнопка скопировать</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>HorizontalIfPossible</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаКнопкаСкопироватьРасширеннаяПодсказка" id="277"/>
+											<ChildItems>
+												<Button name="СкопироватьАдресОбработчика" id="278">
+													<Type>UsualButton</Type>
+													<Representation>Picture</Representation>
+													<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+													<CommandName>Form.Command.СкопироватьАдресОбработчика</CommandName>
+													<TextColor>style:FormBackColor</TextColor>
+													<Picture>
+														<xr:Ref>CommonPicture.КопироватьВБуферОбмена</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Копировать</v8:content>
+														</v8:item>
+													</Title>
+													<ShapeRepresentation>None</ShapeRepresentation>
+													<ButtonImportance>Supplementary</ButtonImportance>
+													<ExtendedTooltip name="СкопироватьАдресОбработчикаРасширеннаяПодсказка" id="279"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаКлючПриложения" id="252">
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа ключ приложения</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаКлючПриложенияРасширеннаяПодсказка" id="253"/>
+							<ChildItems>
+								<InputField name="КлючПриложения" id="254">
+									<DataPath>Объект.КлючПриложения</DataPath>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>36</MaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="КлючПриложенияКонтекстноеМеню" id="255"/>
+									<ExtendedTooltip name="КлючПриложенияРасширеннаяПодсказка" id="256"/>
+								</InputField>
+								<Button name="СоздатьКлюч" id="257">
+									<Type>UsualButton</Type>
+									<Representation>Picture</Representation>
+									<CommandName>Form.Command.СоздатьКлюч</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.DataCompositionSettingsWizard</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="СоздатьКлючРасширеннаяПодсказка" id="258"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Инструкция" id="280">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Инструкция</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Инструкция</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>WeakSeparation</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ИнструкцияРасширеннаяПодсказка" id="281"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияПояснение" id="285">
+									<Width>49</Width>
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;b&gt;&lt;i&gt;&lt;fontsize 12&gt;Чтобы подключить интеграцию с сервисом сквозной аналитики Roistat выполните следующие действия:&lt;/&gt;&lt;/&gt;&lt;/&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияПояснениеКонтекстноеМеню" id="286"/>
+									<ExtendedTooltip name="ДекорацияПояснениеРасширеннаяПодсказка" id="287"/>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация1" id="282">
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;fontsize 12&gt;1. Авторизуйтесь в сервисе &lt;/&gt;&lt;link https://roistat.com&gt;&lt;fontsize 12&gt;Roistat&lt;/&gt;&lt;/&gt;.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация1КонтекстноеМеню" id="283"/>
+									<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="284"/>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация2" id="288">
+									<Width>49</Width>
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;fontsize 12&gt;2. Перейдите в настройки профиля раздел API. Скопируйте номер проекта и секретный API ключ в соответствующие поля формы.&lt;/&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация2КонтекстноеМеню" id="289"/>
+									<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="290"/>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация3" id="291">
+									<Width>50</Width>
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;fontsize 12&gt;3. На сайте Roistat перейдите в настройки интеграции. В поле CRM выберите - Своя CRM (Новая интеграция).&lt;/&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация3КонтекстноеМеню" id="292"/>
+									<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="293"/>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация4" id="294">
+									<Width>50</Width>
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;fontsize 12&gt;4. Скопируйте URL Страницы в соответствующее поле настройки авторизации, после этого нажмите Сохранить.&lt;/&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация4КонтекстноеМеню" id="295"/>
+									<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="296"/>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация5" id="297">
+									<Width>51</Width>
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;fontsize 12&gt;5. Меню отправки данных в CRM заполните следующим образом:
+&lt;/&gt;&lt;fontsize 12&gt;           Метод отправки данных: GET
+&lt;/&gt;&lt;fontsize 12&gt;           Формат отправки данных: JSON
+&lt;/&gt;&lt;fontsize 12&gt;           Адрес обработчика заявок: (Вставте ваш URL страницы)&lt;/&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация5КонтекстноеМеню" id="298"/>
+									<ExtendedTooltip name="Декорация5РасширеннаяПодсказка" id="299"/>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация6" id="300">
+									<Width>49</Width>
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;fontsize 12&gt;6. Перейдите в меню Управление клиентами и подключите его.&lt;/&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация6КонтекстноеМеню" id="301"/>
+									<ExtendedTooltip name="Декорация6РасширеннаяПодсказка" id="302"/>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация7" id="303">
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;fontsize 12&gt;7. Нажмите кнопку "Сохранить".&lt;/&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация7КонтекстноеМеню" id="304"/>
+									<ExtendedTooltip name="Декорация7РасширеннаяПодсказка" id="305"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<LabelDecoration name="ДекорацияВысота" id="239">
+							<Visible>false</Visible>
+							<ContextMenu name="ДекорацияВысотаКонтекстноеМеню" id="240"/>
+							<ExtendedTooltip name="ДекорацияВысотаРасширеннаяПодсказка" id="241"/>
+						</LabelDecoration>
+						<UsualGroup name="ГруппаПодвал" id="306">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа подвал</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа подвал</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>HorizontalIfPossible</Group>
+							<Representation>WeakSeparation</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПодвалРасширеннаяПодсказка" id="307"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаУдалить" id="308">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа удалить</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа удалить</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>15</Width>
+									<Group>HorizontalIfPossible</Group>
+									<Representation>WeakSeparation</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаУдалитьРасширеннаяПодсказка" id="309"/>
+									<ChildItems>
+										<Button name="Удалить" id="310">
+											<Type>UsualButton</Type>
+											<Representation>PictureAndText</Representation>
+											<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+											<CommandName>Form.Command.УдалитьИЗакрыть</CommandName>
+											<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
+											<Picture>
+												<xr:Ref>CommonPicture.ВКорзину</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Удалить</v8:content>
+												</v8:item>
+											</Title>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<ButtonImportance>Supplementary</ButtonImportance>
+											<ExtendedTooltip name="УдалитьРасширеннаяПодсказка" id="311"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаСохранитьИЗакрыть" id="248">
+									<Title>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Group card toadd</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа сохранить текст заметки</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Group save text notes</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>15</Width>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<BackColor>style:AccentColor</BackColor>
+									<ExtendedTooltip name="ГруппаСохранитьИЗакрытьРасширеннаяПодсказка" id="249"/>
+									<ChildItems>
+										<Button name="Сохранить" id="250">
+											<Type>UsualButton</Type>
+											<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+											<CommandName>Form.StandardCommand.WriteAndClose</CommandName>
+											<TextColor>style:FormBackColor</TextColor>
+											<Font ref="style:NormalTextFont" height="11" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Сохранить</v8:content>
+												</v8:item>
+											</Title>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<ButtonImportance>Supplementary</ButtonImportance>
+											<ExtendedTooltip name="СохранитьРасширеннаяПодсказка" id="251"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ВнешниеСистемы</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="НомерПроекта" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер проекта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АпиКлючRoistat" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Апи ключ Roistat</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КлючДляИнтеграции" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ключ для интеграции</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="URLСтраницы" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>URL Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="УИДСессии" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>УИДСессии</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЭтоОблако" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это облако</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СоздатьКлюч" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать ключ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сгенерировать ключ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьКлюч</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СкопироватьАдресОбработчика" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скопировать адрес обработчика</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скопировать адрес обработчика</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Копировать</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СкопироватьURL</Action>
+		</Command>
+		<Command name="УдалитьИЗакрыть" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить и закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить и закрыть</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьИЗакрыть</Action>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>CommonCommand.ПрисоединенныеФайлыКОбъекту</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

@@ -1,0 +1,601 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Выберите услуги</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<Group>Vertical</Group>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="ТаблицаСписок" id="1">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<Width>200</Width>
+			<Height>13</Height>
+			<RowSelectionMode>Cell</RowSelectionMode>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>ТаблицаУслуги</DataPath>
+			<RowPictureDataPath>2/10000000</RowPictureDataPath>
+			<CommandSet>
+				<ExcludedCommand>CancelSearch</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+				<ExcludedCommand>Find</ExcludedCommand>
+			</CommandSet>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаСписокКонтекстноеМеню" id="2">
+				<Autofill>false</Autofill>
+			</ContextMenu>
+			<AutoCommandBar name="ТаблицаСписокКоманднаяПанель" id="3"/>
+			<ExtendedTooltip name="ТаблицаСписокExtendedTooltip" id="86"/>
+			<SearchStringAddition name="ТаблицаСписокСтрокаПоиска" id="107">
+				<AdditionSource>
+					<Item>ТаблицаСписок</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаСписокСтрокаПоискаКонтекстноеМеню" id="108"/>
+				<ExtendedTooltip name="ТаблицаСписокСтрокаПоискаРасширеннаяПодсказка" id="109"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаСписокСостояниеПросмотра" id="110">
+				<AdditionSource>
+					<Item>ТаблицаСписок</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаСписокСостояниеПросмотраКонтекстноеМеню" id="111"/>
+				<ExtendedTooltip name="ТаблицаСписокСостояниеПросмотраРасширеннаяПодсказка" id="112"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаСписокУправлениеПоиском" id="113">
+				<AdditionSource>
+					<Item>ТаблицаСписок</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаСписокУправлениеПоискомКонтекстноеМеню" id="114"/>
+				<ExtendedTooltip name="ТаблицаСписокУправлениеПоискомРасширеннаяПодсказка" id="115"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<CheckBoxField name="ТаблицаСписокПометка" id="45">
+					<DataPath>ТаблицаУслуги.Пометка</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content> </v8:content>
+						</v8:item>
+					</Title>
+					<TitleBackColor>style:FormBackColor</TitleBackColor>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ТаблицаСписокПометкаКонтекстноеМеню" id="46"/>
+					<ExtendedTooltip name="ТаблицаСписокПометкаExtendedTooltip" id="87"/>
+				</CheckBoxField>
+				<InputField name="ТаблицаСписокНомерСтроки" id="47">
+					<DataPath>ТаблицаУслуги.НомерСтроки</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>№</v8:content>
+						</v8:item>
+					</Title>
+					<TitleBackColor>style:FormBackColor</TitleBackColor>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<Width>3</Width>
+					<ContextMenu name="ТаблицаСписокНомерСтрокиКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="ТаблицаСписокНомерСтрокиExtendedTooltip" id="88"/>
+				</InputField>
+				<InputField name="ТаблицаСписокВидЦен" id="49">
+					<DataPath>ТаблицаУслуги.ВидЦен</DataPath>
+					<Visible>false</Visible>
+					<ReadOnly>true</ReadOnly>
+					<TitleBackColor>style:FormBackColor</TitleBackColor>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ТаблицаСписокВидЦенКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="ТаблицаСписокВидЦенExtendedTooltip" id="89"/>
+				</InputField>
+				<InputField name="ТаблицаСписокЗуб" id="57">
+					<DataPath>ТаблицаУслуги.Зуб</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleBackColor>style:FormBackColor</TitleBackColor>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<Width>7</Width>
+					<ContextMenu name="ТаблицаСписокЗубКонтекстноеМеню" id="58"/>
+					<ExtendedTooltip name="ТаблицаСписокЗубExtendedTooltip" id="90"/>
+				</InputField>
+				<InputField name="ТаблицаСписокНоменклатура" id="65">
+					<DataPath>ТаблицаУслуги.Номенклатура</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleBackColor>style:FormBackColor</TitleBackColor>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<Width>30</Width>
+					<ContextMenu name="ТаблицаСписокНоменклатураКонтекстноеМеню" id="66"/>
+					<ExtendedTooltip name="ТаблицаСписокНоменклатураExtendedTooltip" id="91"/>
+				</InputField>
+				<InputField name="ТаблицаСписокКоличество" id="61">
+					<DataPath>ТаблицаУслуги.Количество</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleBackColor>style:FormBackColor</TitleBackColor>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<Width>10</Width>
+					<ContextMenu name="ТаблицаСписокКоличествоКонтекстноеМеню" id="62"/>
+					<ExtendedTooltip name="ТаблицаСписокКоличествоExtendedTooltip" id="92"/>
+				</InputField>
+				<InputField name="ТаблицаСписокЦена" id="81">
+					<DataPath>ТаблицаУслуги.Цена</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleBackColor>style:FormBackColor</TitleBackColor>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<Width>10</Width>
+					<ContextMenu name="ТаблицаСписокЦенаКонтекстноеМеню" id="82"/>
+					<ExtendedTooltip name="ТаблицаСписокЦенаExtendedTooltip" id="93"/>
+				</InputField>
+				<LabelField name="ТаблицаСписокКлючСтроки" id="59">
+					<DataPath>ТаблицаУслуги.КлючСтроки</DataPath>
+					<Visible>false</Visible>
+					<ReadOnly>true</ReadOnly>
+					<TitleBackColor>style:FormBackColor</TitleBackColor>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ТаблицаСписокКлючСтрокиКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="ТаблицаСписокКлючСтрокиExtendedTooltip" id="96"/>
+				</LabelField>
+				<InputField name="ТаблицаСписокКоличествоУпаковок" id="63">
+					<DataPath>ТаблицаУслуги.КоличествоУпаковок</DataPath>
+					<Visible>false</Visible>
+					<ReadOnly>true</ReadOnly>
+					<TitleBackColor>style:FormBackColor</TitleBackColor>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ТаблицаСписокКоличествоУпаковокКонтекстноеМеню" id="64"/>
+					<ExtendedTooltip name="ТаблицаСписокКоличествоУпаковокExtendedTooltip" id="97"/>
+				</InputField>
+				<InputField name="ТаблицаСписокПроцентСкидкиНаценки" id="67">
+					<DataPath>ТаблицаУслуги.ПроцентСкидкиНаценки</DataPath>
+					<Visible>false</Visible>
+					<ReadOnly>true</ReadOnly>
+					<TitleBackColor>style:FormBackColor</TitleBackColor>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ТаблицаСписокПроцентСкидкиНаценкиКонтекстноеМеню" id="68"/>
+					<ExtendedTooltip name="ТаблицаСписокПроцентСкидкиНаценкиExtendedTooltip" id="98"/>
+				</InputField>
+				<InputField name="ТаблицаСписокСтавкаНДС" id="69">
+					<DataPath>ТаблицаУслуги.СтавкаНДС</DataPath>
+					<Visible>false</Visible>
+					<ReadOnly>true</ReadOnly>
+					<TitleBackColor>style:FormBackColor</TitleBackColor>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ТаблицаСписокСтавкаНДСКонтекстноеМеню" id="70"/>
+					<ExtendedTooltip name="ТаблицаСписокСтавкаНДСExtendedTooltip" id="99"/>
+				</InputField>
+				<InputField name="ТаблицаСписокПрием" id="71">
+					<DataPath>ТаблицаУслуги.Прием</DataPath>
+					<Visible>false</Visible>
+					<ReadOnly>true</ReadOnly>
+					<TitleBackColor>style:FormBackColor</TitleBackColor>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ТаблицаСписокПриемКонтекстноеМеню" id="72"/>
+					<ExtendedTooltip name="ТаблицаСписокПриемExtendedTooltip" id="100"/>
+				</InputField>
+				<InputField name="ТаблицаСписокСумма" id="73">
+					<DataPath>ТаблицаУслуги.Сумма</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleBackColor>style:FormBackColor</TitleBackColor>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ТаблицаСписокСуммаКонтекстноеМеню" id="74"/>
+					<ExtendedTooltip name="ТаблицаСписокСуммаExtendedTooltip" id="101"/>
+				</InputField>
+				<InputField name="ТаблицаСписокВсего" id="51">
+					<DataPath>ТаблицаУслуги.Всего</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleBackColor>style:FormBackColor</TitleBackColor>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ТаблицаСписокВсегоКонтекстноеМеню" id="52"/>
+					<ExtendedTooltip name="ТаблицаСписокВсегоExtendedTooltip" id="102"/>
+				</InputField>
+				<InputField name="ТаблицаСписокСуммаАвтоматическойСкидкиНаценки" id="75">
+					<DataPath>ТаблицаУслуги.СуммаАвтоматическойСкидкиНаценки</DataPath>
+					<Visible>false</Visible>
+					<ReadOnly>true</ReadOnly>
+					<TitleBackColor>style:FormBackColor</TitleBackColor>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ТаблицаСписокСуммаАвтоматическойСкидкиНаценкиКонтекстноеМеню" id="76"/>
+					<ExtendedTooltip name="ТаблицаСписокСуммаАвтоматическойСкидкиНаценкиExtendedTooltip" id="103"/>
+				</InputField>
+				<InputField name="ТаблицаСписокСуммаНДС" id="77">
+					<DataPath>ТаблицаУслуги.СуммаНДС</DataPath>
+					<Visible>false</Visible>
+					<ReadOnly>true</ReadOnly>
+					<TitleBackColor>style:FormBackColor</TitleBackColor>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ТаблицаСписокСуммаНДСКонтекстноеМеню" id="78"/>
+					<ExtendedTooltip name="ТаблицаСписокСуммаНДСExtendedTooltip" id="104"/>
+				</InputField>
+				<InputField name="ТаблицаСписокУпаковка" id="79">
+					<DataPath>ТаблицаУслуги.Упаковка</DataPath>
+					<Visible>false</Visible>
+					<ReadOnly>true</ReadOnly>
+					<TitleBackColor>style:FormBackColor</TitleBackColor>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ТаблицаСписокУпаковкаКонтекстноеМеню" id="80"/>
+					<ExtendedTooltip name="ТаблицаСписокУпаковкаExtendedTooltip" id="105"/>
+				</InputField>
+				<InputField name="ТаблицаСписокГарантия" id="83">
+					<DataPath>ТаблицаУслуги.Гарантия</DataPath>
+					<Visible>false</Visible>
+					<ReadOnly>true</ReadOnly>
+					<TitleBackColor>style:FormBackColor</TitleBackColor>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ТаблицаСписокГарантияКонтекстноеМеню" id="84"/>
+					<ExtendedTooltip name="ТаблицаСписокГарантияExtendedTooltip" id="106"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="ГруппаДействий" id="116">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа действий</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа действий</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>AlwaysHorizontal</Group>
+			<HorizontalAlign>Right</HorizontalAlign>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДействийРасширеннаяПодсказка" id="117"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаВыбрать" id="118">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выбрать</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выбрать</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<BackColor>style:AccentColor</BackColor>
+					<ExtendedTooltip name="ГруппаВыбратьРасширеннаяПодсказка" id="119"/>
+					<ChildItems>
+						<Button name="Выбрать" id="44">
+							<Type>UsualButton</Type>
+							<Representation>Text</Representation>
+							<DefaultButton>true</DefaultButton>
+							<Width>10</Width>
+							<CommandName>Form.Command.Выбрать</CommandName>
+							<ShapeRepresentation>None</ShapeRepresentation>
+							<ButtonImportance>Main</ButtonImportance>
+							<ExtendedTooltip name="ВыбратьExtendedTooltip" id="85"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ТаблицаУслуги" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица услуги</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Пометка" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пометка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="НомерСтроки" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер строки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВидЦен" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид цен</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ВидыЦен</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Всего" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Всего</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Зуб" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Зуб</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.Зубы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КлючСтроки" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ключ строки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:UUID</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Количество" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>1</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="КоличествоУпаковок" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество упаковок</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Номенклатура" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номенклатура</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПроцентСкидкиНаценки" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Процент скидки наценки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>5</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="СтавкаНДС" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ставка НДС</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.СтавкиНДС</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Прием" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прием</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.Прием</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Сумма" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="СуммаАвтоматическойСкидкиНаценки" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма автоматической скидки наценки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="СуммаНДС" id="17">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма НДС</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Упаковка" id="18">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Упаковка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.УпаковкиНоменклатуры</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Цена" id="19">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Цена</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Гарантия" id="20">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гарантия</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>2</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Выбрать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ChooseValue</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Выбрать</Action>
+		</Command>
+	</Commands>
+</Form>

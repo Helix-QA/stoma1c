@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockWholeInterface</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="КнопкаСформировать" id="21">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.СформироватьСерийныеНомера</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Сгенерировать</v8:content>
+					</v8:item>
+				</Title>
+				<ButtonImportance>Main</ButtonImportance>
+				<ExtendedTooltip name="КнопкаСформироватьExtendedTooltip" id="22"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="Шапка" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры:</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>WeakSeparation</Representation>
+			<ExtendedTooltip name="ШапкаExtendedTooltip" id="23"/>
+			<ChildItems>
+				<InputField name="КоличествоСертификатов" id="2">
+					<DataPath>Объект.КоличествоСертификатов</DataPath>
+					<ContextMenu name="КоличествоСертификатовКонтекстноеМеню" id="3"/>
+					<ExtendedTooltip name="КоличествоСертификатовExtendedTooltip" id="24"/>
+					<Events>
+						<Event name="OnChange">КоличествоСертификатовПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="Префикс" id="4">
+					<DataPath>Объект.Префикс</DataPath>
+					<Width>32</Width>
+					<ContextMenu name="ПрефиксКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ПрефиксExtendedTooltip" id="25"/>
+					<Events>
+						<Event name="OnChange">ПрефиксПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="Постфикс" id="6">
+					<DataPath>Объект.Постфикс</DataPath>
+					<Width>30</Width>
+					<ContextMenu name="ПостфиксКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="ПостфиксExtendedTooltip" id="26"/>
+					<Events>
+						<Event name="OnChange">ПостфиксПриИзменении</Event>
+					</Events>
+				</InputField>
+				<UsualGroup name="ГруппаДиапозона" id="17">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа диапозона</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа диапозона</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДиапозонаExtendedTooltip" id="27"/>
+					<ChildItems>
+						<InputField name="НачалоДиапазона" id="8">
+							<DataPath>Объект.НачалоДиапазона</DataPath>
+							<ContextMenu name="НачалоДиапазонаКонтекстноеМеню" id="9"/>
+							<ExtendedTooltip name="НачалоДиапазонаExtendedTooltip" id="28"/>
+							<Events>
+								<Event name="OnChange">НачалоДиапазонаПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="КоличествоСимволов" id="10">
+							<DataPath>Объект.КоличествоСимволов</DataPath>
+							<ContextMenu name="КоличествоСимволовКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="КоличествоСимволовExtendedTooltip" id="29"/>
+							<Events>
+								<Event name="OnChange">КоличествоСимволовПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаКодов" id="18">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа кодов</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа кодов</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаКодовExtendedTooltip" id="30"/>
+					<ChildItems>
+						<InputField name="ПервыйКод" id="12">
+							<DataPath>Объект.ПервыйКод</DataPath>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="ПервыйКодКонтекстноеМеню" id="13"/>
+							<ExtendedTooltip name="ПервыйКодExtendedTooltip" id="31"/>
+						</InputField>
+						<InputField name="ПоследнийКод" id="14">
+							<DataPath>Объект.ПоследнийКод</DataPath>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="ПоследнийКодКонтекстноеМеню" id="15"/>
+							<ExtendedTooltip name="ПоследнийКодExtendedTooltip" id="32"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ЗаполнениеДиапазонаСерийныхНомеров</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СформироватьСерийныеНомера" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать серийные номера</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СформироватьСерийныеНомера</Action>
+		</Command>
+	</Commands>
+</Form>

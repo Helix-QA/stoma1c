@@ -1,0 +1,630 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Лист ожидания</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<Group>Vertical</Group>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>CancelSearch</ExcludedCommand>
+		<ExcludedCommand>Change</ExcludedCommand>
+		<ExcludedCommand>Close</ExcludedCommand>
+		<ExcludedCommand>Copy</ExcludedCommand>
+		<ExcludedCommand>Create</ExcludedCommand>
+		<ExcludedCommand>CustomizeForm</ExcludedCommand>
+		<ExcludedCommand>Delete</ExcludedCommand>
+		<ExcludedCommand>Find</ExcludedCommand>
+		<ExcludedCommand>Help</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>ListSettings</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>OutputList</ExcludedCommand>
+		<ExcludedCommand>Refresh</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>SetDateInterval</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="NewWriteProcessing">ОбработкаЗаписиНового</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаОтбор" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа отбор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОтборExtendedTooltip" id="32"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаПериод" id="25">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа период</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ExtendedTooltip name="ГруппаПериодExtendedTooltip" id="33"/>
+					<ChildItems>
+						<InputField name="ОтборНачалоПериода" id="3">
+							<DataPath>ОтборНачалоПериода</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>с</v8:content>
+								</v8:item>
+							</Title>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="ОтборНачалоПериодаКонтекстноеМеню" id="4"/>
+							<ExtendedTooltip name="ОтборНачалоПериодаExtendedTooltip" id="34"/>
+							<Events>
+								<Event name="OnChange">ОтборНачалоПериодаПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ОтборКоннецПериода" id="5">
+							<DataPath>ОтборКоннецПериода</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>по</v8:content>
+								</v8:item>
+							</Title>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="ОтборКоннецПериодаКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="ОтборКоннецПериодаExtendedTooltip" id="35"/>
+							<Events>
+								<Event name="OnChange">ОтборКоннецПериодаПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="ОтборВидОсмотра" id="28">
+					<DataPath>ОтборВидОсмотра</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид осмотра</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Top</TitleLocation>
+					<ClearButton>true</ClearButton>
+					<OpenButton>false</OpenButton>
+					<ContextMenu name="ОтборВидОсмотраКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="ОтборВидОсмотраExtendedTooltip" id="36"/>
+					<Events>
+						<Event name="OnChange">ОтборВидОсмотраПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ОтборСотрудник" id="1">
+					<DataPath>ОтборСотрудник</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сотрудник</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Top</TitleLocation>
+					<ClearButton>true</ClearButton>
+					<OpenButton>false</OpenButton>
+					<ContextMenu name="ОтборСотрудникКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ОтборСотрудникExtendedTooltip" id="37"/>
+					<Events>
+						<Event name="OnChange">ОтборСотрудникПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ОтборПациент" id="52">
+					<DataPath>ОтборПациент</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пациент</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Top</TitleLocation>
+					<ClearButton>true</ClearButton>
+					<OpenButton>false</OpenButton>
+					<ChoiceForm>Catalog.Контрагенты.Form.ФормаВыбораКлиенты</ChoiceForm>
+					<ContextMenu name="ОтборПациентКонтекстноеМеню" id="53"/>
+					<ExtendedTooltip name="ОтборПациентРасширеннаяПодсказка" id="54"/>
+					<Events>
+						<Event name="OnChange">ОтборПациентПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ОтборСтруктурнаяЕдиница" id="23">
+					<DataPath>ОтборСтруктурнаяЕдиница</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Клиника</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Top</TitleLocation>
+					<ClearButton>true</ClearButton>
+					<OpenButton>false</OpenButton>
+					<ContextMenu name="ОтборСтруктурнаяЕдиницаКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ОтборСтруктурнаяЕдиницаExtendedTooltip" id="38"/>
+					<Events>
+						<Event name="OnChange">ОтборСтруктурнаяЕдиницаПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="СписокПлана" id="7">
+			<RowSelectionMode>Cell</RowSelectionMode>
+			<EnableStartDrag>true</EnableStartDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>СписокПлана</DataPath>
+			<RowPictureDataPath>СписокПлана.DefaultPicture</RowPictureDataPath>
+			<CommandSet>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+				<ExcludedCommand>Create</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>Find</ExcludedCommand>
+				<ExcludedCommand>ListSettings</ExcludedCommand>
+				<ExcludedCommand>Refresh</ExcludedCommand>
+				<ExcludedCommand>SetDateInterval</ExcludedCommand>
+			</CommandSet>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="СписокПланаКонтекстноеМеню" id="8">
+				<ChildItems>
+					<Button name="ВывестиСписок" id="64">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.СписокПлана.StandardCommand.OutputList</CommandName>
+						<Picture>
+							<xr:Ref>CommonPicture.НаПечать</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="ВывестиСписокРасширеннаяПодсказка" id="65"/>
+					</Button>
+					<Button name="СписокПланаКонтекстноеМенюОтменитьПоиск" id="72">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.СписокПлана.StandardCommand.CancelSearch</CommandName>
+						<Picture>
+							<xr:Ref>CommonPicture.ОтменитьПоискНовая</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="СписокПланаКонтекстноеМенюОтменитьПоискРасширеннаяПодсказка" id="73"/>
+					</Button>
+				</ChildItems>
+			</ContextMenu>
+			<AutoCommandBar name="СписокПланаКоманднаяПанель" id="9">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокПланаExtendedTooltip" id="39"/>
+			<SearchStringAddition name="СписокПланаСтрокаПоиска" id="55">
+				<AdditionSource>
+					<Item>СписокПлана</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокПланаСтрокаПоискаКонтекстноеМеню" id="56"/>
+				<ExtendedTooltip name="СписокПланаСтрокаПоискаРасширеннаяПодсказка" id="57"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокПланаСостояниеПросмотра" id="58">
+				<AdditionSource>
+					<Item>СписокПлана</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокПланаСостояниеПросмотраКонтекстноеМеню" id="59"/>
+				<ExtendedTooltip name="СписокПланаСостояниеПросмотраРасширеннаяПодсказка" id="60"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокПланаУправлениеПоиском" id="61">
+				<AdditionSource>
+					<Item>СписокПлана</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокПланаУправлениеПоискомКонтекстноеМеню" id="62"/>
+				<ExtendedTooltip name="СписокПланаУправлениеПоискомРасширеннаяПодсказка" id="63"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">СписокПланаВыбор</Event>
+				<Event name="BeforeAddRow">СписокПланаПередНачаломДобавления</Event>
+				<Event name="BeforeDeleteRow">СписокПланаПередУдалением</Event>
+				<Event name="BeforeRowChange">СписокПланаПередНачаломИзменения</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="ВидОсмотра" id="26">
+					<DataPath>СписокПлана.ВидОсмотра</DataPath>
+					<TitleBackColor>style:FormBackColor</TitleBackColor>
+					<ContextMenu name="ВидОсмотраКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ВидОсмотраExtendedTooltip" id="40"/>
+				</LabelField>
+				<LabelField name="СписокПланаДатаЗапланированная" id="18">
+					<DataPath>СписокПлана.ДатаЗапланированная</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата</v8:content>
+						</v8:item>
+					</Title>
+					<TitleBackColor>style:FormBackColor</TitleBackColor>
+					<Format>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДФ='dd MMMM yyyy "г."'</v8:content>
+						</v8:item>
+					</Format>
+					<ContextMenu name="СписокПланаДатаЗапланированнаяКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="СписокПланаДатаЗапланированнаяExtendedTooltip" id="41"/>
+				</LabelField>
+				<LabelField name="СписокПланаКонтрагент" id="12">
+					<DataPath>СписокПлана.Контрагент</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пациент</v8:content>
+						</v8:item>
+					</Title>
+					<TitleBackColor>style:FormBackColor</TitleBackColor>
+					<ContextMenu name="СписокПланаКонтрагентКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="СписокПланаКонтрагентExtendedTooltip" id="42"/>
+				</LabelField>
+				<LabelField name="Возраст" id="69">
+					<DataPath>СписокПлана.Возраст</DataPath>
+					<TitleBackColor>style:FormBackColor</TitleBackColor>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>7</MaxWidth>
+					<ContextMenu name="ВозрастКонтекстноеМеню" id="70"/>
+					<ExtendedTooltip name="ВозрастРасширеннаяПодсказка" id="71"/>
+				</LabelField>
+				<InputField name="СписокТелефонКонтрагента" id="30">
+					<DataPath>СписокПлана.Контрагент.Телефон</DataPath>
+					<TitleBackColor>style:FormBackColor</TitleBackColor>
+					<Width>20</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="СписокТелефонКонтрагентаКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="СписокТелефонКонтрагентаExtendedTooltip" id="43"/>
+				</InputField>
+				<LabelField name="СписокПланаСотрудник" id="14">
+					<DataPath>СписокПлана.Сотрудник</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Врач</v8:content>
+						</v8:item>
+					</Title>
+					<TitleBackColor>style:FormBackColor</TitleBackColor>
+					<ContextMenu name="СписокПланаСотрудникКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="СписокПланаСотрудникExtendedTooltip" id="45"/>
+				</LabelField>
+				<LabelField name="ПричинаНаправления" id="46">
+					<DataPath>СписокПлана.ПричинаНаправления</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Причина</v8:content>
+						</v8:item>
+					</Title>
+					<TitleBackColor>style:FormBackColor</TitleBackColor>
+					<Width>30</Width>
+					<ContextMenu name="ПричинаНаправленияКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="ПричинаНаправленияРасширеннаяПодсказка" id="48"/>
+				</LabelField>
+				<LabelField name="Комментарий" id="49">
+					<DataPath>СписокПлана.Комментарий</DataPath>
+					<TitleBackColor>style:FormBackColor</TitleBackColor>
+					<ContextMenu name="КомментарийКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="51"/>
+				</LabelField>
+				<LabelField name="Специализация" id="74">
+					<DataPath>СписокПлана.Специализация</DataPath>
+					<Visible>false</Visible>
+					<TitleBackColor>style:FormBackColor</TitleBackColor>
+					<ContextMenu name="СпециализацияКонтекстноеМеню" id="75"/>
+					<ExtendedTooltip name="СпециализацияРасширеннаяПодсказка" id="76"/>
+				</LabelField>
+				<LabelField name="ДатаЗапланированная" id="80">
+					<DataPath>СписокПлана.ДатаЗапланированная</DataPath>
+					<TitleBackColor>style:FormBackColor</TitleBackColor>
+					<Format>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДФ=dd.MM.yyyy</v8:content>
+						</v8:item>
+					</Format>
+					<ContextMenu name="ДатаЗапланированнаяКонтекстноеМеню" id="81"/>
+					<ExtendedTooltip name="ДатаЗапланированнаяРасширеннаяПодсказка" id="82"/>
+				</LabelField>
+				<LabelField name="Длительность" id="77">
+					<DataPath>СписокПлана.Длительность</DataPath>
+					<Visible>false</Visible>
+					<TitleBackColor>style:FormBackColor</TitleBackColor>
+					<ContextMenu name="ДлительностьКонтекстноеМеню" id="78"/>
+					<ExtendedTooltip name="ДлительностьРасширеннаяПодсказка" id="79"/>
+				</LabelField>
+				<LabelField name="АвторЗаписи" id="66">
+					<DataPath>СписокПлана.АвторЗаписи</DataPath>
+					<TitleBackColor>style:FormBackColor</TitleBackColor>
+					<ContextMenu name="АвторЗаписиКонтекстноеМеню" id="67"/>
+					<ExtendedTooltip name="АвторЗаписиРасширеннаяПодсказка" id="68"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ОтборНачалоПериода" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор начало периода</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтборКоннецПериода" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор конец периода</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтборСотрудник" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор сотрудник</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокПлана" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список плана</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>СписокПлана.ДатаЗапланированная</Field>
+				<Field>СписокПлана.Длительность</Field>
+				<Field>СписокПлана.Контрагент</Field>
+				<Field>СписокПлана.Период</Field>
+				<Field>СписокПлана.Прием</Field>
+				<Field>СписокПлана.ПричинаНаправления</Field>
+				<Field>СписокПлана.Сотрудник</Field>
+				<Field>СписокПлана.Специализация</Field>
+				<Field>СписокПлана.Статус</Field>
+				<Field>СписокПлана.СтруктурнаяЕдиница</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	РегистрСведенийПрофосмотрыСрезПоследних.Период КАК Период,
+	РегистрСведенийПрофосмотрыСрезПоследних.СтруктурнаяЕдиница КАК СтруктурнаяЕдиница,
+	РегистрСведенийПрофосмотрыСрезПоследних.Контрагент КАК Контрагент,
+	РегистрСведенийПрофосмотрыСрезПоследних.Сотрудник КАК Сотрудник,
+	РегистрСведенийПрофосмотрыСрезПоследних.ВидОсмотра КАК ВидОсмотра,
+	РегистрСведенийПрофосмотрыСрезПоследних.ДатаЗапланированная КАК ДатаЗапланированная,
+	РегистрСведенийПрофосмотрыСрезПоследних.Статус КАК Статус,
+	РегистрСведенийПрофосмотрыСрезПоследних.ПредварительнаяЗапись КАК ПредварительнаяЗапись,
+	РегистрСведенийПрофосмотрыСрезПоследних.ПричинаОтказа КАК ПричинаОтказа,
+	РегистрСведенийПрофосмотрыСрезПоследних.Прием КАК Прием,
+	РегистрСведенийПрофосмотрыСрезПоследних.АвторЗаписи КАК АвторЗаписи,
+	РегистрСведенийПрофосмотрыСрезПоследних.ПричинаНаправления КАК ПричинаНаправления,
+	РегистрСведенийПрофосмотрыСрезПоследних.ПричинаПереноса КАК ПричинаПереноса,
+	РегистрСведенийПрофосмотрыСрезПоследних.Комментарий КАК Комментарий,
+	РегистрСведенийПрофосмотрыСрезПоследних.Длительность КАК Длительность,
+	РегистрСведенийПрофосмотрыСрезПоследних.Специализация КАК Специализация,
+	ВЫБОР
+		КОГДА РегистрСведенийПрофосмотрыСрезПоследних.Контрагент.ДатаРожденияКлиента &lt;&gt; ДАТАВРЕМЯ(1, 1, 1)
+			ТОГДА ВЫБОР
+					КОГДА ДЕНЬГОДА(&amp;ТекущаяДата) &gt; ДЕНЬГОДА(РегистрСведенийПрофосмотрыСрезПоследних.Контрагент.ДатаРожденияКлиента)
+						ТОГДА РАЗНОСТЬДАТ(РегистрСведенийПрофосмотрыСрезПоследних.Контрагент.ДатаРожденияКлиента, &amp;ТекущаяДата, ГОД)
+					ИНАЧЕ (ВЫРАЗИТЬ(РАЗНОСТЬДАТ(РегистрСведенийПрофосмотрыСрезПоследних.Контрагент.ДатаРожденияКлиента, &amp;ТекущаяДата, ГОД) КАК ЧИСЛО)) - 1
+				КОНЕЦ
+	КОНЕЦ КАК Возраст
+ИЗ
+	РегистрСведений.Профосмотры.СрезПоследних КАК РегистрСведенийПрофосмотрыСрезПоследних</QueryText>
+				<MainTable>InformationRegister.Профосмотры.SliceLast</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Статус</dcsset:left>
+							<dcsset:comparisonType>InList</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусыПрофосмотров.Запланирован</dcsset:right>
+							<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусыПрофосмотров.НапомнитьПозже</dcsset:right>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ДатаЗапланированная</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Контрагент</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ОтборСтатус" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор статус</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.СтатусыПрофосмотров</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтборСтруктурнаяЕдиница" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор структурная единица</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.СтруктурныеЕдиницы</v8:Type>
+			</Type>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ЭтоСетьКлиник</Item>
+			</FunctionalOptions>
+		</Attribute>
+		<Attribute name="ОтборВидОсмотра" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор вид осмотра</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ВидыОсмотров</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЭтоЗаписьНаПрием" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это запись на прием</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Старт" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Старт</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Финиш" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Финиш</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Помещение" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Помещение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Помещения</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Сотрудник" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сотрудник</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтборПациент" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор пациент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

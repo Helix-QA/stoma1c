@@ -1,0 +1,1058 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<VerticalSpacing>Double</VerticalSpacing>
+	<HorizontalAlign>Center</HorizontalAlign>
+	<CommandSet>
+		<ExcludedCommand>Delete</ExcludedCommand>
+	</CommandSet>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+		<Event name="OnWriteAtServer">ПриЗаписиНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаСостояниеОбъекта" id="211">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа состояние объекта</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Состояние объекта</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Object state</v8:content>
+				</v8:item>
+			</ToolTip>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСостояниеОбъектаРасширеннаяПодсказка" id="212"/>
+			<ChildItems>
+				<LabelDecoration name="СостояниеОбъекта" id="213">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>63</MaxWidth>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
+					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<ContextMenu name="СостояниеОбъектаКонтекстноеМеню" id="214"/>
+					<ExtendedTooltip name="СостояниеОбъектаРасширеннаяПодсказка" id="215"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаВыравнивание" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа выравнивание</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group alignment</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа выравнивание</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group alignment</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>AlwaysHorizontal</Group>
+			<VerticalSpacing>Single</VerticalSpacing>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаВыравниваниеРасширеннаяПодсказка" id="23"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаЛеваяКолонка1" id="216">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа левая колонка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа левая колонка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<VerticalStretch>true</VerticalStretch>
+					<Group>Vertical</Group>
+					<VerticalSpacing>Double</VerticalSpacing>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<BackColor>style:БудущиеПодпискиЦвет</BackColor>
+					<ExtendedTooltip name="ГруппаЛеваяКолонка1РасширеннаяПодсказка" id="217"/>
+					<ChildItems>
+						<PictureDecoration name="Логотип" id="218">
+							<Width>25</Width>
+							<Height>5</Height>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Логотип</v8:content>
+								</v8:item>
+							</Title>
+							<PictureSize>Proportionally</PictureSize>
+							<Zoomable>true</Zoomable>
+							<Picture>
+								<xr:Ref>CommonPicture.ЛоготипWallet</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="ЛоготипКонтекстноеМеню" id="219"/>
+							<ExtendedTooltip name="ЛоготипРасширеннаяПодсказка" id="220"/>
+						</PictureDecoration>
+						<LabelDecoration name="НазваниеИнтеграции" id="221">
+							<Width>25</Width>
+							<Font ref="style:ExtraLargeTextFont" kind="StyleItem"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Wallet</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="НазваниеИнтеграцииКонтекстноеМеню" id="222"/>
+							<ExtendedTooltip name="НазваниеИнтеграцииРасширеннаяПодсказка" id="223"/>
+						</LabelDecoration>
+						<LabelDecoration name="ОписаниеИнтеграции" id="224">
+							<Width>25</Width>
+							<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Цифровой эквивалент традиционных карт лояльности, подарочных карт, купонов, билетов на мероприятия, пропусков, деловых и персональных карт.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ОписаниеИнтеграцииКонтекстноеМеню" id="225"/>
+							<ExtendedTooltip name="ОписаниеИнтеграцииРасширеннаяПодсказка" id="226"/>
+						</LabelDecoration>
+						<CheckBoxField name="Используется" id="227">
+							<DataPath>Объект.Используется</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Используется</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+							<CheckBoxType>Switcher</CheckBoxType>
+							<ContextMenu name="ИспользуетсяКонтекстноеМеню" id="228"/>
+							<ExtendedTooltip name="ИспользуетсяРасширеннаяПодсказка" id="229"/>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаНастройкиВнешнейСистемы" id="85">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Main information</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа настройки внешней системы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Group left speaker</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<HorizontalAlign>Left</HorizontalAlign>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНастройкиВнешнейСистемыРасширеннаяПодсказка" id="86"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаВидыКартОбщая" id="128">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа виды карт общая</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа виды карт общая</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<VerticalSpacing>None</VerticalSpacing>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВидыКартОбщаяРасширеннаяПодсказка" id="129"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаВидыКартСтрока_Шаблон" id="126">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа виды карт строка шаблон</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа виды карт строка шаблон</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<HorizontalSpacing>Half</HorizontalSpacing>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаВидыКартСтрока_ШаблонРасширеннаяПодсказка" id="127"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаВидКарты_Шаблон" id="122">
+											<Visible>false</Visible>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа вид карты шаблон</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Group display personal accounts</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Group display personal accounts</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>AlwaysHorizontal</Group>
+											<Representation>NormalSeparation</Representation>
+											<ShowTitle>false</ShowTitle>
+											<BackColor>#F2F2F2</BackColor>
+											<ExtendedTooltip name="ГруппаВидКарты_ШаблонРасширеннаяПодсказка" id="123"/>
+											<ChildItems>
+												<Button name="РедактироватьВидКарты_Шаблон" id="124">
+													<Type>UsualButton</Type>
+													<Width>17</Width>
+													<MaxWidth>16</MaxWidth>
+													<VerticalStretch>true</VerticalStretch>
+													<CommandName>Form.Command.РедактироватьВидКарты</CommandName>
+													<TextColor>#4D4D4D</TextColor>
+													<ShapeRepresentation>None</ShapeRepresentation>
+													<ButtonImportance>Supplementary</ButtonImportance>
+													<ExtendedTooltip name="РедактироватьВидКарты_ШаблонРасширеннаяПодсказка" id="125"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<HTMLDocumentField name="РедакторКарты" id="107">
+							<DataPath>РедакторКарты</DataPath>
+							<Visible>false</Visible>
+							<TitleLocation>None</TitleLocation>
+							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+							<Width>132</Width>
+							<Height>27</Height>
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<BorderColor>style:FormBackColor</BorderColor>
+							<ContextMenu name="РедакторКартыКонтекстноеМеню" id="108"/>
+							<ExtendedTooltip name="РедакторКартыРасширеннаяПодсказка" id="109"/>
+						</HTMLDocumentField>
+						<UsualGroup name="ГруппаWallet" id="114">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа wallet</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаWalletРасширеннаяПодсказка" id="115"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаWalletНастройки" id="130">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа wallet настройки</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаWalletНастройкиРасширеннаяПодсказка" id="131"/>
+									<ChildItems>
+										<InputField name="ИдКлиента" id="116">
+											<DataPath>Объект.ТокенДоступа</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Идентификатор клиента (Client ID)</v8:content>
+												</v8:item>
+											</Title>
+											<MarkRequiredComplete>true</MarkRequiredComplete>
+											<AutoMarkIncomplete>true</AutoMarkIncomplete>
+											<ContextMenu name="ИдКлиентаКонтекстноеМеню" id="117"/>
+											<ExtendedTooltip name="ИдКлиентаРасширеннаяПодсказка" id="118"/>
+											<Events>
+												<Event name="OnChange">ИдКлиентаПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="СекретКлиента" id="119">
+											<DataPath>Объект.КлючШифрования</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Секрет клиента (Client Secret)</v8:content>
+												</v8:item>
+											</Title>
+											<MarkRequiredComplete>true</MarkRequiredComplete>
+											<AutoMarkIncomplete>true</AutoMarkIncomplete>
+											<ContextMenu name="СекретКлиентаКонтекстноеМеню" id="120"/>
+											<ExtendedTooltip name="СекретКлиентаРасширеннаяПодсказка" id="121"/>
+											<Events>
+												<Event name="OnChange">СекретКлиентаПриИзменении</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаДополнительныеНастройки" id="243">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа дополнительные настройки</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа дополнительные настройки</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>HorizontalIfPossible</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаДополнительныеНастройкиРасширеннаяПодсказка" id="244"/>
+									<ChildItems>
+										<Button name="КнопкаДополнительно" id="13">
+											<Type>UsualButton</Type>
+											<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+											<CommandName>Form.Command.СкрытьПоказатьДополнительно</CommandName>
+											<TextColor>style:ГруппаВариантовОтчетовЦвет</TextColor>
+											<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Дополнительно</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Additionally</v8:content>
+												</v8:item>
+											</Title>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<ButtonImportance>Supplementary</ButtonImportance>
+											<ExtendedTooltip name="КнопкаДополнительноРасширеннаяПодсказка" id="14"/>
+										</Button>
+										<UsualGroup name="ГруппаДополнительно" id="15">
+											<Visible>false</Visible>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа дополнительно</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Group additionally</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа дополнительно</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Group additionally</v8:content>
+												</v8:item>
+											</ToolTip>
+											<HorizontalStretch>true</HorizontalStretch>
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаДополнительноРасширеннаяПодсказка" id="16"/>
+											<ChildItems>
+												<UsualGroup name="ГруппаWalletДополнительно" id="132">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа wallet дополнительно</v8:content>
+														</v8:item>
+													</Title>
+													<HorizontalStretch>true</HorizontalStretch>
+													<Group>AlwaysHorizontal</Group>
+													<HorizontalSpacing>Double</HorizontalSpacing>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаWalletДополнительноРасширеннаяПодсказка" id="133"/>
+													<ChildItems>
+														<UsualGroup name="ГруппаЛеваяКолонка" id="204">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа левая колонка</v8:content>
+																</v8:item>
+															</Title>
+															<Group>Vertical</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаЛеваяКолонкаРасширеннаяПодсказка" id="205"/>
+															<ChildItems>
+																<UsualGroup name="ГруппаТипВнешнейСистемыДополнительно" id="137">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Группа тип внешней системы</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Group typeof external systems</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Group typeof external systems</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<Group>Horizontal</Group>
+																	<HorizontalSpacing>Half</HorizontalSpacing>
+																	<Representation>None</Representation>
+																	<ShowTitle>false</ShowTitle>
+																	<ExtendedTooltip name="ГруппаТипВнешнейСистемыДополнительноРасширеннаяПодсказка" id="138"/>
+																	<ChildItems>
+																		<InputField name="НаименованиеДополнительно" id="134">
+																			<DataPath>Объект.Description</DataPath>
+																			<EditMode>EnterOnInput</EditMode>
+																			<AutoEditMode>true</AutoEditMode>
+																			<AutoMaxWidth>false</AutoMaxWidth>
+																			<MaxWidth>42</MaxWidth>
+																			<ContextMenu name="НаименованиеДополнительноКонтекстноеМеню" id="135"/>
+																			<ExtendedTooltip name="НаименованиеДополнительноРасширеннаяПодсказка" id="136"/>
+																		</InputField>
+																	</ChildItems>
+																</UsualGroup>
+																<UsualGroup name="ГруппаКлючПриложенияДополнительно" id="163">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Группа ключ приложения дополнительно</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Group>AlwaysHorizontal</Group>
+																	<HorizontalSpacing>Single</HorizontalSpacing>
+																	<Representation>None</Representation>
+																	<ShowTitle>false</ShowTitle>
+																	<ExtendedTooltip name="ГруппаКлючПриложенияДополнительноРасширеннаяПодсказка" id="164"/>
+																	<ChildItems>
+																		<InputField name="КлючПриложенияДополнительно" id="153">
+																			<DataPath>Объект.КлючПриложения</DataPath>
+																			<AutoMaxWidth>false</AutoMaxWidth>
+																			<MaxWidth>42</MaxWidth>
+																			<HorizontalStretch>true</HorizontalStretch>
+																			<ContextMenu name="КлючПриложенияДополнительноКонтекстноеМеню" id="154"/>
+																			<ExtendedTooltip name="КлючПриложенияДополнительноРасширеннаяПодсказка" id="155"/>
+																			<Events>
+																				<Event name="OnChange">КлючПриложенияДополнительноПриИзменении</Event>
+																			</Events>
+																		</InputField>
+																		<Button name="СоздатьКлючДополнительно" id="165">
+																			<Type>UsualButton</Type>
+																			<Representation>Picture</Representation>
+																			<CommandName>Form.Command.СоздатьКлюч</CommandName>
+																			<Picture>
+																				<xr:Ref>StdPicture.DataCompositionSettingsWizard</xr:Ref>
+																				<xr:LoadTransparent>true</xr:LoadTransparent>
+																			</Picture>
+																			<ExtendedTooltip name="СоздатьКлючДополнительноРасширеннаяПодсказка" id="166"/>
+																		</Button>
+																	</ChildItems>
+																</UsualGroup>
+																<InputField name="АдресAPI" id="208">
+																	<DataPath>АдресAPI</DataPath>
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<MaxWidth>42</MaxWidth>
+																	<ContextMenu name="АдресAPIКонтекстноеМеню" id="209"/>
+																	<ExtendedTooltip name="АдресAPIРасширеннаяПодсказка" id="210"/>
+																	<Events>
+																		<Event name="OnChange">АдресAPIПриИзменении</Event>
+																	</Events>
+																</InputField>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="ГруппаПраваяКолонка" id="206">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа правая колонка</v8:content>
+																</v8:item>
+															</Title>
+															<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+															<Group>HorizontalIfPossible</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаПраваяКолонкаРасширеннаяПодсказка" id="207"/>
+															<ChildItems>
+																<InputField name="ИдКлиентаДополнительно" id="145">
+																	<DataPath>Объект.ТокенДоступа</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Идентификатор клиента (Client ID)</v8:content>
+																		</v8:item>
+																	</Title>
+																	<MarkRequiredComplete>true</MarkRequiredComplete>
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<MaxWidth>46</MaxWidth>
+																	<AutoMarkIncomplete>true</AutoMarkIncomplete>
+																	<ContextMenu name="ИдКлиентаДополнительноКонтекстноеМеню" id="146"/>
+																	<ExtendedTooltip name="ИдКлиентаДополнительноРасширеннаяПодсказка" id="147"/>
+																	<Events>
+																		<Event name="OnChange">ИдКлиентаПриИзменении</Event>
+																	</Events>
+																</InputField>
+																<InputField name="СекретКлиентаДополнительно" id="148">
+																	<DataPath>Объект.КлючШифрования</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Секрет клиента (Client Secret)</v8:content>
+																		</v8:item>
+																	</Title>
+																	<MarkRequiredComplete>true</MarkRequiredComplete>
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<MaxWidth>46</MaxWidth>
+																	<AutoMarkIncomplete>true</AutoMarkIncomplete>
+																	<ContextMenu name="СекретКлиентаДополнительноКонтекстноеМеню" id="149"/>
+																	<ExtendedTooltip name="СекретКлиентаДополнительноРасширеннаяПодсказка" id="150"/>
+																	<Events>
+																		<Event name="OnChange">СекретКлиентаПриИзменении</Event>
+																	</Events>
+																</InputField>
+																<UsualGroup name="ГруппаНастройкиКарты" id="177">
+																	<Visible>false</Visible>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Группа настройки карты</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Group>AlwaysHorizontal</Group>
+																	<Representation>None</Representation>
+																	<ShowTitle>false</ShowTitle>
+																	<ExtendedTooltip name="ГруппаНастройкиКартыРасширеннаяПодсказка" id="178"/>
+																	<ChildItems>
+																		<CheckBoxField name="АвтоматическиВыдаватьКартуПриПервойПокупке" id="179">
+																			<DataPath>АвтоматическиВыдаватьКартуПриПокупке</DataPath>
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Выдавать карту при покупке</v8:content>
+																				</v8:item>
+																			</Title>
+																			<TitleHeight>1</TitleHeight>
+																			<ToolTip>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>При покупке членства или пакета услуг будет выдаваться электронная карта, при условии что у клиента нет электронных карт</v8:content>
+																				</v8:item>
+																			</ToolTip>
+																			<ToolTipRepresentation>Button</ToolTipRepresentation>
+																			<VerticalAlign>Center</VerticalAlign>
+																			<GroupVerticalAlign>Center</GroupVerticalAlign>
+																			<CheckBoxType>Switcher</CheckBoxType>
+																			<ContextMenu name="АвтоматическиВыдаватьКартуПриПервойПокупкеКонтекстноеМеню" id="180"/>
+																			<ExtendedTooltip name="АвтоматическиВыдаватьКартуПриПервойПокупкеРасширеннаяПодсказка" id="181"/>
+																			<Events>
+																				<Event name="OnChange">АвтоматическиВыдаватьКартуПриПервойПокупкеПриИзменении</Event>
+																			</Events>
+																		</CheckBoxField>
+																		<InputField name="КаналРассылкиКарты" id="182">
+																			<DataPath>КаналРассылкиКарты</DataPath>
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>канал рассылки</v8:content>
+																				</v8:item>
+																			</Title>
+																			<AutoMaxWidth>false</AutoMaxWidth>
+																			<MaxWidth>16</MaxWidth>
+																			<ListChoiceMode>true</ListChoiceMode>
+																			<ChoiceList>
+																				<xr:Item>
+																					<xr:Presentation/>
+																					<xr:CheckState>0</xr:CheckState>
+																					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																						<Presentation>
+																							<v8:item>
+																								<v8:lang>ru</v8:lang>
+																								<v8:content>Мессенджер</v8:content>
+																							</v8:item>
+																						</Presentation>
+																						<Value xsi:type="xs:decimal">1</Value>
+																					</xr:Value>
+																				</xr:Item>
+																				<xr:Item>
+																					<xr:Presentation/>
+																					<xr:CheckState>0</xr:CheckState>
+																					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																						<Presentation>
+																							<v8:item>
+																								<v8:lang>ru</v8:lang>
+																								<v8:content>SMS</v8:content>
+																							</v8:item>
+																						</Presentation>
+																						<Value xsi:type="xs:decimal">2</Value>
+																					</xr:Value>
+																				</xr:Item>
+																			</ChoiceList>
+																			<BackColor>style:FormBackColor</BackColor>
+																			<ContextMenu name="КаналРассылкиКартыКонтекстноеМеню" id="183"/>
+																			<ExtendedTooltip name="КаналРассылкиКартыРасширеннаяПодсказка" id="184"/>
+																		</InputField>
+																		<LabelDecoration name="ДекорацияНастройки" id="190">
+																			<Title formatted="false">
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Настройки</v8:content>
+																				</v8:item>
+																			</Title>
+																			<Hyperlink>true</Hyperlink>
+																			<ContextMenu name="ДекорацияНастройкиКонтекстноеМеню" id="191"/>
+																			<ExtendedTooltip name="ДекорацияНастройкиРасширеннаяПодсказка" id="192"/>
+																			<Events>
+																				<Event name="Click">ДекорацияНастройкиНажатие</Event>
+																			</Events>
+																		</LabelDecoration>
+																	</ChildItems>
+																</UsualGroup>
+																<InputField name="ВидКартыПоУмолчанию" id="193">
+																	<DataPath>ВидКартыПоУмолчанию</DataPath>
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<MaxWidth>46</MaxWidth>
+																	<CreateButton>false</CreateButton>
+																	<ListChoiceMode>true</ListChoiceMode>
+																	<ContextMenu name="ВидКартыПоУмолчаниюКонтекстноеМеню" id="194"/>
+																	<ExtendedTooltip name="ВидКартыПоУмолчаниюРасширеннаяПодсказка" id="195"/>
+																	<Events>
+																		<Event name="OnChange">ВидКартыПоУмолчаниюПриИзменении</Event>
+																	</Events>
+																</InputField>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<LabelDecoration name="ДекорацияВысота" id="240">
+							<ContextMenu name="ДекорацияВысотаКонтекстноеМеню" id="241"/>
+							<ExtendedTooltip name="ДекорацияВысотаРасширеннаяПодсказка" id="242"/>
+						</LabelDecoration>
+						<UsualGroup name="ГруппаПодвал" id="230">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа подвал</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа подвал</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>AlwaysHorizontal</Group>
+							<VerticalAlign>Center</VerticalAlign>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПодвалРасширеннаяПодсказка" id="231"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаУдалить" id="232">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа удалить</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа удалить</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>15</Width>
+									<Group>HorizontalIfPossible</Group>
+									<Representation>WeakSeparation</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаУдалитьРасширеннаяПодсказка" id="233"/>
+									<ChildItems>
+										<Button name="Удалить" id="234">
+											<Type>UsualButton</Type>
+											<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+											<CommandName>Form.Command.УдалитьИЗакрыть</CommandName>
+											<TextColor>style:SpecialTextColor</TextColor>
+											<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Удалить</v8:content>
+												</v8:item>
+											</Title>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<ButtonImportance>Supplementary</ButtonImportance>
+											<ExtendedTooltip name="УдалитьРасширеннаяПодсказка" id="235"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаСохранитьИЗакрыть" id="236">
+									<Title>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Group card toadd</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа сохранить текст заметки</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Group save text notes</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>15</Width>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<BackColor>style:ФонАктивногоЗначенияОтбора</BackColor>
+									<ExtendedTooltip name="ГруппаСохранитьИЗакрытьРасширеннаяПодсказка" id="237"/>
+									<ChildItems>
+										<Button name="Сохранить" id="238">
+											<Type>UsualButton</Type>
+											<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+											<CommandName>Form.StandardCommand.WriteAndClose</CommandName>
+											<Font ref="style:NormalTextFont" height="11" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Сохранить</v8:content>
+												</v8:item>
+											</Title>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<ButtonImportance>Supplementary</ButtonImportance>
+											<ExtendedTooltip name="СохранитьРасширеннаяПодсказка" id="239"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ВнешниеСистемы</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="РедакторКарты" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактор карты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="УидСессии" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уид сессии</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПодключениеУстановлено" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подключение установлено</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИдВебХука" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ид веб хука</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>0</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АвтоматическиВыдаватьКартуПриПокупке" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автоматически выдавать карту при покупке</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтправитьСсылкуПоSMS" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>По SMS</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КаналРассылкиКарты" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Канал рассылки карты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПараметрыВнешнейСистемы" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры внешней системы</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ВидыКартПоУмолчанию" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Виды карт по умолчанию</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ВидКартыПоУмолчанию" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид карты по умолчанию</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ВидыКарт</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИдПроектаДляРедактирования" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ид проекта для редактирования</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВидыКарт" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Виды карт</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЭтоОблако" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это облако</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресAPI" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес API</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СкрытьПоказатьДополнительно" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скрыть показать дополнительно</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Hide show additionally</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скрыть показать дополнительно</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Hide show additionally</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СкрытьПоказатьДополнительно</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="РедактироватьВидКарты" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактировать вид карты</v8:content>
+				</v8:item>
+			</Title>
+			<Action>РедактироватьВидКарты</Action>
+		</Command>
+		<Command name="СоздатьКлюч" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать ключ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сгенерировать ключ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьКлюч</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="УдалитьИЗакрыть" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить и закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить и закрыть</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьИЗакрыть</Action>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>CommonCommand.ПрисоединенныеФайлы</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

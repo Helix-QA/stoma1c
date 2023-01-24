@@ -1,0 +1,4153 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<Group>AlwaysHorizontal</Group>
+	<HorizontalAlign>Center</HorizontalAlign>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="ЗаглушкаВыравнивание" id="684">
+			<Visible>false</Visible>
+			<Width>11</Width>
+			<ContextMenu name="ЗаглушкаВыравниваниеКонтекстноеМеню" id="685"/>
+			<ExtendedTooltip name="ЗаглушкаВыравниваниеРасширеннаяПодсказка" id="686"/>
+		</LabelDecoration>
+		<UsualGroup name="ГруппаВыравнивание" id="208">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа выравнивание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа выравнивание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Vertical</Group>
+			<HorizontalAlign>Left</HorizontalAlign>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаВыравниваниеРасширеннаяПодсказка" id="209"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаШапка" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шапка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шапка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаШапкаExtendedTooltip" id="80"/>
+					<ChildItems>
+						<InputField name="РазделУчета" id="197">
+							<DataPath>Объект.РазделУчета</DataPath>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>57</MaxWidth>
+							<ClearButton>false</ClearButton>
+							<SpinButton>false</SpinButton>
+							<OpenButton>false</OpenButton>
+							<ListChoiceMode>true</ListChoiceMode>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Сертификаты</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">Сертификаты</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Денежные средства на лицевых счетах</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">Денежные средства на лицевых счетах</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Продажи</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">Продажи</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Расчеты с подотчетниками</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">Расчеты с подотчетниками</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Взаиморасчеты с поставщиками</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">Взаиморасчеты</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Расчеты с персоналом</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">Расчеты с персоналом</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Бонусные счета</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">Бонусные счета</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<BackColor>#FFE4C4</BackColor>
+							<ContextMenu name="РазделУчетаКонтекстноеМеню" id="198"/>
+							<ExtendedTooltip name="РазделУчетаРасширеннаяПодсказка" id="199"/>
+							<Events>
+								<Event name="OnChange">РазделУчетаПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаСертификаты" id="200">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сертификаты</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont ref="style:NormalTextFont" height="11" kind="StyleItem"/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа сертификаты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>WeakSeparation</Representation>
+					<ExtendedTooltip name="ГруппаСертификатыРасширеннаяПодсказка" id="201"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаКомманднаяПанель_Сертификаты" id="412">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа коммандная панель сертификаты</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа коммандная панель сертификаты</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>AlwaysHorizontal</Group>
+							<HorizontalSpacing>Double</HorizontalSpacing>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаКомманднаяПанель_СертификатыРасширеннаяПодсказка" id="413"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаКомманднаяПанельРедактирование_Сертификаты" id="414">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа коммандная панель редактирование сертификаты</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа коммандная панель редактирование сертификаты</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>HorizontalIfPossible</Group>
+									<HorizontalSpacing>Single</HorizontalSpacing>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаКомманднаяПанельРедактирование_СертификатыРасширеннаяПодсказка" id="415"/>
+									<ChildItems>
+										<Button name="КнопкаДобавить_Сертификаты" id="416">
+											<Type>UsualButton</Type>
+											<Representation>PictureAndText</Representation>
+											<CommandName>Form.Item.СерийныеНомераСертификатов.StandardCommand.Add</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.Добавить</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<ButtonImportance>Supplementary</ButtonImportance>
+											<ExtendedTooltip name="КнопкаДобавить_СертификатыРасширеннаяПодсказка" id="417"/>
+										</Button>
+										<Button name="КнопкаСкопировать_Сертификаты" id="418">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Item.СерийныеНомераСертификатов.StandardCommand.Copy</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.ДобавитьКопированием</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Скопировать</v8:content>
+												</v8:item>
+											</Title>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<PictureLocation>Left</PictureLocation>
+											<ButtonImportance>Supplementary</ButtonImportance>
+											<ExtendedTooltip name="КнопкаСкопировать_СертификатыРасширеннаяПодсказка" id="419"/>
+										</Button>
+										<Button name="КнопкаУдалить_Сертификаты" id="420">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Item.СерийныеНомераСертификатов.StandardCommand.Delete</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.ВКорзину</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Удалить</v8:content>
+												</v8:item>
+											</Title>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<PictureLocation>Left</PictureLocation>
+											<ButtonImportance>Supplementary</ButtonImportance>
+											<ExtendedTooltip name="КнопкаУдалить_СертификатыРасширеннаяПодсказка" id="421"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<Button name="ЗагрузитьДанныеИзВнешнегоИсточника_Сертификаты" id="284">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<CommandName>Form.Command.ЗагрузитьДанныеИзВнешнегоИсточникаСертификаты</CommandName>
+									<Picture>
+										<xr:Ref>CommonPicture.ИзВнешнегоИсточника</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Загрузить из внешнего источника</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ButtonImportance>Supplementary</ButtonImportance>
+									<ExtendedTooltip name="ЗагрузитьДанныеИзВнешнегоИсточника_СертификатыРасширеннаяПодсказка" id="285"/>
+								</Button>
+								<CommandBar name="ГруппаКнопки_Сертификаты" id="430">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа кнопки сертификаты</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Stocks group buttons</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа кнопки сертификаты</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Stocks group buttons</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>4</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ExtendedTooltip name="ГруппаКнопки_СертификатыРасширеннаяПодсказка" id="431"/>
+									<ChildItems>
+										<Popup name="ГруппаЕще_Сертификаты" id="432">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа еще сертификаты</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа еще сертификаты</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Picture>
+												<xr:Ref>CommonPicture.МенюДополнительныеФункции</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ShapeRepresentation>WhenActive</ShapeRepresentation>
+											<ExtendedTooltip name="ГруппаЕще_СертификатыРасширеннаяПодсказка" id="433"/>
+											<ChildItems>
+												<Button name="КнопкаСортироватьСписокПоВозрастанию_Сертификаты" id="434">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Item.СерийныеНомераСертификатов.StandardCommand.SortListAsc</CommandName>
+													<Picture>
+														<xr:Ref>CommonPicture.УпорядочитьПоВозрастанию</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+													<ExtendedTooltip name="КнопкаСортироватьСписокПоВозрастанию_СертификатыРасширеннаяПодсказка" id="435"/>
+												</Button>
+												<Button name="КнопкаСортироватьСписокПоУбыванию_Сертификаты" id="436">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Item.СерийныеНомераСертификатов.StandardCommand.SortListDesc</CommandName>
+													<Picture>
+														<xr:Ref>CommonPicture.УпорядочитьПоУбыванию</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+													<ExtendedTooltip name="КнопкаСортироватьСписокПоУбыванию_СертификатыРасширеннаяПодсказка" id="437"/>
+												</Button>
+												<Button name="КнопкаВывестиСписок_Сертификаты" id="438">
+													<Type>CommandBarButton</Type>
+													<Representation>Picture</Representation>
+													<CommandName>Form.Item.СерийныеНомераСертификатов.StandardCommand.OutputList</CommandName>
+													<Picture>
+														<xr:Ref>CommonPicture.НаПечать</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<ShapeRepresentation>None</ShapeRepresentation>
+													<PictureLocation>Left</PictureLocation>
+													<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+													<ButtonImportance>Supplementary</ButtonImportance>
+													<ExtendedTooltip name="КнопкаВывестиСписок_СертификатыРасширеннаяПодсказка" id="439"/>
+												</Button>
+											</ChildItems>
+										</Popup>
+									</ChildItems>
+								</CommandBar>
+								<SearchStringAddition name="ДополнениеСтрокаПоиска_Сертификаты" id="440">
+									<AdditionSource>
+										<Item>СерийныеНомераСертификатов</Item>
+										<Type>SearchStringRepresentation</Type>
+									</AdditionSource>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дополнение строка поиска сертификаты</v8:content>
+										</v8:item>
+									</Title>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>20</MaxWidth>
+									<ContextMenu name="ДополнениеСтрокаПоиска_СертификатыКонтекстноеМеню" id="441"/>
+									<ExtendedTooltip name="ДополнениеСтрокаПоиска_СертификатыРасширеннаяПодсказка" id="442"/>
+								</SearchStringAddition>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="СерийныеНомераСертификатов" id="7">
+							<Representation>List</Representation>
+							<CommandBarLocation>None</CommandBarLocation>
+							<MaxWidth>150</MaxWidth>
+							<RowSelectionMode>Cell</RowSelectionMode>
+							<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Объект.СерийныеНомераСертификатов</DataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="СерийныеНомераСертификатовКонтекстноеМеню" id="8">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<ButtonGroup name="СписокКонтекстноеМенюГруппаСоздание_Сертификаты" id="443">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа создание сертификаты</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа создание сертификаты</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="СписокКонтекстноеМенюГруппаСоздание_СертификатыРасширеннаяПодсказка" id="444"/>
+										<ChildItems>
+											<Button name="СписокКонтекстноеМенюКнопкаСоздать_Сертификаты" id="445">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.СерийныеНомераСертификатов.StandardCommand.Add</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.Добавить</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаСоздать_СертификатыРасширеннаяПодсказка" id="446"/>
+											</Button>
+											<Button name="СписокКонтекстноеМенюКнопкаСкопировать_Сертификаты" id="447">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.СерийныеНомераСертификатов.StandardCommand.Copy</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.ДобавитьКопированием</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаСкопировать_СертификатыРасширеннаяПодсказка" id="448"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<ButtonGroup name="СписокКонтекстноеМенюГруппаРедактирование_Сертификаты" id="449">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа редактирование сертификаты</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа редактирование сертификаты</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="СписокКонтекстноеМенюГруппаРедактирование_СертификатыРасширеннаяПодсказка" id="450"/>
+										<ChildItems>
+											<Button name="СписокКонтекстноеМенюКнопкаИзменить_Сертификаты" id="451">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.СерийныеНомераСертификатов.StandardCommand.Change</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.Редактировать</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаИзменить_СертификатыРасширеннаяПодсказка" id="452"/>
+											</Button>
+											<Button name="СписокКонтекстноеМенюКнопкаУдалить_Сертификаты" id="453">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.СерийныеНомераСертификатов.StandardCommand.Delete</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.ВКорзину</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Удалить</v8:content>
+													</v8:item>
+												</Title>
+												<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаУдалить_СертификатыРасширеннаяПодсказка" id="454"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<ButtonGroup name="СписокКонтекстноеМенюГруппаСортировка_Сертификаты" id="455">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа сортировка сертификаты</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа сортировка сертификаты</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="СписокКонтекстноеМенюГруппаСортировка_СертификатыРасширеннаяПодсказка" id="456"/>
+										<ChildItems>
+											<Button name="СписокКонтекстноеМенюСортироватьСписокПоВозрастанию_Сертификаты" id="457">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.СерийныеНомераСертификатов.StandardCommand.SortListAsc</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.УпорядочитьПоВозрастанию</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+												<ExtendedTooltip name="СписокКонтекстноеМенюСортироватьСписокПоВозрастанию_СертификатыРасширеннаяПодсказка" id="458"/>
+											</Button>
+											<Button name="СписокКонтекстноеМенюСортироватьСписокПоУбыванию_Сертификаты" id="459">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.СерийныеНомераСертификатов.StandardCommand.SortListDesc</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.УпорядочитьПоУбыванию</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+												<ExtendedTooltip name="СписокКонтекстноеМенюСортироватьСписокПоУбыванию_СертификатыРасширеннаяПодсказка" id="460"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<Button name="СписокКонтекстноеМенюКнопкаВывестиСписок_Сертификаты" id="461">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<CommandName>Form.Item.СерийныеНомераСертификатов.StandardCommand.OutputList</CommandName>
+										<Picture>
+											<xr:Ref>CommonPicture.НаПечать</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ShapeRepresentation>None</ShapeRepresentation>
+										<PictureLocation>Left</PictureLocation>
+										<ButtonImportance>Supplementary</ButtonImportance>
+										<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаВывестиСписок_СертификатыРасширеннаяПодсказка" id="462"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="СерийныеНомераСертификатовКоманднаяПанель" id="9"/>
+							<ExtendedTooltip name="СерийныеНомераСертификатовExtendedTooltip" id="88"/>
+							<SearchStringAddition name="СерийныеНомераСертификатовСтрокаПоиска" id="149">
+								<AdditionSource>
+									<Item>СерийныеНомераСертификатов</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СерийныеНомераСертификатовСтрокаПоискаКонтекстноеМеню" id="150"/>
+								<ExtendedTooltip name="СерийныеНомераСертификатовСтрокаПоискаРасширеннаяПодсказка" id="151"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СерийныеНомераСертификатовСостояниеПросмотра" id="152">
+								<AdditionSource>
+									<Item>СерийныеНомераСертификатов</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СерийныеНомераСертификатовСостояниеПросмотраКонтекстноеМеню" id="153"/>
+								<ExtendedTooltip name="СерийныеНомераСертификатовСостояниеПросмотраРасширеннаяПодсказка" id="154"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СерийныеНомераСертификатовУправлениеПоиском" id="155">
+								<AdditionSource>
+									<Item>СерийныеНомераСертификатов</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СерийныеНомераСертификатовУправлениеПоискомКонтекстноеМеню" id="156"/>
+								<ExtendedTooltip name="СерийныеНомераСертификатовУправлениеПоискомРасширеннаяПодсказка" id="157"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnActivateCell">СерийныеНомераСертификатовПриАктивизацииЯчейки</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="СерийныеНомераСертификатовНомерСтроки" id="10">
+									<DataPath>Объект.СерийныеНомераСертификатов.LineNumber</DataPath>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<AutoEditMode>true</AutoEditMode>
+									<MaxWidth>3</MaxWidth>
+									<ContextMenu name="СерийныеНомераСертификатовНомерСтрокиКонтекстноеМеню" id="11"/>
+									<ExtendedTooltip name="СерийныеНомераСертификатовНомерСтрокиExtendedTooltip" id="89"/>
+								</LabelField>
+								<InputField name="СерийныеНомераСертификатовНоменклатура" id="14">
+									<DataPath>Объект.СерийныеНомераСертификатов.Номенклатура</DataPath>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<HorizontalAlign>Left</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>20</MaxWidth>
+									<ContextMenu name="СерийныеНомераСертификатовНоменклатураКонтекстноеМеню" id="15"/>
+									<ExtendedTooltip name="СерийныеНомераСертификатовНоменклатураExtendedTooltip" id="90"/>
+									<Events>
+										<Event name="OnChange">СерийныеНомераСертификатовНоменклатураПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="СерийныеНомераСертификатовСерийныйНомер" id="12">
+									<DataPath>Объект.СерийныеНомераСертификатов.СерийныйНомер</DataPath>
+									<Visible>false</Visible>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="СерийныеНомераСертификатовСерийныйНомерКонтекстноеМеню" id="13"/>
+									<ExtendedTooltip name="СерийныеНомераСертификатовСерийныйНомерExtendedTooltip" id="91"/>
+								</InputField>
+								<InputField name="СерийныеНомераСертификатовПартия" id="21">
+									<DataPath>Объект.СерийныеНомераСертификатов.Партия</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Серия</v8:content>
+										</v8:item>
+									</Title>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<AutoEditMode>true</AutoEditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>20</MaxWidth>
+									<ContextMenu name="СерийныеНомераСертификатовПартияКонтекстноеМеню" id="22"/>
+									<ExtendedTooltip name="СерийныеНомераСертификатовПартияExtendedTooltip" id="92"/>
+									<Events>
+										<Event name="StartChoice">СерийныеНомераСертификатовПартияНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<InputField name="СерийныеНомераСертификатовКлиент" id="119">
+									<DataPath>Объект.СерийныеНомераСертификатов.Клиент</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пациент</v8:content>
+										</v8:item>
+									</Title>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<AutoEditMode>true</AutoEditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>20</MaxWidth>
+									<ContextMenu name="СерийныеНомераСертификатовКлиентКонтекстноеМеню" id="120"/>
+									<ExtendedTooltip name="СерийныеНомераСертификатовКлиентРасширеннаяПодсказка" id="121"/>
+								</InputField>
+								<InputField name="СерийныеНомераСертификатовКоличество" id="122">
+									<DataPath>Объект.СерийныеНомераСертификатов.Количество</DataPath>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<AutoEditMode>true</AutoEditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>10</MaxWidth>
+									<ContextMenu name="СерийныеНомераСертификатовКоличествоКонтекстноеМеню" id="123"/>
+									<ExtendedTooltip name="СерийныеНомераСертификатовКоличествоРасширеннаяПодсказка" id="124"/>
+								</InputField>
+								<InputField name="СерийныеНомераСертификатовСумма" id="125">
+									<DataPath>Объект.СерийныеНомераСертификатов.Сумма</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<AutoEditMode>true</AutoEditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>10</MaxWidth>
+									<ContextMenu name="СерийныеНомераСертификатовСуммаКонтекстноеМеню" id="126"/>
+									<ExtendedTooltip name="СерийныеНомераСертификатовСуммаРасширеннаяПодсказка" id="127"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаДенежныеСредстваНаЛицевыхСчетах" id="202">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Денежные средства на лицевых счетах</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont ref="style:NormalTextFont" height="11" kind="StyleItem"/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа денежные средства на лицевых счетах</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>WeakSeparation</Representation>
+					<ExtendedTooltip name="ГруппаДенежныеСредстваНаЛицевыхСчетахРасширеннаяПодсказка" id="203"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаКомманднаяПанель_ДенежныеСредства" id="483">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа коммандная панель</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа коммандная панель сертификаты</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>AlwaysHorizontal</Group>
+							<HorizontalSpacing>Double</HorizontalSpacing>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаКомманднаяПанель_ДенежныеСредстваРасширеннаяПодсказка" id="484"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаКомманднаяПанельРедактирование_ДенежныеСредства" id="485">
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа коммандная панель редактирование сертификаты</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>HorizontalIfPossible</Group>
+									<HorizontalSpacing>Single</HorizontalSpacing>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаКомманднаяПанельРедактирование_ДенежныеСредстваРасширеннаяПодсказка" id="486"/>
+									<ChildItems>
+										<Button name="КнопкаДобавить_ДенежныеСредства" id="487">
+											<Type>UsualButton</Type>
+											<Representation>PictureAndText</Representation>
+											<CommandName>Form.Item.ТаблицаДенежныеСредстваНаЛицевыхСчетах.StandardCommand.Add</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.Добавить</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<ButtonImportance>Supplementary</ButtonImportance>
+											<ExtendedTooltip name="КнопкаДобавить_ДенежныеСредстваРасширеннаяПодсказка" id="488"/>
+										</Button>
+										<Button name="КнопкаСкопировать_ДенежныеСредства" id="489">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Item.ТаблицаДенежныеСредстваНаЛицевыхСчетах.StandardCommand.Copy</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.ДобавитьКопированием</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Скопировать</v8:content>
+												</v8:item>
+											</Title>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<PictureLocation>Left</PictureLocation>
+											<ButtonImportance>Supplementary</ButtonImportance>
+											<ExtendedTooltip name="КнопкаСкопировать_ДенежныеСредстваРасширеннаяПодсказка" id="490"/>
+										</Button>
+										<Button name="КнопкаУдалить_ДенежныеСредства" id="491">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Item.ТаблицаДенежныеСредстваНаЛицевыхСчетах.StandardCommand.Delete</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.ВКорзину</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Удалить</v8:content>
+												</v8:item>
+											</Title>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<PictureLocation>Left</PictureLocation>
+											<ButtonImportance>Supplementary</ButtonImportance>
+											<ExtendedTooltip name="КнопкаУдалить_ДенежныеСредстваРасширеннаяПодсказка" id="492"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<Button name="ЗагрузитьДанныеИзВнешнегоИсточника_ДенежныеСредства" id="286">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<CommandName>Form.Command.ЗагрузитьДанныеИзВнешнегоИсточникаДенежныеСредстваНаЛицевыхСчетах</CommandName>
+									<Picture>
+										<xr:Ref>CommonPicture.ИзВнешнегоИсточника</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Загрузить из внешнего источника</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ButtonImportance>Supplementary</ButtonImportance>
+									<ExtendedTooltip name="ЗагрузитьДанныеИзВнешнегоИсточника_ДенежныеСредстваРасширеннаяПодсказка" id="287"/>
+								</Button>
+								<CommandBar name="ГруппаКнопки_ДенежныеСредства" id="493">
+									<Title>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Stocks group buttons</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа кнопки денежные средства</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа кнопки сертификаты</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Stocks group buttons</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>4</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ExtendedTooltip name="ГруппаКнопки_ДенежныеСредстваРасширеннаяПодсказка" id="494"/>
+									<ChildItems>
+										<Popup name="ГруппаЕще_ДенежныеСредства" id="495">
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа еще сертификаты</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Picture>
+												<xr:Ref>CommonPicture.МенюДополнительныеФункции</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ShapeRepresentation>WhenActive</ShapeRepresentation>
+											<ExtendedTooltip name="ГруппаЕще_ДенежныеСредстваРасширеннаяПодсказка" id="496"/>
+											<ChildItems>
+												<Button name="КнопкаСортироватьСписокПоВозрастанию_ДенежныеСредства" id="497">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Item.ТаблицаДенежныеСредстваНаЛицевыхСчетах.StandardCommand.SortListAsc</CommandName>
+													<Picture>
+														<xr:Ref>CommonPicture.УпорядочитьПоВозрастанию</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+													<ExtendedTooltip name="КнопкаСортироватьСписокПоВозрастанию_ДенежныеСредстваРасширеннаяПодсказка" id="498"/>
+												</Button>
+												<Button name="КнопкаСортироватьСписокПоУбыванию_ДенежныеСредства" id="499">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Item.ТаблицаДенежныеСредстваНаЛицевыхСчетах.StandardCommand.SortListDesc</CommandName>
+													<Picture>
+														<xr:Ref>CommonPicture.УпорядочитьПоУбыванию</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+													<ExtendedTooltip name="КнопкаСортироватьСписокПоУбыванию_ДенежныеСредстваРасширеннаяПодсказка" id="500"/>
+												</Button>
+												<Button name="КнопкаВывестиСписок_ДенежныеСредства" id="501">
+													<Type>CommandBarButton</Type>
+													<Representation>Picture</Representation>
+													<CommandName>Form.Item.ТаблицаДенежныеСредстваНаЛицевыхСчетах.StandardCommand.OutputList</CommandName>
+													<Picture>
+														<xr:Ref>CommonPicture.НаПечать</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<ShapeRepresentation>None</ShapeRepresentation>
+													<PictureLocation>Left</PictureLocation>
+													<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+													<ButtonImportance>Supplementary</ButtonImportance>
+													<ExtendedTooltip name="КнопкаВывестиСписок_ДенежныеСредстваРасширеннаяПодсказка" id="502"/>
+												</Button>
+											</ChildItems>
+										</Popup>
+									</ChildItems>
+								</CommandBar>
+								<SearchStringAddition name="ДополнениеСтрокаПоиска_ДенежныеСредства" id="505">
+									<AdditionSource>
+										<Item>ТаблицаДенежныеСредстваНаЛицевыхСчетах</Item>
+										<Type>SearchStringRepresentation</Type>
+									</AdditionSource>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>20</MaxWidth>
+									<ContextMenu name="ДополнениеСтрокаПоиска_ДенежныеСредстваКонтекстноеМеню" id="506"/>
+									<ExtendedTooltip name="ДополнениеСтрокаПоиска_ДенежныеСредстваРасширеннаяПодсказка" id="507"/>
+								</SearchStringAddition>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="ТаблицаДенежныеСредстваНаЛицевыхСчетах" id="24">
+							<CommandBarLocation>None</CommandBarLocation>
+							<MaxWidth>150</MaxWidth>
+							<RowSelectionMode>Cell</RowSelectionMode>
+							<Footer>true</Footer>
+							<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Объект.ДенежныеСредстваНаЛицевыхСчетах</DataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТаблицаДенежныеСредстваНаЛицевыхСчетахКонтекстноеМеню" id="25">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<ButtonGroup name="СписокКонтекстноеМенюГруппаСоздание_ДенежныеСредства" id="463">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа создание денежные средства</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа создание денежные средства</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="СписокКонтекстноеМенюГруппаСоздание_ДенежныеСредстваРасширеннаяПодсказка" id="464"/>
+										<ChildItems>
+											<Button name="СписокКонтекстноеМенюКнопкаСоздать_ДенежныеСредства" id="465">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ТаблицаДенежныеСредстваНаЛицевыхСчетах.StandardCommand.Add</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.Добавить</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаСоздать_ДенежныеСредстваРасширеннаяПодсказка" id="466"/>
+											</Button>
+											<Button name="СписокКонтекстноеМенюКнопкаСкопировать_ДенежныеСредства" id="467">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ТаблицаДенежныеСредстваНаЛицевыхСчетах.StandardCommand.Copy</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.ДобавитьКопированием</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаСкопировать_ДенежныеСредстваРасширеннаяПодсказка" id="468"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<ButtonGroup name="СписокКонтекстноеМенюГруппаРедактирование_ДенежныеСредства" id="469">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа редактирование денежные средства</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа редактирование денежные средства</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="СписокКонтекстноеМенюГруппаРедактирование_ДенежныеСредстваРасширеннаяПодсказка" id="470"/>
+										<ChildItems>
+											<Button name="СписокКонтекстноеМенюКнопкаИзменить_ДенежныеСредства" id="471">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ТаблицаДенежныеСредстваНаЛицевыхСчетах.StandardCommand.Change</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.Редактировать</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаИзменить_ДенежныеСредстваРасширеннаяПодсказка" id="472"/>
+											</Button>
+											<Button name="СписокКонтекстноеМенюКнопкаУдалить_ДенежныеСредства" id="473">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ТаблицаДенежныеСредстваНаЛицевыхСчетах.StandardCommand.Delete</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.ВКорзину</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Удалить</v8:content>
+													</v8:item>
+												</Title>
+												<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаУдалить_ДенежныеСредстваРасширеннаяПодсказка" id="474"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<ButtonGroup name="СписокКонтекстноеМенюГруппаСортировка_ДенежныеСредства" id="475">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа сортировка денежные средства</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа сортировка денежные средства</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="СписокКонтекстноеМенюГруппаСортировка_ДенежныеСредстваРасширеннаяПодсказка" id="476"/>
+										<ChildItems>
+											<Button name="СписокКонтекстноеМенюСортироватьСписокПоВозрастанию_ДенежныеСредства" id="477">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ТаблицаДенежныеСредстваНаЛицевыхСчетах.StandardCommand.SortListAsc</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.УпорядочитьПоВозрастанию</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+												<ExtendedTooltip name="СписокКонтекстноеМенюСортироватьСписокПоВозрастанию_ДенежныеСредстваРасширеннаяПодсказка" id="478"/>
+											</Button>
+											<Button name="СписокКонтекстноеМенюСортироватьСписокПоУбыванию_ДенежныеСредства" id="479">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ТаблицаДенежныеСредстваНаЛицевыхСчетах.StandardCommand.SortListDesc</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.УпорядочитьПоУбыванию</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+												<ExtendedTooltip name="СписокКонтекстноеМенюСортироватьСписокПоУбыванию_ДенежныеСредстваРасширеннаяПодсказка" id="480"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<Button name="СписокКонтекстноеМенюКнопкаВывестиСписок_ДенежныеСредства" id="481">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<CommandName>Form.Item.СерийныеНомераСертификатов.StandardCommand.OutputList</CommandName>
+										<Picture>
+											<xr:Ref>CommonPicture.НаПечать</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ShapeRepresentation>None</ShapeRepresentation>
+										<PictureLocation>Left</PictureLocation>
+										<ButtonImportance>Supplementary</ButtonImportance>
+										<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаВывестиСписок_ДенежныеСредстваРасширеннаяПодсказка" id="482"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="ТаблицаДенежныеСредстваНаЛицевыхСчетахКоманднаяПанель" id="26"/>
+							<ExtendedTooltip name="ТаблицаДенежныеСредстваНаЛицевыхСчетахExtendedTooltip" id="94"/>
+							<SearchStringAddition name="ТаблицаДенежныеСредстваНаЛицевыхСчетахСтрокаПоиска" id="158">
+								<AdditionSource>
+									<Item>ТаблицаДенежныеСредстваНаЛицевыхСчетах</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаДенежныеСредстваНаЛицевыхСчетахСтрокаПоискаКонтекстноеМеню" id="159"/>
+								<ExtendedTooltip name="ТаблицаДенежныеСредстваНаЛицевыхСчетахСтрокаПоискаРасширеннаяПодсказка" id="160"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТаблицаДенежныеСредстваНаЛицевыхСчетахСостояниеПросмотра" id="161">
+								<AdditionSource>
+									<Item>ТаблицаДенежныеСредстваНаЛицевыхСчетах</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаДенежныеСредстваНаЛицевыхСчетахСостояниеПросмотраКонтекстноеМеню" id="162"/>
+								<ExtendedTooltip name="ТаблицаДенежныеСредстваНаЛицевыхСчетахСостояниеПросмотраРасширеннаяПодсказка" id="163"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТаблицаДенежныеСредстваНаЛицевыхСчетахУправлениеПоиском" id="164">
+								<AdditionSource>
+									<Item>ТаблицаДенежныеСредстваНаЛицевыхСчетах</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаДенежныеСредстваНаЛицевыхСчетахУправлениеПоискомКонтекстноеМеню" id="165"/>
+								<ExtendedTooltip name="ТаблицаДенежныеСредстваНаЛицевыхСчетахУправлениеПоискомРасширеннаяПодсказка" id="166"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnStartEdit">ТаблицаДенежныеСредстваНаЛицевыхСчетахПриНачалеРедактирования</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="Таблица1НомерСтроки" id="27">
+									<DataPath>Объект.ДенежныеСредстваНаЛицевыхСчетах.LineNumber</DataPath>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<FooterBackColor>style:FormBackColor</FooterBackColor>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="Таблица1НомерСтрокиКонтекстноеМеню" id="28"/>
+									<ExtendedTooltip name="Таблица1НомерСтрокиExtendedTooltip" id="95"/>
+								</LabelField>
+								<InputField name="Таблица1Контрагент" id="29">
+									<DataPath>Объект.ДенежныеСредстваНаЛицевыхСчетах.Контрагент</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пациент</v8:content>
+										</v8:item>
+									</Title>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<HorizontalAlign>Left</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterBackColor>style:FormBackColor</FooterBackColor>
+									<AutoEditMode>true</AutoEditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>20</MaxWidth>
+									<ContextMenu name="Таблица1КонтрагентКонтекстноеМеню" id="30"/>
+									<ExtendedTooltip name="Таблица1КонтрагентExtendedTooltip" id="96"/>
+								</InputField>
+								<InputField name="Таблица1ВидЛицевогоСчета" id="49">
+									<DataPath>Объект.ДенежныеСредстваНаЛицевыхСчетах.ВидЛицевогоСчета</DataPath>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<FooterBackColor>style:FormBackColor</FooterBackColor>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="Таблица1ВидЛицевогоСчетаКонтекстноеМеню" id="50"/>
+									<ExtendedTooltip name="Таблица1ВидЛицевогоСчетаExtendedTooltip" id="97"/>
+								</InputField>
+								<InputField name="Таблица1Сумма" id="31">
+									<DataPath>Объект.ДенежныеСредстваНаЛицевыхСчетах.Сумма</DataPath>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<FooterDataPath>Объект.ДенежныеСредстваНаЛицевыхСчетах.TotalСумма</FooterDataPath>
+									<FooterBackColor>style:FormBackColor</FooterBackColor>
+									<FooterHorizontalAlign>Right</FooterHorizontalAlign>
+									<AutoEditMode>true</AutoEditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>9</MaxWidth>
+									<ContextMenu name="Таблица1СуммаКонтекстноеМеню" id="32"/>
+									<ExtendedTooltip name="Таблица1СуммаExtendedTooltip" id="98"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаПродажи" id="204">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Продажи</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont ref="style:NormalTextFont" height="11" kind="StyleItem"/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа продажи</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>WeakSeparation</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПродажиРасширеннаяПодсказка" id="205"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаКомманднаяПанель_Продажи" id="528">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа коммандная панель</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа коммандная панель сертификаты</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>AlwaysHorizontal</Group>
+							<HorizontalSpacing>Double</HorizontalSpacing>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаКомманднаяПанель_ПродажиРасширеннаяПодсказка" id="529"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаКомманднаяПанельРедактирование_Продажи" id="530">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа коммандная панель редактирование продажи</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа коммандная панель редактирование сертификаты</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>HorizontalIfPossible</Group>
+									<HorizontalSpacing>Single</HorizontalSpacing>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаКомманднаяПанельРедактирование_ПродажиРасширеннаяПодсказка" id="531"/>
+									<ChildItems>
+										<Button name="КнопкаДобавить_Продажи" id="532">
+											<Type>UsualButton</Type>
+											<Representation>PictureAndText</Representation>
+											<CommandName>Form.Item.ТаблицаПродажи.StandardCommand.Add</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.Добавить</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<ButtonImportance>Supplementary</ButtonImportance>
+											<ExtendedTooltip name="КнопкаДобавить_ПродажиРасширеннаяПодсказка" id="533"/>
+										</Button>
+										<Button name="КнопкаСкопировать_Продажи" id="534">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Item.ТаблицаПродажи.StandardCommand.Copy</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.ДобавитьКопированием</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Скопировать</v8:content>
+												</v8:item>
+											</Title>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<PictureLocation>Left</PictureLocation>
+											<ButtonImportance>Supplementary</ButtonImportance>
+											<ExtendedTooltip name="КнопкаСкопировать_ПродажиРасширеннаяПодсказка" id="535"/>
+										</Button>
+										<Button name="КнопкаУдалить_Продажи" id="536">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Item.ТаблицаПродажи.StandardCommand.Delete</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.ВКорзину</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Удалить</v8:content>
+												</v8:item>
+											</Title>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<PictureLocation>Left</PictureLocation>
+											<ButtonImportance>Supplementary</ButtonImportance>
+											<ExtendedTooltip name="КнопкаУдалить_ПродажиРасширеннаяПодсказка" id="537"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<Button name="ЗагрузитьДанныеИзВнешнегоИсточника_Продажи" id="280">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<CommandName>Form.Command.ЗагрузитьДанныеИзВнешнегоИсточникаПродажи</CommandName>
+									<Picture>
+										<xr:Ref>CommonPicture.ИзВнешнегоИсточника</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Загрузить из внешнего источника</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ButtonImportance>Supplementary</ButtonImportance>
+									<ExtendedTooltip name="ЗагрузитьДанныеИзВнешнегоИсточника_ПродажиРасширеннаяПодсказка" id="281"/>
+								</Button>
+								<CommandBar name="ГруппаКнопки_Продажи" id="538">
+									<Title>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Stocks group buttons</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа кнопки денежные средства</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Еще возможности</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Stocks group buttons</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>4</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<GroupVerticalAlign>Center</GroupVerticalAlign>
+									<ExtendedTooltip name="ГруппаКнопки_ПродажиРасширеннаяПодсказка" id="539"/>
+									<ChildItems>
+										<Popup name="ГруппаЕще_Продажи" id="540">
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Еще возможности</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Picture>
+												<xr:Ref>CommonPicture.МенюДополнительныеФункции</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<ExtendedTooltip name="ГруппаЕще_ПродажиРасширеннаяПодсказка" id="541"/>
+											<ChildItems>
+												<Button name="КнопкаСортироватьСписокПоВозрастанию_Продажи" id="542">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Item.ТаблицаПродажи.StandardCommand.SortListAsc</CommandName>
+													<Picture>
+														<xr:Ref>CommonPicture.УпорядочитьПоВозрастанию</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+													<ExtendedTooltip name="КнопкаСортироватьСписокПоВозрастанию_ПродажиРасширеннаяПодсказка" id="543"/>
+												</Button>
+												<Button name="КнопкаСортироватьСписокПоУбыванию_Продажи" id="544">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Item.ТаблицаПродажи.StandardCommand.SortListDesc</CommandName>
+													<Picture>
+														<xr:Ref>CommonPicture.УпорядочитьПоУбыванию</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+													<ExtendedTooltip name="КнопкаСортироватьСписокПоУбыванию_ПродажиРасширеннаяПодсказка" id="545"/>
+												</Button>
+												<Button name="КнопкаВывестиСписок_Продажи" id="546">
+													<Type>CommandBarButton</Type>
+													<Representation>Picture</Representation>
+													<CommandName>Form.Item.ТаблицаПродажи.StandardCommand.OutputList</CommandName>
+													<Picture>
+														<xr:Ref>CommonPicture.НаПечать</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<ShapeRepresentation>None</ShapeRepresentation>
+													<PictureLocation>Left</PictureLocation>
+													<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+													<ButtonImportance>Supplementary</ButtonImportance>
+													<ExtendedTooltip name="КнопкаВывестиСписок_ПродажиРасширеннаяПодсказка" id="547"/>
+												</Button>
+											</ChildItems>
+										</Popup>
+									</ChildItems>
+								</CommandBar>
+								<SearchStringAddition name="ДополнениеСтрокаПоиска_Продажи" id="550">
+									<AdditionSource>
+										<Item>ТаблицаПродажи</Item>
+										<Type>SearchStringRepresentation</Type>
+									</AdditionSource>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>20</MaxWidth>
+									<ContextMenu name="ДополнениеСтрокаПоиска_ПродажиКонтекстноеМеню" id="551"/>
+									<ExtendedTooltip name="ДополнениеСтрокаПоиска_ПродажиРасширеннаяПодсказка" id="552"/>
+								</SearchStringAddition>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="ТаблицаПродажи" id="34">
+							<CommandBarLocation>None</CommandBarLocation>
+							<MaxWidth>150</MaxWidth>
+							<RowSelectionMode>Cell</RowSelectionMode>
+							<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Объект.Продажи</DataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТаблицаПродажиКонтекстноеМеню" id="35">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<ButtonGroup name="СписокКонтекстноеМенюГруппаСоздание_Продажи" id="508">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа создание продажи</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа создание продажи</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="СписокКонтекстноеМенюГруппаСоздание_ПродажиРасширеннаяПодсказка" id="509"/>
+										<ChildItems>
+											<Button name="СписокКонтекстноеМенюКнопкаСоздать_Продажи" id="510">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ТаблицаПродажи.StandardCommand.Add</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.Добавить</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаСоздать_ПродажиРасширеннаяПодсказка" id="511"/>
+											</Button>
+											<Button name="СписокКонтекстноеМенюКнопкаСкопировать_Продажи" id="512">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ТаблицаПродажи.StandardCommand.Copy</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.ДобавитьКопированием</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаСкопировать_ПродажиРасширеннаяПодсказка" id="513"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<ButtonGroup name="СписокКонтекстноеМенюГруппаРедактирование_Продажи" id="514">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа редактирование продажи</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа редактирование продажи</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="СписокКонтекстноеМенюГруппаРедактирование_ПродажиРасширеннаяПодсказка" id="515"/>
+										<ChildItems>
+											<Button name="СписокКонтекстноеМенюКнопкаИзменить_Продажи" id="516">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ТаблицаПродажи.StandardCommand.Change</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.Редактировать</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаИзменить_ПродажиРасширеннаяПодсказка" id="517"/>
+											</Button>
+											<Button name="СписокКонтекстноеМенюКнопкаУдалить_Продажи" id="518">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ТаблицаПродажи.StandardCommand.Delete</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.ВКорзину</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Удалить</v8:content>
+													</v8:item>
+												</Title>
+												<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаУдалить_ПродажиРасширеннаяПодсказка" id="519"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<ButtonGroup name="СписокКонтекстноеМенюГруппаСортировка_Продажи" id="520">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа сортировка продажи</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа сортировка продажи</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="СписокКонтекстноеМенюГруппаСортировка_ПродажиРасширеннаяПодсказка" id="521"/>
+										<ChildItems>
+											<Button name="СписокКонтекстноеМенюСортироватьСписокПоВозрастанию_Продажи" id="522">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ТаблицаПродажи.StandardCommand.SortListAsc</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.УпорядочитьПоВозрастанию</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+												<ExtendedTooltip name="СписокКонтекстноеМенюСортироватьСписокПоВозрастанию_ПродажиРасширеннаяПодсказка" id="523"/>
+											</Button>
+											<Button name="СписокКонтекстноеМенюСортироватьСписокПоУбыванию_Продажи" id="524">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ТаблицаПродажи.StandardCommand.SortListDesc</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.УпорядочитьПоУбыванию</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+												<ExtendedTooltip name="СписокКонтекстноеМенюСортироватьСписокПоУбыванию_ПродажиРасширеннаяПодсказка" id="525"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<Button name="СписокКонтекстноеМенюКнопкаВывестиСписок_Продажи" id="526">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<CommandName>Form.Item.ТаблицаПродажи.StandardCommand.OutputList</CommandName>
+										<Picture>
+											<xr:Ref>CommonPicture.НаПечать</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ShapeRepresentation>None</ShapeRepresentation>
+										<PictureLocation>Left</PictureLocation>
+										<ButtonImportance>Supplementary</ButtonImportance>
+										<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаВывестиСписок_ПродажиРасширеннаяПодсказка" id="527"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="ТаблицаПродажиКоманднаяПанель" id="36"/>
+							<ExtendedTooltip name="ТаблицаПродажиExtendedTooltip" id="100"/>
+							<SearchStringAddition name="ТаблицаПродажиСтрокаПоиска" id="167">
+								<AdditionSource>
+									<Item>ТаблицаПродажи</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаПродажиСтрокаПоискаКонтекстноеМеню" id="168"/>
+								<ExtendedTooltip name="ТаблицаПродажиСтрокаПоискаРасширеннаяПодсказка" id="169"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТаблицаПродажиСостояниеПросмотра" id="170">
+								<AdditionSource>
+									<Item>ТаблицаПродажи</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаПродажиСостояниеПросмотраКонтекстноеМеню" id="171"/>
+								<ExtendedTooltip name="ТаблицаПродажиСостояниеПросмотраРасширеннаяПодсказка" id="172"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТаблицаПродажиУправлениеПоиском" id="173">
+								<AdditionSource>
+									<Item>ТаблицаПродажи</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаПродажиУправлениеПоискомКонтекстноеМеню" id="174"/>
+								<ExtendedTooltip name="ТаблицаПродажиУправлениеПоискомРасширеннаяПодсказка" id="175"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ТаблицаПродажиНомерСтроки" id="37">
+									<DataPath>Объект.Продажи.LineNumber</DataPath>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterBackColor>style:FormBackColor</FooterBackColor>
+									<AutoEditMode>true</AutoEditMode>
+									<Width>3</Width>
+									<ContextMenu name="ТаблицаПродажиНомерСтрокиКонтекстноеМеню" id="38"/>
+									<ExtendedTooltip name="ТаблицаПродажиНомерСтрокиExtendedTooltip" id="101"/>
+								</LabelField>
+								<InputField name="ТаблицаПродажиНоменклатура" id="39">
+									<DataPath>Объект.Продажи.Номенклатура</DataPath>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterBackColor>style:FormBackColor</FooterBackColor>
+									<AutoEditMode>true</AutoEditMode>
+									<MaxWidth>20</MaxWidth>
+									<ContextMenu name="ТаблицаПродажиНоменклатураКонтекстноеМеню" id="40"/>
+									<ExtendedTooltip name="ТаблицаПродажиНоменклатураExtendedTooltip" id="102"/>
+								</InputField>
+								<InputField name="ТаблицаПродажиДатаПродажи" id="690">
+									<DataPath>Объект.Продажи.ДатаПродажи</DataPath>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterBackColor>style:FormBackColor</FooterBackColor>
+									<AutoEditMode>true</AutoEditMode>
+									<Format>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ДЛФ=D</v8:content>
+										</v8:item>
+									</Format>
+									<EditFormat>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ДЛФ=D</v8:content>
+										</v8:item>
+									</EditFormat>
+									<ContextMenu name="ТаблицаПродажиДатаПродажиКонтекстноеМеню" id="691"/>
+									<ExtendedTooltip name="ТаблицаПродажиДатаПродажиРасширеннаяПодсказка" id="692"/>
+								</InputField>
+								<InputField name="ТаблицаПродажиПартия" id="70">
+									<DataPath>Объект.Продажи.Партия</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Характеристика, серия</v8:content>
+										</v8:item>
+									</Title>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterBackColor>style:FormBackColor</FooterBackColor>
+									<AutoEditMode>true</AutoEditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>15</MaxWidth>
+									<ContextMenu name="ТаблицаПродажиПартияКонтекстноеМеню" id="71"/>
+									<ExtendedTooltip name="ТаблицаПродажиПартияExtendedTooltip" id="103"/>
+								</InputField>
+								<InputField name="ТаблицаПродажиСотрудник" id="41">
+									<DataPath>Объект.Продажи.Сотрудник</DataPath>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterBackColor>style:FormBackColor</FooterBackColor>
+									<AutoEditMode>true</AutoEditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>20</MaxWidth>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ТаблицаПродажиСотрудникКонтекстноеМеню" id="42"/>
+									<ExtendedTooltip name="ТаблицаПродажиСотрудникExtendedTooltip" id="104"/>
+								</InputField>
+								<InputField name="ТаблицаПродажиАссистент" id="68">
+									<DataPath>Объект.Продажи.Ассистент</DataPath>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterBackColor>style:FormBackColor</FooterBackColor>
+									<AutoEditMode>true</AutoEditMode>
+									<MaxWidth>20</MaxWidth>
+									<ContextMenu name="ТаблицаПродажиАссистентКонтекстноеМеню" id="69"/>
+									<ExtendedTooltip name="ТаблицаПродажиАссистентExtendedTooltip" id="105"/>
+								</InputField>
+								<InputField name="ТаблицаПродажиКонтрагент" id="43">
+									<DataPath>Объект.Продажи.Контрагент</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пациент</v8:content>
+										</v8:item>
+									</Title>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterBackColor>style:FormBackColor</FooterBackColor>
+									<AutoEditMode>true</AutoEditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>20</MaxWidth>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ТаблицаПродажиКонтрагентКонтекстноеМеню" id="44"/>
+									<ExtendedTooltip name="ТаблицаПродажиКонтрагентExtendedTooltip" id="106"/>
+								</InputField>
+								<InputField name="ТаблицаПродажиКонтрагентПлательщик" id="72">
+									<DataPath>Объект.Продажи.КонтрагентПлательщик</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Плательщик</v8:content>
+										</v8:item>
+									</Title>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterBackColor>style:FormBackColor</FooterBackColor>
+									<AutoEditMode>true</AutoEditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>20</MaxWidth>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ТаблицаПродажиКонтрагентПлательщикКонтекстноеМеню" id="73"/>
+									<ExtendedTooltip name="ТаблицаПродажиКонтрагентПлательщикExtendedTooltip" id="107"/>
+								</InputField>
+								<InputField name="ТаблицаПродажиНомерЗуба" id="74">
+									<DataPath>Объект.Продажи.НомерЗуба</DataPath>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterBackColor>style:FormBackColor</FooterBackColor>
+									<AutoEditMode>true</AutoEditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>10</MaxWidth>
+									<ContextMenu name="ТаблицаПродажиНомерЗубаКонтекстноеМеню" id="75"/>
+									<ExtendedTooltip name="ТаблицаПродажиНомерЗубаExtendedTooltip" id="108"/>
+								</InputField>
+								<InputField name="ТаблицаПродажиКоличество" id="45">
+									<DataPath>Объект.Продажи.Количество</DataPath>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterBackColor>style:FormBackColor</FooterBackColor>
+									<AutoEditMode>true</AutoEditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>8</MaxWidth>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ТаблицаПродажиКоличествоКонтекстноеМеню" id="46"/>
+									<ExtendedTooltip name="ТаблицаПродажиКоличествоExtendedTooltip" id="109"/>
+								</InputField>
+								<InputField name="ТаблицаПродажиСтоимостьБезСкидки" id="76">
+									<DataPath>Объект.Продажи.СтоимостьБезСкидки</DataPath>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterBackColor>style:FormBackColor</FooterBackColor>
+									<AutoEditMode>true</AutoEditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>11</MaxWidth>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ТаблицаПродажиСтоимостьБезСкидкиКонтекстноеМеню" id="77"/>
+									<ExtendedTooltip name="ТаблицаПродажиСтоимостьБезСкидкиExtendedTooltip" id="111"/>
+								</InputField>
+								<InputField name="ТаблицаПродажиСумма" id="47">
+									<DataPath>Объект.Продажи.Сумма</DataPath>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterBackColor>style:FormBackColor</FooterBackColor>
+									<AutoEditMode>true</AutoEditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>11</MaxWidth>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ТаблицаПродажиСуммаКонтекстноеМеню" id="48"/>
+									<ExtendedTooltip name="ТаблицаПродажиСуммаExtendedTooltip" id="110"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаРасчетыСПодотчетниками" id="702">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расчеты с подотчетниками</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Calculations with counterparties</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont ref="style:NormalTextFont" height="11" kind="StyleItem"/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа расчеты с подотчетниками</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>WeakSeparation</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаРасчетыСПодотчетникамиРасширеннаяПодсказка" id="703"/>
+					<ChildItems>
+						<UsualGroup name="КоманднаяПанельТаблицыРасчетыСПодотчетниками" id="775">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа командная панель таблицы</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа командная панель таблицы</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>140</Width>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="КоманднаяПанельТаблицыРасчетыСПодотчетникамиРасширеннаяПодсказка" id="776"/>
+							<ChildItems>
+								<Button name="РасчетыСПодотчетникамиКнопкаДобавить" id="777">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<CommandName>Form.Item.РасчетыСПодотчетниками.StandardCommand.Add</CommandName>
+									<Picture>
+										<xr:Ref>CommonPicture.Добавить</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ButtonImportance>Supplementary</ButtonImportance>
+									<ExtendedTooltip name="РасчетыСПодотчетникамиКнопкаДобавитьРасширеннаяПодсказка" id="778"/>
+								</Button>
+								<Button name="РасчетыСПодотчетникамиКнопкаКопировать" id="779">
+									<Type>UsualButton</Type>
+									<Representation>Picture</Representation>
+									<CommandName>Form.Item.РасчетыСПодотчетниками.StandardCommand.Copy</CommandName>
+									<Picture>
+										<xr:Ref>CommonPicture.ДобавитьКопированием</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+									<ButtonImportance>Supplementary</ButtonImportance>
+									<ExtendedTooltip name="РасчетыСПодотчетникамиКнопкаКопироватьРасширеннаяПодсказка" id="780"/>
+								</Button>
+								<Button name="РасчетыСПодотчетникамиКнопкаУдалить" id="781">
+									<Type>UsualButton</Type>
+									<Representation>Picture</Representation>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<CommandName>Form.Item.РасчетыСПодотчетниками.StandardCommand.Delete</CommandName>
+									<Picture>
+										<xr:Ref>CommonPicture.ВКорзину</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+									<ButtonImportance>Supplementary</ButtonImportance>
+									<ExtendedTooltip name="РасчетыСПодотчетникамиКнопкаУдалитьРасширеннаяПодсказка" id="782"/>
+								</Button>
+								<CommandBar name="КоманднаяПанельДляПодробноРасчетыСПодотчетниками" id="783">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа командная панель для подробно</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Еще возможности</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>3</Width>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<GroupVerticalAlign>Center</GroupVerticalAlign>
+									<HorizontalLocation>Right</HorizontalLocation>
+									<ExtendedTooltip name="КоманднаяПанельДляПодробноРасчетыСПодотчетникамиРасширеннаяПодсказка" id="784"/>
+									<ChildItems>
+										<Popup name="ПодменюРасчетыСПодотчетниками" id="785">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Подменю расчеты с подотчетниками</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Еще возможности</v8:content>
+												</v8:item>
+											</ToolTip>
+											<HorizontalStretch>false</HorizontalStretch>
+											<Picture>
+												<xr:Ref>CommonPicture.МенюДополнительныеФункции</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<Representation>Picture</Representation>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<ExtendedTooltip name="ПодменюРасчетыСПодотчетникамиРасширеннаяПодсказка" id="786"/>
+											<ChildItems>
+												<ButtonGroup name="СортироватьРасчетыСПодотчетниками" id="787">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа создать</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа создать</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ExtendedTooltip name="СортироватьРасчетыСПодотчетникамиРасширеннаяПодсказка" id="788"/>
+													<ChildItems>
+														<Button name="РасчетыСПодотчетникамиКнопкаСортироватьПоВозрастанию" id="789">
+															<Type>CommandBarButton</Type>
+															<Representation>Picture</Representation>
+															<CommandName>Form.Item.РасчетыСПодотчетниками.StandardCommand.SortListAsc</CommandName>
+															<Picture>
+																<xr:Ref>CommonPicture.УпорядочитьПоВозрастанию</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<ShapeRepresentation>None</ShapeRepresentation>
+															<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+															<ButtonImportance>Supplementary</ButtonImportance>
+															<ExtendedTooltip name="РасчетыСПодотчетникамиКнопкаСортироватьПоВозрастаниюРасширеннаяПодсказка" id="790"/>
+														</Button>
+														<Button name="РасчетыСПодотчетникамиИзмеренияСортироватьПоУбыванию" id="791">
+															<Type>CommandBarButton</Type>
+															<Representation>Picture</Representation>
+															<CommandName>Form.Item.РасчетыСПодотчетниками.StandardCommand.SortListDesc</CommandName>
+															<Picture>
+																<xr:Ref>CommonPicture.УпорядочитьПоУбыванию</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<ShapeRepresentation>None</ShapeRepresentation>
+															<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+															<ButtonImportance>Supplementary</ButtonImportance>
+															<ExtendedTooltip name="РасчетыСПодотчетникамиИзмеренияСортироватьПоУбываниюРасширеннаяПодсказка" id="792"/>
+														</Button>
+													</ChildItems>
+												</ButtonGroup>
+												<Button name="РасчетыСПодотчетникамиКнопкаНаПечать" id="793">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Item.РасчетыСПодотчетниками.StandardCommand.OutputList</CommandName>
+													<Picture>
+														<xr:Ref>CommonPicture.НаПечать</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+													<ExtendedTooltip name="РасчетыСПодотчетникамиКнопкаНаПечатьРасширеннаяПодсказка" id="794"/>
+												</Button>
+											</ChildItems>
+										</Popup>
+									</ChildItems>
+								</CommandBar>
+								<SearchStringAddition name="РасчетыСПодотчетникамиСтрокаПоиска" id="795">
+									<AdditionSource>
+										<Item>РасчетыСПодотчетниками</Item>
+										<Type>SearchStringRepresentation</Type>
+									</AdditionSource>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Строка поиска</v8:content>
+										</v8:item>
+									</Title>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<Width>20</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="РасчетыСПодотчетникамиСтрокаПоискаКонтекстноеМеню" id="796"/>
+									<ExtendedTooltip name="РасчетыСПодотчетникамиСтрокаПоискаРасширеннаяПодсказка" id="797"/>
+								</SearchStringAddition>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="РасчетыСПодотчетниками" id="798">
+							<RowSelectionMode>Cell</RowSelectionMode>
+							<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.РасчетыСПодотчетниками</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="РасчетыСПодотчетникамиКонтекстноеМеню" id="799">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<ButtonGroup name="СписокКонтекстноеМенюГруппаСозданиеРасчетыСПодотчетниками" id="837">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа создание </v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа создание продажи</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="СписокКонтекстноеМенюГруппаСозданиеРасчетыСПодотчетникамиРасширеннаяПодсказка" id="838"/>
+										<ChildItems>
+											<Button name="СписокКонтекстноеМенюКнопкаСоздатьРасчетыСПодотчетниками" id="839">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.РасчетыСПодотчетниками.StandardCommand.Add</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.Добавить</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаСоздатьРасчетыСПодотчетникамиРасширеннаяПодсказка" id="840"/>
+											</Button>
+											<Button name="СписокКонтекстноеМенюКнопкаСкопироватьРасчетыСПодотчетниками" id="841">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.РасчетыСПодотчетниками.StandardCommand.Copy</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.ДобавитьКопированием</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаСкопироватьРасчетыСПодотчетникамиРасширеннаяПодсказка" id="842"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<ButtonGroup name="СписокКонтекстноеМенюГруппаРедактированиеРасчетыСПодотчетниками" id="823">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа редактирование </v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа редактирование продажи</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="СписокКонтекстноеМенюГруппаРедактированиеРасчетыСПодотчетникамиРасширеннаяПодсказка" id="824"/>
+										<ChildItems>
+											<Button name="СписокКонтекстноеМенюКнопкаИзменитьРасчетыСПодотчетниками" id="825">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.РасчетыСПодотчетниками.StandardCommand.Change</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.Редактировать</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаИзменитьРасчетыСПодотчетникамиРасширеннаяПодсказка" id="826"/>
+											</Button>
+											<Button name="СписокКонтекстноеМенюКнопкаУдалитьРасчетыСПодотчетниками" id="827">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.РасчетыСПодотчетниками.StandardCommand.Delete</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.ВКорзину</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Удалить</v8:content>
+													</v8:item>
+												</Title>
+												<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаУдалитьРасчетыСПодотчетникамиРасширеннаяПодсказка" id="828"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<ButtonGroup name="СписокКонтекстноеМенюГруппаСортировкаРасчетыСПодотчетниками" id="829">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа сортировка</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа сортировка продажи</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="СписокКонтекстноеМенюГруппаСортировкаРасчетыСПодотчетникамиРасширеннаяПодсказка" id="830"/>
+										<ChildItems>
+											<Button name="СписокКонтекстноеМенюСортироватьСписокПоВозрастаниюРасчетыСПодотчетниками" id="831">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.РасчетыСПодотчетниками.StandardCommand.SortListAsc</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.УпорядочитьПоВозрастанию</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+												<ExtendedTooltip name="СписокКонтекстноеМенюСортироватьСписокПоВозрастаниюРасчетыСПодотчетникамиРасширеннаяПодсказка" id="832"/>
+											</Button>
+											<Button name="СписокКонтекстноеМенюСортироватьСписокПоУбываниюРасчетыСПодотчетниками" id="833">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.РасчетыСПодотчетниками.StandardCommand.SortListDesc</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.УпорядочитьПоУбыванию</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+												<ExtendedTooltip name="СписокКонтекстноеМенюСортироватьСписокПоУбываниюРасчетыСПодотчетникамиРасширеннаяПодсказка" id="834"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<Button name="СписокКонтекстноеМенюКнопкаВывестиСписокРасчетыСПодотчетниками" id="835">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<CommandName>Form.Item.ТаблицаПродажи.StandardCommand.OutputList</CommandName>
+										<Picture>
+											<xr:Ref>CommonPicture.НаПечать</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ShapeRepresentation>None</ShapeRepresentation>
+										<PictureLocation>Left</PictureLocation>
+										<ButtonImportance>Supplementary</ButtonImportance>
+										<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаВывестиСписокРасчетыСПодотчетникамиРасширеннаяПодсказка" id="836"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="РасчетыСПодотчетникамиКоманднаяПанель" id="800">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="РасчетыСПодотчетникамиРасширеннаяПодсказка" id="801"/>
+							<SearchStringAddition name="РасчетыСПодотчетникамиСтрокаПоиска" id="802">
+								<AdditionSource>
+									<Item>РасчетыСПодотчетниками</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РасчетыСПодотчетникамиСтрокаПоискаКонтекстноеМеню" id="803"/>
+								<ExtendedTooltip name="РасчетыСПодотчетникамиСтрокаПоискаРасширеннаяПодсказка" id="804"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="РасчетыСПодотчетникамиСостояниеПросмотра" id="805">
+								<AdditionSource>
+									<Item>РасчетыСПодотчетниками</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РасчетыСПодотчетникамиСостояниеПросмотраКонтекстноеМеню" id="806"/>
+								<ExtendedTooltip name="РасчетыСПодотчетникамиСостояниеПросмотраРасширеннаяПодсказка" id="807"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="РасчетыСПодотчетникамиУправлениеПоиском" id="808">
+								<AdditionSource>
+									<Item>РасчетыСПодотчетниками</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="РасчетыСПодотчетникамиУправлениеПоискомКонтекстноеМеню" id="809"/>
+								<ExtendedTooltip name="РасчетыСПодотчетникамиУправлениеПоискомРасширеннаяПодсказка" id="810"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="РасчетыСПодотчетникамиНомерСтроки" id="811">
+									<DataPath>Объект.РасчетыСПодотчетниками.LineNumber</DataPath>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<Width>3</Width>
+									<ContextMenu name="РасчетыСПодотчетникамиНомерСтрокиКонтекстноеМеню" id="812"/>
+									<ExtendedTooltip name="РасчетыСПодотчетникамиНомерСтрокиРасширеннаяПодсказка" id="813"/>
+								</LabelField>
+								<InputField name="РасчетыСПодотчетникамиСотрудник" id="814">
+									<DataPath>Объект.РасчетыСПодотчетниками.Сотрудник</DataPath>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="РасчетыСПодотчетникамиСотрудникКонтекстноеМеню" id="815"/>
+									<ExtendedTooltip name="РасчетыСПодотчетникамиСотрудникРасширеннаяПодсказка" id="816"/>
+									<Events>
+										<Event name="StartChoice">РасчетыСПодотчетникамиСотрудникНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<InputField name="РасчетыСПодотчетникамиОснование" id="817">
+									<DataPath>Объект.РасчетыСПодотчетниками.Основание</DataPath>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="РасчетыСПодотчетникамиОснованиеКонтекстноеМеню" id="818"/>
+									<ExtendedTooltip name="РасчетыСПодотчетникамиОснованиеРасширеннаяПодсказка" id="819"/>
+								</InputField>
+								<InputField name="РасчетыСПодотчетникамиСумма" id="820">
+									<DataPath>Объект.РасчетыСПодотчетниками.Сумма</DataPath>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="РасчетыСПодотчетникамиСуммаКонтекстноеМеню" id="821"/>
+									<ExtendedTooltip name="РасчетыСПодотчетникамиСуммаРасширеннаяПодсказка" id="822"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаВзаиморасчеты" id="206">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Взаиморасчеты с поставщиками</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont ref="style:NormalTextFont" height="11" kind="StyleItem"/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа взаиморасчеты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>WeakSeparation</Representation>
+					<ExtendedTooltip name="ГруппаВзаиморасчетыРасширеннаяПодсказка" id="207"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаКомманднаяПанель_Взаиморасчеты" id="553">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа коммандная панель</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа коммандная панель сертификаты</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>AlwaysHorizontal</Group>
+							<HorizontalSpacing>Double</HorizontalSpacing>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаКомманднаяПанель_ВзаиморасчетыРасширеннаяПодсказка" id="554"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаКомманднаяПанельРедактирование_Взаиморасчеты" id="555">
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа коммандная панель редактирование сертификаты</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>HorizontalIfPossible</Group>
+									<HorizontalSpacing>Single</HorizontalSpacing>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаКомманднаяПанельРедактирование_ВзаиморасчетыРасширеннаяПодсказка" id="556"/>
+									<ChildItems>
+										<Button name="КнопкаДобавить_Взаиморасчеты" id="557">
+											<Type>UsualButton</Type>
+											<Representation>PictureAndText</Representation>
+											<CommandName>Form.Item.ВзаиморасчетыСКонтрагентами.StandardCommand.Add</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.Добавить</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<ButtonImportance>Supplementary</ButtonImportance>
+											<ExtendedTooltip name="КнопкаДобавить_ВзаиморасчетыРасширеннаяПодсказка" id="558"/>
+										</Button>
+										<Button name="КнопкаСкопировать_Взаиморасчеты" id="559">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Item.ВзаиморасчетыСКонтрагентами.StandardCommand.Copy</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.ДобавитьКопированием</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Скопировать</v8:content>
+												</v8:item>
+											</Title>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<PictureLocation>Left</PictureLocation>
+											<ButtonImportance>Supplementary</ButtonImportance>
+											<ExtendedTooltip name="КнопкаСкопировать_ВзаиморасчетыРасширеннаяПодсказка" id="560"/>
+										</Button>
+										<Button name="КнопкаУдалить_Взаиморасчеты" id="561">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Item.ВзаиморасчетыСКонтрагентами.StandardCommand.Delete</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.ВКорзину</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Удалить</v8:content>
+												</v8:item>
+											</Title>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<PictureLocation>Left</PictureLocation>
+											<ButtonImportance>Supplementary</ButtonImportance>
+											<ExtendedTooltip name="КнопкаУдалить_ВзаиморасчетыРасширеннаяПодсказка" id="562"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<CommandBar name="ГруппаКнопки_Взаиморасчеты" id="565">
+									<Title>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Stocks group buttons</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа кнопки взаиморасчеты</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Еще возможности</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Stocks group buttons</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>4</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<GroupVerticalAlign>Center</GroupVerticalAlign>
+									<ExtendedTooltip name="ГруппаКнопки_ВзаиморасчетыРасширеннаяПодсказка" id="566"/>
+									<ChildItems>
+										<Popup name="ГруппаЕще_Взаиморасчеты" id="567">
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Еще возможности</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Picture>
+												<xr:Ref>CommonPicture.МенюДополнительныеФункции</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<ExtendedTooltip name="ГруппаЕще_ВзаиморасчетыРасширеннаяПодсказка" id="568"/>
+											<ChildItems>
+												<Button name="КнопкаСортироватьСписокПоВозрастанию_Взаиморасчеты" id="569">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Item.ВзаиморасчетыСКонтрагентами.StandardCommand.SortListAsc</CommandName>
+													<Picture>
+														<xr:Ref>CommonPicture.УпорядочитьПоВозрастанию</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+													<ExtendedTooltip name="КнопкаСортироватьСписокПоВозрастанию_ВзаиморасчетыРасширеннаяПодсказка" id="570"/>
+												</Button>
+												<Button name="КнопкаСортироватьСписокПоУбыванию_Взаиморасчеты" id="571">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Item.ВзаиморасчетыСКонтрагентами.StandardCommand.SortListDesc</CommandName>
+													<Picture>
+														<xr:Ref>CommonPicture.УпорядочитьПоУбыванию</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+													<ExtendedTooltip name="КнопкаСортироватьСписокПоУбыванию_ВзаиморасчетыРасширеннаяПодсказка" id="572"/>
+												</Button>
+												<Button name="КнопкаВывестиСписок_Взаиморасчеты" id="573">
+													<Type>CommandBarButton</Type>
+													<Representation>Picture</Representation>
+													<CommandName>Form.Item.ВзаиморасчетыСКонтрагентами.StandardCommand.OutputList</CommandName>
+													<Picture>
+														<xr:Ref>CommonPicture.НаПечать</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<ShapeRepresentation>None</ShapeRepresentation>
+													<PictureLocation>Left</PictureLocation>
+													<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+													<ButtonImportance>Supplementary</ButtonImportance>
+													<ExtendedTooltip name="КнопкаВывестиСписок_ВзаиморасчетыРасширеннаяПодсказка" id="574"/>
+												</Button>
+											</ChildItems>
+										</Popup>
+									</ChildItems>
+								</CommandBar>
+								<SearchStringAddition name="ДополнениеСтрокаПоиска_Взаиморасчеты" id="575">
+									<AdditionSource>
+										<Item>ВзаиморасчетыСКонтрагентами</Item>
+										<Type>SearchStringRepresentation</Type>
+									</AdditionSource>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дополнение строка поиска взаиморасчеты</v8:content>
+										</v8:item>
+									</Title>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>20</MaxWidth>
+									<ContextMenu name="ДополнениеСтрокаПоиска_ВзаиморасчетыКонтекстноеМеню" id="576"/>
+									<ExtendedTooltip name="ДополнениеСтрокаПоиска_ВзаиморасчетыРасширеннаяПодсказка" id="577"/>
+								</SearchStringAddition>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="ВзаиморасчетыСКонтрагентами" id="55">
+							<CommandBarLocation>None</CommandBarLocation>
+							<MaxWidth>150</MaxWidth>
+							<RowSelectionMode>Cell</RowSelectionMode>
+							<Footer>true</Footer>
+							<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Объект.ВзаиморасчетыСКонтрагентами</DataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ВзаиморасчетыСКонтрагентамиКонтекстноеМеню" id="56">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<ButtonGroup name="СписокКонтекстноеМенюГруппаСоздание_Взаиморасчеты" id="592">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа создание взаиморасчеты</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа создание взаиморасчеты</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="СписокКонтекстноеМенюГруппаСоздание_ВзаиморасчетыРасширеннаяПодсказка" id="593"/>
+										<ChildItems>
+											<Button name="СписокКонтекстноеМенюКнопкаСоздать_Взаиморасчеты" id="594">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ВзаиморасчетыСКонтрагентами.StandardCommand.Add</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.Добавить</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаСоздать_ВзаиморасчетыРасширеннаяПодсказка" id="595"/>
+											</Button>
+											<Button name="СписокКонтекстноеМенюКнопкаСкопировать_Взаиморасчеты" id="596">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ВзаиморасчетыСКонтрагентами.StandardCommand.Copy</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.ДобавитьКопированием</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаСкопировать_ВзаиморасчетыРасширеннаяПодсказка" id="597"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<ButtonGroup name="СписокКонтекстноеМенюГруппаРедактирование_Взаиморасчеты" id="578">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа редактирование взаиморасчеты</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа редактирование взаиморасчеты</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="СписокКонтекстноеМенюГруппаРедактирование_ВзаиморасчетыРасширеннаяПодсказка" id="579"/>
+										<ChildItems>
+											<Button name="СписокКонтекстноеМенюКнопкаИзменить_Взаиморасчеты" id="580">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ВзаиморасчетыСКонтрагентами.StandardCommand.Change</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.Редактировать</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаИзменить_ВзаиморасчетыРасширеннаяПодсказка" id="581"/>
+											</Button>
+											<Button name="СписокКонтекстноеМенюКнопкаУдалить_Взаиморасчеты" id="582">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ВзаиморасчетыСКонтрагентами.StandardCommand.Delete</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.ВКорзину</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Удалить</v8:content>
+													</v8:item>
+												</Title>
+												<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаУдалить_ВзаиморасчетыРасширеннаяПодсказка" id="583"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<ButtonGroup name="СписокКонтекстноеМенюГруппаСортировка_Взаиморасчеты" id="584">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа сортировка взаиморасчеты</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа сортировка взаиморасчеты</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="СписокКонтекстноеМенюГруппаСортировка_ВзаиморасчетыРасширеннаяПодсказка" id="585"/>
+										<ChildItems>
+											<Button name="СписокКонтекстноеМенюСортироватьСписокПоВозрастанию_Взаиморасчеты" id="586">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ВзаиморасчетыСКонтрагентами.StandardCommand.SortListAsc</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.УпорядочитьПоВозрастанию</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+												<ExtendedTooltip name="СписокКонтекстноеМенюСортироватьСписокПоВозрастанию_ВзаиморасчетыРасширеннаяПодсказка" id="587"/>
+											</Button>
+											<Button name="СписокКонтекстноеМенюСортироватьСписокПоУбыванию_Взаиморасчеты" id="588">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ВзаиморасчетыСКонтрагентами.StandardCommand.SortListDesc</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.УпорядочитьПоУбыванию</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+												<ExtendedTooltip name="СписокКонтекстноеМенюСортироватьСписокПоУбыванию_ВзаиморасчетыРасширеннаяПодсказка" id="589"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<Button name="СписокКонтекстноеМенюКнопкаВывестиСписок_Взаиморасчеты" id="590">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<CommandName>Form.Item.ВзаиморасчетыСКонтрагентами.StandardCommand.OutputList</CommandName>
+										<Picture>
+											<xr:Ref>CommonPicture.НаПечать</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ShapeRepresentation>None</ShapeRepresentation>
+										<PictureLocation>Left</PictureLocation>
+										<ButtonImportance>Supplementary</ButtonImportance>
+										<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаВывестиСписок_ВзаиморасчетыРасширеннаяПодсказка" id="591"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="ВзаиморасчетыСКонтрагентамиКоманднаяПанель" id="57">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ВзаиморасчетыСКонтрагентамиExtendedTooltip" id="113"/>
+							<SearchStringAddition name="ВзаиморасчетыСКонтрагентамиСтрокаПоиска" id="176">
+								<AdditionSource>
+									<Item>ВзаиморасчетыСКонтрагентами</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ВзаиморасчетыСКонтрагентамиСтрокаПоискаКонтекстноеМеню" id="177"/>
+								<ExtendedTooltip name="ВзаиморасчетыСКонтрагентамиСтрокаПоискаРасширеннаяПодсказка" id="178"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ВзаиморасчетыСКонтрагентамиСостояниеПросмотра" id="179">
+								<AdditionSource>
+									<Item>ВзаиморасчетыСКонтрагентами</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ВзаиморасчетыСКонтрагентамиСостояниеПросмотраКонтекстноеМеню" id="180"/>
+								<ExtendedTooltip name="ВзаиморасчетыСКонтрагентамиСостояниеПросмотраРасширеннаяПодсказка" id="181"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ВзаиморасчетыСКонтрагентамиУправлениеПоиском" id="182">
+								<AdditionSource>
+									<Item>ВзаиморасчетыСКонтрагентами</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ВзаиморасчетыСКонтрагентамиУправлениеПоискомКонтекстноеМеню" id="183"/>
+								<ExtendedTooltip name="ВзаиморасчетыСКонтрагентамиУправлениеПоискомРасширеннаяПодсказка" id="184"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ВзаиморасчетыСКонтрагентамиНомерСтроки" id="58">
+									<DataPath>Объект.ВзаиморасчетыСКонтрагентами.LineNumber</DataPath>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<FooterBackColor>style:FormBackColor</FooterBackColor>
+									<AutoEditMode>true</AutoEditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>3</MaxWidth>
+									<ContextMenu name="ВзаиморасчетыСКонтрагентамиНомерСтрокиКонтекстноеМеню" id="59"/>
+									<ExtendedTooltip name="ВзаиморасчетыСКонтрагентамиНомерСтрокиExtendedTooltip" id="114"/>
+								</LabelField>
+								<InputField name="ВзаиморасчетыСКонтрагентамиКонтрагент" id="60">
+									<DataPath>Объект.ВзаиморасчетыСКонтрагентами.Контрагент</DataPath>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<HorizontalAlign>Left</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterBackColor>style:FormBackColor</FooterBackColor>
+									<AutoEditMode>true</AutoEditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>20</MaxWidth>
+									<ContextMenu name="ВзаиморасчетыСКонтрагентамиКонтрагентКонтекстноеМеню" id="61"/>
+									<ExtendedTooltip name="ВзаиморасчетыСКонтрагентамиКонтрагентExtendedTooltip" id="115"/>
+									<Events>
+										<Event name="OnChange">ВзаиморасчетыСКонтрагентамиКонтрагентПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="ВзаиморасчетыСКонтрагентамиДокументРеализации" id="66">
+									<DataPath>Объект.ВзаиморасчетыСКонтрагентами.ДокументРеализации</DataPath>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<FooterBackColor>style:FormBackColor</FooterBackColor>
+									<AutoEditMode>true</AutoEditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>20</MaxWidth>
+									<ContextMenu name="ВзаиморасчетыСКонтрагентамиДокументРеализацииКонтекстноеМеню" id="67"/>
+									<ExtendedTooltip name="ВзаиморасчетыСКонтрагентамиДокументРеализацииExtendedTooltip" id="116"/>
+									<Events>
+										<Event name="StartChoice">ВзаиморасчетыСКонтрагентамиДокументРеализацииНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<InputField name="ВзаиморасчетыСКонтрагентамиДокументАванса" id="78">
+									<DataPath>Объект.ВзаиморасчетыСКонтрагентами.ДокументАванса</DataPath>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<FooterBackColor>style:FormBackColor</FooterBackColor>
+									<AutoEditMode>true</AutoEditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>20</MaxWidth>
+									<ContextMenu name="ВзаиморасчетыСКонтрагентамиДокументАвансаКонтекстноеМеню" id="79"/>
+									<ExtendedTooltip name="ВзаиморасчетыСКонтрагентамиДокументАвансаExtendedTooltip" id="117"/>
+								</InputField>
+								<InputField name="ВзаиморасчетыСКонтрагентамиСумма" id="64">
+									<DataPath>Объект.ВзаиморасчетыСКонтрагентами.Сумма</DataPath>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<FooterBackColor>style:FormBackColor</FooterBackColor>
+									<AutoEditMode>true</AutoEditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>11</MaxWidth>
+									<ContextMenu name="ВзаиморасчетыСКонтрагентамиСуммаКонтекстноеМеню" id="65"/>
+									<ExtendedTooltip name="ВзаиморасчетыСКонтрагентамиСуммаExtendedTooltip" id="118"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаРасчетыСПерсоналом" id="128">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расчеты с персоналом</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont ref="style:NormalTextFont" height="11" kind="StyleItem"/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа расчеты с персоналом</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>WeakSeparation</Representation>
+					<ExtendedTooltip name="ГруппаРасчетыСПерсоналомРасширеннаяПодсказка" id="129"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаКомманднаяПанель_РасчетыСПерсоналом" id="618">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа коммандная панель</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа коммандная панель сертификаты</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>AlwaysHorizontal</Group>
+							<HorizontalSpacing>Double</HorizontalSpacing>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаКомманднаяПанель_РасчетыСПерсоналомРасширеннаяПодсказка" id="619"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаКомманднаяПанельРедактирование_РасчетыСПерсоналом" id="620">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа коммандная панель редактирование расчеты с персоналом</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа коммандная панель редактирование сертификаты</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>HorizontalIfPossible</Group>
+									<HorizontalSpacing>Single</HorizontalSpacing>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаКомманднаяПанельРедактирование_РасчетыСПерсоналомРасширеннаяПодсказка" id="621"/>
+									<ChildItems>
+										<Button name="КнопкаДобавить_РасчетыСПерсоналом" id="622">
+											<Type>UsualButton</Type>
+											<Representation>PictureAndText</Representation>
+											<CommandName>Form.Item.РасчетыСПерсоаналом.StandardCommand.Add</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.Добавить</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<ButtonImportance>Supplementary</ButtonImportance>
+											<ExtendedTooltip name="КнопкаДобавить_РасчетыСПерсоналомРасширеннаяПодсказка" id="623"/>
+										</Button>
+										<Button name="КнопкаСкопировать_РасчетыСПерсоналом" id="624">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Item.РасчетыСПерсоаналом.StandardCommand.Copy</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.ДобавитьКопированием</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Скопировать</v8:content>
+												</v8:item>
+											</Title>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<PictureLocation>Left</PictureLocation>
+											<ButtonImportance>Supplementary</ButtonImportance>
+											<ExtendedTooltip name="КнопкаСкопировать_РасчетыСПерсоналомРасширеннаяПодсказка" id="625"/>
+										</Button>
+										<Button name="КнопкаУдалить_РасчетыСПерсоналом" id="626">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Item.РасчетыСПерсоаналом.StandardCommand.Delete</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.ВКорзину</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Удалить</v8:content>
+												</v8:item>
+											</Title>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<PictureLocation>Left</PictureLocation>
+											<ButtonImportance>Supplementary</ButtonImportance>
+											<ExtendedTooltip name="КнопкаУдалить_РасчетыСПерсоналомРасширеннаяПодсказка" id="627"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<CommandBar name="ГруппаКнопки_РасчетыСПерсоналом" id="628">
+									<Title>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Stocks group buttons</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа кнопки денежные средства взаиморасчеты</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Еще возможности</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Stocks group buttons</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>4</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<GroupVerticalAlign>Center</GroupVerticalAlign>
+									<ExtendedTooltip name="ГруппаКнопки_РасчетыСПерсоналомРасширеннаяПодсказка" id="629"/>
+									<ChildItems>
+										<Popup name="ГруппаЕще_РасчетыСПерсоналом" id="630">
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Еще возможности</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Picture>
+												<xr:Ref>CommonPicture.МенюДополнительныеФункции</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<ExtendedTooltip name="ГруппаЕще_РасчетыСПерсоналомРасширеннаяПодсказка" id="631"/>
+											<ChildItems>
+												<Button name="КнопкаСортироватьСписокПоВозрастанию_РасчетыСПерсоналом" id="632">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Item.РасчетыСПерсоаналом.StandardCommand.SortListAsc</CommandName>
+													<Picture>
+														<xr:Ref>CommonPicture.УпорядочитьПоВозрастанию</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+													<ExtendedTooltip name="КнопкаСортироватьСписокПоВозрастанию_РасчетыСПерсоналомРасширеннаяПодсказка" id="633"/>
+												</Button>
+												<Button name="КнопкаСортироватьСписокПоУбыванию_РасчетыСПерсоналом" id="634">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Item.РасчетыСПерсоаналом.StandardCommand.SortListDesc</CommandName>
+													<Picture>
+														<xr:Ref>CommonPicture.УпорядочитьПоУбыванию</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+													<ExtendedTooltip name="КнопкаСортироватьСписокПоУбыванию_РасчетыСПерсоналомРасширеннаяПодсказка" id="635"/>
+												</Button>
+												<Button name="КнопкаВывестиСписок_РасчетыСПерсоналом" id="636">
+													<Type>CommandBarButton</Type>
+													<Representation>Picture</Representation>
+													<CommandName>Form.Item.РасчетыСПерсоаналом.StandardCommand.OutputList</CommandName>
+													<Picture>
+														<xr:Ref>CommonPicture.НаПечать</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<ShapeRepresentation>None</ShapeRepresentation>
+													<PictureLocation>Left</PictureLocation>
+													<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+													<ButtonImportance>Supplementary</ButtonImportance>
+													<ExtendedTooltip name="КнопкаВывестиСписок_РасчетыСПерсоналомРасширеннаяПодсказка" id="637"/>
+												</Button>
+											</ChildItems>
+										</Popup>
+									</ChildItems>
+								</CommandBar>
+								<SearchStringAddition name="ДополнениеСтрокаПоиска_РасчетыСПерсоналом" id="638">
+									<AdditionSource>
+										<Item>РасчетыСПерсоаналом</Item>
+										<Type>SearchStringRepresentation</Type>
+									</AdditionSource>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дополнение строка поиска взаиморасчеты</v8:content>
+										</v8:item>
+									</Title>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>20</MaxWidth>
+									<ContextMenu name="ДополнениеСтрокаПоиска_РасчетыСПерсоналомКонтекстноеМеню" id="639"/>
+									<ExtendedTooltip name="ДополнениеСтрокаПоиска_РасчетыСПерсоналомРасширеннаяПодсказка" id="640"/>
+								</SearchStringAddition>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="РасчетыСПерсоаналом" id="130">
+							<CommandBarLocation>None</CommandBarLocation>
+							<MaxWidth>150</MaxWidth>
+							<RowSelectionMode>Cell</RowSelectionMode>
+							<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Объект.РасчетыСПерсоаналом</DataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="РасчетыСПерсоаналомКонтекстноеМеню" id="131">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<ButtonGroup name="СписокКонтекстноеМенюГруппаСоздание_РасчетыСПерсоналом" id="612">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа создание расчеты с персоналом</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа создание расчеты с персоналом</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="СписокКонтекстноеМенюГруппаСоздание_РасчетыСПерсоналомРасширеннаяПодсказка" id="613"/>
+										<ChildItems>
+											<Button name="СписокКонтекстноеМенюКнопкаСоздать_РасчетыСПерсоналом" id="614">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.РасчетыСПерсоаналом.StandardCommand.Add</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.Добавить</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаСоздать_РасчетыСПерсоналомРасширеннаяПодсказка" id="615"/>
+											</Button>
+											<Button name="СписокКонтекстноеМенюКнопкаСкопировать_РасчетыСПерсоналом" id="616">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.РасчетыСПерсоаналом.StandardCommand.Copy</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.ДобавитьКопированием</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаСкопировать_РасчетыСПерсоналомРасширеннаяПодсказка" id="617"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<ButtonGroup name="СписокКонтекстноеМенюГруппаРедактирование_РасчетыСПерсоналом" id="598">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа редактирование расчеты с персоналом</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа редактирование расчеты с персоналом</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="СписокКонтекстноеМенюГруппаРедактирование_РасчетыСПерсоналомРасширеннаяПодсказка" id="599"/>
+										<ChildItems>
+											<Button name="СписокКонтекстноеМенюКнопкаИзменить_РасчетыСПерсоналом" id="600">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.РасчетыСПерсоаналом.StandardCommand.Change</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.Редактировать</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаИзменить_РасчетыСПерсоналомРасширеннаяПодсказка" id="601"/>
+											</Button>
+											<Button name="СписокКонтекстноеМенюКнопкаУдалить_РасчетыСПерсоналом" id="602">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.РасчетыСПерсоаналом.StandardCommand.Delete</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.ВКорзину</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Удалить</v8:content>
+													</v8:item>
+												</Title>
+												<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаУдалить_РасчетыСПерсоналомРасширеннаяПодсказка" id="603"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<ButtonGroup name="СписокКонтекстноеМенюГруппаСортировка_РасчетыСПерсоналом" id="604">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа сортировка расчеты с персоналом</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа сортировка расчеты с персоналом</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="СписокКонтекстноеМенюГруппаСортировка_РасчетыСПерсоналомРасширеннаяПодсказка" id="605"/>
+										<ChildItems>
+											<Button name="СписокКонтекстноеМенюСортироватьСписокПоВозрастанию_РасчетыСПерсоналом" id="606">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.РасчетыСПерсоаналом.StandardCommand.SortListAsc</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.УпорядочитьПоВозрастанию</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+												<ExtendedTooltip name="СписокКонтекстноеМенюСортироватьСписокПоВозрастанию_РасчетыСПерсоналомРасширеннаяПодсказка" id="607"/>
+											</Button>
+											<Button name="СписокКонтекстноеМенюСортироватьСписокПоУбыванию_РасчетыСПерсоналом" id="608">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.РасчетыСПерсоаналом.StandardCommand.SortListDesc</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.УпорядочитьПоУбыванию</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+												<ExtendedTooltip name="СписокКонтекстноеМенюСортироватьСписокПоУбыванию_РасчетыСПерсоналомРасширеннаяПодсказка" id="609"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<Button name="СписокКонтекстноеМенюКнопкаВывестиСписок_РасчетыСПерсоналом" id="610">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<CommandName>Form.Item.РасчетыСПерсоаналом.StandardCommand.OutputList</CommandName>
+										<Picture>
+											<xr:Ref>CommonPicture.НаПечать</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ShapeRepresentation>None</ShapeRepresentation>
+										<PictureLocation>Left</PictureLocation>
+										<ButtonImportance>Supplementary</ButtonImportance>
+										<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаВывестиСписок_РасчетыСПерсоналомРасширеннаяПодсказка" id="611"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="РасчетыСПерсоаналомКоманднаяПанель" id="132">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="РасчетыСПерсоаналомРасширеннаяПодсказка" id="133"/>
+							<SearchStringAddition name="РасчетыСПерсоаналомСтрокаПоиска" id="185">
+								<AdditionSource>
+									<Item>РасчетыСПерсоаналом</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РасчетыСПерсоаналомСтрокаПоискаКонтекстноеМеню" id="186"/>
+								<ExtendedTooltip name="РасчетыСПерсоаналомСтрокаПоискаРасширеннаяПодсказка" id="187"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="РасчетыСПерсоаналомСостояниеПросмотра" id="188">
+								<AdditionSource>
+									<Item>РасчетыСПерсоаналом</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РасчетыСПерсоаналомСостояниеПросмотраКонтекстноеМеню" id="189"/>
+								<ExtendedTooltip name="РасчетыСПерсоаналомСостояниеПросмотраРасширеннаяПодсказка" id="190"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="РасчетыСПерсоаналомУправлениеПоиском" id="191">
+								<AdditionSource>
+									<Item>РасчетыСПерсоаналом</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="РасчетыСПерсоаналомУправлениеПоискомКонтекстноеМеню" id="192"/>
+								<ExtendedTooltip name="РасчетыСПерсоаналомУправлениеПоискомРасширеннаяПодсказка" id="193"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="РасчетыСПерсоаналомНомерСтроки" id="134">
+									<DataPath>Объект.РасчетыСПерсоаналом.LineNumber</DataPath>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<FooterBackColor>style:FormBackColor</FooterBackColor>
+									<AutoEditMode>true</AutoEditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>3</MaxWidth>
+									<ContextMenu name="РасчетыСПерсоаналомНомерСтрокиКонтекстноеМеню" id="135"/>
+									<ExtendedTooltip name="РасчетыСПерсоаналомНомерСтрокиРасширеннаяПодсказка" id="136"/>
+								</LabelField>
+								<InputField name="РасчетыСПерсоаналомСотрудник" id="137">
+									<DataPath>Объект.РасчетыСПерсоаналом.Сотрудник</DataPath>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<HorizontalAlign>Left</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterBackColor>style:FormBackColor</FooterBackColor>
+									<AutoEditMode>true</AutoEditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>20</MaxWidth>
+									<ContextMenu name="РасчетыСПерсоаналомСотрудникКонтекстноеМеню" id="138"/>
+									<ExtendedTooltip name="РасчетыСПерсоаналомСотрудникРасширеннаяПодсказка" id="139"/>
+								</InputField>
+								<InputField name="РасчетыСПерсоаналомМесяцНачисления" id="140">
+									<DataPath>Объект.РасчетыСПерсоаналом.МесяцНачисления</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Период</v8:content>
+										</v8:item>
+									</Title>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<FooterBackColor>style:FormBackColor</FooterBackColor>
+									<AutoEditMode>true</AutoEditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>15</MaxWidth>
+									<ContextMenu name="РасчетыСПерсоаналомМесяцНачисленияКонтекстноеМеню" id="141"/>
+									<ExtendedTooltip name="РасчетыСПерсоаналомМесяцНачисленияРасширеннаяПодсказка" id="142"/>
+								</InputField>
+								<InputField name="РасчетыСПерсоаналомДокументНачисления" id="143">
+									<DataPath>Объект.РасчетыСПерсоаналом.ДокументНачисления</DataPath>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<FooterBackColor>style:FormBackColor</FooterBackColor>
+									<AutoEditMode>true</AutoEditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>15</MaxWidth>
+									<ContextMenu name="РасчетыСПерсоаналомДокументНачисленияКонтекстноеМеню" id="144"/>
+									<ExtendedTooltip name="РасчетыСПерсоаналомДокументНачисленияРасширеннаяПодсказка" id="145"/>
+								</InputField>
+								<InputField name="РасчетыСПерсоаналомСумма" id="146">
+									<DataPath>Объект.РасчетыСПерсоаналом.Сумма</DataPath>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<FooterBackColor>style:FormBackColor</FooterBackColor>
+									<AutoEditMode>true</AutoEditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>9</MaxWidth>
+									<ContextMenu name="РасчетыСПерсоаналомСуммаКонтекстноеМеню" id="147"/>
+									<ExtendedTooltip name="РасчетыСПерсоаналомСуммаРасширеннаяПодсказка" id="148"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаБонусныеСчета" id="288">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Бонусные счета</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Bonus accounts</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont ref="style:NormalTextFont" height="11" kind="StyleItem"/>
+					<Group>Vertical</Group>
+					<Representation>WeakSeparation</Representation>
+					<TitleDataPath>Объект.БонусныеСчета.RowsCount</TitleDataPath>
+					<ExtendedTooltip name="ГруппаБонусныеСчетаРасширеннаяПодсказка" id="289"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаКомманднаяПанель_БонусныеСчета" id="661">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа коммандная панель</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа коммандная панель сертификаты</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>AlwaysHorizontal</Group>
+							<HorizontalSpacing>Double</HorizontalSpacing>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаКомманднаяПанель_БонусныеСчетаРасширеннаяПодсказка" id="662"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаКомманднаяПанельРедактирование_БонусныеСчета" id="663">
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа коммандная панель редактирование сертификаты</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>HorizontalIfPossible</Group>
+									<HorizontalSpacing>Single</HorizontalSpacing>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаКомманднаяПанельРедактирование_БонусныеСчетаРасширеннаяПодсказка" id="664"/>
+									<ChildItems>
+										<Button name="КнопкаДобавить_БонусныеСчета" id="665">
+											<Type>UsualButton</Type>
+											<Representation>PictureAndText</Representation>
+											<CommandName>Form.Item.БонусныеСчета.StandardCommand.Add</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.Добавить</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<ButtonImportance>Supplementary</ButtonImportance>
+											<ExtendedTooltip name="КнопкаДобавить_БонусныеСчетаРасширеннаяПодсказка" id="666"/>
+										</Button>
+										<Button name="КнопкаСкопировать_БонусныеСчета" id="667">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Item.БонусныеСчета.StandardCommand.Copy</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.ДобавитьКопированием</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Скопировать</v8:content>
+												</v8:item>
+											</Title>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<PictureLocation>Left</PictureLocation>
+											<ButtonImportance>Supplementary</ButtonImportance>
+											<ExtendedTooltip name="КнопкаСкопировать_БонусныеСчетаРасширеннаяПодсказка" id="668"/>
+										</Button>
+										<Button name="КнопкаУдалить_БонусныеСчета" id="669">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Item.БонусныеСчета.StandardCommand.Delete</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.ВКорзину</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Удалить</v8:content>
+												</v8:item>
+											</Title>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<PictureLocation>Left</PictureLocation>
+											<ButtonImportance>Supplementary</ButtonImportance>
+											<ExtendedTooltip name="КнопкаУдалить_БонусныеСчетаРасширеннаяПодсказка" id="670"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<Button name="ЗагрузитьДанныеИзВнешнегоИсточника_БонусныеСчета" id="693">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<CommandName>Form.Command.ЗагрузитьДанныеИзВнешнегоИсточникаБонусныеСчета</CommandName>
+									<Picture>
+										<xr:Ref>CommonPicture.ИзВнешнегоИсточника</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Загрузить из внешнего источника</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ButtonImportance>Supplementary</ButtonImportance>
+									<ExtendedTooltip name="ЗагрузитьДанныеИзВнешнегоИсточника_БонусныеСчетаРасширеннаяПодсказка" id="694"/>
+								</Button>
+								<CommandBar name="ГруппаКнопки_БонусныеСчета" id="671">
+									<Title>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Stocks group buttons</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа кнопки бонусные счета</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Еще возможности</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Stocks group buttons</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>4</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<GroupVerticalAlign>Center</GroupVerticalAlign>
+									<ExtendedTooltip name="ГруппаКнопки_БонусныеСчетаРасширеннаяПодсказка" id="672"/>
+									<ChildItems>
+										<Popup name="ГруппаЕще_БонусныеСчета" id="673">
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Еще возможности</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Picture>
+												<xr:Ref>CommonPicture.МенюДополнительныеФункции</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<ExtendedTooltip name="ГруппаЕще_БонусныеСчетаРасширеннаяПодсказка" id="674"/>
+											<ChildItems>
+												<Button name="КнопкаСортироватьСписокПоВозрастанию_БонусныеСчета" id="675">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Item.БонусныеСчета.StandardCommand.SortListAsc</CommandName>
+													<Picture>
+														<xr:Ref>CommonPicture.УпорядочитьПоВозрастанию</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+													<ExtendedTooltip name="КнопкаСортироватьСписокПоВозрастанию_БонусныеСчетаРасширеннаяПодсказка" id="676"/>
+												</Button>
+												<Button name="КнопкаСортироватьСписокПоУбыванию_БонусныеСчета" id="677">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Item.БонусныеСчета.StandardCommand.SortListDesc</CommandName>
+													<Picture>
+														<xr:Ref>CommonPicture.УпорядочитьПоУбыванию</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+													<ExtendedTooltip name="КнопкаСортироватьСписокПоУбыванию_БонусныеСчетаРасширеннаяПодсказка" id="678"/>
+												</Button>
+												<Button name="КнопкаВывестиСписок_БонусныеСчета" id="679">
+													<Type>CommandBarButton</Type>
+													<Representation>Picture</Representation>
+													<CommandName>Form.Item.БонусныеСчета.StandardCommand.OutputList</CommandName>
+													<Picture>
+														<xr:Ref>CommonPicture.НаПечать</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<ShapeRepresentation>None</ShapeRepresentation>
+													<PictureLocation>Left</PictureLocation>
+													<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+													<ButtonImportance>Supplementary</ButtonImportance>
+													<ExtendedTooltip name="КнопкаВывестиСписок_БонусныеСчетаРасширеннаяПодсказка" id="680"/>
+												</Button>
+											</ChildItems>
+										</Popup>
+									</ChildItems>
+								</CommandBar>
+								<SearchStringAddition name="ДополнениеСтрокаПоиска_БонусныеСчета" id="681">
+									<AdditionSource>
+										<Item>БонусныеСчета</Item>
+										<Type>SearchStringRepresentation</Type>
+									</AdditionSource>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дополнение строка поиска взаиморасчеты</v8:content>
+										</v8:item>
+									</Title>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>20</MaxWidth>
+									<ContextMenu name="ДополнениеСтрокаПоиска_БонусныеСчетаКонтекстноеМеню" id="682"/>
+									<ExtendedTooltip name="ДополнениеСтрокаПоиска_БонусныеСчетаРасширеннаяПодсказка" id="683"/>
+								</SearchStringAddition>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="БонусныеСчета" id="292">
+							<CommandBarLocation>None</CommandBarLocation>
+							<MaxWidth>150</MaxWidth>
+							<RowSelectionMode>Cell</RowSelectionMode>
+							<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Объект.БонусныеСчета</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Бонусные счета</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Bonus accounts</v8:content>
+								</v8:item>
+							</Title>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="БонусныеСчетаКонтекстноеМеню" id="293">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<ButtonGroup name="СписокКонтекстноеМенюГруппаСоздание_БонусныеСчета" id="655">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа создание бонусные счета</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа создание бонусные счета</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="СписокКонтекстноеМенюГруппаСоздание_БонусныеСчетаРасширеннаяПодсказка" id="656"/>
+										<ChildItems>
+											<Button name="СписокКонтекстноеМенюКнопкаСоздать_БонусныеСчета" id="657">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.БонусныеСчета.StandardCommand.Add</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.Добавить</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаСоздать_БонусныеСчетаРасширеннаяПодсказка" id="658"/>
+											</Button>
+											<Button name="СписокКонтекстноеМенюКнопкаСкопировать_БонусныеСчета" id="659">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.БонусныеСчета.StandardCommand.Copy</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.ДобавитьКопированием</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаСкопировать_БонусныеСчетаРасширеннаяПодсказка" id="660"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<ButtonGroup name="СписокКонтекстноеМенюГруппаРедактирование_БонусныеСчета" id="641">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа редактирование бонусные счета</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа редактирование бонусные счета</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="СписокКонтекстноеМенюГруппаРедактирование_БонусныеСчетаРасширеннаяПодсказка" id="642"/>
+										<ChildItems>
+											<Button name="СписокКонтекстноеМенюКнопкаИзменить_БонусныеСчета" id="643">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.БонусныеСчета.StandardCommand.Change</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.Редактировать</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаИзменить_БонусныеСчетаРасширеннаяПодсказка" id="644"/>
+											</Button>
+											<Button name="СписокКонтекстноеМенюКнопкаУдалить_БонусныеСчета" id="645">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.БонусныеСчета.StandardCommand.Delete</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.ВКорзину</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Удалить</v8:content>
+													</v8:item>
+												</Title>
+												<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаУдалить_БонусныеСчетаРасширеннаяПодсказка" id="646"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<ButtonGroup name="СписокКонтекстноеМенюГруппаСортировка_БонусныеСчета" id="647">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа сортировка бонусные счета</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа сортировка бонусные счета</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="СписокКонтекстноеМенюГруппаСортировка_БонусныеСчетаРасширеннаяПодсказка" id="648"/>
+										<ChildItems>
+											<Button name="СписокКонтекстноеМенюСортироватьСписокПоВозрастанию_БонусныеСчета" id="649">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.БонусныеСчета.StandardCommand.SortListAsc</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.УпорядочитьПоВозрастанию</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+												<ExtendedTooltip name="СписокКонтекстноеМенюСортироватьСписокПоВозрастанию_БонусныеСчетаРасширеннаяПодсказка" id="650"/>
+											</Button>
+											<Button name="СписокКонтекстноеМенюСортироватьСписокПоУбыванию_БонусныеСчета" id="651">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.БонусныеСчета.StandardCommand.SortListDesc</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.УпорядочитьПоУбыванию</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+												<ExtendedTooltip name="СписокКонтекстноеМенюСортироватьСписокПоУбыванию_БонусныеСчетаРасширеннаяПодсказка" id="652"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<Button name="СписокКонтекстноеМенюКнопкаВывестиСписок_БонусныеСчета" id="653">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<CommandName>Form.Item.БонусныеСчета.StandardCommand.OutputList</CommandName>
+										<Picture>
+											<xr:Ref>CommonPicture.НаПечать</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ShapeRepresentation>None</ShapeRepresentation>
+										<PictureLocation>Left</PictureLocation>
+										<ButtonImportance>Supplementary</ButtonImportance>
+										<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаВывестиСписок_БонусныеСчетаРасширеннаяПодсказка" id="654"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="БонусныеСчетаКоманднаяПанель" id="294"/>
+							<ExtendedTooltip name="БонусныеСчетаРасширеннаяПодсказка" id="295"/>
+							<SearchStringAddition name="БонусныеСчетаСтрокаПоиска" id="296">
+								<AdditionSource>
+									<Item>БонусныеСчета</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="БонусныеСчетаСтрокаПоискаКонтекстноеМеню" id="297"/>
+								<ExtendedTooltip name="БонусныеСчетаСтрокаПоискаРасширеннаяПодсказка" id="298"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="БонусныеСчетаСостояниеПросмотра" id="299">
+								<AdditionSource>
+									<Item>БонусныеСчета</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="БонусныеСчетаСостояниеПросмотраКонтекстноеМеню" id="300"/>
+								<ExtendedTooltip name="БонусныеСчетаСостояниеПросмотраРасширеннаяПодсказка" id="301"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="БонусныеСчетаУправлениеПоиском" id="302">
+								<AdditionSource>
+									<Item>БонусныеСчета</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="БонусныеСчетаУправлениеПоискомКонтекстноеМеню" id="303"/>
+								<ExtendedTooltip name="БонусныеСчетаУправлениеПоискомРасширеннаяПодсказка" id="304"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="БонусныеСчетаНомерСтроки" id="305">
+									<DataPath>Объект.БонусныеСчета.LineNumber</DataPath>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterBackColor>style:FormBackColor</FooterBackColor>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="БонусныеСчетаНомерСтрокиКонтекстноеМеню" id="306"/>
+									<ExtendedTooltip name="БонусныеСчетаНомерСтрокиРасширеннаяПодсказка" id="307"/>
+								</LabelField>
+								<InputField name="БонусныеСчетаКонтрагент" id="308">
+									<DataPath>Объект.БонусныеСчета.Контрагент</DataPath>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterBackColor>style:FormBackColor</FooterBackColor>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="БонусныеСчетаКонтрагентКонтекстноеМеню" id="309"/>
+									<ExtendedTooltip name="БонусныеСчетаКонтрагентРасширеннаяПодсказка" id="310"/>
+								</InputField>
+								<InputField name="БонусныеСчетаКарта" id="311">
+									<DataPath>Объект.БонусныеСчета.Карта</DataPath>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterBackColor>style:FormBackColor</FooterBackColor>
+									<AutoEditMode>true</AutoEditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>15</MaxWidth>
+									<ContextMenu name="БонусныеСчетаКартаКонтекстноеМеню" id="312"/>
+									<ExtendedTooltip name="БонусныеСчетаКартаРасширеннаяПодсказка" id="313"/>
+								</InputField>
+								<InputField name="БонусныеСчетаВидБонусногоСчета" id="314">
+									<DataPath>Объект.БонусныеСчета.ВидБонусногоСчета</DataPath>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterBackColor>style:FormBackColor</FooterBackColor>
+									<AutoEditMode>true</AutoEditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>15</MaxWidth>
+									<ContextMenu name="БонусныеСчетаВидБонусногоСчетаКонтекстноеМеню" id="315"/>
+									<ExtendedTooltip name="БонусныеСчетаВидБонусногоСчетаРасширеннаяПодсказка" id="316"/>
+								</InputField>
+								<InputField name="БонусныеСчетаБонусныйСчет" id="317">
+									<DataPath>Объект.БонусныеСчета.БонусныйСчет</DataPath>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterBackColor>style:FormBackColor</FooterBackColor>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="БонусныеСчетаБонусныйСчетКонтекстноеМеню" id="318"/>
+									<ExtendedTooltip name="БонусныеСчетаБонусныйСчетРасширеннаяПодсказка" id="319"/>
+									<Events>
+										<Event name="StartChoice">БонусныеСчетаБонусныйСчетНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<InputField name="БонусныеСчетаСумма" id="320">
+									<DataPath>Объект.БонусныеСчета.Сумма</DataPath>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterBackColor>style:FormBackColor</FooterBackColor>
+									<AutoEditMode>true</AutoEditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>11</MaxWidth>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="БонусныеСчетаСуммаКонтекстноеМеню" id="321"/>
+									<ExtendedTooltip name="БонусныеСчетаСуммаРасширеннаяПодсказка" id="322"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<Button name="СкрытьПоказатьДополнительно" id="278">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.СкрытьПоказатьДополнительно</CommandName>
+					<TextColor>style:AccentColor</TextColor>
+					<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
+					<Picture>
+						<xr:Ref>CommonPicture.ПоказатьСкрытыеЭлементы</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительно</v8:content>
+						</v8:item>
+					</Title>
+					<ShapeRepresentation>None</ShapeRepresentation>
+					<ButtonImportance>Supplementary</ButtonImportance>
+					<ExtendedTooltip name="СкрытьПоказатьДополнительноРасширеннаяПодсказка" id="279"/>
+				</Button>
+				<UsualGroup name="ГруппаДополнительно" id="210">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа дополнительно</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа дополнительно</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<United>false</United>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДополнительноРасширеннаяПодсказка" id="211"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаНомерДата" id="18">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа номер дата</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа номер дата</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаНомерДатаExtendedTooltip" id="82"/>
+							<ChildItems>
+								<InputField name="Номер" id="1">
+									<DataPath>Объект.Number</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>40</MaxWidth>
+									<InputHint>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;Авто&gt;</v8:content>
+										</v8:item>
+									</InputHint>
+									<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+									<ExtendedTooltip name="НомерExtendedTooltip" id="83"/>
+								</InputField>
+								<InputField name="Дата" id="3">
+									<DataPath>Объект.Date</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ДатаКонтекстноеМеню" id="4"/>
+									<ExtendedTooltip name="ДатаExtendedTooltip" id="84"/>
+									<Events>
+										<Event name="OnChange">ДатаПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаОрганизацияСЕ" id="700">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа организация СЕ</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа организация СЕ</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>72</Width>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОрганизацияСЕРасширеннаяПодсказка" id="701"/>
+							<ChildItems>
+								<InputField name="Организация" id="695">
+									<DataPath>Объект.Организация</DataPath>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>40</MaxWidth>
+									<ContextMenu name="ОрганизацияКонтекстноеМеню" id="696"/>
+									<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="697"/>
+								</InputField>
+								<LabelDecoration name="СтруктурнаяЕдиницаНадпись" id="194">
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<Hyperlink>true</Hyperlink>
+									<HorizontalAlign>Right</HorizontalAlign>
+									<ContextMenu name="СтруктурнаяЕдиницаНадписьКонтекстноеМеню" id="195"/>
+									<ExtendedTooltip name="СтруктурнаяЕдиницаНадписьРасширеннаяПодсказка" id="196"/>
+									<Events>
+										<Event name="Click">СтруктурнаяЕдиницаНадписьНажатие</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаКоманднаяПанель" id="323">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа командная панель</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа командная панель</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>AlwaysHorizontal</Group>
+					<HorizontalSpacing>Double</HorizontalSpacing>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаКоманднаяПанельРасширеннаяПодсказка" id="324"/>
+					<ChildItems>
+						<Button name="Удалить" id="325">
+							<Type>UsualButton</Type>
+							<Representation>Picture</Representation>
+							<CommandName>Form.StandardCommand.SetDeletionMark</CommandName>
+							<Picture>
+								<xr:Ref>CommonPicture.ВКорзину</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Удалить</v8:content>
+								</v8:item>
+							</Title>
+							<ShapeRepresentation>None</ShapeRepresentation>
+							<PictureLocation>Left</PictureLocation>
+							<ButtonImportance>Supplementary</ButtonImportance>
+							<ExtendedTooltip name="УдалитьРасширеннаяПодсказка" id="326"/>
+						</Button>
+						<Button name="КнопкаИстория" id="698">
+							<Type>UsualButton</Type>
+							<Representation>Picture</Representation>
+							<CommandName>InformationRegister.Обсуждения.Command.История</CommandName>
+							<DataPath>Объект.Ref</DataPath>
+							<Picture>
+								<xr:Ref>CommonPicture.ИсторияОбъекта</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ShapeRepresentation>None</ShapeRepresentation>
+							<ButtonImportance>Supplementary</ButtonImportance>
+							<ExtendedTooltip name="КнопкаИсторияРасширеннаяПодсказка" id="699"/>
+						</Button>
+						<CommandBar name="ГруппаКоманднаяПанельПодменю" id="329">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа командная панель подменю</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Еще возможности</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>false</HorizontalStretch>
+							<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+							<GroupVerticalAlign>Center</GroupVerticalAlign>
+							<ExtendedTooltip name="ГруппаКоманднаяПанельПодменюРасширеннаяПодсказка" id="330"/>
+							<ChildItems>
+								<Popup name="ГруппаПодменю" id="331">
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Еще возможности</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Picture>
+										<xr:Ref>CommonPicture.МенюДополнительныеФункции</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Representation>Picture</Representation>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="ГруппаПодменюРасширеннаяПодсказка" id="332"/>
+									<ChildItems>
+										<ButtonGroup name="ФормаГруппаПроведение" id="341">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Форма группа проведение</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Форма группа проведение</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Form group holding</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="ФормаГруппаПроведениеРасширеннаяПодсказка" id="342"/>
+											<ChildItems>
+												<Button name="ФормаПровести" id="343">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.StandardCommand.Post</CommandName>
+													<Picture>
+														<xr:Ref>CommonPicture.ПровестиДокумент</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<RepresentationInContextMenu>None</RepresentationInContextMenu>
+													<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+													<ExtendedTooltip name="ФормаПровестиРасширеннаяПодсказка" id="344"/>
+												</Button>
+												<Button name="ФормаОтменитьПроведение" id="345">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.StandardCommand.UndoPosting</CommandName>
+													<Picture>
+														<xr:Ref>CommonPicture.ОтменитьПроведениеДокумента</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<RepresentationInContextMenu>None</RepresentationInContextMenu>
+													<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+													<ExtendedTooltip name="ФормаОтменитьПроведениеРасширеннаяПодсказка" id="346"/>
+												</Button>
+											</ChildItems>
+										</ButtonGroup>
+										<ButtonGroup name="ФормаГруппаГлобальныеКоманды" id="347">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Форма группа глобальные команды</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Form group global commands</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Форма группа глобальные команды</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Form group global commands</v8:content>
+												</v8:item>
+											</ToolTip>
+											<HorizontalStretch>true</HorizontalStretch>
+											<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+											<ExtendedTooltip name="ФормаГруппаГлобальныеКомандыРасширеннаяПодсказка" id="348"/>
+											<ChildItems>
+												<Button name="ФормаОбщаяКомандаОтчетПоДвижениям" id="349">
+													<Type>CommandBarButton</Type>
+													<CommandName>CommonCommand.ОтчетПоДвижениям</CommandName>
+													<DataPath>Объект.Ref</DataPath>
+													<Picture>
+														<xr:Ref>CommonPicture.ДвижениеПоРегиструНовая</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+													<ExtendedTooltip name="ФормаОбщаяКомандаОтчетПоДвижениямРасширеннаяПодсказка" id="350"/>
+												</Button>
+												<Button name="ФормаОбщаяКомандаСтруктураПодчиненности" id="351">
+													<Type>CommandBarButton</Type>
+													<CommandName>FilterCriterion.СвязанныеДокументы.Command.СтруктураПодчиненности</CommandName>
+													<DataPath>Объект.Ref</DataPath>
+													<Picture>
+														<xr:Ref>CommonPicture.СтруктураПодчиненностиНовая</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+													<ExtendedTooltip name="ФормаОбщаяКомандаСтруктураПодчиненностиРасширеннаяПодсказка" id="352"/>
+												</Button>
+											</ChildItems>
+										</ButtonGroup>
+										<Button name="ФормаКнопкаСправка" id="353">
+											<Type>CommandBarButton</Type>
+											<Visible>false</Visible>
+											<Representation>Text</Representation>
+											<CommandName>Form.StandardCommand.Help</CommandName>
+											<RepresentationInContextMenu>None</RepresentationInContextMenu>
+											<ExtendedTooltip name="ФормаКнопкаСправкаРасширеннаяПодсказка" id="354"/>
+										</Button>
+										<Button name="ФормаКнопкаВывестиНастройкаФормы" id="355">
+											<Type>CommandBarButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.НастройкаФормы</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<PictureLocation>Left</PictureLocation>
+											<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+											<ButtonImportance>Supplementary</ButtonImportance>
+											<ExtendedTooltip name="ФормаКнопкаВывестиНастройкаФормыРасширеннаяПодсказка" id="356"/>
+										</Button>
+									</ChildItems>
+								</Popup>
+							</ChildItems>
+						</CommandBar>
+						<UsualGroup name="ГруппаФормаКнопкаСохранитьИЗакрыть" id="410">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа форма кнопка сохранить и закрыть</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа форма кнопка сохранить и закрыть</v8:content>
+								</v8:item>
+							</ToolTip>
+							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+							<Group>HorizontalIfPossible</Group>
+							<Representation>WeakSeparation</Representation>
+							<ShowTitle>false</ShowTitle>
+							<BackColor>style:ImportantColor</BackColor>
+							<ExtendedTooltip name="ГруппаФормаКнопкаСохранитьИЗакрытьРасширеннаяПодсказка" id="411"/>
+							<ChildItems>
+								<Button name="ФормаКнопкаПровестиИЗакрыть" id="236">
+									<Type>UsualButton</Type>
+									<DefaultButton>true</DefaultButton>
+									<Width>10</Width>
+									<CommandName>Form.StandardCommand.PostAndClose</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сохранить</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ButtonImportance>Main</ButtonImportance>
+									<ExtendedTooltip name="ФормаКнопкаПровестиИЗакрытьРасширеннаяПодсказка" id="237"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<LabelDecoration name="ЗаглушкаВыравниваниеСправа" id="687">
+			<Visible>false</Visible>
+			<Width>1</Width>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MaxWidth>50</MaxWidth>
+			<Height>1</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<ContextMenu name="ЗаглушкаВыравниваниеСправаКонтекстноеМеню" id="688"/>
+			<ExtendedTooltip name="ЗаглушкаВыравниваниеСправаРасширеннаяПодсказка" id="689"/>
+		</LabelDecoration>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ВводНачальныхОстатков</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="КартинкаСостоянияДокумента" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Картинка состояния документа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РазрешеноПроведение" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разрешено проведение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СостояниеДокумента" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Состояние документа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>20</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="НастройкиЗагрузкиДанных" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки загрузки данных</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ДатаДокумента" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата документа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СерийныеНомераСертификатовКоличество</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.СерийныеНомераСертификатов.ИспользоватьПартии</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СерийныеНомераСертификатовКлиент</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.СерийныеНомераСертификатов.ЭтоИменнойСертификат</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СерийныеНомераСертификатовСумма</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemGroup">
+						<dcsset:groupType>OrGroup</dcsset:groupType>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Объект.СерийныеНомераСертификатов.СертификатМногоразовоеИспользование</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Объект.СерийныеНомераСертификатов.ВидНоминала</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СерийныеНомераСертификатовПартия</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.СерийныеНомераСертификатов.ИспользоватьПартии</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.СерийныеНомераСертификатов.Партия</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="СкрытьПоказатьДополнительно" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скрыть показать дополнительно</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Hide show additionally</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скрыть показать дополнительно</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Hide show additionally</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СкрытьПоказатьДополнительно</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗагрузитьДанныеИзВнешнегоИсточникаСертификаты" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить данные из внешнего источника</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить данные из внешнего источника</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Use>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</Use>
+			<Picture>
+				<xr:Ref>CommonPicture.ЗагрузкаИзФайла</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗагрузитьДанныеИзВнешнегоИсточникаСертификаты</Action>
+			<Representation>Picture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗагрузитьДанныеИзВнешнегоИсточникаДенежныеСредстваНаЛицевыхСчетах" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить данные из внешнего источника</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить данные из внешнего источника</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Use>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</Use>
+			<Picture>
+				<xr:Ref>CommonPicture.ЗагрузкаИзФайла</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗагрузитьДанныеИзВнешнегоИсточникаДенежныеСредстваНаЛицевыхСчетах</Action>
+			<Representation>Picture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗагрузитьДанныеИзВнешнегоИсточникаПродажи" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить данные из внешнего источника</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить данные из внешнего источника</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Use>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</Use>
+			<Picture>
+				<xr:Ref>CommonPicture.ЗагрузкаИзФайла</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗагрузитьДанныеИзВнешнегоИсточникаПродажи</Action>
+			<Representation>Picture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗагрузитьДанныеИзВнешнегоИсточникаБонусныеСчета" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить данные из внешнего источника бонусные счета</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить данные из внешнего источника бонусные счета</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьДанныеИзВнешнегоИсточникаБонусныеСчета</Action>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>FilterCriterion.СвязанныеДокументы.Command.СтруктураПодчиненности</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>InformationRegister.Обсуждения.Command.История</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

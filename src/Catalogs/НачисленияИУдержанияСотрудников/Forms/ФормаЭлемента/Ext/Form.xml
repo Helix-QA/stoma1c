@@ -1,0 +1,1900 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<HorizontalAlign>Center</HorizontalAlign>
+	<ChildItemsWidth>Equal</ChildItemsWidth>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаВыравнивание" id="310">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа выравнивание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа выравнивание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Vertical</Group>
+			<HorizontalAlign>Left</HorizontalAlign>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаВыравниваниеРасширеннаяПодсказка" id="311"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаШапка" id="23">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид начисления (удержания)</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шапка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>StrongSeparation</Representation>
+					<ExtendedTooltip name="ГруппаШапкаExtendedTooltip" id="157"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаПериод" id="97">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа период</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа период</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПериодExtendedTooltip" id="158"/>
+							<ChildItems>
+								<InputField name="НачалоПериода" id="9">
+									<DataPath>Объект.НачалоПериода</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Действует с</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<Width>14</Width>
+									<ContextMenu name="НачалоПериодаКонтекстноеМеню" id="10"/>
+									<ExtendedTooltip name="НачалоПериодаExtendedTooltip" id="159"/>
+									<Events>
+										<Event name="OnChange">НачалоПериодаПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="КонецПериода" id="11">
+									<DataPath>Объект.КонецПериода</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>по</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Left</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<Width>14</Width>
+									<ContextMenu name="КонецПериодаКонтекстноеМеню" id="12"/>
+									<ExtendedTooltip name="КонецПериодаExtendedTooltip" id="160"/>
+									<Events>
+										<Event name="OnChange">КонецПериодаПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаСтруктурнаяЕдиница" id="128">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа структурная единица</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа структурная единица</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаСтруктурнаяЕдиницаExtendedTooltip" id="161"/>
+							<ChildItems>
+								<InputField name="СтруктурнаяЕдиница" id="126">
+									<DataPath>Объект.СтруктурнаяЕдиница</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>В клинике</v8:content>
+										</v8:item>
+									</Title>
+									<Width>30</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
+									<ContextMenu name="СтруктурнаяЕдиницаКонтекстноеМеню" id="127"/>
+									<ExtendedTooltip name="СтруктурнаяЕдиницаExtendedTooltip" id="162"/>
+									<Events>
+										<Event name="StartChoice">СтруктурнаяЕдиницаНачалоВыбора</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаТипНачисления" id="25">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа тип начисления</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа тип начисления</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаТипНачисленияExtendedTooltip" id="163"/>
+							<ChildItems>
+								<InputField name="НачислениеУдержание" id="27">
+									<DataPath>Объект.НачислениеУдержание</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Начисление (удержание)</v8:content>
+										</v8:item>
+									</Title>
+									<Width>32</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ListChoiceMode>true</ListChoiceMode>
+									<TextEdit>false</TextEdit>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ТипыНачисленийУдержаний.EnumValue.Начисление</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ТипыНачисленийУдержаний.EnumValue.Удержание</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="НачислениеУдержаниеКонтекстноеМеню" id="28"/>
+									<ExtendedTooltip name="НачислениеУдержаниеExtendedTooltip" id="164"/>
+									<Events>
+										<Event name="OnChange">ФормированиеИнтерфейсаПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаВидНачисления" id="144">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа тип начисления</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа тип начисления</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВидНачисленияExtendedTooltip" id="165"/>
+							<ChildItems>
+								<InputField name="ТипНачисленияУдержания" id="15">
+									<DataPath>Объект.ТипНачисленияУдержания</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>В виде</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<Width>20</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ListChoiceMode>true</ListChoiceMode>
+									<TextEdit>false</TextEdit>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ТипыНачисленийУдержаний.EnumValue.Оклад</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ТипыНачисленийУдержаний.EnumValue.Тариф</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ТипыНачисленийУдержаний.EnumValue.Процент</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="ТипНачисленияУдержанияКонтекстноеМеню" id="16"/>
+									<ExtendedTooltip name="ТипНачисленияУдержанияExtendedTooltip" id="166"/>
+									<Events>
+										<Event name="OnChange">ФормированиеИнтерфейсаПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="Размер" id="13">
+									<DataPath>Объект.Размер</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>В размере</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Left</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="РазмерКонтекстноеМеню" id="14"/>
+									<ExtendedTooltip name="РазмерExtendedTooltip" id="167"/>
+									<Events>
+										<Event name="OnChange">ФормированиеНаименованияПриИзменении</Event>
+									</Events>
+								</InputField>
+								<LabelDecoration name="ПроцентВалютаЗаголовок" id="98">
+									<Width>3</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Руб.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ПроцентВалютаЗаголовокКонтекстноеМеню" id="99"/>
+									<ExtendedTooltip name="ПроцентВалютаЗаголовокExtendedTooltip" id="168"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<Pages name="СтраницыУточненияТипаНачисления" id="139">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страницы уточнения типа начисления</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страницы уточнения типа начисления</v8:content>
+								</v8:item>
+							</ToolTip>
+							<PagesRepresentation>None</PagesRepresentation>
+							<ExtendedTooltip name="СтраницыУточненияТипаНачисленияExtendedTooltip" id="169"/>
+							<ChildItems>
+								<Page name="ГруппаРазмерНачисленияПроцент" id="119">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа размер начисления процент</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа размер начисления процент</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<ScrollOnCompress>false</ScrollOnCompress>
+									<ExtendedTooltip name="ГруппаРазмерНачисленияПроцентExtendedTooltip" id="170"/>
+									<ChildItems>
+										<LabelDecoration name="ОтПродажЗаголовок1" id="153">
+											<Width>15</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="ОтПродажЗаголовок1КонтекстноеМеню" id="154"/>
+											<ExtendedTooltip name="ОтПродажЗаголовок1ExtendedTooltip" id="171"/>
+										</LabelDecoration>
+										<LabelDecoration name="ОтПродажЗаголовок" id="62">
+											<Visible>false</Visible>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>От</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ОтПродажЗаголовокКонтекстноеМеню" id="63"/>
+											<ExtendedTooltip name="ОтПродажЗаголовокExtendedTooltip" id="172"/>
+										</LabelDecoration>
+										<InputField name="УчитываяТолькоОплаченныеПродажи" id="133">
+											<DataPath>Объект.УчитываяТолькоОплаченныеПродажи</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<Width>17</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ListChoiceMode>true</ListChoiceMode>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>от оказанных</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:boolean">false</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>от оказанных и оплаченных</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:boolean">true</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="УчитываяТолькоОплаченныеПродажиКонтекстноеМеню" id="134"/>
+											<ExtendedTooltip name="УчитываяТолькоОплаченныеПродажиExtendedTooltip" id="173"/>
+											<Events>
+												<Event name="OnChange">ФормированиеНаименованияПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="ОтПродаж" id="36">
+											<DataPath>Объект.ОтПродаж</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>от про        </v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>None</TitleLocation>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<ListChoiceMode>true</ListChoiceMode>
+											<TextEdit>false</TextEdit>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.ПоСотруднику</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.ПоСотрудникуВКачествеВрача</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.ПоСотрудникуВКачествеАссистента</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.ПоСотрудникуВКачествеЗубногоТехника</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.ПоСтоматологии</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.ПродажиОформленныхСотрудником</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="ОтПродажКонтекстноеМеню" id="37"/>
+											<ExtendedTooltip name="ОтПродажExtendedTooltip" id="174"/>
+											<Events>
+												<Event name="OnChange">ФормированиеНаименованияПриИзменении</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</Page>
+								<Page name="ГруппаРазмерНачисленияТариф" id="51">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Тариф</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа размер начисления тариф</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<ScrollOnCompress>false</ScrollOnCompress>
+									<ExtendedTooltip name="ГруппаРазмерНачисленияТарифExtendedTooltip" id="175"/>
+									<ChildItems>
+										<LabelDecoration name="ТипТарифаЗаголовок1" id="145">
+											<Width>15</Width>
+											<ContextMenu name="ТипТарифаЗаголовок1КонтекстноеМеню" id="146"/>
+											<ExtendedTooltip name="ТипТарифаЗаголовок1ExtendedTooltip" id="176"/>
+										</LabelDecoration>
+										<InputField name="ТипТарифа" id="58">
+											<DataPath>Объект.ТипТарифа</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<Width>20</Width>
+											<ListChoiceMode>true</ListChoiceMode>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.ЗаЧас</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.ЗаВыход</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.ЗаЧасАссистирования</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.АвторуЗаПервичныйПрием</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.АвторуЗаОплаченныйПрием</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="ТипТарифаКонтекстноеМеню" id="59"/>
+											<ExtendedTooltip name="ТипТарифаExtendedTooltip" id="177"/>
+											<Events>
+												<Event name="OnChange">ФормированиеИнтерфейсаПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="ТипТарифаВрач" id="235">
+											<DataPath>Объект.Врач</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Врача</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<Width>30</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<TextEdit>false</TextEdit>
+											<ContextMenu name="ТипТарифаВрачКонтекстноеМеню" id="236"/>
+											<ExtendedTooltip name="ТипТарифаВрачРасширеннаяПодсказка" id="237"/>
+											<Events>
+												<Event name="OnChange">ФормированиеНаименованияПриИзменении</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</Page>
+								<Page name="ГруппаРазмерНачисленияОклад" id="52">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Оклад</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа размер начисления оклад</v8:content>
+										</v8:item>
+									</ToolTip>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Group>Horizontal</Group>
+									<ScrollOnCompress>false</ScrollOnCompress>
+									<ExtendedTooltip name="ГруппаРазмерНачисленияОкладExtendedTooltip" id="178"/>
+									<ChildItems>
+										<LabelDecoration name="ТипОкладаЗаголовок" id="142">
+											<Width>15</Width>
+											<ContextMenu name="ТипОкладаЗаголовокКонтекстноеМеню" id="143"/>
+											<ExtendedTooltip name="ТипОкладаЗаголовокExtendedTooltip" id="179"/>
+										</LabelDecoration>
+										<InputField name="ЗависимостьОтВыработки" id="32">
+											<DataPath>Объект.ЗависимостьОтВыработки</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ListChoiceMode>true</ListChoiceMode>
+											<TextEdit>false</TextEdit>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.ЗависитОтВыработки</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.НеЗависитОтВыработки</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="ЗависимостьОтВыработкиКонтекстноеМеню" id="33"/>
+											<ExtendedTooltip name="ЗависимостьОтВыработкиExtendedTooltip" id="180"/>
+											<Events>
+												<Event name="OnChange">ФормированиеИнтерфейсаПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="ТипПериодаНачисления" id="56">
+											<DataPath>Объект.ТипПериодаНачисления</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<Width>20</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ListChoiceMode>true</ListChoiceMode>
+											<TextEdit>false</TextEdit>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.ПоДням</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.ПоЧасам</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="ТипПериодаНачисленияКонтекстноеМеню" id="57"/>
+											<ExtendedTooltip name="ТипПериодаНачисленияExtendedTooltip" id="181"/>
+											<Events>
+												<Event name="OnChange">ФормированиеНаименованияПриИзменении</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+						<UsualGroup name="ГруппаУсловиеСуммаПроцент" id="479">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>WeakSeparation</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаУсловиеСуммаПроцентРасширеннаяПодсказка" id="480"/>
+							<ChildItems>
+								<LabelDecoration name="УсловиеСуммаЗаголовок" id="481">
+									<Width>15</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="УсловиеСуммаЗаголовокКонтекстноеМеню" id="482"/>
+									<ExtendedTooltip name="УсловиеСуммаЗаголовокРасширеннаяПодсказка" id="483"/>
+								</LabelDecoration>
+								<InputField name="УсловиеСумма" id="484">
+									<DataPath>Объект.УсловиеСумма</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<Width>17</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ListChoiceMode>true</ListChoiceMode>
+									<TextEdit>false</TextEdit>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>от всей суммы</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.ОтВсейСуммы</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>от части суммы</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.ОтЧастиСуммы</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="УсловиеСуммаКонтекстноеМеню" id="485"/>
+									<ExtendedTooltip name="УсловиеСуммаРасширеннаяПодсказка" id="486"/>
+									<Events>
+										<Event name="OnChange">УсловиеСуммаПриИзменении</Event>
+									</Events>
+								</InputField>
+								<UsualGroup name="ГруппаУсловиеОтЧастиСуммы" id="502">
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа условие от части суммы</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>HorizontalIfPossible</Group>
+									<Representation>WeakSeparation</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаУсловиеОтЧастиСуммыРасширеннаяПодсказка" id="503"/>
+									<ChildItems>
+										<InputField name="СравнениеУсловиеСумма" id="504">
+											<DataPath>Объект.ТипСравненияУсловиеСумма</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ListChoiceMode>true</ListChoiceMode>
+											<ChooseType>false</ChooseType>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>от</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.Больше</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>до</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.Меньше</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>между</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.Между</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="СравнениеУсловиеСуммаКонтекстноеМеню" id="505"/>
+											<ExtendedTooltip name="СравнениеУсловиеСуммаРасширеннаяПодсказка" id="506"/>
+											<Events>
+												<Event name="OnChange">СравнениеУсловиеСуммаПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="УсловиеСуммаОт" id="487">
+											<DataPath>Объект.УсловиеСуммаОт</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="УсловиеСуммаОтКонтекстноеМеню" id="488"/>
+											<ExtendedTooltip name="УсловиеСуммаОтРасширеннаяПодсказка" id="489"/>
+										</InputField>
+										<LabelDecoration name="ДекорацияУсловиеСУммаИ" id="496">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>и</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДекорацияУсловиеСУммаИКонтекстноеМеню" id="497"/>
+											<ExtendedTooltip name="ДекорацияУсловиеСУммаИРасширеннаяПодсказка" id="498"/>
+										</LabelDecoration>
+										<InputField name="УсловиеСуммаДо" id="490">
+											<DataPath>Объект.УсловиеСуммаДо</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="УсловиеСуммаДоКонтекстноеМеню" id="491"/>
+											<ExtendedTooltip name="УсловиеСуммаДоРасширеннаяПодсказка" id="492"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаУсловияНачислений" id="135">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Условия начисления</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа условия начислений</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>StrongSeparation</Representation>
+					<ExtendedTooltip name="ГруппаУсловияНачисленийExtendedTooltip" id="182"/>
+					<ChildItems>
+						<LabelDecoration name="Декорация1" id="137">
+							<Visible>false</Visible>
+							<Width>15</Width>
+							<ContextMenu name="Декорация1КонтекстноеМеню" id="138"/>
+							<ExtendedTooltip name="Декорация1ExtendedTooltip" id="183"/>
+						</LabelDecoration>
+						<Pages name="СтраницыУсловийНачислений" id="136">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страницы условий начислений</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страницы условий начислений</v8:content>
+								</v8:item>
+							</ToolTip>
+							<PagesRepresentation>None</PagesRepresentation>
+							<ExtendedTooltip name="СтраницыУсловийНачисленийExtendedTooltip" id="184"/>
+							<ChildItems>
+								<Page name="ГруппаУсловийНачисленийПроцент" id="26">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Процент</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа условий начислений процент</v8:content>
+										</v8:item>
+									</ToolTip>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Group>Vertical</Group>
+									<ScrollOnCompress>false</ScrollOnCompress>
+									<ExtendedTooltip name="ГруппаУсловийНачисленийПроцентExtendedTooltip" id="185"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаОтПродаж" id="64">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа от продаж</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа от продаж</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаОтПродажExtendedTooltip" id="186"/>
+										</UsualGroup>
+										<UsualGroup name="ГруппаСегментНоменклатуры" id="65">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа сегмент номенклатуры</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа сегмент номенклатуры</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСегментНоменклатурыExtendedTooltip" id="187"/>
+											<ChildItems>
+												<LabelDecoration name="ТипСегментаНоменклатурыЗаголовок" id="155">
+													<Width>21</Width>
+													<HorizontalStretch>false</HorizontalStretch>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>По номенклатуре сегмента:</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ТипСегментаНоменклатурыЗаголовокКонтекстноеМеню" id="156"/>
+													<ExtendedTooltip name="ТипСегментаНоменклатурыЗаголовокExtendedTooltip" id="188"/>
+												</LabelDecoration>
+												<InputField name="СегментНоменклатуры" id="17">
+													<DataPath>Объект.СегментНоменклатуры</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<EditMode>EnterOnInput</EditMode>
+													<AutoEditMode>true</AutoEditMode>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<TextEdit>false</TextEdit>
+													<ContextMenu name="СегментНоменклатурыКонтекстноеМеню" id="18"/>
+													<ExtendedTooltip name="СегментНоменклатурыExtendedTooltip" id="189"/>
+													<Events>
+														<Event name="OnChange">ФормированиеНаименованияПриИзменении</Event>
+													</Events>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаСегментКонтрагента" id="66">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа сегмент контрагента</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа сегмент контрагента</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСегментКонтрагентаExtendedTooltip" id="190"/>
+											<ChildItems>
+												<LabelDecoration name="СегментКонтрагентаЗаголовок" id="70">
+													<Width>21</Width>
+													<HorizontalStretch>false</HorizontalStretch>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>По клиентам сегмента:</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="СегментКонтрагентаЗаголовокКонтекстноеМеню" id="71"/>
+													<ExtendedTooltip name="СегментКонтрагентаЗаголовокExtendedTooltip" id="191"/>
+												</LabelDecoration>
+												<InputField name="СегментКонтрагента" id="19">
+													<DataPath>Объект.СегментКонтрагента</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>клиентам</v8:content>
+														</v8:item>
+													</Title>
+													<TitleLocation>None</TitleLocation>
+													<EditMode>EnterOnInput</EditMode>
+													<AutoEditMode>true</AutoEditMode>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<TextEdit>false</TextEdit>
+													<ContextMenu name="СегментКонтрагентаКонтекстноеМеню" id="20"/>
+													<ExtendedTooltip name="СегментКонтрагентаExtendedTooltip" id="192"/>
+													<Events>
+														<Event name="OnChange">ФормированиеНаименованияПриИзменении</Event>
+													</Events>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаПоМедПолисамПриема" id="279">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа мед. полисам приема</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа мед. полисам приема</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаПоМедПолисамПриемаРасширеннаяПодсказка" id="280"/>
+											<ChildItems>
+												<LabelDecoration name="ТипПоМедПолисамПриемаЗаголовок" id="281">
+													<Width>21</Width>
+													<HorizontalStretch>false</HorizontalStretch>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>По мед. полисам приема:</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ТипПоМедПолисамПриемаЗаголовокКонтекстноеМеню" id="282"/>
+													<ExtendedTooltip name="ТипПоМедПолисамПриемаЗаголовокРасширеннаяПодсказка" id="283"/>
+												</LabelDecoration>
+												<InputField name="УсловиеПоМедПолисамПриема" id="284">
+													<DataPath>Объект.УсловиеПоМедПолисамПриема</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<EditMode>EnterOnInput</EditMode>
+													<AutoEditMode>true</AutoEditMode>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<ListChoiceMode>true</ListChoiceMode>
+													<TextEdit>false</TextEdit>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation/>
+																<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.БезУсловий</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation/>
+																<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.СМедПолисом</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation/>
+																<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.БезМедПолиса</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="УсловиеПоМедПолисамПриемаКонтекстноеМеню" id="285"/>
+													<ExtendedTooltip name="УсловиеПоМедПолисамПриемаРасширеннаяПодсказка" id="286"/>
+													<Events>
+														<Event name="OnChange">ФормированиеНаименованияПриИзменении</Event>
+													</Events>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаУчетМатериалов" id="30">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа учет материалов</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа учет материалов</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаУчетМатериаловExtendedTooltip" id="193"/>
+											<ChildItems>
+												<InputField name="УчитыватьМатериалы" id="38">
+													<DataPath>Объект.УчитыватьМатериалы</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<Width>18</Width>
+													<HorizontalStretch>false</HorizontalStretch>
+													<ListChoiceMode>true</ListChoiceMode>
+													<TextEdit>false</TextEdit>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation/>
+																<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.НеУчитыватьСтоимостьМатериалов</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation/>
+																<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.УчитыватьСтоимостьМатериалов</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation/>
+																<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.ВычитатьСтоимостьПереданныхСотрудникуМатериалов</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="УчитыватьМатериалыКонтекстноеМеню" id="39"/>
+													<ExtendedTooltip name="УчитыватьМатериалыExtendedTooltip" id="194"/>
+													<Events>
+														<Event name="OnChange">ФормированиеИнтерфейсаПриИзменении</Event>
+													</Events>
+												</InputField>
+												<InputField name="ТипЦен" id="21">
+													<DataPath>Объект.ТипЦен</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<EditMode>EnterOnInput</EditMode>
+													<AutoEditMode>true</AutoEditMode>
+													<Width>25</Width>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<HorizontalStretch>true</HorizontalStretch>
+													<ListChoiceMode>true</ListChoiceMode>
+													<TextEdit>false</TextEdit>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation/>
+																<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.ПоВидуЦен</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation/>
+																<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.ПоЗакупочнойЦене</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="ТипЦенКонтекстноеМеню" id="22"/>
+													<ExtendedTooltip name="ТипЦенExtendedTooltip" id="195"/>
+													<Events>
+														<Event name="OnChange">ФормированиеИнтерфейсаПриИзменении</Event>
+													</Events>
+												</InputField>
+												<InputField name="ВидЦен" id="60">
+													<DataPath>Объект.ВидЦен</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<Width>10</Width>
+													<HorizontalStretch>false</HorizontalStretch>
+													<TextEdit>false</TextEdit>
+													<ContextMenu name="ВидЦенКонтекстноеМеню" id="61"/>
+													<ExtendedTooltip name="ВидЦенExtendedTooltip" id="196"/>
+													<Events>
+														<Event name="OnChange">ФормированиеНаименованияПриИзменении</Event>
+													</Events>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаСегментПередаваемыхМатериалов" id="213">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа сегмент контрагента</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа сегмент контрагента</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСегментПередаваемыхМатериаловРасширеннаяПодсказка" id="214"/>
+											<ChildItems>
+												<LabelDecoration name="СегментПередаваемыхМатериаловЗаголовок" id="215">
+													<Width>21</Width>
+													<HorizontalStretch>false</HorizontalStretch>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>По материалам сегмента:</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="СегментПередаваемыхМатериаловЗаголовокКонтекстноеМеню" id="216"/>
+													<ExtendedTooltip name="СегментПередаваемыхМатериаловЗаголовокРасширеннаяПодсказка" id="217"/>
+												</LabelDecoration>
+												<InputField name="СегментПередаваемыхМатериалов" id="210">
+													<DataPath>Объект.СегментПередаваемыхМатериалов</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>по материалам сегмента</v8:content>
+														</v8:item>
+													</Title>
+													<TitleLocation>None</TitleLocation>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<ContextMenu name="СегментПередаваемыхМатериаловКонтекстноеМеню" id="211"/>
+													<ExtendedTooltip name="СегментПередаваемыхМатериаловРасширеннаяПодсказка" id="212"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаОтСуммы" id="67">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа от суммы</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа от суммы</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаОтСуммыExtendedTooltip" id="197"/>
+											<ChildItems>
+												<LabelDecoration name="ОтСуммыЗаголовок" id="72">
+													<Width>21</Width>
+													<HorizontalStretch>false</HorizontalStretch>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>От суммы:</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ОтСуммыЗаголовокКонтекстноеМеню" id="73"/>
+													<ExtendedTooltip name="ОтСуммыЗаголовокExtendedTooltip" id="198"/>
+												</LabelDecoration>
+												<InputField name="ОтСуммы" id="40">
+													<DataPath>Объект.ОтСуммы</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>от суммы</v8:content>
+														</v8:item>
+													</Title>
+													<TitleLocation>None</TitleLocation>
+													<Width>25</Width>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<HorizontalStretch>true</HorizontalStretch>
+													<ListChoiceMode>true</ListChoiceMode>
+													<TextEdit>false</TextEdit>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation/>
+																<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.СоСкидкой</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation/>
+																<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.БезСкидки</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation/>
+																<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.ПоВидуЦен</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="ОтСуммыКонтекстноеМеню" id="41"/>
+													<ExtendedTooltip name="ОтСуммыExtendedTooltip" id="199"/>
+													<Events>
+														<Event name="OnChange">ФормированиеИнтерфейсаПриИзменении</Event>
+													</Events>
+												</InputField>
+												<InputField name="ВидЦенСуммы" id="122">
+													<DataPath>Объект.ВидЦенСуммы</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Вид цены</v8:content>
+														</v8:item>
+													</Title>
+													<TitleLocation>None</TitleLocation>
+													<Width>10</Width>
+													<HorizontalStretch>false</HorizontalStretch>
+													<ContextMenu name="ВидЦенСуммыКонтекстноеМеню" id="123"/>
+													<ExtendedTooltip name="ВидЦенСуммыExtendedTooltip" id="200"/>
+													<Events>
+														<Event name="OnChange">ФормированиеНаименованияПриИзменении</Event>
+													</Events>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаСравнениеСумма" id="48">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа сравнение сумма</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа сравнение сумма</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСравнениеСуммаExtendedTooltip" id="201"/>
+											<ChildItems>
+												<InputField name="УсловиеПродажи" id="42">
+													<DataPath>Объект.УсловиеПродажи</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<Width>18</Width>
+													<HorizontalStretch>false</HorizontalStretch>
+													<ListChoiceMode>true</ListChoiceMode>
+													<TextEdit>false</TextEdit>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation/>
+																<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.БезУсловий</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation/>
+																<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.ЕслиСуммаПродажи</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation/>
+																<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.ЕслиОбщаяСуммаПродажи</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="УсловиеПродажиКонтекстноеМеню" id="43"/>
+													<ExtendedTooltip name="УсловиеПродажиExtendedTooltip" id="202"/>
+													<Events>
+														<Event name="OnChange">ФормированиеИнтерфейсаПриИзменении</Event>
+													</Events>
+												</InputField>
+												<InputField name="ТипСравнения" id="46">
+													<DataPath>Объект.ТипСравнения</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<Width>25</Width>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<HorizontalStretch>true</HorizontalStretch>
+													<ListChoiceMode>true</ListChoiceMode>
+													<TextEdit>false</TextEdit>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation/>
+																<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.Больше</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation/>
+																<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.Меньше</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="ТипСравненияКонтекстноеМеню" id="47"/>
+													<ExtendedTooltip name="ТипСравненияExtendedTooltip" id="203"/>
+													<Events>
+														<Event name="OnChange">ФормированиеНаименованияПриИзменении</Event>
+													</Events>
+												</InputField>
+												<InputField name="СуммаПродаж" id="49">
+													<DataPath>Объект.СуммаПродаж</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Сумма</v8:content>
+														</v8:item>
+													</Title>
+													<TitleLocation>None</TitleLocation>
+													<Width>12</Width>
+													<HorizontalStretch>false</HorizontalStretch>
+													<ContextMenu name="СуммаПродажКонтекстноеМеню" id="50"/>
+													<ExtendedTooltip name="СуммаПродажExtendedTooltip" id="204"/>
+													<Events>
+														<Event name="OnChange">ФормированиеНаименованияПриИзменении</Event>
+													</Events>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</Page>
+								<Page name="ГруппаУсловийНачисленийТариф" id="218">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Тариф</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа условий начислений процент</v8:content>
+										</v8:item>
+									</ToolTip>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Group>Vertical</Group>
+									<ScrollOnCompress>false</ScrollOnCompress>
+									<ExtendedTooltip name="ГруппаУсловийНачисленийТарифРасширеннаяПодсказка" id="219"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаСегментНоменклатурыТариф" id="222">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа сегмент номенклатуры</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа сегмент номенклатуры</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСегментНоменклатурыТарифРасширеннаяПодсказка" id="223"/>
+											<ChildItems>
+												<LabelDecoration name="ТипСегментаНоменклатурыЗаголовокТариф" id="224">
+													<Width>21</Width>
+													<HorizontalStretch>false</HorizontalStretch>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>по номенклатуре сегмента</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ТипСегментаНоменклатурыЗаголовокТарифКонтекстноеМеню" id="225"/>
+													<ExtendedTooltip name="ТипСегментаНоменклатурыЗаголовокТарифРасширеннаяПодсказка" id="226"/>
+												</LabelDecoration>
+												<InputField name="СегментНоменклатурыТариф" id="227">
+													<DataPath>Объект.СегментНоменклатуры</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<EditMode>EnterOnInput</EditMode>
+													<AutoEditMode>true</AutoEditMode>
+													<TextEdit>false</TextEdit>
+													<ContextMenu name="СегментНоменклатурыТарифКонтекстноеМеню" id="228"/>
+													<ExtendedTooltip name="СегментНоменклатурыТарифРасширеннаяПодсказка" id="229"/>
+													<Events>
+														<Event name="OnChange">ФормированиеНаименованияПриИзменении</Event>
+													</Events>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаСравнениеСуммаТариф" id="268">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа сравнение сумма</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа сравнение сумма</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСравнениеСуммаТарифРасширеннаяПодсказка" id="269"/>
+											<ChildItems>
+												<InputField name="УсловиеПродажиТариф" id="270">
+													<DataPath>Объект.УсловиеПродажи</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<Width>20</Width>
+													<HorizontalStretch>false</HorizontalStretch>
+													<ListChoiceMode>true</ListChoiceMode>
+													<TextEdit>false</TextEdit>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation/>
+																<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.БезУсловий</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation/>
+																<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.ЕслиСуммаПродажи</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation/>
+																<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.ЗаКаждыйЧасДо</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation/>
+																<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.ЗаКаждыйЧасСверх</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="УсловиеПродажиТарифКонтекстноеМеню" id="271"/>
+													<ExtendedTooltip name="УсловиеПродажиТарифРасширеннаяПодсказка" id="272"/>
+													<Events>
+														<Event name="OnChange">ФормированиеИнтерфейсаПриИзменении</Event>
+													</Events>
+												</InputField>
+												<InputField name="ТипСравненияТариф" id="273">
+													<DataPath>Объект.ТипСравнения</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<Width>19</Width>
+													<HorizontalStretch>true</HorizontalStretch>
+													<ListChoiceMode>true</ListChoiceMode>
+													<TextEdit>false</TextEdit>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation/>
+																<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.Больше</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation/>
+																<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.Меньше</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="ТипСравненияТарифКонтекстноеМеню" id="274"/>
+													<ExtendedTooltip name="ТипСравненияТарифРасширеннаяПодсказка" id="275"/>
+													<Events>
+														<Event name="OnChange">ФормированиеНаименованияПриИзменении</Event>
+													</Events>
+												</InputField>
+												<InputField name="СуммаПродажТариф" id="276">
+													<DataPath>Объект.СуммаПродаж</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Сумма</v8:content>
+														</v8:item>
+													</Title>
+													<TitleLocation>None</TitleLocation>
+													<Width>10</Width>
+													<HorizontalStretch>false</HorizontalStretch>
+													<ContextMenu name="СуммаПродажТарифКонтекстноеМеню" id="277"/>
+													<ExtendedTooltip name="СуммаПродажТарифРасширеннаяПодсказка" id="278"/>
+													<Events>
+														<Event name="OnChange">ФормированиеНаименованияПриИзменении</Event>
+													</Events>
+												</InputField>
+												<LabelDecoration name="ТарифВалютаСравнениеСуммыЗаголовок" id="287">
+													<Width>5</Width>
+													<HorizontalStretch>false</HorizontalStretch>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Часов</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ТарифВалютаСравнениеСуммыЗаголовокКонтекстноеМеню" id="288"/>
+													<ExtendedTooltip name="ТарифВалютаСравнениеСуммыЗаголовокРасширеннаяПодсказка" id="289"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаВыработкиПоЧасам" id="290">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа выработки по часам</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа выработки по часам</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаВыработкиПоЧасамРасширеннаяПодсказка" id="291"/>
+											<ChildItems>
+												<LabelDecoration name="ЕслиОтработаноЗаголовок" id="292">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>если отработано</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ЕслиОтработаноЗаголовокКонтекстноеМеню" id="293"/>
+													<ExtendedTooltip name="ЕслиОтработаноЗаголовокРасширеннаяПодсказка" id="294"/>
+												</LabelDecoration>
+												<InputField name="УсловиеВыработкиПоЧасам" id="301">
+													<DataPath>Объект.УсловиеВыработкиПоЧасам</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<ListChoiceMode>true</ListChoiceMode>
+													<TextEdit>false</TextEdit>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation/>
+																<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.Всего</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation/>
+																<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.СВрачом</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="УсловиеВыработкиПоЧасамКонтекстноеМеню" id="302"/>
+													<ExtendedTooltip name="УсловиеВыработкиПоЧасамРасширеннаяПодсказка" id="303"/>
+													<Events>
+														<Event name="OnChange">ФормированиеНаименованияПриИзменении</Event>
+													</Events>
+												</InputField>
+												<InputField name="ТипСравненияВыработкиПоЧасам" id="304">
+													<DataPath>Объект.ТипСравненияВыработкиПоЧасам</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<ListChoiceMode>true</ListChoiceMode>
+													<TextEdit>false</TextEdit>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation/>
+																<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.Больше</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation/>
+																<Value xsi:type="xr:DesignTimeRef">Enum.ВариантыЗначенийПоВидамНачисленийУдержаний.EnumValue.Меньше</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="ТипСравненияВыработкиПоЧасамКонтекстноеМеню" id="305"/>
+													<ExtendedTooltip name="ТипСравненияВыработкиПоЧасамРасширеннаяПодсказка" id="306"/>
+													<Events>
+														<Event name="OnChange">ФормированиеНаименованияПриИзменении</Event>
+													</Events>
+												</InputField>
+												<InputField name="КоличествоЧасов" id="307">
+													<DataPath>Объект.КоличествоЧасов</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<HorizontalStretch>false</HorizontalStretch>
+													<ChoiceButton>true</ChoiceButton>
+													<ContextMenu name="КоличествоЧасовКонтекстноеМеню" id="308"/>
+													<ExtendedTooltip name="КоличествоЧасовРасширеннаяПодсказка" id="309"/>
+													<Events>
+														<Event name="OnChange">ФормированиеНаименованияПриИзменении</Event>
+													</Events>
+												</InputField>
+												<LabelDecoration name="ЧасовЗаголовок" id="298">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Часов</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ЧасовЗаголовокКонтекстноеМеню" id="299"/>
+													<ExtendedTooltip name="ЧасовЗаголовокРасширеннаяПодсказка" id="300"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаПолноеНаименование" id="106">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание начисления (удержания)</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа полное наименование</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПолноеНаименованиеExtendedTooltip" id="205"/>
+					<ChildItems>
+						<InputField name="ПолноеНаименование" id="115">
+							<DataPath>Объект.ПолноеНаименование</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<TitleLocation>None</TitleLocation>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Height>3</Height>
+							<VerticalStretch>false</VerticalStretch>
+							<MultiLine>true</MultiLine>
+							<TextColor>style:ПоясняющийТекст</TextColor>
+							<ContextMenu name="ПолноеНаименованиеКонтекстноеМеню" id="116"/>
+							<ExtendedTooltip name="ПолноеНаименованиеExtendedTooltip" id="206"/>
+						</InputField>
+						<UsualGroup name="Группа1" id="150">
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1ExtendedTooltip" id="207"/>
+							<ChildItems>
+								<Button name="ВозможностьРедактирования" id="147">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ВозможностьРедактирования</CommandName>
+									<Picture>
+										<xr:Ref>CommonPicture.Редактировать</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ButtonImportance>Supplementary</ButtonImportance>
+									<ExtendedTooltip name="ВозможностьРедактированияExtendedTooltip" id="208"/>
+								</Button>
+								<CheckBoxField name="ВозможностьРедактировать" id="151">
+									<Visible>false</Visible>
+									<Enabled>false</Enabled>
+									<ReadOnly>true</ReadOnly>
+									<ContextMenu name="ВозможностьРедактироватьКонтекстноеМеню" id="152"/>
+									<ExtendedTooltip name="ВозможностьРедактироватьExtendedTooltip" id="209"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаКомманднаяПанель" id="467">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа коммандная панель</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа коммандная панель</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<Group>HorizontalIfPossible</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаКомманднаяПанельРасширеннаяПодсказка" id="468"/>
+					<ChildItems>
+						<Button name="Удалить" id="469">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<CommandName>Form.StandardCommand.SetDeletionMark</CommandName>
+							<Picture>
+								<xr:Ref>CommonPicture.ВКорзину</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Удалить</v8:content>
+								</v8:item>
+							</Title>
+							<ShapeRepresentation>None</ShapeRepresentation>
+							<PictureLocation>Left</PictureLocation>
+							<ButtonImportance>Supplementary</ButtonImportance>
+							<ExtendedTooltip name="УдалитьРасширеннаяПодсказка" id="470"/>
+						</Button>
+						<Button name="КнопкаВывестиНастройкаФормы" id="471">
+							<Type>UsualButton</Type>
+							<Representation>Picture</Representation>
+							<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+							<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+							<Picture>
+								<xr:Ref>CommonPicture.НастройкаФормы</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ShapeRepresentation>None</ShapeRepresentation>
+							<PictureLocation>Left</PictureLocation>
+							<ButtonImportance>Supplementary</ButtonImportance>
+							<ExtendedTooltip name="КнопкаВывестиНастройкаФормыРасширеннаяПодсказка" id="472"/>
+						</Button>
+						<Button name="КнопкаИстория" id="477">
+							<Type>UsualButton</Type>
+							<Representation>Picture</Representation>
+							<CommandName>InformationRegister.Обсуждения.Command.История</CommandName>
+							<DataPath>Объект.Ref</DataPath>
+							<Picture>
+								<xr:Ref>CommonPicture.ИсторияОбъекта</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ShapeRepresentation>None</ShapeRepresentation>
+							<ButtonImportance>Supplementary</ButtonImportance>
+							<ExtendedTooltip name="КнопкаИсторияРасширеннаяПодсказка" id="478"/>
+						</Button>
+						<UsualGroup name="ГруппаКнопкаСохранить" id="473">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа кнопка сохранить</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа кнопка сохранить</v8:content>
+								</v8:item>
+							</ToolTip>
+							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+							<Group>HorizontalIfPossible</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<BackColor>style:ImportantColor</BackColor>
+							<ExtendedTooltip name="ГруппаКнопкаСохранитьРасширеннаяПодсказка" id="474"/>
+							<ChildItems>
+								<Button name="ФормаКнопкаСохранитьИЗакрыть" id="475">
+									<Type>UsualButton</Type>
+									<Width>10</Width>
+									<CommandName>Form.StandardCommand.WriteAndClose</CommandName>
+									<TextColor>style:FormBackColor</TextColor>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сохранить</v8:content>
+										</v8:item>
+									</Title>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ButtonImportance>Supplementary</ButtonImportance>
+									<ExtendedTooltip name="ФормаКнопкаСохранитьИЗакрытьРасширеннаяПодсказка" id="476"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.НачисленияИУдержанияСотрудников</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВозможностьРедактирования" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Возможность редактирования описания</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Change</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВозможностьРедактирования</Action>
+			<Representation>Picture</Representation>
+			<ModifiesSavedData>true</ModifiesSavedData>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>InformationRegister.Обсуждения.Command.История</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

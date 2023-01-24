@@ -1,0 +1,3069 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаВерхняяКоманднаяПанель" id="399">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа верхняя командная панель</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа верхняя командная панель</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>HorizontalIfPossible</Group>
+			<Representation>WeakSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаВерхняяКоманднаяПанельРасширеннаяПодсказка" id="400"/>
+			<ChildItems>
+				<Button name="ФормаЗагрузитьШаблонПоУмолчанию" id="154">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ЗагрузитьШаблонПоУмолчанию</CommandName>
+					<Picture>
+						<xr:Ref>CommonPicture.ВосстановитьПоУмолчанию</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ShapeRepresentation>None</ShapeRepresentation>
+					<ButtonImportance>Supplementary</ButtonImportance>
+					<ExtendedTooltip name="ФормаЗагрузитьШаблонПоУмолчаниюРасширеннаяПодсказка" id="199"/>
+				</Button>
+				<Button name="ФормаОчиститьШаблон" id="155">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ОчиститьШаблон</CommandName>
+					<Picture>
+						<xr:Ref>CommonPicture.ОчиститьРезультатПроверки</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ShapeRepresentation>None</ShapeRepresentation>
+					<ButtonImportance>Supplementary</ButtonImportance>
+					<ExtendedTooltip name="ФормаОчиститьШаблонРасширеннаяПодсказка" id="200"/>
+				</Button>
+				<Button name="ФормаИмпортироватьШаблонИзФайла" id="158">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ИмпортироватьШаблонИзФайла</CommandName>
+					<Picture>
+						<xr:Ref>CommonPicture.ФайлЗагрузить</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ShapeRepresentation>None</ShapeRepresentation>
+					<ButtonImportance>Supplementary</ButtonImportance>
+					<ExtendedTooltip name="ФормаИмпортироватьШаблонИзФайлаРасширеннаяПодсказка" id="201"/>
+				</Button>
+				<Button name="ФормаЭкспортШаблонаВФайл" id="123">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ЭкспортШаблонаВФайл</CommandName>
+					<Picture>
+						<xr:Ref>CommonPicture.ФайлВыгрузить</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ShapeRepresentation>None</ShapeRepresentation>
+					<ButtonImportance>Supplementary</ButtonImportance>
+					<ExtendedTooltip name="ФормаЭкспортШаблонаВФайлРасширеннаяПодсказка" id="202"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаШапка" id="149">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="203"/>
+			<ChildItems>
+				<CheckBoxField name="ОднаФискальнаяСтрока" id="147">
+					<DataPath>ОднаФискальнаяСтрока</DataPath>
+					<ContextMenu name="ОднаФискальнаяСтрокаКонтекстноеМеню" id="148"/>
+					<ExtendedTooltip name="ОднаФискальнаяСтрокаРасширеннаяПодсказка" id="204"/>
+					<Events>
+						<Event name="OnChange">ОднаФискальнаяСтрокаПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<InputField name="СписокШиринаЧека" id="60">
+					<DataPath>мШиринаЧека</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ширина</v8:content>
+						</v8:item>
+					</Title>
+					<ChoiceButton>true</ChoiceButton>
+					<ClearButton>false</ClearButton>
+					<SpinButton>false</SpinButton>
+					<OpenButton>false</OpenButton>
+					<ListChoiceMode>true</ListChoiceMode>
+					<QuickChoice>true</QuickChoice>
+					<ChooseType>false</ChooseType>
+					<TextEdit>false</TextEdit>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>18 символов</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">18</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>20 символов</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">20</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>21 символов</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">21</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>32 символов</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">32</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>36 символов</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">36</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>40 символов</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">36</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>42 символов</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">42</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>43 символов</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">43</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>48 символов</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">48</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>50 символов</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">50</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ChoiceListButton>false</ChoiceListButton>
+					<ContextMenu name="СписокШиринаЧекаКонтекстноеМеню" id="61"/>
+					<ExtendedTooltip name="СписокШиринаЧекаРасширеннаяПодсказка" id="205"/>
+					<Events>
+						<Event name="OnChange">СписокШиринаЧекаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ЧекККМ" id="54">
+					<DataPath>ЧекККМ</DataPath>
+					<ChooseType>false</ChooseType>
+					<ContextMenu name="ЧекККМКонтекстноеМеню" id="55"/>
+					<ExtendedTooltip name="ЧекККМРасширеннаяПодсказка" id="206"/>
+					<Events>
+						<Event name="OnChange">ЧекККМПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаОсновная" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа основная</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа основная</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОсновнаяРасширеннаяПодсказка" id="207"/>
+			<ChildItems>
+				<Pages name="ГруппаКомпоновщикиНастроек" id="62">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа компоновщики настроек</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа компоновщики настроек</v8:content>
+						</v8:item>
+					</ToolTip>
+					<PagesRepresentation>None</PagesRepresentation>
+					<ExtendedTooltip name="ГруппаКомпоновщикиНастроекРасширеннаяПодсказка" id="208"/>
+					<ChildItems>
+						<Page name="СКДПриходныйКассовыйОрдерПоляШаблона" id="63">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>СКДПриходный кассовый ордер поля шаблона</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>СКДПриходный кассовый ордер поля шаблона</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ScrollOnCompress>false</ScrollOnCompress>
+							<ExtendedTooltip name="СКДПриходныйКассовыйОрдерПоляШаблонаРасширеннаяПодсказка" id="209"/>
+							<ChildItems>
+								<Table name="КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблона" id="64">
+									<Representation>Tree</Representation>
+									<Autofill>true</Autofill>
+									<Width>60</Width>
+									<HeightInTableRows>15</HeightInTableRows>
+									<ChoiceMode>true</ChoiceMode>
+									<SelectionMode>SingleRow</SelectionMode>
+									<RowSelectionMode>Cell</RowSelectionMode>
+									<HorizontalLinesBWA>false</HorizontalLinesBWA>
+									<VerticalLinesBWA>false</VerticalLinesBWA>
+									<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+									<InitialTreeView>ExpandTopLevel</InitialTreeView>
+									<EnableStartDrag>true</EnableStartDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>СКДПриходныйКассовыйОрдерПоляШаблона.Settings.Order.OrderAvailableFields</DataPath>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<ContextMenu name="КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаКонтекстноеМеню" id="65">
+										<Autofill>false</Autofill>
+										<ChildItems>
+											<Button name="КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаКонтекстноеМенюКнопка" id="183">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ДобавитьВШаблон</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.ФайлДобавить</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ShapeRepresentation>None</ShapeRepresentation>
+												<ButtonImportance>Supplementary</ButtonImportance>
+												<ExtendedTooltip name="КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаКонтекстноеМенюКнопкаРасширеннаяПодсказка" id="210"/>
+											</Button>
+										</ChildItems>
+									</ContextMenu>
+									<AutoCommandBar name="КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаКоманднаяПанель" id="66">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаРасширеннаяПодсказка" id="211"/>
+									<SearchStringAddition name="КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаСтрокаПоиска" id="212">
+										<AdditionSource>
+											<Item>КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблона</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаСтрокаПоискаКонтекстноеМеню" id="213"/>
+										<ExtendedTooltip name="КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаСтрокаПоискаРасширеннаяПодсказка" id="214"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаСостояниеПросмотра" id="215">
+										<AdditionSource>
+											<Item>КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблона</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаСостояниеПросмотраКонтекстноеМеню" id="216"/>
+										<ExtendedTooltip name="КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаСостояниеПросмотраРасширеннаяПодсказка" id="217"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаУправлениеПоиском" id="218">
+										<AdditionSource>
+											<Item>КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблона</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаУправлениеПоискомКонтекстноеМеню" id="219"/>
+										<ExtendedTooltip name="КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаУправлениеПоискомРасширеннаяПодсказка" id="220"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="Selection">КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаВыбор</Event>
+									</Events>
+								</Table>
+							</ChildItems>
+						</Page>
+						<Page name="СКДПриходныйКассовыйОрдерПоляШаблонаШапка" id="67">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>СКДПриходный кассовый ордер поля шаблона</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>СКДПриходный кассовый ордер поля шаблона</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ScrollOnCompress>false</ScrollOnCompress>
+							<ExtendedTooltip name="СКДПриходныйКассовыйОрдерПоляШаблонаШапкаРасширеннаяПодсказка" id="221"/>
+							<ChildItems>
+								<Table name="КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаШапка" id="68">
+									<Representation>Tree</Representation>
+									<Autofill>true</Autofill>
+									<Width>60</Width>
+									<HeightInTableRows>15</HeightInTableRows>
+									<ChoiceMode>true</ChoiceMode>
+									<SelectionMode>SingleRow</SelectionMode>
+									<RowSelectionMode>Cell</RowSelectionMode>
+									<HorizontalLinesBWA>false</HorizontalLinesBWA>
+									<VerticalLinesBWA>false</VerticalLinesBWA>
+									<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+									<InitialTreeView>ExpandTopLevel</InitialTreeView>
+									<EnableStartDrag>true</EnableStartDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>СКДПриходныйКассовыйОрдерПоляШаблонаШапка.Settings.Order.OrderAvailableFields</DataPath>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<ContextMenu name="КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаШапкаКонтекстноеМеню" id="69">
+										<Autofill>false</Autofill>
+										<ChildItems>
+											<Button name="КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаШапкаКонтекстноеМенюКнопка" id="184">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ДобавитьВШаблон</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.ФайлДобавить</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ShapeRepresentation>None</ShapeRepresentation>
+												<ButtonImportance>Supplementary</ButtonImportance>
+												<ExtendedTooltip name="КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаШапкаКонтекстноеМенюКнопкаРасширеннаяПодсказка" id="222"/>
+											</Button>
+										</ChildItems>
+									</ContextMenu>
+									<AutoCommandBar name="КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаШапкаКоманднаяПанель" id="70">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаШапкаРасширеннаяПодсказка" id="223"/>
+									<SearchStringAddition name="КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаШапкаСтрокаПоиска" id="224">
+										<AdditionSource>
+											<Item>КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаШапка</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаШапкаСтрокаПоискаКонтекстноеМеню" id="225"/>
+										<ExtendedTooltip name="КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаШапкаСтрокаПоискаРасширеннаяПодсказка" id="226"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаШапкаСостояниеПросмотра" id="227">
+										<AdditionSource>
+											<Item>КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаШапка</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаШапкаСостояниеПросмотраКонтекстноеМеню" id="228"/>
+										<ExtendedTooltip name="КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаШапкаСостояниеПросмотраРасширеннаяПодсказка" id="229"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаШапкаУправлениеПоиском" id="230">
+										<AdditionSource>
+											<Item>КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаШапка</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаШапкаУправлениеПоискомКонтекстноеМеню" id="231"/>
+										<ExtendedTooltip name="КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаШапкаУправлениеПоискомРасширеннаяПодсказка" id="232"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="Selection">КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаШапкаВыбор</Event>
+									</Events>
+								</Table>
+							</ChildItems>
+						</Page>
+						<Page name="СКДПриходныйКассовыйОрдерПоляШаблонаТЧ" id="71">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>СКДПриходный кассовый ордер поля шаблона</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>СКДПриходный кассовый ордер поля шаблона</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ScrollOnCompress>false</ScrollOnCompress>
+							<ExtendedTooltip name="СКДПриходныйКассовыйОрдерПоляШаблонаТЧРасширеннаяПодсказка" id="233"/>
+							<ChildItems>
+								<Table name="КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаТЧ" id="72">
+									<Representation>Tree</Representation>
+									<Autofill>true</Autofill>
+									<Width>60</Width>
+									<HeightInTableRows>15</HeightInTableRows>
+									<ChoiceMode>true</ChoiceMode>
+									<SelectionMode>SingleRow</SelectionMode>
+									<RowSelectionMode>Cell</RowSelectionMode>
+									<HorizontalLinesBWA>false</HorizontalLinesBWA>
+									<VerticalLinesBWA>false</VerticalLinesBWA>
+									<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+									<InitialTreeView>ExpandTopLevel</InitialTreeView>
+									<EnableStartDrag>true</EnableStartDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>СКДПриходныйКассовыйОрдерПоляШаблонаТЧ.Settings.Order.OrderAvailableFields</DataPath>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<ContextMenu name="КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаТЧКонтекстноеМеню" id="73">
+										<Autofill>false</Autofill>
+										<ChildItems>
+											<Button name="КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаТЧКнопка" id="185">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ДобавитьВШаблон</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.ФайлДобавить</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ShapeRepresentation>None</ShapeRepresentation>
+												<ButtonImportance>Supplementary</ButtonImportance>
+												<ExtendedTooltip name="КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаТЧКнопкаРасширеннаяПодсказка" id="234"/>
+											</Button>
+										</ChildItems>
+									</ContextMenu>
+									<AutoCommandBar name="КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаТЧКоманднаяПанель" id="74">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаТЧРасширеннаяПодсказка" id="235"/>
+									<SearchStringAddition name="КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаТЧСтрокаПоиска" id="236">
+										<AdditionSource>
+											<Item>КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаТЧ</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаТЧСтрокаПоискаКонтекстноеМеню" id="237"/>
+										<ExtendedTooltip name="КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаТЧСтрокаПоискаРасширеннаяПодсказка" id="238"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаТЧСостояниеПросмотра" id="239">
+										<AdditionSource>
+											<Item>КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаТЧ</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаТЧСостояниеПросмотраКонтекстноеМеню" id="240"/>
+										<ExtendedTooltip name="КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаТЧСостояниеПросмотраРасширеннаяПодсказка" id="241"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаТЧУправлениеПоиском" id="242">
+										<AdditionSource>
+											<Item>КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаТЧ</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаТЧУправлениеПоискомКонтекстноеМеню" id="243"/>
+										<ExtendedTooltip name="КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаТЧУправлениеПоискомРасширеннаяПодсказка" id="244"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="Selection">КомпоновщикНастроекСКДПриходныйКассовыйОрдерПоляШаблонаТЧВыбор</Event>
+									</Events>
+								</Table>
+							</ChildItems>
+						</Page>
+						<Page name="СКДРасходныйКассовыйОрдерПоляШаблона" id="75">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>СКДПриходный кассовый ордер поля шаблона</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>СКДПриходный кассовый ордер поля шаблона</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ScrollOnCompress>false</ScrollOnCompress>
+							<ExtendedTooltip name="СКДРасходныйКассовыйОрдерПоляШаблонаРасширеннаяПодсказка" id="245"/>
+							<ChildItems>
+								<Table name="КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблона" id="76">
+									<Representation>Tree</Representation>
+									<Autofill>true</Autofill>
+									<Width>60</Width>
+									<HeightInTableRows>15</HeightInTableRows>
+									<ChoiceMode>true</ChoiceMode>
+									<SelectionMode>SingleRow</SelectionMode>
+									<RowSelectionMode>Cell</RowSelectionMode>
+									<HorizontalLinesBWA>false</HorizontalLinesBWA>
+									<VerticalLinesBWA>false</VerticalLinesBWA>
+									<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+									<InitialTreeView>ExpandTopLevel</InitialTreeView>
+									<EnableStartDrag>true</EnableStartDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>СКДРасходныйКассовыйОрдерПоляШаблона.Settings.Order.OrderAvailableFields</DataPath>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<ContextMenu name="КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаКонтекстноеМеню" id="77">
+										<Autofill>false</Autofill>
+										<ChildItems>
+											<Button name="КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаКнопка" id="186">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ДобавитьВШаблон</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.ФайлДобавить</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ShapeRepresentation>None</ShapeRepresentation>
+												<ButtonImportance>Supplementary</ButtonImportance>
+												<ExtendedTooltip name="КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаКнопкаРасширеннаяПодсказка" id="246"/>
+											</Button>
+										</ChildItems>
+									</ContextMenu>
+									<AutoCommandBar name="КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаКоманднаяПанель" id="78">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаРасширеннаяПодсказка" id="247"/>
+									<SearchStringAddition name="КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаСтрокаПоиска" id="248">
+										<AdditionSource>
+											<Item>КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблона</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаСтрокаПоискаКонтекстноеМеню" id="249"/>
+										<ExtendedTooltip name="КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаСтрокаПоискаРасширеннаяПодсказка" id="250"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаСостояниеПросмотра" id="251">
+										<AdditionSource>
+											<Item>КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблона</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаСостояниеПросмотраКонтекстноеМеню" id="252"/>
+										<ExtendedTooltip name="КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаСостояниеПросмотраРасширеннаяПодсказка" id="253"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаУправлениеПоиском" id="254">
+										<AdditionSource>
+											<Item>КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблона</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаУправлениеПоискомКонтекстноеМеню" id="255"/>
+										<ExtendedTooltip name="КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаУправлениеПоискомРасширеннаяПодсказка" id="256"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="Selection">КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаВыбор</Event>
+									</Events>
+								</Table>
+							</ChildItems>
+						</Page>
+						<Page name="СКДРасходныйКассовыйОрдерПоляШаблонаТЧ" id="79">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>СКДПриходный кассовый ордер поля шаблона</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>СКДПриходный кассовый ордер поля шаблона</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ScrollOnCompress>false</ScrollOnCompress>
+							<ExtendedTooltip name="СКДРасходныйКассовыйОрдерПоляШаблонаТЧРасширеннаяПодсказка" id="257"/>
+							<ChildItems>
+								<Table name="КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаТЧ" id="80">
+									<Representation>Tree</Representation>
+									<Autofill>true</Autofill>
+									<Width>60</Width>
+									<HeightInTableRows>15</HeightInTableRows>
+									<ChoiceMode>true</ChoiceMode>
+									<SelectionMode>SingleRow</SelectionMode>
+									<RowSelectionMode>Cell</RowSelectionMode>
+									<HorizontalLinesBWA>false</HorizontalLinesBWA>
+									<VerticalLinesBWA>false</VerticalLinesBWA>
+									<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+									<InitialTreeView>ExpandTopLevel</InitialTreeView>
+									<EnableStartDrag>true</EnableStartDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>СКДРасходныйКассовыйОрдерПоляШаблонаТЧ.Settings.Order.OrderAvailableFields</DataPath>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<ContextMenu name="КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаТЧКонтекстноеМеню" id="81">
+										<Autofill>false</Autofill>
+										<ChildItems>
+											<Button name="КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаТЧКнопка" id="187">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ДобавитьВШаблон</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.ФайлДобавить</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ShapeRepresentation>None</ShapeRepresentation>
+												<ButtonImportance>Supplementary</ButtonImportance>
+												<ExtendedTooltip name="КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаТЧКнопкаРасширеннаяПодсказка" id="258"/>
+											</Button>
+										</ChildItems>
+									</ContextMenu>
+									<AutoCommandBar name="КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаТЧКоманднаяПанель" id="82">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаТЧРасширеннаяПодсказка" id="259"/>
+									<SearchStringAddition name="КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаТЧСтрокаПоиска" id="260">
+										<AdditionSource>
+											<Item>КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаТЧ</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаТЧСтрокаПоискаКонтекстноеМеню" id="261"/>
+										<ExtendedTooltip name="КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаТЧСтрокаПоискаРасширеннаяПодсказка" id="262"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаТЧСостояниеПросмотра" id="263">
+										<AdditionSource>
+											<Item>КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаТЧ</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаТЧСостояниеПросмотраКонтекстноеМеню" id="264"/>
+										<ExtendedTooltip name="КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаТЧСостояниеПросмотраРасширеннаяПодсказка" id="265"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаТЧУправлениеПоиском" id="266">
+										<AdditionSource>
+											<Item>КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаТЧ</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаТЧУправлениеПоискомКонтекстноеМеню" id="267"/>
+										<ExtendedTooltip name="КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаТЧУправлениеПоискомРасширеннаяПодсказка" id="268"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="Selection">КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаТЧВыбор</Event>
+									</Events>
+								</Table>
+							</ChildItems>
+						</Page>
+						<Page name="СКДРасходныйКассовыйОрдерПоляШаблонаШапка" id="83">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>СКДПриходный кассовый ордер поля шаблона</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>СКДПриходный кассовый ордер поля шаблона</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ScrollOnCompress>false</ScrollOnCompress>
+							<ExtendedTooltip name="СКДРасходныйКассовыйОрдерПоляШаблонаШапкаРасширеннаяПодсказка" id="269"/>
+							<ChildItems>
+								<Table name="КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаШапка" id="84">
+									<Representation>Tree</Representation>
+									<Autofill>true</Autofill>
+									<Width>60</Width>
+									<HeightInTableRows>15</HeightInTableRows>
+									<ChoiceMode>true</ChoiceMode>
+									<SelectionMode>SingleRow</SelectionMode>
+									<RowSelectionMode>Cell</RowSelectionMode>
+									<HorizontalLinesBWA>false</HorizontalLinesBWA>
+									<VerticalLinesBWA>false</VerticalLinesBWA>
+									<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+									<InitialTreeView>ExpandTopLevel</InitialTreeView>
+									<EnableStartDrag>true</EnableStartDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>СКДРасходныйКассовыйОрдерПоляШаблонаШапка.Settings.Order.OrderAvailableFields</DataPath>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<ContextMenu name="КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаШапкаКонтекстноеМеню" id="85">
+										<Autofill>false</Autofill>
+										<ChildItems>
+											<Button name="КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаШапкаКнопка" id="188">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ДобавитьВШаблон</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.ФайлДобавить</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ShapeRepresentation>None</ShapeRepresentation>
+												<ButtonImportance>Supplementary</ButtonImportance>
+												<ExtendedTooltip name="КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаШапкаКнопкаРасширеннаяПодсказка" id="270"/>
+											</Button>
+										</ChildItems>
+									</ContextMenu>
+									<AutoCommandBar name="КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаШапкаКоманднаяПанель" id="86">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаШапкаРасширеннаяПодсказка" id="271"/>
+									<SearchStringAddition name="КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаШапкаСтрокаПоиска" id="272">
+										<AdditionSource>
+											<Item>КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаШапка</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаШапкаСтрокаПоискаКонтекстноеМеню" id="273"/>
+										<ExtendedTooltip name="КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаШапкаСтрокаПоискаРасширеннаяПодсказка" id="274"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаШапкаСостояниеПросмотра" id="275">
+										<AdditionSource>
+											<Item>КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаШапка</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаШапкаСостояниеПросмотраКонтекстноеМеню" id="276"/>
+										<ExtendedTooltip name="КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаШапкаСостояниеПросмотраРасширеннаяПодсказка" id="277"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаШапкаУправлениеПоиском" id="278">
+										<AdditionSource>
+											<Item>КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаШапка</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаШапкаУправлениеПоискомКонтекстноеМеню" id="279"/>
+										<ExtendedTooltip name="КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаШапкаУправлениеПоискомРасширеннаяПодсказка" id="280"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="Selection">КомпоновщикНастроекСКДРасходныйКассовыйОрдерПоляШаблонаШапкаВыбор</Event>
+									</Events>
+								</Table>
+							</ChildItems>
+						</Page>
+						<Page name="СКДЧекККМПоляШаблона" id="87">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>СКДПриходный кассовый ордер поля шаблона</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>СКДПриходный кассовый ордер поля шаблона</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ScrollOnCompress>false</ScrollOnCompress>
+							<ExtendedTooltip name="СКДЧекККМПоляШаблонаРасширеннаяПодсказка" id="281"/>
+							<ChildItems>
+								<Table name="КомпоновщикНастроекСКДЧекККМПоляШаблона" id="88">
+									<Representation>Tree</Representation>
+									<Autofill>true</Autofill>
+									<Width>60</Width>
+									<HeightInTableRows>15</HeightInTableRows>
+									<ChoiceMode>true</ChoiceMode>
+									<SelectionMode>SingleRow</SelectionMode>
+									<RowSelectionMode>Cell</RowSelectionMode>
+									<HorizontalLinesBWA>false</HorizontalLinesBWA>
+									<VerticalLinesBWA>false</VerticalLinesBWA>
+									<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+									<InitialTreeView>ExpandTopLevel</InitialTreeView>
+									<EnableStartDrag>true</EnableStartDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>СКДЧекККМПоляШаблона.Settings.Order.OrderAvailableFields</DataPath>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<ContextMenu name="КомпоновщикНастроекСКДЧекККМПоляШаблонаКонтекстноеМеню" id="89">
+										<Autofill>false</Autofill>
+										<ChildItems>
+											<Button name="КомпоновщикНастроекСКДЧекККМПоляШаблонаКнопка" id="189">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ДобавитьВШаблон</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.ФайлДобавить</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ShapeRepresentation>None</ShapeRepresentation>
+												<ButtonImportance>Supplementary</ButtonImportance>
+												<ExtendedTooltip name="КомпоновщикНастроекСКДЧекККМПоляШаблонаКнопкаРасширеннаяПодсказка" id="282"/>
+											</Button>
+										</ChildItems>
+									</ContextMenu>
+									<AutoCommandBar name="КомпоновщикНастроекСКДЧекККМПоляШаблонаКоманднаяПанель" id="90">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="КомпоновщикНастроекСКДЧекККМПоляШаблонаРасширеннаяПодсказка" id="283"/>
+									<SearchStringAddition name="КомпоновщикНастроекСКДЧекККМПоляШаблонаСтрокаПоиска" id="284">
+										<AdditionSource>
+											<Item>КомпоновщикНастроекСКДЧекККМПоляШаблона</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="КомпоновщикНастроекСКДЧекККМПоляШаблонаСтрокаПоискаКонтекстноеМеню" id="285"/>
+										<ExtendedTooltip name="КомпоновщикНастроекСКДЧекККМПоляШаблонаСтрокаПоискаРасширеннаяПодсказка" id="286"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="КомпоновщикНастроекСКДЧекККМПоляШаблонаСостояниеПросмотра" id="287">
+										<AdditionSource>
+											<Item>КомпоновщикНастроекСКДЧекККМПоляШаблона</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="КомпоновщикНастроекСКДЧекККМПоляШаблонаСостояниеПросмотраКонтекстноеМеню" id="288"/>
+										<ExtendedTooltip name="КомпоновщикНастроекСКДЧекККМПоляШаблонаСостояниеПросмотраРасширеннаяПодсказка" id="289"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="КомпоновщикНастроекСКДЧекККМПоляШаблонаУправлениеПоиском" id="290">
+										<AdditionSource>
+											<Item>КомпоновщикНастроекСКДЧекККМПоляШаблона</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="КомпоновщикНастроекСКДЧекККМПоляШаблонаУправлениеПоискомКонтекстноеМеню" id="291"/>
+										<ExtendedTooltip name="КомпоновщикНастроекСКДЧекККМПоляШаблонаУправлениеПоискомРасширеннаяПодсказка" id="292"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="Selection">КомпоновщикНастроекСКДЧекККМПоляШаблонаВыбор</Event>
+									</Events>
+								</Table>
+							</ChildItems>
+						</Page>
+						<Page name="СКДЧекККМПоляШаблонаШапка" id="95">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>СКДПриходный кассовый ордер поля шаблона</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>СКДПриходный кассовый ордер поля шаблона</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ScrollOnCompress>false</ScrollOnCompress>
+							<ExtendedTooltip name="СКДЧекККМПоляШаблонаШапкаРасширеннаяПодсказка" id="293"/>
+							<ChildItems>
+								<Table name="КомпоновщикНастроекСКДЧекККМПоляШаблонаШапка" id="96">
+									<Representation>Tree</Representation>
+									<Autofill>true</Autofill>
+									<Width>60</Width>
+									<HeightInTableRows>15</HeightInTableRows>
+									<ChoiceMode>true</ChoiceMode>
+									<SelectionMode>SingleRow</SelectionMode>
+									<RowSelectionMode>Cell</RowSelectionMode>
+									<HorizontalLinesBWA>false</HorizontalLinesBWA>
+									<VerticalLinesBWA>false</VerticalLinesBWA>
+									<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+									<InitialTreeView>ExpandTopLevel</InitialTreeView>
+									<EnableStartDrag>true</EnableStartDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>СКДЧекККМПоляШаблонаШапка.Settings.Order.OrderAvailableFields</DataPath>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<ContextMenu name="КомпоновщикНастроекСКДЧекККМПоляШаблонаШапкаКонтекстноеМеню" id="97">
+										<Autofill>false</Autofill>
+										<ChildItems>
+											<Button name="КомпоновщикНастроекСКДЧекККМПоляШаблонаШапкаКнопка" id="190">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ДобавитьВШаблон</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.ФайлДобавить</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ShapeRepresentation>None</ShapeRepresentation>
+												<ButtonImportance>Supplementary</ButtonImportance>
+												<ExtendedTooltip name="КомпоновщикНастроекСКДЧекККМПоляШаблонаШапкаКнопкаРасширеннаяПодсказка" id="294"/>
+											</Button>
+										</ChildItems>
+									</ContextMenu>
+									<AutoCommandBar name="КомпоновщикНастроекСКДЧекККМПоляШаблонаШапкаКоманднаяПанель" id="98">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="КомпоновщикНастроекСКДЧекККМПоляШаблонаШапкаРасширеннаяПодсказка" id="295"/>
+									<SearchStringAddition name="КомпоновщикНастроекСКДЧекККМПоляШаблонаШапкаСтрокаПоиска" id="296">
+										<AdditionSource>
+											<Item>КомпоновщикНастроекСКДЧекККМПоляШаблонаШапка</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="КомпоновщикНастроекСКДЧекККМПоляШаблонаШапкаСтрокаПоискаКонтекстноеМеню" id="297"/>
+										<ExtendedTooltip name="КомпоновщикНастроекСКДЧекККМПоляШаблонаШапкаСтрокаПоискаРасширеннаяПодсказка" id="298"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="КомпоновщикНастроекСКДЧекККМПоляШаблонаШапкаСостояниеПросмотра" id="299">
+										<AdditionSource>
+											<Item>КомпоновщикНастроекСКДЧекККМПоляШаблонаШапка</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="КомпоновщикНастроекСКДЧекККМПоляШаблонаШапкаСостояниеПросмотраКонтекстноеМеню" id="300"/>
+										<ExtendedTooltip name="КомпоновщикНастроекСКДЧекККМПоляШаблонаШапкаСостояниеПросмотраРасширеннаяПодсказка" id="301"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="КомпоновщикНастроекСКДЧекККМПоляШаблонаШапкаУправлениеПоиском" id="302">
+										<AdditionSource>
+											<Item>КомпоновщикНастроекСКДЧекККМПоляШаблонаШапка</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="КомпоновщикНастроекСКДЧекККМПоляШаблонаШапкаУправлениеПоискомКонтекстноеМеню" id="303"/>
+										<ExtendedTooltip name="КомпоновщикНастроекСКДЧекККМПоляШаблонаШапкаУправлениеПоискомРасширеннаяПодсказка" id="304"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="Selection">КомпоновщикНастроекСКДЧекККМПоляШаблонаШапкаВыбор</Event>
+									</Events>
+								</Table>
+							</ChildItems>
+						</Page>
+						<Page name="СКДЧекККМПоляШаблонаТЧ_Товары" id="99">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>СКДПриходный кассовый ордер поля шаблона</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>СКДПриходный кассовый ордер поля шаблона</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ScrollOnCompress>false</ScrollOnCompress>
+							<ExtendedTooltip name="СКДЧекККМПоляШаблонаТЧ_ТоварыРасширеннаяПодсказка" id="305"/>
+							<ChildItems>
+								<Table name="КомпоновщикНастроекСКДЧекККМПоляШаблонаТЧ_Товары" id="100">
+									<Representation>Tree</Representation>
+									<Autofill>true</Autofill>
+									<Width>60</Width>
+									<HeightInTableRows>15</HeightInTableRows>
+									<ChoiceMode>true</ChoiceMode>
+									<SelectionMode>SingleRow</SelectionMode>
+									<RowSelectionMode>Cell</RowSelectionMode>
+									<HorizontalLinesBWA>false</HorizontalLinesBWA>
+									<VerticalLinesBWA>false</VerticalLinesBWA>
+									<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+									<InitialTreeView>ExpandTopLevel</InitialTreeView>
+									<EnableStartDrag>true</EnableStartDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>СКДЧекККМПоляШаблонаТЧ_Товары.Settings.Order.OrderAvailableFields</DataPath>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<ContextMenu name="КомпоновщикНастроекСКДЧекККМПоляШаблонаТЧ_ТоварыКонтекстноеМеню" id="101">
+										<Autofill>false</Autofill>
+										<ChildItems>
+											<Button name="КомпоновщикНастроекСКДЧекККМПоляШаблонаТЧ_ТоварыКнопка" id="191">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ДобавитьВШаблон</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.ФайлДобавить</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ShapeRepresentation>None</ShapeRepresentation>
+												<ButtonImportance>Supplementary</ButtonImportance>
+												<ExtendedTooltip name="КомпоновщикНастроекСКДЧекККМПоляШаблонаТЧ_ТоварыКнопкаРасширеннаяПодсказка" id="306"/>
+											</Button>
+										</ChildItems>
+									</ContextMenu>
+									<AutoCommandBar name="КомпоновщикНастроекСКДЧекККМПоляШаблонаТЧ_ТоварыКоманднаяПанель" id="102">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="КомпоновщикНастроекСКДЧекККМПоляШаблонаТЧ_ТоварыРасширеннаяПодсказка" id="307"/>
+									<SearchStringAddition name="КомпоновщикНастроекСКДЧекККМПоляШаблонаТЧ_ТоварыСтрокаПоиска" id="308">
+										<AdditionSource>
+											<Item>КомпоновщикНастроекСКДЧекККМПоляШаблонаТЧ_Товары</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="КомпоновщикНастроекСКДЧекККМПоляШаблонаТЧ_ТоварыСтрокаПоискаКонтекстноеМеню" id="309"/>
+										<ExtendedTooltip name="КомпоновщикНастроекСКДЧекККМПоляШаблонаТЧ_ТоварыСтрокаПоискаРасширеннаяПодсказка" id="310"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="КомпоновщикНастроекСКДЧекККМПоляШаблонаТЧ_ТоварыСостояниеПросмотра" id="311">
+										<AdditionSource>
+											<Item>КомпоновщикНастроекСКДЧекККМПоляШаблонаТЧ_Товары</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="КомпоновщикНастроекСКДЧекККМПоляШаблонаТЧ_ТоварыСостояниеПросмотраКонтекстноеМеню" id="312"/>
+										<ExtendedTooltip name="КомпоновщикНастроекСКДЧекККМПоляШаблонаТЧ_ТоварыСостояниеПросмотраРасширеннаяПодсказка" id="313"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="КомпоновщикНастроекСКДЧекККМПоляШаблонаТЧ_ТоварыУправлениеПоиском" id="314">
+										<AdditionSource>
+											<Item>КомпоновщикНастроекСКДЧекККМПоляШаблонаТЧ_Товары</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="КомпоновщикНастроекСКДЧекККМПоляШаблонаТЧ_ТоварыУправлениеПоискомКонтекстноеМеню" id="315"/>
+										<ExtendedTooltip name="КомпоновщикНастроекСКДЧекККМПоляШаблонаТЧ_ТоварыУправлениеПоискомРасширеннаяПодсказка" id="316"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="Selection">КомпоновщикНастроекСКДЧекККМПоляШаблонаТЧ_ТоварыВыбор</Event>
+									</Events>
+								</Table>
+							</ChildItems>
+						</Page>
+						<Page name="СКДЧекККМПоляШаблонаПодарки" id="107">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>СКДПриходный кассовый ордер поля шаблона</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>СКДПриходный кассовый ордер поля шаблона</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ScrollOnCompress>false</ScrollOnCompress>
+							<ExtendedTooltip name="СКДЧекККМПоляШаблонаПодаркиРасширеннаяПодсказка" id="317"/>
+							<ChildItems>
+								<Table name="КомпоновщикНастроекСКДЧекККМПоляШаблонаПодарки" id="108">
+									<Representation>Tree</Representation>
+									<Autofill>true</Autofill>
+									<Width>60</Width>
+									<HeightInTableRows>15</HeightInTableRows>
+									<ChoiceMode>true</ChoiceMode>
+									<SelectionMode>SingleRow</SelectionMode>
+									<RowSelectionMode>Cell</RowSelectionMode>
+									<HorizontalLinesBWA>false</HorizontalLinesBWA>
+									<VerticalLinesBWA>false</VerticalLinesBWA>
+									<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+									<InitialTreeView>ExpandTopLevel</InitialTreeView>
+									<EnableStartDrag>true</EnableStartDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>СКДЧекККМПоляШаблонаПодарки.Settings.Order.OrderAvailableFields</DataPath>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<ContextMenu name="КомпоновщикНастроекСКДЧекККМПоляШаблонаПодаркиКонтекстноеМеню" id="109">
+										<Autofill>false</Autofill>
+										<ChildItems>
+											<Button name="КомпоновщикНастроекСКДЧекККМПоляШаблонаПодаркиКнопка" id="192">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ДобавитьВШаблон</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.ФайлДобавить</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ShapeRepresentation>WhenActive</ShapeRepresentation>
+												<ExtendedTooltip name="КомпоновщикНастроекСКДЧекККМПоляШаблонаПодаркиКнопкаРасширеннаяПодсказка" id="318"/>
+											</Button>
+										</ChildItems>
+									</ContextMenu>
+									<AutoCommandBar name="КомпоновщикНастроекСКДЧекККМПоляШаблонаПодаркиКоманднаяПанель" id="110">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="КомпоновщикНастроекСКДЧекККМПоляШаблонаПодаркиРасширеннаяПодсказка" id="319"/>
+									<SearchStringAddition name="КомпоновщикНастроекСКДЧекККМПоляШаблонаПодаркиСтрокаПоиска" id="320">
+										<AdditionSource>
+											<Item>КомпоновщикНастроекСКДЧекККМПоляШаблонаПодарки</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="КомпоновщикНастроекСКДЧекККМПоляШаблонаПодаркиСтрокаПоискаКонтекстноеМеню" id="321"/>
+										<ExtendedTooltip name="КомпоновщикНастроекСКДЧекККМПоляШаблонаПодаркиСтрокаПоискаРасширеннаяПодсказка" id="322"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="КомпоновщикНастроекСКДЧекККМПоляШаблонаПодаркиСостояниеПросмотра" id="323">
+										<AdditionSource>
+											<Item>КомпоновщикНастроекСКДЧекККМПоляШаблонаПодарки</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="КомпоновщикНастроекСКДЧекККМПоляШаблонаПодаркиСостояниеПросмотраКонтекстноеМеню" id="324"/>
+										<ExtendedTooltip name="КомпоновщикНастроекСКДЧекККМПоляШаблонаПодаркиСостояниеПросмотраРасширеннаяПодсказка" id="325"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="КомпоновщикНастроекСКДЧекККМПоляШаблонаПодаркиУправлениеПоиском" id="326">
+										<AdditionSource>
+											<Item>КомпоновщикНастроекСКДЧекККМПоляШаблонаПодарки</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="КомпоновщикНастроекСКДЧекККМПоляШаблонаПодаркиУправлениеПоискомКонтекстноеМеню" id="327"/>
+										<ExtendedTooltip name="КомпоновщикНастроекСКДЧекККМПоляШаблонаПодаркиУправлениеПоискомРасширеннаяПодсказка" id="328"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="Selection">КомпоновщикНастроекСКДЧекККМПоляШаблонаПодаркиВыбор</Event>
+									</Events>
+								</Table>
+							</ChildItems>
+						</Page>
+						<Page name="СКДЧекККМПоляШаблонаТЧ_Подарки" id="115">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>СКДПриходный кассовый ордер поля шаблона</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>СКДПриходный кассовый ордер поля шаблона</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ScrollOnCompress>false</ScrollOnCompress>
+							<ExtendedTooltip name="СКДЧекККМПоляШаблонаТЧ_ПодаркиРасширеннаяПодсказка" id="329"/>
+							<ChildItems>
+								<Table name="КомпоновщикНастроекСКДЧекККМПоляШаблонаТЧ_Подарки" id="116">
+									<Representation>Tree</Representation>
+									<Autofill>true</Autofill>
+									<Width>60</Width>
+									<HeightInTableRows>15</HeightInTableRows>
+									<ChoiceMode>true</ChoiceMode>
+									<SelectionMode>SingleRow</SelectionMode>
+									<RowSelectionMode>Cell</RowSelectionMode>
+									<HorizontalLinesBWA>false</HorizontalLinesBWA>
+									<VerticalLinesBWA>false</VerticalLinesBWA>
+									<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+									<InitialTreeView>ExpandTopLevel</InitialTreeView>
+									<EnableStartDrag>true</EnableStartDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>СКДЧекККМПоляШаблонаТЧ_Подарки.Settings.Order.OrderAvailableFields</DataPath>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<ContextMenu name="КомпоновщикНастроекСКДЧекККМПоляШаблонаТЧ_ПодаркиКонтекстноеМеню" id="117">
+										<Autofill>false</Autofill>
+										<ChildItems>
+											<Button name="КомпоновщикНастроекСКДЧекККМПоляШаблонаТЧ_ПодаркиКнопка" id="193">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ДобавитьВШаблон</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.ФайлДобавить</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ShapeRepresentation>None</ShapeRepresentation>
+												<ButtonImportance>Supplementary</ButtonImportance>
+												<ExtendedTooltip name="КомпоновщикНастроекСКДЧекККМПоляШаблонаТЧ_ПодаркиКнопкаРасширеннаяПодсказка" id="330"/>
+											</Button>
+										</ChildItems>
+									</ContextMenu>
+									<AutoCommandBar name="КомпоновщикНастроекСКДЧекККМПоляШаблонаТЧ_ПодаркиКоманднаяПанель" id="118">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="КомпоновщикНастроекСКДЧекККМПоляШаблонаТЧ_ПодаркиРасширеннаяПодсказка" id="331"/>
+									<SearchStringAddition name="КомпоновщикНастроекСКДЧекККМПоляШаблонаТЧ_ПодаркиСтрокаПоиска" id="332">
+										<AdditionSource>
+											<Item>КомпоновщикНастроекСКДЧекККМПоляШаблонаТЧ_Подарки</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="КомпоновщикНастроекСКДЧекККМПоляШаблонаТЧ_ПодаркиСтрокаПоискаКонтекстноеМеню" id="333"/>
+										<ExtendedTooltip name="КомпоновщикНастроекСКДЧекККМПоляШаблонаТЧ_ПодаркиСтрокаПоискаРасширеннаяПодсказка" id="334"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="КомпоновщикНастроекСКДЧекККМПоляШаблонаТЧ_ПодаркиСостояниеПросмотра" id="335">
+										<AdditionSource>
+											<Item>КомпоновщикНастроекСКДЧекККМПоляШаблонаТЧ_Подарки</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="КомпоновщикНастроекСКДЧекККМПоляШаблонаТЧ_ПодаркиСостояниеПросмотраКонтекстноеМеню" id="336"/>
+										<ExtendedTooltip name="КомпоновщикНастроекСКДЧекККМПоляШаблонаТЧ_ПодаркиСостояниеПросмотраРасширеннаяПодсказка" id="337"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="КомпоновщикНастроекСКДЧекККМПоляШаблонаТЧ_ПодаркиУправлениеПоиском" id="338">
+										<AdditionSource>
+											<Item>КомпоновщикНастроекСКДЧекККМПоляШаблонаТЧ_Подарки</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="КомпоновщикНастроекСКДЧекККМПоляШаблонаТЧ_ПодаркиУправлениеПоискомКонтекстноеМеню" id="339"/>
+										<ExtendedTooltip name="КомпоновщикНастроекСКДЧекККМПоляШаблонаТЧ_ПодаркиУправлениеПоискомРасширеннаяПодсказка" id="340"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="Selection">КомпоновщикНастроекСКДЧекККМПоляШаблонаТЧ_ПодаркиВыбор</Event>
+									</Events>
+								</Table>
+							</ChildItems>
+						</Page>
+						<Page name="СКДЧекККМПоляШаблонаШапкаПодарки" id="119">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>СКДПриходный кассовый ордер поля шаблона</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>СКДПриходный кассовый ордер поля шаблона</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ScrollOnCompress>false</ScrollOnCompress>
+							<ExtendedTooltip name="СКДЧекККМПоляШаблонаШапкаПодаркиРасширеннаяПодсказка" id="341"/>
+							<ChildItems>
+								<Table name="КомпоновщикНастроекСКДЧекККМПоляШаблонаШапкаПодарки" id="120">
+									<Representation>Tree</Representation>
+									<Autofill>true</Autofill>
+									<Width>60</Width>
+									<HeightInTableRows>15</HeightInTableRows>
+									<ChoiceMode>true</ChoiceMode>
+									<SelectionMode>SingleRow</SelectionMode>
+									<RowSelectionMode>Cell</RowSelectionMode>
+									<HorizontalLinesBWA>false</HorizontalLinesBWA>
+									<VerticalLinesBWA>false</VerticalLinesBWA>
+									<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+									<InitialTreeView>ExpandTopLevel</InitialTreeView>
+									<EnableStartDrag>true</EnableStartDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>СКДЧекККМПоляШаблонаШапкаПодарки.Settings.Order.OrderAvailableFields</DataPath>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<ContextMenu name="КомпоновщикНастроекСКДЧекККМПоляШаблонаШапкаПодаркиКонтекстноеМеню" id="121">
+										<Autofill>false</Autofill>
+										<ChildItems>
+											<Button name="КомпоновщикНастроекСКДЧекККМПоляШаблонаШапкаПодаркиКнопка" id="194">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ДобавитьВШаблон</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.ФайлДобавить</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ShapeRepresentation>None</ShapeRepresentation>
+												<ButtonImportance>Supplementary</ButtonImportance>
+												<ExtendedTooltip name="КомпоновщикНастроекСКДЧекККМПоляШаблонаШапкаПодаркиКнопкаРасширеннаяПодсказка" id="342"/>
+											</Button>
+										</ChildItems>
+									</ContextMenu>
+									<AutoCommandBar name="КомпоновщикНастроекСКДЧекККМПоляШаблонаШапкаПодаркиКоманднаяПанель" id="122">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="КомпоновщикНастроекСКДЧекККМПоляШаблонаШапкаПодаркиРасширеннаяПодсказка" id="343"/>
+									<SearchStringAddition name="КомпоновщикНастроекСКДЧекККМПоляШаблонаШапкаПодаркиСтрокаПоиска" id="344">
+										<AdditionSource>
+											<Item>КомпоновщикНастроекСКДЧекККМПоляШаблонаШапкаПодарки</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="КомпоновщикНастроекСКДЧекККМПоляШаблонаШапкаПодаркиСтрокаПоискаКонтекстноеМеню" id="345"/>
+										<ExtendedTooltip name="КомпоновщикНастроекСКДЧекККМПоляШаблонаШапкаПодаркиСтрокаПоискаРасширеннаяПодсказка" id="346"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="КомпоновщикНастроекСКДЧекККМПоляШаблонаШапкаПодаркиСостояниеПросмотра" id="347">
+										<AdditionSource>
+											<Item>КомпоновщикНастроекСКДЧекККМПоляШаблонаШапкаПодарки</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="КомпоновщикНастроекСКДЧекККМПоляШаблонаШапкаПодаркиСостояниеПросмотраКонтекстноеМеню" id="348"/>
+										<ExtendedTooltip name="КомпоновщикНастроекСКДЧекККМПоляШаблонаШапкаПодаркиСостояниеПросмотраРасширеннаяПодсказка" id="349"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="КомпоновщикНастроекСКДЧекККМПоляШаблонаШапкаПодаркиУправлениеПоиском" id="350">
+										<AdditionSource>
+											<Item>КомпоновщикНастроекСКДЧекККМПоляШаблонаШапкаПодарки</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="КомпоновщикНастроекСКДЧекККМПоляШаблонаШапкаПодаркиУправлениеПоискомКонтекстноеМеню" id="351"/>
+										<ExtendedTooltip name="КомпоновщикНастроекСКДЧекККМПоляШаблонаШапкаПодаркиУправлениеПоискомРасширеннаяПодсказка" id="352"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="Selection">КомпоновщикНастроекСКДЧекККМПоляШаблонаШапкаПодаркиВыбор</Event>
+									</Events>
+								</Table>
+							</ChildItems>
+						</Page>
+					</ChildItems>
+				</Pages>
+				<UsualGroup name="ГруппаШаблонЧека" id="401">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шаблон чека</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шаблон чека</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>WeakSeparation</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаШаблонЧекаРасширеннаяПодсказка" id="402"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаШаблонЧекаКоманднаяПанель" id="403">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа шаблон чека командная панель</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа шаблон чека командная панель</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>HorizontalIfPossible</Group>
+							<Representation>WeakSeparation</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаШаблонЧекаКоманднаяПанельРасширеннаяПодсказка" id="404"/>
+							<ChildItems>
+								<UsualGroup name="ШаблонЧекаГруппаКнопок" id="413">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Шаблон чека группа кнопок</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Шаблон чека группа кнопок</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>HorizontalIfPossible</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ШаблонЧекаГруппаКнопокРасширеннаяПодсказка" id="414"/>
+									<ChildItems>
+										<Button name="ПереместитьВверх" id="133">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Item.ШаблонЧека.StandardCommand.MoveUp</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.НоваяСтрелкаВверх</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<ButtonImportance>Supplementary</ButtonImportance>
+											<ExtendedTooltip name="ПереместитьВверхРасширеннаяПодсказка" id="363"/>
+										</Button>
+										<Button name="ПереместитьВниз" id="134">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Item.ШаблонЧека.StandardCommand.MoveDown</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.НоваяСтрелкаВниз</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<ButtonImportance>Supplementary</ButtonImportance>
+											<ExtendedTooltip name="ПереместитьВнизРасширеннаяПодсказка" id="364"/>
+										</Button>
+										<Button name="УдалитьТекущуюСтроку" id="138">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Item.ШаблонЧека.StandardCommand.Delete</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.ВКорзину</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<ButtonImportance>Supplementary</ButtonImportance>
+											<ExtendedTooltip name="УдалитьТекущуюСтрокуРасширеннаяПодсказка" id="365"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ШаблонЧекаГруппаРедактированияСтрокШаблона" id="415">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Шаблон чека группа редактирования строк шаблона</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Шаблон чека группа редактирования строк шаблона</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>HorizontalIfPossible</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ШаблонЧекаГруппаРедактированияСтрокШаблонаРасширеннаяПодсказка" id="416"/>
+								</UsualGroup>
+								<Button name="ШаблонЧекаОбновитьТабличныйДокумент" id="152">
+									<Type>UsualButton</Type>
+									<Representation>Picture</Representation>
+									<CommandName>Form.Command.ОбновитьТабличныйДокумент</CommandName>
+									<Picture>
+										<xr:Ref>CommonPicture.ОбновитьНовая</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ButtonImportance>Supplementary</ButtonImportance>
+									<ExtendedTooltip name="ШаблонЧекаОбновитьТабличныйДокументРасширеннаяПодсказка" id="370"/>
+								</Button>
+								<CommandBar name="ГруппаШаблонЧекаМеню" id="417">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа шаблон чека меню</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Stocks group buttons</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа шаблон чека меню</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Stocks group buttons</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>4</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ExtendedTooltip name="ГруппаШаблонЧекаМенюРасширеннаяПодсказка" id="418"/>
+									<ChildItems>
+										<Popup name="ГруппаЕще" id="419">
+											<Picture>
+												<xr:Ref>CommonPicture.МенюДополнительныеФункции</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ShapeRepresentation>WhenActive</ShapeRepresentation>
+											<ExtendedTooltip name="ГруппаЕщеРасширеннаяПодсказка" id="420"/>
+											<ChildItems>
+												<Button name="ДобавитьСтрокуТаблицы" id="137">
+													<Type>CommandBarButton</Type>
+													<Representation>PictureAndText</Representation>
+													<CommandName>Form.Command.ДобавитьСтрокуТаблицы</CommandName>
+													<Picture>
+														<xr:Ref>CommonPicture.ДобавитьПоле</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<ShapeRepresentation>None</ShapeRepresentation>
+													<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+													<ButtonImportance>Supplementary</ButtonImportance>
+													<ExtendedTooltip name="ДобавитьСтрокуТаблицыРасширеннаяПодсказка" id="369"/>
+												</Button>
+												<Button name="ДобавитьПользовательскуюСтроку" id="135">
+													<Type>CommandBarButton</Type>
+													<Representation>PictureAndText</Representation>
+													<CommandName>Form.Command.ДобавитьПользовательскуюСтроку</CommandName>
+													<Picture>
+														<xr:Ref>CommonPicture.ДобавитьСтрокиТаблицыСнизу</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<ShapeRepresentation>None</ShapeRepresentation>
+													<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+													<ButtonImportance>Supplementary</ButtonImportance>
+													<ExtendedTooltip name="ДобавитьПользовательскуюСтрокуРасширеннаяПодсказка" id="367"/>
+												</Button>
+												<Button name="ДобавитьСоставнуюСтроку" id="136">
+													<Type>CommandBarButton</Type>
+													<Representation>PictureAndText</Representation>
+													<CommandName>Form.Command.ДобавитьСоставнуюСтроку</CommandName>
+													<Picture>
+														<xr:Ref>CommonPicture.ТаблицаВнимание</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<ShapeRepresentation>None</ShapeRepresentation>
+													<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+													<ButtonImportance>Supplementary</ButtonImportance>
+													<ExtendedTooltip name="ДобавитьСоставнуюСтрокуРасширеннаяПодсказка" id="368"/>
+												</Button>
+											</ChildItems>
+										</Popup>
+									</ChildItems>
+								</CommandBar>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="ШаблонЧека" id="11">
+							<Representation>Tree</Representation>
+							<SelectionMode>SingleRow</SelectionMode>
+							<RowSelectionMode>Row</RowSelectionMode>
+							<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<InitialTreeView>ExpandTopLevel</InitialTreeView>
+							<EnableStartDrag>true</EnableStartDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>ШаблонЧека</DataPath>
+							<RowPictureDataPath>ШаблонЧека.ИндексКартинки</RowPictureDataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<ContextMenu name="ШаблонЧекаКонтекстноеМеню" id="12">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<ButtonGroup name="СписокКонтекстноеМенюГруппаСоздание" id="427">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа создание</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа создание</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="СписокКонтекстноеМенюГруппаСозданиеРасширеннаяПодсказка" id="428"/>
+										<ChildItems>
+											<Button name="СписокКонтекстноеМенюКнопкаСоздать" id="429">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ШаблонЧека.StandardCommand.Add</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.Добавить</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаСоздатьРасширеннаяПодсказка" id="430"/>
+											</Button>
+											<Button name="СписокКонтекстноеМенюКнопкаСкопировать" id="433">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ШаблонЧека.StandardCommand.Copy</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.ДобавитьКопированием</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаСкопироватьРасширеннаяПодсказка" id="434"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<ButtonGroup name="СписокКонтекстноеМенюГруппаРедактирование" id="421">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа редактирование</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа редактирование</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="СписокКонтекстноеМенюГруппаРедактированиеРасширеннаяПодсказка" id="422"/>
+										<ChildItems>
+											<Button name="СписокКонтекстноеМенюКнопкаИзменить" id="423">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ШаблонЧека.StandardCommand.Change</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.Редактировать</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаИзменитьРасширеннаяПодсказка" id="424"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<ButtonGroup name="ШаблонЧекаКонтекстноеМенюГруппаМеню" id="141">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Шаблон чека контекстное меню группа меню</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Шаблон чека контекстное меню группа меню</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="ШаблонЧекаКонтекстноеМенюГруппаМенюРасширеннаяПодсказка" id="353"/>
+										<ChildItems>
+											<Button name="ПереместитьВверхМеню" id="128">
+												<Type>CommandBarButton</Type>
+												<Representation>Picture</Representation>
+												<CommandName>Form.Item.ШаблонЧека.StandardCommand.MoveUp</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.НоваяСтрелкаВверх</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Переместить вверх</v8:content>
+													</v8:item>
+												</Title>
+												<ShapeRepresentation>None</ShapeRepresentation>
+												<ButtonImportance>Supplementary</ButtonImportance>
+												<ExtendedTooltip name="ПереместитьВверхМенюРасширеннаяПодсказка" id="354"/>
+											</Button>
+											<Button name="ПереместитьВнизМеню" id="129">
+												<Type>CommandBarButton</Type>
+												<Representation>Picture</Representation>
+												<CommandName>Form.Item.ШаблонЧека.StandardCommand.MoveDown</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.НоваяСтрелкаВниз</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Переместить вниз</v8:content>
+													</v8:item>
+												</Title>
+												<ShapeRepresentation>None</ShapeRepresentation>
+												<ButtonImportance>Supplementary</ButtonImportance>
+												<ExtendedTooltip name="ПереместитьВнизМенюРасширеннаяПодсказка" id="355"/>
+											</Button>
+											<Button name="УдалитьТекущуюСтрокуМеню" id="143">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ШаблонЧека.StandardCommand.Delete</CommandName>
+												<ShapeRepresentation>None</ShapeRepresentation>
+												<ButtonImportance>Supplementary</ButtonImportance>
+												<ExtendedTooltip name="УдалитьТекущуюСтрокуМенюРасширеннаяПодсказка" id="356"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<ButtonGroup name="ШаблонЧекаКонтекстноеМенюГруппаСтрокШаблонаМеню" id="142">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Шаблон чека контекстное меню группа строк шаблона меню</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Шаблон чека контекстное меню группа строк шаблона меню</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="ШаблонЧекаКонтекстноеМенюГруппаСтрокШаблонаМенюРасширеннаяПодсказка" id="357"/>
+										<ChildItems>
+											<Button name="ДобавитьПользовательскуюСтрокуМеню" id="130">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ДобавитьПользовательскуюСтрокуМеню</CommandName>
+												<ExtendedTooltip name="ДобавитьПользовательскуюСтрокуМенюРасширеннаяПодсказка" id="358"/>
+											</Button>
+											<Button name="ДобавитьСоставнуюСтрокуМеню" id="131">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ДобавитьСоставнуюСтрокуМеню</CommandName>
+												<ExtendedTooltip name="ДобавитьСоставнуюСтрокуМенюРасширеннаяПодсказка" id="359"/>
+											</Button>
+											<Button name="ДобавитьСтрокуТаблицыМеню" id="132">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ДобавитьСтрокуТаблицыМеню</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.ДобавитьПоле</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ShapeRepresentation>None</ShapeRepresentation>
+												<ButtonImportance>Supplementary</ButtonImportance>
+												<ExtendedTooltip name="ДобавитьСтрокуТаблицыМенюРасширеннаяПодсказка" id="360"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<Button name="ШаблонЧекаКонтекстноеМенюОбновитьТабличныйДокумент" id="153">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Form.Command.ОбновитьТабличныйДокумент</CommandName>
+										<Picture>
+											<xr:Ref>CommonPicture.ОбновитьНовая</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ShapeRepresentation>None</ShapeRepresentation>
+										<ButtonImportance>Supplementary</ButtonImportance>
+										<ExtendedTooltip name="ШаблонЧекаКонтекстноеМенюОбновитьТабличныйДокументРасширеннаяПодсказка" id="361"/>
+									</Button>
+									<Popup name="СписокКонтекстноеМенюГруппаВидСписка" id="439">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Вид отображения</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Список контекстное меню группа вид списка</v8:content>
+											</v8:item>
+										</ToolTip>
+										<Picture>
+											<xr:Ref>CommonPicture.ВидОтображенияДерево</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="СписокКонтекстноеМенюГруппаВидСпискаРасширеннаяПодсказка" id="440"/>
+										<ChildItems>
+											<Button name="СписокКонтекстноеМенюКнопкаОтображениеДерево" id="441">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ШаблонЧека.StandardCommand.Tree</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.ВидОтображенияДеревоНовый</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаОтображениеДеревоРасширеннаяПодсказка" id="442"/>
+											</Button>
+											<Button name="СписокКонтекстноеМенюКнопкаОтображениеСписок" id="443">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ШаблонЧека.StandardCommand.List</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.ВидОтображенияСписокНовый</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаОтображениеСписокРасширеннаяПодсказка" id="444"/>
+											</Button>
+											<Button name="СписокКонтекстноеМенюКнопкаОтображениеИерархическийСписок" id="445">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ШаблонЧека.StandardCommand.HierarchicalList</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.СтруктураДеревоНовая</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаОтображениеИерархическийСписокРасширеннаяПодсказка" id="446"/>
+											</Button>
+										</ChildItems>
+									</Popup>
+									<Button name="СписокКонтекстноеМенюКнопкаВывестиСписок" id="435">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<CommandName>Form.Item.ШаблонЧека.StandardCommand.OutputList</CommandName>
+										<Picture>
+											<xr:Ref>CommonPicture.НаПечать</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ShapeRepresentation>None</ShapeRepresentation>
+										<PictureLocation>Left</PictureLocation>
+										<ButtonImportance>Supplementary</ButtonImportance>
+										<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаВывестиСписокРасширеннаяПодсказка" id="436"/>
+									</Button>
+									<Button name="СписокКонтекстноеМенюКнопкаВывестиНастройкаФормы" id="437">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+										<Picture>
+											<xr:Ref>CommonPicture.НастройкаФормы</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ShapeRepresentation>None</ShapeRepresentation>
+										<PictureLocation>Left</PictureLocation>
+										<ButtonImportance>Supplementary</ButtonImportance>
+										<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаВывестиНастройкаФормыРасширеннаяПодсказка" id="438"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="ШаблонЧекаКоманднаяПанель" id="13">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ШаблонЧекаРасширеннаяПодсказка" id="371"/>
+							<SearchStringAddition name="ШаблонЧекаСтрокаПоиска" id="372">
+								<AdditionSource>
+									<Item>ШаблонЧека</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ШаблонЧекаСтрокаПоискаКонтекстноеМеню" id="373"/>
+								<ExtendedTooltip name="ШаблонЧекаСтрокаПоискаРасширеннаяПодсказка" id="374"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ШаблонЧекаСостояниеПросмотра" id="375">
+								<AdditionSource>
+									<Item>ШаблонЧека</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ШаблонЧекаСостояниеПросмотраКонтекстноеМеню" id="376"/>
+								<ExtendedTooltip name="ШаблонЧекаСостояниеПросмотраРасширеннаяПодсказка" id="377"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ШаблонЧекаУправлениеПоиском" id="378">
+								<AdditionSource>
+									<Item>ШаблонЧека</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ШаблонЧекаУправлениеПоискомКонтекстноеМеню" id="379"/>
+								<ExtendedTooltip name="ШаблонЧекаУправлениеПоискомРасширеннаяПодсказка" id="380"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">ШаблонЧекаВыбор</Event>
+								<Event name="BeforeAddRow">ШаблонЧекаПередНачаломДобавления</Event>
+								<Event name="BeforeDeleteRow">ШаблонЧекаПередУдалением</Event>
+								<Event name="BeforeEditEnd">ШаблонЧекаПередОкончаниемРедактирования</Event>
+								<Event name="OnActivateRow">ШаблонЧекаПриАктивизацииСтроки</Event>
+								<Event name="OnChange">ШаблонЧекаПриИзменении</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="ШаблонЧекаЭлемент" id="44">
+									<DataPath>ШаблонЧека.Элемент</DataPath>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<HorizontalAlign>Left</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ШаблонЧекаЭлементКонтекстноеМеню" id="45"/>
+									<ExtendedTooltip name="ШаблонЧекаЭлементРасширеннаяПодсказка" id="381"/>
+								</InputField>
+								<InputField name="ШаблонЧекаИмяОбъекта" id="14">
+									<DataPath>ШаблонЧека.ИмяОбъекта</DataPath>
+									<Visible>false</Visible>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<ShowInFooter>false</ShowInFooter>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ШаблонЧекаИмяОбъектаКонтекстноеМеню" id="15"/>
+									<ExtendedTooltip name="ШаблонЧекаИмяОбъектаРасширеннаяПодсказка" id="382"/>
+								</InputField>
+								<InputField name="ШаблонЧекаИмяМакета" id="16">
+									<DataPath>ШаблонЧека.ИмяМакета</DataPath>
+									<Visible>false</Visible>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<ShowInFooter>false</ShowInFooter>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ШаблонЧекаИмяМакетаКонтекстноеМеню" id="17"/>
+									<ExtendedTooltip name="ШаблонЧекаИмяМакетаРасширеннаяПодсказка" id="383"/>
+								</InputField>
+								<InputField name="ШаблонЧекаИмяКолонки" id="18">
+									<DataPath>ШаблонЧека.ИмяКолонки</DataPath>
+									<Visible>false</Visible>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<ShowInFooter>false</ShowInFooter>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ШаблонЧекаИмяКолонкиКонтекстноеМеню" id="19"/>
+									<ExtendedTooltip name="ШаблонЧекаИмяКолонкиРасширеннаяПодсказка" id="384"/>
+								</InputField>
+								<InputField name="ШаблонЧекаПрефикс" id="20">
+									<DataPath>ШаблонЧека.Префикс</DataPath>
+									<Visible>false</Visible>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<ShowInFooter>false</ShowInFooter>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ШаблонЧекаПрефиксКонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="ШаблонЧекаПрефиксРасширеннаяПодсказка" id="385"/>
+								</InputField>
+								<InputField name="ШаблонЧекаПостфикс" id="22">
+									<DataPath>ШаблонЧека.Постфикс</DataPath>
+									<Visible>false</Visible>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<ShowInFooter>false</ShowInFooter>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ШаблонЧекаПостфиксКонтекстноеМеню" id="23"/>
+									<ExtendedTooltip name="ШаблонЧекаПостфиксРасширеннаяПодсказка" id="386"/>
+								</InputField>
+								<InputField name="ШаблонЧекаИдентификатор" id="24">
+									<DataPath>ШаблонЧека.Идентификатор</DataPath>
+									<Visible>false</Visible>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<ShowInFooter>false</ShowInFooter>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ШаблонЧекаИдентификаторКонтекстноеМеню" id="25"/>
+									<ExtendedTooltip name="ШаблонЧекаИдентификаторРасширеннаяПодсказка" id="387"/>
+								</InputField>
+								<InputField name="ШаблонЧекаТипЭлемента" id="26">
+									<DataPath>ШаблонЧека.ТипЭлемента</DataPath>
+									<Visible>false</Visible>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<ShowInFooter>false</ShowInFooter>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ШаблонЧекаТипЭлементаКонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="ШаблонЧекаТипЭлементаРасширеннаяПодсказка" id="388"/>
+								</InputField>
+								<InputField name="ШаблонЧекаВыравнивание" id="28">
+									<DataPath>ШаблонЧека.Выравнивание</DataPath>
+									<Visible>false</Visible>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<ShowInFooter>false</ShowInFooter>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ШаблонЧекаВыравниваниеКонтекстноеМеню" id="29"/>
+									<ExtendedTooltip name="ШаблонЧекаВыравниваниеРасширеннаяПодсказка" id="389"/>
+								</InputField>
+								<InputField name="ШаблонЧекаРазмещениеТекста" id="30">
+									<DataPath>ШаблонЧека.РазмещениеТекста</DataPath>
+									<Visible>false</Visible>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<ShowInFooter>false</ShowInFooter>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ШаблонЧекаРазмещениеТекстаКонтекстноеМеню" id="31"/>
+									<ExtendedTooltip name="ШаблонЧекаРазмещениеТекстаРасширеннаяПодсказка" id="390"/>
+								</InputField>
+								<InputField name="ШаблонЧекаШирина" id="32">
+									<DataPath>ШаблонЧека.Ширина</DataPath>
+									<Visible>false</Visible>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<ShowInFooter>false</ShowInFooter>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ШаблонЧекаШиринаКонтекстноеМеню" id="33"/>
+									<ExtendedTooltip name="ШаблонЧекаШиринаРасширеннаяПодсказка" id="391"/>
+								</InputField>
+								<InputField name="ШаблонЧекаФормат" id="34">
+									<DataPath>ШаблонЧека.Формат</DataPath>
+									<Visible>false</Visible>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<ShowInFooter>false</ShowInFooter>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ШаблонЧекаФорматКонтекстноеМеню" id="35"/>
+									<ExtendedTooltip name="ШаблонЧекаФорматРасширеннаяПодсказка" id="392"/>
+								</InputField>
+								<CheckBoxField name="ШаблонЧекаВычислять" id="36">
+									<DataPath>ШаблонЧека.Вычислять</DataPath>
+									<Visible>false</Visible>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<ShowInFooter>false</ShowInFooter>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ШаблонЧекаВычислятьКонтекстноеМеню" id="37"/>
+									<ExtendedTooltip name="ШаблонЧекаВычислятьРасширеннаяПодсказка" id="393"/>
+								</CheckBoxField>
+								<InputField name="ШаблонЧекаПустоеЗначение" id="38">
+									<DataPath>ШаблонЧека.ПустоеЗначение</DataPath>
+									<Visible>false</Visible>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<ShowInFooter>false</ShowInFooter>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ШаблонЧекаПустоеЗначениеКонтекстноеМеню" id="39"/>
+									<ExtendedTooltip name="ШаблонЧекаПустоеЗначениеРасширеннаяПодсказка" id="394"/>
+								</InputField>
+								<InputField name="ШаблонЧекаСтрокаПустоеЗначение" id="40">
+									<DataPath>ШаблонЧека.СтрокаПустоеЗначение</DataPath>
+									<Visible>false</Visible>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<ShowInFooter>false</ShowInFooter>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ШаблонЧекаСтрокаПустоеЗначениеКонтекстноеМеню" id="41"/>
+									<ExtendedTooltip name="ШаблонЧекаСтрокаПустоеЗначениеРасширеннаяПодсказка" id="395"/>
+								</InputField>
+								<InputField name="ШаблонЧекаОписаниеТипа" id="42">
+									<DataPath>ШаблонЧека.ОписаниеТипа</DataPath>
+									<Visible>false</Visible>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<ShowInFooter>false</ShowInFooter>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ШаблонЧекаОписаниеТипаКонтекстноеМеню" id="43"/>
+									<ExtendedTooltip name="ШаблонЧекаОписаниеТипаРасширеннаяПодсказка" id="396"/>
+								</InputField>
+								<InputField name="ШаблонЧекаИндексКартинки" id="150">
+									<DataPath>ШаблонЧека.ИндексКартинки</DataPath>
+									<Visible>false</Visible>
+									<TitleBackColor>style:FormBackColor</TitleBackColor>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ШаблонЧекаИндексКартинкиКонтекстноеМеню" id="151"/>
+									<ExtendedTooltip name="ШаблонЧекаИндексКартинкиРасширеннаяПодсказка" id="397"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<SpreadSheetDocumentField name="ПолеТабличногоДокумента" id="52">
+					<DataPath>ПолеТабличногоДокумента</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<VerticalScrollBar>true</VerticalScrollBar>
+					<HorizontalScrollBar>true</HorizontalScrollBar>
+					<ContextMenu name="ПолеТабличногоДокументаКонтекстноеМеню" id="53"/>
+					<ExtendedTooltip name="ПолеТабличногоДокументаРасширеннаяПодсказка" id="398"/>
+				</SpreadSheetDocumentField>
+			</ChildItems>
+		</UsualGroup>
+		<CommandBar name="ФормаГруппаОКЗакрыть" id="156">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Форма группа ОКЗакрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ФормаГруппаОКЗакрытьРасширеннаяПодсказка" id="195"/>
+		</CommandBar>
+		<UsualGroup name="ГруппаКомманднаяПанель" id="405">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа коммандная панель</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа коммандная панель</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+			<Group>HorizontalIfPossible</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКомманднаяПанельРасширеннаяПодсказка" id="406"/>
+			<ChildItems>
+				<Button name="Отмена" id="146">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<CommandName>Form.Command.Отмена</CommandName>
+					<Picture>
+						<xr:Ref>CommonPicture.Отмена</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ShapeRepresentation>None</ShapeRepresentation>
+					<ButtonImportance>Supplementary</ButtonImportance>
+					<ExtendedTooltip name="ОтменаРасширеннаяПодсказка" id="197"/>
+				</Button>
+				<Button name="КнопкаВывестиНастройкаФормы" id="409">
+					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+					<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+					<Picture>
+						<xr:Ref>CommonPicture.НастройкаФормы</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ShapeRepresentation>None</ShapeRepresentation>
+					<PictureLocation>Left</PictureLocation>
+					<ButtonImportance>Supplementary</ButtonImportance>
+					<ExtendedTooltip name="КнопкаВывестиНастройкаФормыРасширеннаяПодсказка" id="410"/>
+				</Button>
+				<UsualGroup name="ГруппаКнопкаСохранить" id="411">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа кнопка сохранить</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа кнопка сохранить</v8:content>
+						</v8:item>
+					</ToolTip>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<Group>HorizontalIfPossible</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<BackColor>style:ImportantColor</BackColor>
+					<ExtendedTooltip name="ГруппаКнопкаСохранитьРасширеннаяПодсказка" id="412"/>
+					<ChildItems>
+						<Button name="ДействиеОК" id="1">
+							<Type>UsualButton</Type>
+							<Representation>Text</Representation>
+							<Width>6</Width>
+							<CommandName>Form.Command.ДействиеОК</CommandName>
+							<TextColor>style:FormBackColor</TextColor>
+							<ShapeRepresentation>None</ShapeRepresentation>
+							<ButtonImportance>Supplementary</ButtonImportance>
+							<ExtendedTooltip name="ДействиеОКРасширеннаяПодсказка" id="196"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="мСхемаКомпоновкиДанныхАдрес" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>М схема компоновки данных адрес</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="мКомпоновщикМакета" id="7">
+			<Type>
+				<v8:Type>dcsset:SettingsComposer</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЧекККМ" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Чек</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ШаблонЧека" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шаблон чека</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ИмяОбъекта" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя объекта</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИмяМакета" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя макета</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИмяКолонки" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя колонки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Префикс" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Префикс</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Постфикс" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Постфикс</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Идентификатор" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ID</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТипЭлемента" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>TС</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Выравнивание" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выравнивание</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="РазмещениеТекста" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>РТ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Ширина" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ширина</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>5</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Формат" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Формат</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Вычислять" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ВЧ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПустоеЗначение" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПЗ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="СтрокаПустоеЗначение" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>СП</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОписаниеТипа" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание типа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:TypeDescription</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Элемент" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Элемент</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИндексКартинки" id="17">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Индекс картинки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="мШиринаЧека" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>М ширина чека</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="мКэшМакетовАдрес" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>М кэш макетов адрес</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="мИмяМакета" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>М имя макета</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОднаФискальнаяСтрока" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Не выводить фискальные строки на каждую позицию</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПолеТабличногоДокумента" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поле табличного документа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="мКэшТаблицыРезультатаКомпоновкиАдрес" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>М кэш таблицы результата компоновки адрес</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="мТекущееИмяМакета" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>М текущее имя макета</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокИсточникДоступныхНастроек" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список источник доступных настроек</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="URLСхемы" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>URLСхемы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИмяСтраницы" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя страницы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Имя_КомпоновщикНастроек" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя компоновщик настроек</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="СписокШиринаЧека" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список ширина чека</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Settings>
+		</Attribute>
+		<Attribute name="СКДПриходныйКассовыйОрдерПоляШаблона" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>СКДПриходный кассовый ордер поля шаблона</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>dcsset:SettingsComposer</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СКДПриходныйКассовыйОрдерПоляШаблонаШапка" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>СКДПриходный кассовый ордер поля шаблона шапка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>dcsset:SettingsComposer</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СКДПриходныйКассовыйОрдерПоляШаблонаТЧ" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>СКДПриходный кассовый ордер поля шаблона ТЧ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>dcsset:SettingsComposer</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СКДРасходныйКассовыйОрдерПоляШаблона" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>СКДРасходный кассовый ордер поля шаблона</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>dcsset:SettingsComposer</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СКДРасходныйКассовыйОрдерПоляШаблонаТЧ" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>СКДРасходный кассовый ордер поля шаблона ТЧ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>dcsset:SettingsComposer</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СКДРасходныйКассовыйОрдерПоляШаблонаШапка" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>СКДРасходный кассовый ордер поля шаблона шапка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>dcsset:SettingsComposer</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СКДЧекККМПоляШаблона" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>СКДЧек ККМПоля шаблона</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>dcsset:SettingsComposer</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СКДЧекККМПоляШаблонаШапка" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>СКДЧек ККМПоля шаблона шапка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>dcsset:SettingsComposer</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СКДЧекККМПоляШаблонаТЧ_Товары" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>СКДЧек ККМПоля шаблона т ч товары</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>dcsset:SettingsComposer</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СКДЧекККМПоляШаблонаПодарки" id="30">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>СКДЧек ККМПоля шаблона подарки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>dcsset:SettingsComposer</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СКДЧекККМПоляШаблонаТЧ_Подарки" id="32">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>СКДЧек ККМПоля шаблона т ч подарки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>dcsset:SettingsComposer</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СКДЧекККМПоляШаблонаШапкаПодарки" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>СКДЧек ККМПоля шаблона шапка подарки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>dcsset:SettingsComposer</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмяОбъектаМетаданных" id="34">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя объекта метаданных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИдентификаторТекущейСтрокиШаблона" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификатор текущей строки шаблона</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПараметрЗакрытия" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметр закрытия</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ДействиеОК" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.WriteAndClose</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ДействиеОК</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ЭкспортШаблонаВФайл" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Экспортировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Экспортировать шаблон в файл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SaveFile</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЭкспортШаблонаВФайл</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ДобавитьПользовательскуюСтроку" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить текстовую строку</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ДобавитьПользовательскуюСтроку</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ДобавитьСоставнуюСтроку" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить составную строку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить составную строку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьСоставнуюСтроку</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ДобавитьСтрокуТаблицы" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить таблицу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить таблицу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьСтрокуТаблицы</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ДобавитьПользовательскуюСтрокуМеню" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить текстовую строку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить текстовую строку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьПользовательскуюСтрокуМеню</Action>
+		</Command>
+		<Command name="ДобавитьСоставнуюСтрокуМеню" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить составную строку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить составную строку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьСоставнуюСтрокуМеню</Action>
+		</Command>
+		<Command name="ДобавитьСтрокуТаблицыМеню" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить таблицу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить таблицу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьСтрокуТаблицыМеню</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ОбновитьТабличныйДокумент" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить табличный документ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОбновитьТабличныйДокумент</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ЗагрузитьШаблонПоУмолчанию" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>По умолчанию</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить шаблон по умолчанию</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьШаблонПоУмолчанию</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ОчиститьШаблон" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить шаблон</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.InputFieldClear</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОчиститьШаблон</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ИмпортироватьШаблонИзФайла" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Импортировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Импортировать шаблон из файла</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.OpenFile</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ИмпортироватьШаблонИзФайла</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="Отмена" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Close</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Отмена</Action>
+		</Command>
+		<Command name="ДобавитьВШаблон" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить в шаблон</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда меню добавляет выбранный элемент в шаблон чека</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.MoveRight</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ДобавитьВШаблон</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ОбъектМетаданных">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+		<Parameter name="АдресШаблона">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

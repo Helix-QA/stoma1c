@@ -1,0 +1,1194 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="КомманднаяПанель" id="88">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Коммандная панель</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Коммандная панель</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>AlwaysHorizontal</Group>
+			<HorizontalSpacing>Double</HorizontalSpacing>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="КомманднаяПанельРасширеннаяПодсказка" id="89"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаСоздать" id="90">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа создать</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа создать</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<HorizontalSpacing>Single</HorizontalSpacing>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаСоздатьРасширеннаяПодсказка" id="91"/>
+					<ChildItems>
+						<Button name="Создать" id="92">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<CommandName>Form.StandardCommand.Create</CommandName>
+							<Picture>
+								<xr:Ref>CommonPicture.Добавить</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Создать</v8:content>
+								</v8:item>
+							</Title>
+							<ShapeRepresentation>None</ShapeRepresentation>
+							<PictureLocation>Left</PictureLocation>
+							<ButtonImportance>Supplementary</ButtonImportance>
+							<ExtendedTooltip name="СоздатьРасширеннаяПодсказка" id="93"/>
+						</Button>
+						<Button name="СоздатьГруппу" id="94">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<CommandName>Form.StandardCommand.CreateFolder</CommandName>
+							<Picture>
+								<xr:Ref>CommonPicture.ДобавитьГруппу</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Создать группу</v8:content>
+								</v8:item>
+							</Title>
+							<ShapeRepresentation>None</ShapeRepresentation>
+							<PictureLocation>Left</PictureLocation>
+							<ButtonImportance>Supplementary</ButtonImportance>
+							<ExtendedTooltip name="СоздатьГруппуРасширеннаяПодсказка" id="95"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<Button name="Скопировать" id="96">
+					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<CommandName>Form.StandardCommand.Copy</CommandName>
+					<Picture>
+						<xr:Ref>CommonPicture.ДобавитьКопированием</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Скопировать</v8:content>
+						</v8:item>
+					</Title>
+					<ShapeRepresentation>None</ShapeRepresentation>
+					<PictureLocation>Left</PictureLocation>
+					<ButtonImportance>Supplementary</ButtonImportance>
+					<ExtendedTooltip name="СкопироватьРасширеннаяПодсказка" id="97"/>
+				</Button>
+				<Button name="Редактировать" id="98">
+					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<CommandName>Form.StandardCommand.Change</CommandName>
+					<Picture>
+						<xr:Ref>CommonPicture.Редактировать</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ShapeRepresentation>None</ShapeRepresentation>
+					<PictureLocation>Left</PictureLocation>
+					<ButtonImportance>Supplementary</ButtonImportance>
+					<ExtendedTooltip name="РедактироватьРасширеннаяПодсказка" id="99"/>
+				</Button>
+				<Button name="Удалить" id="100">
+					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<CommandName>Form.StandardCommand.SetDeletionMark</CommandName>
+					<Picture>
+						<xr:Ref>CommonPicture.ВКорзину</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Удалить</v8:content>
+						</v8:item>
+					</Title>
+					<ShapeRepresentation>None</ShapeRepresentation>
+					<PictureLocation>Left</PictureLocation>
+					<ButtonImportance>Supplementary</ButtonImportance>
+					<ExtendedTooltip name="УдалитьРасширеннаяПодсказка" id="101"/>
+				</Button>
+				<CommandBar name="ПодключаемыеКоманды" id="127">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подключаемые команды</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подключаемые команды</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ExtendedTooltip name="ПодключаемыеКомандыРасширеннаяПодсказка" id="128"/>
+				</CommandBar>
+				<Button name="ГрупповоеИзменениеОбъектов1" id="125">
+					<Type>UsualButton</Type>
+					<UserVisible>
+						<xr:Common>true</xr:Common>
+						<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+						<xr:Value name="Role.БазовыеПрава">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеБазовойНСИ">false</xr:Value>
+						<xr:Value name="8249d733-a7fc-4b63-bc8e-83d81e33e096">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеРекламныхИсточников">false</xr:Value>
+						<xr:Value name="1e241f9d-a6a4-4d0b-86f9-efd4234e2ed5">false</xr:Value>
+						<xr:Value name="Role.ЧтениеКлиентов">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеКонтрагентов">false</xr:Value>
+						<xr:Value name="Role.ЧтениеКонтрагентов">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеСотрудников">false</xr:Value>
+					</UserVisible>
+					<Representation>PictureAndText</Representation>
+					<CommandName>Form.Command.ИзменитьВыделенные</CommandName>
+					<Picture>
+						<xr:Ref>CommonPicture.РедактироватьВыделенные</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Изменить выделенные </v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Change selected</v8:content>
+						</v8:item>
+					</Title>
+					<ShapeRepresentation>None</ShapeRepresentation>
+					<ButtonImportance>Supplementary</ButtonImportance>
+					<ExtendedTooltip name="ГрупповоеИзменениеОбъектов1РасширеннаяПодсказка" id="126"/>
+				</Button>
+				<Button name="ФормаПодобрать" id="64">
+					<Type>UsualButton</Type>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+						<xr:Value name="Role.АдминистраторСистемы">true</xr:Value>
+						<xr:Value name="Role.Администрирование">false</xr:Value>
+						<xr:Value name="Role.АдминистрированиеОтчетов">false</xr:Value>
+						<xr:Value name="Role.БазовыеПрава">false</xr:Value>
+						<xr:Value name="Role.БазовыеПраваБСП">false</xr:Value>
+						<xr:Value name="Role.БазовыеПраваБТС">false</xr:Value>
+						<xr:Value name="Role.БазовыеПраваВнешнихПользователейБСП">false</xr:Value>
+						<xr:Value name="Role.БазовыеПраваИПП">false</xr:Value>
+						<xr:Value name="Role.БазовыеПраваМДЛП">false</xr:Value>
+						<xr:Value name="Role.ВыводНаПринтерФайлБуферОбмена">false</xr:Value>
+						<xr:Value name="f0152598-ffa3-4eb7-811f-906e569373e6">false</xr:Value>
+						<xr:Value name="Role.ВыполнениеСинхронизацииДанных">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеSMSРассылки">false</xr:Value>
+						<xr:Value name="312118ff-a2a4-479c-964a-5250cca0cd20">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеБазовойНСИ">false</xr:Value>
+						<xr:Value name="f8d32d21-ea2f-42bb-a785-9bd3cf754cd9">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеВариантовОтчетов">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеВидовКонтактнойИнформации">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеВнешнихПользователей">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеГрафикаРаботыСотрудников">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеДатЗапретаИзменения">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеДокументовПоЗарплате">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеДокументовПоЗатратам">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеДокументовПоОказаниюУслуг">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеДокументовПоОплате">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеДокументовПоПродажамТоваров">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеДокументовПоСкладу">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеДокументовПоФинансам">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеДополнительныхОтчетовИОбработок">false</xr:Value>
+						<xr:Value name="4436b2cf-2d71-401f-99fd-012ff0c91fbd">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеЕжедневногоОтчета">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеЗаметок">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеЗаявокВсех">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеКалендарныхГрафиков">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеКлиентов">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеКонтрагентов">false</xr:Value>
+						<xr:Value name="017e3da8-e48e-488b-9bbf-4fef1a4f3417">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеЛичныхВариантовОтчетов">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеЛичныхШаблоновСообщений">false</xr:Value>
+						<xr:Value name="5a741cf6-8160-4409-9396-2e6d1e67e6fa">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеНоменклатуры">true</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеОбщейБазовойНСИ">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеПапокИФайлов">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеПапокИФайловВнешнимиПользователями">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеПользователей">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеПредварительнойЗаписи">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеРассылокОтчетов">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеРекламныхИсточников">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеСделокВсех">false</xr:Value>
+						<xr:Value name="68e207e7-8c20-426d-8a0e-c3dd4d683631">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеСотрудников">false</xr:Value>
+						<xr:Value name="5bfd74f4-811a-45db-b33d-8f93ba9c873a">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеТабеляРаботыСотрудников">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеУведомленийОбАгрегированииИТрансформацииУпаковокМДЛП">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеУведомленийОбОтбореОбразцовМДЛП">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеУведомленийОбОтгрузкеМДЛП">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеУведомленийОбОтпускеПоЛьготнымРецептамМДЛП">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеУведомленийОВводеВОборотМДЛП">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеУведомленийОВыбытииМДЛП">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеУведомленийОВыдачеВОтделенияМДЛП">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеУведомленийОВыпускеГотовойПродукцииМДЛП">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеУведомленийОЗавершенииЭтапаУпаковкиМДЛП">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеУведомленийОПередачеНаУничтожениеМДЛП">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеУведомленийОПеремещенииГЛОМДЛП">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеУведомленийОПеремещенииМДЛП">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеУведомленийОПовторномВводеВОборотМДЛП">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеУведомленийОПриемкеМДЛП">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеУведомленийОРозничныхПродажахМДЛП">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеУведомленийОФактеУничтоженияМДЛП">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеУчетныхЗаписейЭлектроннойПочты">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеЦенНоменклатуры">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеШаблоновСообщений">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеЭлектронныхПодписейИШифрование">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеКлиентов">false</xr:Value>
+						<xr:Value name="Role.ЗапускAutomation">false</xr:Value>
+						<xr:Value name="Role.ЗапускВебКлиента">false</xr:Value>
+						<xr:Value name="Role.ЗапускВнешнегоСоединения">false</xr:Value>
+						<xr:Value name="Role.ЗапускМобильногоКлиента">false</xr:Value>
+						<xr:Value name="Role.ЗапускТолстогоКлиента">false</xr:Value>
+						<xr:Value name="Role.ЗапускТонкогоКлиента">false</xr:Value>
+						<xr:Value name="35eea3b8-d017-442a-b5a0-a1571165b9a9">false</xr:Value>
+						<xr:Value name="Role.ИзменениеМакетовПечатныхФорм">false</xr:Value>
+						<xr:Value name="Role.ИзменениеОконченныхПриемов">false</xr:Value>
+						<xr:Value name="Role.ИзменениеСвоихКлиентовКуратором">false</xr:Value>
+						<xr:Value name="69530795-5a90-47b0-ae8d-a44b420b51f6">false</xr:Value>
+						<xr:Value name="Role.ИзменениеТекущегоВнешнегоПользователя">false</xr:Value>
+						<xr:Value name="Role.ИзменениеТекущегоПользователя">false</xr:Value>
+						<xr:Value name="Role.ИзменениеУчастниковГруппДоступа">false</xr:Value>
+						<xr:Value name="Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок">false</xr:Value>
+						<xr:Value name="Role.ИспользованиеИнформационногоЦентра">false</xr:Value>
+						<xr:Value name="Role.ИспользованиеЛичногоКабинета">false</xr:Value>
+						<xr:Value name="Role.ИспользованиеМессенджера">false</xr:Value>
+						<xr:Value name="5fbea8c7-48e3-4ed0-a8d0-cf942b37a166">false</xr:Value>
+						<xr:Value name="Role.ИспользованиеТелефонии">false</xr:Value>
+						<xr:Value name="Role.ИспользованиеУниверсальногоОтчета">false</xr:Value>
+						<xr:Value name="Role.ИспользованиеЭлектроннойПодписиВМоделиСервиса">false</xr:Value>
+						<xr:Value name="Role.ИспользоватьРабочийСтолМонитораПриемов">false</xr:Value>
+						<xr:Value name="Role.ИспользоватьРабочийСтолМониторРуководителя">false</xr:Value>
+						<xr:Value name="Role.НастройкаИОценкаПроизводительности">false</xr:Value>
+						<xr:Value name="Role.НастройкаНСИМДЛП">false</xr:Value>
+						<xr:Value name="Role.НастройкаСинхронизацииДанных">false</xr:Value>
+						<xr:Value name="Role.НастройкаСинхронизацииФайлов">false</xr:Value>
+						<xr:Value name="Role.ОбновлениеКонфигурацииБазыДанных">false</xr:Value>
+						<xr:Value name="f9a5bd40-7c56-4ced-bddb-a66c1fc31b81">false</xr:Value>
+						<xr:Value name="Role.ОтчетыПоДенежнымСредствам">false</xr:Value>
+						<xr:Value name="Role.ОтчетыПоЗапасам">false</xr:Value>
+						<xr:Value name="Role.ОтчетыПоКлиентам">false</xr:Value>
+						<xr:Value name="Role.ОтчетыПоПерсоналу">false</xr:Value>
+						<xr:Value name="Role.ОтчетыПоПрибыли">false</xr:Value>
+						<xr:Value name="Role.ОтчетыПоПродажам">false</xr:Value>
+						<xr:Value name="Role.ПередачаДанныхАнонимныйДоступ">false</xr:Value>
+						<xr:Value name="Role.ПодготовкаСогласияНаОбработкуПерсональныхДанных">false</xr:Value>
+						<xr:Value name="Role.ПодключениеИнтернетПоддержки">false</xr:Value>
+						<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+						<xr:Value name="Role.ПолучениеОбновленийКлассификаторов">false</xr:Value>
+						<xr:Value name="40a52f83-f0e2-470d-9c17-7fdc8cc646b7">false</xr:Value>
+						<xr:Value name="Role.ПросмотрЖурналаРегистрации">false</xr:Value>
+						<xr:Value name="Role.ПросмотрИнформацииОДоступныхОбновленияхПрограммы">false</xr:Value>
+						<xr:Value name="Role.ПросмотрОписанияИзмененийПрограммы">false</xr:Value>
+						<xr:Value name="Role.ПросмотрОтчетаДвиженияДокумента">false</xr:Value>
+						<xr:Value name="Role.ПросмотрСвязанныеДокументы">false</xr:Value>
+						<xr:Value name="Role.РедактированиеПечатныхФорм">false</xr:Value>
+						<xr:Value name="Role.РедактированиеРеквизитовОбъектов">false</xr:Value>
+						<xr:Value name="Role.РежимВсеФункции">false</xr:Value>
+						<xr:Value name="Role.СогласованиеСтраховыхУслуг">false</xr:Value>
+						<xr:Value name="Role.СохранениеДанныхПользователя">false</xr:Value>
+						<xr:Value name="1a3eff9b-6598-4e11-9b8f-81249c53abec">false</xr:Value>
+						<xr:Value name="Role.УдаленныйДоступАдминистрированиеИБВМоделиСервиса">false</xr:Value>
+						<xr:Value name="Role.УдаленныйДоступБазоваяФункциональность">false</xr:Value>
+						<xr:Value name="Role.УдаленныйДоступВнешнееПриложение">false</xr:Value>
+						<xr:Value name="Role.УдаленныйДоступОбменДаннымиВМоделиСервиса">false</xr:Value>
+						<xr:Value name="Role.УдаленныйДоступОбменСообщениями">false</xr:Value>
+						<xr:Value name="Role.УдаленныйДоступПередачаДанных">false</xr:Value>
+						<xr:Value name="Role.УдаленныйКонтроль">false</xr:Value>
+						<xr:Value name="Role.ЧтениеSMSРассылки">false</xr:Value>
+						<xr:Value name="Role.ЧтениеБазовойНСИ">false</xr:Value>
+						<xr:Value name="Role.ЧтениеВариантовОтчетов">false</xr:Value>
+						<xr:Value name="Role.ЧтениеВнешнихПользователей">false</xr:Value>
+						<xr:Value name="Role.ЧтениеГрафикаРаботыСотрудников">false</xr:Value>
+						<xr:Value name="789a2027-8601-434c-bf47-37696a3966ad">false</xr:Value>
+						<xr:Value name="Role.ЧтениеДокументовПоЗарплате">false</xr:Value>
+						<xr:Value name="Role.ЧтениеДокументовПоЗатратам">false</xr:Value>
+						<xr:Value name="Role.ЧтениеДокументовПоОказаниюУслуг">false</xr:Value>
+						<xr:Value name="Role.ЧтениеДокументовПоОплате">false</xr:Value>
+						<xr:Value name="Role.ЧтениеДокументовПоПродажамТоваров">false</xr:Value>
+						<xr:Value name="Role.ЧтениеДокументовПоСкладу">false</xr:Value>
+						<xr:Value name="Role.ЧтениеДокументовПоФинансам">false</xr:Value>
+						<xr:Value name="Role.ЧтениеДополнительныхОтчетовИОбработок">false</xr:Value>
+						<xr:Value name="Role.ЧтениеДополнительныхСведений">false</xr:Value>
+						<xr:Value name="Role.ЧтениеЕжедневногоОтчета">false</xr:Value>
+						<xr:Value name="Role.ЧтениеЗаписейРазговоров">false</xr:Value>
+						<xr:Value name="Role.ЧтениеЗапросовСоставаУпаковокМДЛП">false</xr:Value>
+						<xr:Value name="b1951856-24e1-4062-9532-97b064fe4663">false</xr:Value>
+						<xr:Value name="Role.ЧтениеИсторииВызовов">false</xr:Value>
+						<xr:Value name="Role.ЧтениеКлиентов">false</xr:Value>
+						<xr:Value name="Role.ЧтениеКонтрагентов">false</xr:Value>
+						<xr:Value name="4c3085e1-2f86-4af4-a392-ab45e30a7152">false</xr:Value>
+						<xr:Value name="Role.ЧтениеНоменклатуры">false</xr:Value>
+						<xr:Value name="Role.ЧтениеОбщейБазовойНСИ">false</xr:Value>
+						<xr:Value name="Role.ЧтениеПредварительнойЗаписи">false</xr:Value>
+						<xr:Value name="Role.ЧтениеРассылокОтчетов">false</xr:Value>
+						<xr:Value name="36e096be-ee28-437a-b8f2-c1e274c150e3">false</xr:Value>
+						<xr:Value name="160e9608-7301-4572-af02-6a7cceca1560">false</xr:Value>
+						<xr:Value name="Role.ЧтениеТабеляРаботыСотрудников">false</xr:Value>
+						<xr:Value name="Role.ЧтениеУведомленийОбАгрегированииИТрансформацииУпаковокМДЛП">false</xr:Value>
+						<xr:Value name="Role.ЧтениеУведомленийОбОтгрузкеМДЛП">false</xr:Value>
+						<xr:Value name="Role.ЧтениеУведомленийОбОтпускеПоЛьготнымРецептамМДЛП">false</xr:Value>
+						<xr:Value name="Role.ЧтениеУведомленийОВводеВОборотМДЛП">false</xr:Value>
+						<xr:Value name="Role.ЧтениеУведомленийОВыбытииМДЛП">false</xr:Value>
+						<xr:Value name="Role.ЧтениеУведомленийОВыдачеВОтделенияМДЛП">false</xr:Value>
+						<xr:Value name="Role.ЧтениеУведомленийОВыпускеГотовойПродукцииМДЛП">false</xr:Value>
+						<xr:Value name="Role.ЧтениеУведомленийОЗавершенииЭтапаУпаковкиМДЛП">false</xr:Value>
+						<xr:Value name="Role.ЧтениеУведомленийОПередачеНаУничтожениеМДЛП">false</xr:Value>
+						<xr:Value name="Role.ЧтениеУведомленийОПеремещенииГЛОМДЛП">false</xr:Value>
+						<xr:Value name="Role.ЧтениеУведомленийОПеремещенииМДЛП">false</xr:Value>
+						<xr:Value name="Role.ЧтениеУведомленийОПовторномВводеВОборотМДЛП">false</xr:Value>
+						<xr:Value name="Role.ЧтениеУведомленийОПриемкеМДЛП">false</xr:Value>
+						<xr:Value name="Role.ЧтениеУведомленийОРозничныхПродажахМДЛП">false</xr:Value>
+						<xr:Value name="Role.ЧтениеУведомленийОФактеУничтоженияМДЛП">false</xr:Value>
+						<xr:Value name="Role.ЧтениеУчетныхЗаписейЭлектроннойПочты">false</xr:Value>
+						<xr:Value name="Role.ЧтениеЦенНоменклатуры">false</xr:Value>
+						<xr:Value name="Role.ЧтениеШаблоновСообщений">false</xr:Value>
+					</UserVisible>
+					<Representation>PictureAndText</Representation>
+					<CommandName>Form.Command.Подобрать</CommandName>
+					<Picture>
+						<xr:Ref>CommonPicture.ПодборИзКлассификатор</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Из классификатора</v8:content>
+						</v8:item>
+					</Title>
+					<ShapeRepresentation>None</ShapeRepresentation>
+					<ButtonImportance>Supplementary</ButtonImportance>
+					<ExtendedTooltip name="ФормаПодобратьРасширеннаяПодсказка" id="65"/>
+				</Button>
+				<Button name="СписокЗапасыЗагрузкаДанныхИзВнешнегоИсточника" id="66">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<CommandName>Form.Command.ЗагрузкаДанныхИзВнешнегоИсточника</CommandName>
+					<Picture>
+						<xr:Ref>CommonPicture.Импорт</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Импорт</v8:content>
+						</v8:item>
+					</Title>
+					<ShapeRepresentation>None</ShapeRepresentation>
+					<ButtonImportance>Supplementary</ButtonImportance>
+					<ExtendedTooltip name="СписокЗапасыЗагрузкаДанныхИзВнешнегоИсточникаРасширеннаяПодсказка" id="67"/>
+				</Button>
+				<Button name="ФормаПоискПоШтрихКоду" id="129">
+					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<CommandName>Form.Command.ПоискПоШтрихКоду</CommandName>
+					<Picture>
+						<xr:Ref>CommonPicture.НовыйПоШтрихкоду</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отменить отбор по штрих-коду</v8:content>
+						</v8:item>
+					</Title>
+					<ShapeRepresentation>None</ShapeRepresentation>
+					<ButtonImportance>Supplementary</ButtonImportance>
+					<ExtendedTooltip name="ФормаПоискПоШтрихКодуРасширеннаяПодсказка" id="130"/>
+				</Button>
+				<SearchStringAddition name="СтрокаПоиска" id="102">
+					<AdditionSource>
+						<Item>Список</Item>
+						<Type>SearchStringRepresentation</Type>
+					</AdditionSource>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Строка поиска</v8:content>
+						</v8:item>
+					</Title>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<Width>20</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="СтрокаПоискаКонтекстноеМеню" id="103"/>
+					<ExtendedTooltip name="СтрокаПоискаРасширеннаяПодсказка" id="104"/>
+				</SearchStringAddition>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаКП" id="56">
+			<Visible>false</Visible>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа КП</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group KP</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа КП</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group KP</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКПРасширеннаяПодсказка" id="57"/>
+			<ChildItems>
+				<InputField name="ВПродажеОтбор" id="58">
+					<DataPath>ВПродажеОтбор</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ClearButton>false</ClearButton>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Все</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>en</v8:lang>
+										<v8:content>All</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">Все</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>В продаже</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>en</v8:lang>
+										<v8:content>At selling</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">ВПродаже</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Снят с продажи</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>en</v8:lang>
+										<v8:content>Taken off the market</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">СнятСПродажи</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="ВПродажеОтборКонтекстноеМеню" id="59"/>
+					<ExtendedTooltip name="ВПродажеОтборРасширеннаяПодсказка" id="60"/>
+					<Events>
+						<Event name="OnChange">ВПродажеОтборПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Список" id="1">
+			<DefaultItem>true</DefaultItem>
+			<RowSelectionMode>Cell</RowSelectionMode>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.ВариантКартинки</RowPictureDataPath>
+			<RowsPicture>
+				<xr:Ref>CommonPicture.ИконкиДляСписка</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</RowsPicture>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="СписокКонтекстноеМеню" id="2">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<ButtonGroup name="СписокКонтекстноеМенюГруппаСоздание" id="80">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Список контекстное меню группа создание</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Список контекстное меню группа создание</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="СписокКонтекстноеМенюГруппаСозданиеРасширеннаяПодсказка" id="81"/>
+						<ChildItems>
+							<Button name="СписокКонтекстноеМенюКнопкаСоздать" id="82">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.Список.StandardCommand.Create</CommandName>
+								<Picture>
+									<xr:Ref>CommonPicture.Добавить</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаСоздатьРасширеннаяПодсказка" id="83"/>
+							</Button>
+							<Button name="СписокКонтекстноеМенюКнопкаНоваяГруппа" id="84">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.StandardCommand.CreateFolder</CommandName>
+								<Picture>
+									<xr:Ref>CommonPicture.ДобавитьГруппу</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаНоваяГруппаРасширеннаяПодсказка" id="85"/>
+							</Button>
+							<Button name="СписокКонтекстноеМенюКнопкаСкопировать" id="86">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.Список.StandardCommand.Copy</CommandName>
+								<Picture>
+									<xr:Ref>CommonPicture.ДобавитьКопированием</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаСкопироватьРасширеннаяПодсказка" id="87"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+					<ButtonGroup name="СписокКонтекстноеМенюГруппаРедактирование" id="68">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Список контекстное меню группа редактирование</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Список контекстное меню группа редактирование</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="СписокКонтекстноеМенюГруппаРедактированиеРасширеннаяПодсказка" id="69"/>
+						<ChildItems>
+							<Button name="СписокКонтекстноеМенюКнопкаИзменить" id="70">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.Список.StandardCommand.Change</CommandName>
+								<Picture>
+									<xr:Ref>CommonPicture.Редактировать</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаИзменитьРасширеннаяПодсказка" id="71"/>
+							</Button>
+							<Button name="СписокКонтекстноеМенюКнопкаУдалить" id="72">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.StandardCommand.SetDeletionMark</CommandName>
+								<Picture>
+									<xr:Ref>CommonPicture.ВКорзину</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Удалить</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаУдалитьРасширеннаяПодсказка" id="73"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+					<Button name="ГрупповоеИзменениеОбъектов" id="16">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<CommandName>Form.Command.ИзменитьВыделенные</CommandName>
+						<Picture>
+							<xr:Ref>CommonPicture.РедактироватьВыделенные</xr:Ref>
+							<xr:LoadTransparent>false</xr:LoadTransparent>
+						</Picture>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Групповое изменение</v8:content>
+							</v8:item>
+						</Title>
+						<ShapeRepresentation>None</ShapeRepresentation>
+						<ButtonImportance>Supplementary</ButtonImportance>
+						<ExtendedTooltip name="ГрупповоеИзменениеОбъектовExtendedTooltip" id="17"/>
+					</Button>
+					<ButtonGroup name="СписокКонтекстноеМенюГруппаПереместить" id="117">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Список контекстное меню группа переместить</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Список контекстное меню группа переместить</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="СписокКонтекстноеМенюГруппаПереместитьРасширеннаяПодсказка" id="118"/>
+						<ChildItems>
+							<Button name="СписокКонтекстноеМенюКнопкаПереместитьВГруппу" id="119">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.Список.StandardCommand.MoveItem</CommandName>
+								<Picture>
+									<xr:Ref>CommonPicture.ПапкаСтрелкаСледующий</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаПереместитьВГруппуРасширеннаяПодсказка" id="120"/>
+							</Button>
+							<Button name="СписокКонтекстноеМенюКнопкаУровеньВверх" id="121">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.Список.StandardCommand.LevelUp</CommandName>
+								<Picture>
+									<xr:Ref>CommonPicture.ПапкаВыгрузить</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаУровеньВверхРасширеннаяПодсказка" id="122"/>
+							</Button>
+							<Button name="СписокКонтекстноеМенюКнопкаУровеньВниз" id="123">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.Список.StandardCommand.LevelDown</CommandName>
+								<Picture>
+									<xr:Ref>CommonPicture.ПапкаЗагрузить</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаУровеньВнизРасширеннаяПодсказка" id="124"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+					<Button name="СписокКонтекстноеМенюКнопкаНастройкаСписка" id="74">
+						<Type>CommandBarButton</Type>
+						<Representation>Picture</Representation>
+						<CommandName>Form.Item.Список.StandardCommand.ListSettings</CommandName>
+						<Picture>
+							<xr:Ref>CommonPicture.НастройкаВертикально</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ShapeRepresentation>None</ShapeRepresentation>
+						<PictureLocation>Left</PictureLocation>
+						<ButtonImportance>Supplementary</ButtonImportance>
+						<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаНастройкаСпискаРасширеннаяПодсказка" id="75"/>
+					</Button>
+					<Popup name="СписокКонтекстноеМенюГруппаВидСписка" id="105">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Вид отображения</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Список контекстное меню группа вид списка</v8:content>
+							</v8:item>
+						</ToolTip>
+						<Picture>
+							<xr:Ref>CommonPicture.ВидОтображенияДерево</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="СписокКонтекстноеМенюГруппаВидСпискаРасширеннаяПодсказка" id="106"/>
+						<ChildItems>
+							<Button name="СписокКонтекстноеМенюКнопкаОтображениеДерево" id="107">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.Список.StandardCommand.Tree</CommandName>
+								<Picture>
+									<xr:Ref>CommonPicture.ВидОтображенияДеревоНовый</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаОтображениеДеревоРасширеннаяПодсказка" id="108"/>
+							</Button>
+							<Button name="СписокКонтекстноеМенюКнопкаОтображениеСписок" id="109">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.Список.StandardCommand.List</CommandName>
+								<Picture>
+									<xr:Ref>CommonPicture.ВидОтображенияСписокНовый</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаОтображениеСписокРасширеннаяПодсказка" id="110"/>
+							</Button>
+							<Button name="СписокКонтекстноеМенюКнопкаОтображениеИерархическийСписок" id="111">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.Список.StandardCommand.HierarchicalList</CommandName>
+								<Picture>
+									<xr:Ref>CommonPicture.СтруктураДеревоНовая</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаОтображениеИерархическийСписокРасширеннаяПодсказка" id="112"/>
+							</Button>
+						</ChildItems>
+					</Popup>
+					<Button name="СписокКонтекстноеМенюКнопкаНайтиПоЗначению" id="113">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<CommandName>Form.Item.Список.StandardCommand.FindByCurrentValue</CommandName>
+						<Picture>
+							<xr:Ref>CommonPicture.НайтиПоТекущемуЗначению</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаНайтиПоЗначениюРасширеннаяПодсказка" id="114"/>
+					</Button>
+					<Button name="ФормаОбновитьСписок" id="115">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.Список.StandardCommand.Refresh</CommandName>
+						<Picture>
+							<xr:Ref>CommonPicture.ОбновитьНовая</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+						<ExtendedTooltip name="ФормаОбновитьСписокРасширеннаяПодсказка" id="116"/>
+					</Button>
+					<Button name="СписокКонтекстноеМенюКнопкаВывестиСписок" id="76">
+						<Type>CommandBarButton</Type>
+						<Representation>Picture</Representation>
+						<CommandName>Form.Item.Список.StandardCommand.OutputList</CommandName>
+						<Picture>
+							<xr:Ref>CommonPicture.НаПечать</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ShapeRepresentation>None</ShapeRepresentation>
+						<PictureLocation>Left</PictureLocation>
+						<ButtonImportance>Supplementary</ButtonImportance>
+						<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаВывестиСписокРасширеннаяПодсказка" id="77"/>
+					</Button>
+					<Button name="СписокКонтекстноеМенюКнопкаВывестиНастройкаФормы" id="78">
+						<Type>CommandBarButton</Type>
+						<Representation>Picture</Representation>
+						<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+						<Picture>
+							<xr:Ref>CommonPicture.НастройкаФормы</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ShapeRepresentation>None</ShapeRepresentation>
+						<PictureLocation>Left</PictureLocation>
+						<ButtonImportance>Supplementary</ButtonImportance>
+						<ExtendedTooltip name="СписокКонтекстноеМенюКнопкаВывестиНастройкаФормыРасширеннаяПодсказка" id="79"/>
+					</Button>
+				</ChildItems>
+			</ContextMenu>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокExtendedTooltip" id="18"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="28">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="29"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="30"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="31">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="32"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="33"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="34">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="35"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="36"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="Наименование" id="4">
+					<DataPath>Список.Наименование</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</Title>
+					<TitleBackColor>style:FormBackColor</TitleBackColor>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalAlign>Left</HorizontalAlign>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="19"/>
+				</LabelField>
+				<LabelField name="КодНоменклатурыМедицинскиУслуг" id="61">
+					<DataPath>Список.КодНоменклатурыМедицинскиУслуг</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код услуги</v8:content>
+						</v8:item>
+					</Title>
+					<TitleBackColor>style:FormBackColor</TitleBackColor>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>12</MaxWidth>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="КодНоменклатурыМедицинскиУслугКонтекстноеМеню" id="62"/>
+					<ExtendedTooltip name="КодНоменклатурыМедицинскиУслугРасширеннаяПодсказка" id="63"/>
+				</LabelField>
+				<LabelField name="Артикул" id="14">
+					<DataPath>Список.Артикул</DataPath>
+					<TitleBackColor>style:FormBackColor</TitleBackColor>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>12</MaxWidth>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="АртикулКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="АртикулExtendedTooltip" id="21"/>
+				</LabelField>
+				<InputField name="ТипНоменклатуры" id="8">
+					<DataPath>Список.ТипНоменклатуры</DataPath>
+					<TitleBackColor>style:FormBackColor</TitleBackColor>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип номенклатуры</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ContextMenu name="ТипНоменклатурыКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="ТипНоменклатурыExtendedTooltip" id="22"/>
+				</InputField>
+				<LabelField name="Специализация" id="25">
+					<DataPath>Список.Специализация</DataPath>
+					<TitleBackColor>style:FormBackColor</TitleBackColor>
+					<ContextMenu name="СпециализацияКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="СпециализацияРасширеннаяПодсказка" id="27"/>
+				</LabelField>
+				<InputField name="ЕдиницаИзм" id="10">
+					<DataPath>Список.ЕдиницаИзмерения</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ед.</v8:content>
+						</v8:item>
+					</Title>
+					<TitleBackColor>style:FormBackColor</TitleBackColor>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Единица измерения</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ContextMenu name="ЕдиницаИзмКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ЕдиницаИзмExtendedTooltip" id="23"/>
+				</InputField>
+				<CheckBoxField name="ВПродаже" id="53">
+					<DataPath>Список.ВПродаже</DataPath>
+					<TitleBackColor>style:FormBackColor</TitleBackColor>
+					<ContextMenu name="ВПродажеКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="ВПродажеРасширеннаяПодсказка" id="55"/>
+				</CheckBoxField>
+				<InputField name="Комментарий" id="12">
+					<DataPath>Список.Комментарий</DataPath>
+					<TitleBackColor>style:FormBackColor</TitleBackColor>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>20</MaxWidth>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="КомментарийКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="КомментарийExtendedTooltip" id="24"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СправочникНоменклатура.ПометкаУдаления КАК ПометкаУдаления,
+	СправочникНоменклатура.Родитель КАК Родитель,
+	СправочникНоменклатура.ЭтоГруппа КАК ЭтоГруппа,
+	СправочникНоменклатура.Код КАК Код,
+	СправочникНоменклатура.Ссылка КАК Наименование,
+	СправочникНоменклатура.Артикул КАК Артикул,
+	СправочникНоменклатура.ВестиСерийныеНомера КАК ВестиСерийныеНомера,
+	СправочникНоменклатура.ВидНоминала КАК ВидНоминала,
+	СправочникНоменклатура.Гарантия КАК Гарантия,
+	СправочникНоменклатура.ДатаОкончанияДействия КАК ДатаОкончанияДействия,
+	СправочникНоменклатура.ЕдиницаИзмерения КАК ЕдиницаИзмерения,
+	СправочникНоменклатура.ИспользоватьПартии КАК ИспользоватьПартии,
+	СправочникНоменклатура.КоличествоПериодовДействия КАК КоличествоПериодовДействия,
+	ВЫРАЗИТЬ(СправочникНоменклатура.Комментарий КАК СТРОКА(100)) КАК Комментарий,
+	СправочникНоменклатура.НаименованиеПолное КАК НаименованиеПолное,
+	СправочникНоменклатура.Номинал КАК Номинал,
+	СправочникНоменклатура.НормаВремени КАК НормаВремени,
+	СправочникНоменклатура.ОбменССайтомСоответствиеУслуги КАК ОбменССайтомСоответствиеУслуги,
+	СправочникНоменклатура.ОбязательноУказаниеАссистента КАК ОбязательноУказаниеАссистента,
+	СправочникНоменклатура.Периодичность КАК Периодичность,
+	СправочникНоменклатура.СертификатМногоразовоеИспользование КАК СертификатМногоразовоеИспользование,
+	СправочникНоменклатура.СкидкиЗапрещены КАК СкидкиЗапрещены,
+	СправочникНоменклатура.Специализация КАК Специализация,
+	СправочникНоменклатура.СтавкаНДС КАК СтавкаНДС,
+	СправочникНоменклатура.ТипНоменклатуры КАК ТипНоменклатуры,
+	СправочникНоменклатура.ТипСрокаДействия КАК ТипСрокаДействия,
+	СправочникНоменклатура.УпаковкаДляОтчета КАК УпаковкаДляОтчета,
+	СправочникНоменклатура.УпаковкаПоУмолчанию КАК УпаковкаПоУмолчанию,
+	СправочникНоменклатура.ЭтоИменнойСертификат КАК ЭтоИменнойСертификат,
+	ВЫБОР
+		КОГДА СправочникНоменклатура.ЭтоГруппа
+			ТОГДА ЛОЖЬ
+		ИНАЧЕ ЕСТЬNULL(СтатусыНоменклатурыСрезПоследних.ВПродаже, ИСТИНА)
+	КОНЕЦ КАК ВПродаже,
+	СправочникНоменклатура.ДополнительныеРеквизиты.(
+		Ссылка КАК Ссылка,
+		НомерСтроки КАК НомерСтроки,
+		Свойство КАК Свойство,
+		Значение КАК Значение
+	) КАК ДополнительныеРеквизиты,
+	СправочникНоменклатура.ОбластиЗубнойФормулы.(
+		Ссылка КАК Ссылка,
+		НомерСтроки КАК НомерСтроки,
+		СостояниеЗубнойФормулы КАК СостояниеЗубнойФормулы
+	) КАК ОбластиЗубнойФормулы,
+	СправочникНоменклатура.СоставНабора.(
+		Ссылка КАК Ссылка,
+		НомерСтроки КАК НомерСтроки,
+		СННоменклатура КАК СННоменклатура,
+		СНКоличество КАК СНКоличество
+	) КАК СоставНабора,
+	СправочникНоменклатура.Предопределенный КАК Предопределенный,
+	СправочникНоменклатура.ИмяПредопределенныхДанных КАК ИмяПредопределенныхДанных,
+	ВЫБОР
+		КОГДА СправочникНоменклатура.ЭтоГруппа
+				И НЕ СправочникНоменклатура.ПометкаУдаления
+			ТОГДА 0
+		ИНАЧЕ ВЫБОР
+				КОГДА СправочникНоменклатура.ЭтоГруппа
+						И СправочникНоменклатура.ПометкаУдаления
+					ТОГДА 1
+				ИНАЧЕ ВЫБОР
+						КОГДА НЕ СправочникНоменклатура.ЭтоГруппа
+								И НЕ СправочникНоменклатура.ПометкаУдаления
+								И СправочникНоменклатура.ТипНоменклатуры = ЗНАЧЕНИЕ(Перечисление.ТипыНоменклатуры.Набор)
+							ТОГДА 4
+						ИНАЧЕ ВЫБОР
+								КОГДА НЕ СправочникНоменклатура.ЭтоГруппа
+										И НЕ СправочникНоменклатура.ПометкаУдаления
+									ТОГДА 2
+								ИНАЧЕ 3
+							КОНЕЦ
+					КОНЕЦ
+			КОНЕЦ
+	КОНЕЦ КАК ИндКартинки,
+	СправочникНоменклатура.КодНоменклатурыМедицинскиУслуг КАК КодНоменклатурыМедицинскиУслуг,
+	ВЫБОР
+		КОГДА СправочникНоменклатура.ЭтоГруппа
+			ТОГДА 0
+		ИНАЧЕ 1
+	КОНЕЦ + ВЫБОР
+		КОГДА СправочникНоменклатура.ПометкаУдаления
+			ТОГДА 2
+		ИНАЧЕ 0
+	КОНЕЦ КАК ВариантКартинки
+ИЗ
+	Справочник.Номенклатура КАК СправочникНоменклатура
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СтатусыНоменклатуры.СрезПоследних(&amp;ТекущаяДата, СтруктурнаяЕдиница = &amp;СтруктурнаяЕдиница) КАК СтатусыНоменклатурыСрезПоследних
+		ПО (СтатусыНоменклатурыСрезПоследних.Номенклатура = СправочникНоменклатура.Ссылка)</QueryText>
+				<MainTable>Catalog.Номенклатура</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ВПродажеОтбор" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>В продаже отбор</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="НастройкиЗагрузкиДанных" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки загрузки данных</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ВключенОтборПоШтрихКоду" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включен отбор по штрих коду</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ИзменитьВыделенные" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить выделенные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить выделенные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИзменитьВыделенные</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Подобрать" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Из классификатора</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подобрать услуги из классификатора</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Подобрать</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ЗагрузкаДанныхИзВнешнегоИсточника" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузка данных из внешнего источника</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузка данных из внешнего источника</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Use>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ДобавлениеИзменениеНоменклатуры">true</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</Use>
+			<Picture>
+				<xr:Ref>CommonPicture.ЗагрузкаИзФайла</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗагрузкаДанныхИзВнешнегоИсточника</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПоискПоШтрихКоду" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск по штрих-коду</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск по штрих-коду</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоискПоШтрихКоду</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,191 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="ffoms:order:79:2011-04-07">
+	<valueType name="Дата_ГГГГ_ММ_ДД" base="xs:date" variety="Atomic"/>
+	<valueType name="Строка_2" base="xs:string" variety="Atomic" minLength="1" maxLength="2"/>
+	<valueType name="Строка_5" base="xs:string" variety="Atomic" minLength="1" maxLength="5"/>
+	<valueType name="Строка_6" base="xs:string" variety="Atomic" minLength="1" maxLength="6"/>
+	<valueType name="Строка_9" base="xs:string" variety="Atomic" minLength="1" maxLength="9"/>
+	<valueType name="Строка_10" base="xs:string" variety="Atomic" minLength="1" maxLength="10"/>
+	<valueType name="Строка_11" base="xs:string" variety="Atomic" minLength="1" maxLength="11"/>
+	<valueType name="Строка_14" base="xs:string" variety="Atomic" minLength="1" maxLength="14"/>
+	<valueType name="Строка_15" base="xs:string" variety="Atomic" minLength="1" maxLength="15"/>
+	<valueType name="Строка_16" base="xs:string" variety="Atomic" minLength="1" maxLength="16"/>
+	<valueType name="Строка_20" base="xs:string" variety="Atomic" minLength="1" maxLength="20"/>
+	<valueType name="Строка_24" base="xs:string" variety="Atomic" minLength="1" maxLength="24"/>
+	<valueType name="Строка_26" base="xs:string" variety="Atomic" minLength="1" maxLength="26" whiteSpace="preserve"/>
+	<valueType name="Строка_36" base="xs:string" variety="Atomic" minLength="1" maxLength="36"/>
+	<valueType name="Строка_40" base="xs:string" variety="Atomic" minLength="1" maxLength="40"/>
+	<valueType name="Строка_50" base="xs:string" variety="Atomic" minLength="1" maxLength="50"/>
+	<valueType name="Строка_100" base="xs:string" variety="Atomic" minLength="1" maxLength="100"/>
+	<valueType name="Строка_250" base="xs:string" variety="Atomic" minLength="1" maxLength="250"/>
+	<valueType name="Число_1" base="xs:integer" variety="Atomic"/>
+	<valueType name="Число_2" base="xs:integer" variety="Atomic" totalDigits="2"/>
+	<valueType name="Число_3" base="xs:integer" variety="Atomic" totalDigits="3"/>
+	<valueType name="Число_4" base="xs:integer" variety="Atomic" totalDigits="4"/>
+	<valueType name="Число_5_2" base="xs:decimal" variety="Atomic" totalDigits="7" fractionDigits="2"/>
+	<valueType name="Число_6_2" base="xs:decimal" variety="Atomic" totalDigits="8" fractionDigits="2"/>
+	<valueType name="Число_8" base="xs:int" variety="Atomic" totalDigits="8"/>
+	<valueType name="Число_9" base="xs:integer" variety="Atomic" totalDigits="9"/>
+	<valueType name="Число_15_2" base="xs:decimal" variety="Atomic" totalDigits="17" fractionDigits="2"/>
+	<objectType name="ZL_LIST">
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="ZGLV" type="d3p1:ZGLV"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="SCHET" type="d3p1:SCHET"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="ZAP" type="d3p1:ZAP" upperBound="-1" form="Element"/>
+	</objectType>
+	<objectType name="ZGLV">
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="VERSION" type="d3p1:Строка_5"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="DATA" type="d3p1:Дата_ГГГГ_ММ_ДД"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="FILENAME" type="d3p1:Строка_26" nillable="false" form="Element"/>
+	</objectType>
+	<objectType name="SCHET">
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="CODE" type="d3p1:Число_8"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="CODE_MO" type="d3p1:Строка_6"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="YEAR" type="d3p1:Число_4"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="MONTH" type="d3p1:Число_2"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="NSCHET" type="d3p1:Строка_15"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="DSCHET" type="d3p1:Дата_ГГГГ_ММ_ДД"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="PLAT" type="d3p1:Строка_5" lowerBound="0"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="SUMMAV" type="d3p1:Число_15_2"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="COMENTS" type="d3p1:Строка_250" lowerBound="0"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="SUMMAP" type="d3p1:Число_15_2" lowerBound="0"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="SANK_MEK" type="d3p1:Число_15_2" lowerBound="0"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="SANK_MEE" type="d3p1:Число_15_2" lowerBound="0"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="SANK_EKMP" type="d3p1:Число_15_2" lowerBound="0"/>
+	</objectType>
+	<objectType name="ZAP">
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="N_ZAP" type="d3p1:Число_4"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="PR_NOV" type="d3p1:Число_1"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="PACIENT" type="d3p1:PACIENT"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="SLUCH" type="d3p1:SLUCH" upperBound="-1"/>
+	</objectType>
+	<objectType name="PACIENT">
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="ID_PAC" type="d3p1:Строка_36"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="VPOLIS" type="d3p1:Число_1"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="SPOLIS" type="d3p1:Строка_10" lowerBound="0"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="NPOLIS" type="d3p1:Строка_20"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="SMO" type="d3p1:Строка_5" lowerBound="0"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="SMO_OGRN" type="d3p1:Строка_15" lowerBound="0"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="SMO_OK" type="d3p1:Строка_5" lowerBound="0"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="SMO_NAM" type="d3p1:Строка_100" lowerBound="0"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="NOVOR" type="d3p1:Строка_9"/>
+	</objectType>
+	<objectType name="SLUCH">
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="IDCASE" type="d3p1:Число_8"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="USL_OK" type="d3p1:Число_2"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="VIDPOM" type="d3p1:Число_4"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="NPR_MO" type="d3p1:Строка_6" lowerBound="0"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="EXTR" type="d3p1:Число_2" lowerBound="0"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="LPU" type="d3p1:Строка_6"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="LPU_1" type="d3p1:Строка_6" lowerBound="0"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="PODR" type="d3p1:Число_8" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="PROFIL" type="d3p1:Число_3"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="DET" type="d3p1:Число_1"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="NHISTORY" type="d3p1:Строка_50"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="DATE_1" type="d3p1:Дата_ГГГГ_ММ_ДД"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="DATE_2" type="d3p1:Дата_ГГГГ_ММ_ДД"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="DS0" type="d3p1:Строка_10" lowerBound="0"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="DS1" type="d3p1:Строка_10"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="DS2" type="d3p1:Строка_10" lowerBound="0"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="CODE_MES1" type="d3p1:Строка_16" lowerBound="0"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="CODE_MES2" type="d3p1:Строка_16" lowerBound="0"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="RSLT" type="d3p1:Число_3" lowerBound="0"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="ISHOD" type="d3p1:Число_3" lowerBound="0"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="PRVS" type="d3p1:Число_9"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="IDDOKT" type="d3p1:Строка_16"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="OS_SLUCH" type="d3p1:Число_1" lowerBound="0" upperBound="-1"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="IDSP" type="d3p1:Число_2"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="ED_COL" type="d3p1:Число_5_2" lowerBound="0"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="TARIF" type="d3p1:Число_15_2" lowerBound="0"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="SUMV" type="d3p1:Число_15_2"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="OPLATA" type="d3p1:Число_1" lowerBound="0"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="SUMP" type="d3p1:Число_15_2" lowerBound="0"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="REFREASON" type="d3p1:Число_2" lowerBound="0" upperBound="-1"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="SANK_MEK" type="d3p1:Число_15_2" lowerBound="0"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="SANK_MEE" type="d3p1:Число_15_2" lowerBound="0"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="SANK_EKMP" type="d3p1:Число_15_2" lowerBound="0"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="USL" type="d3p1:USL" lowerBound="0" upperBound="-1"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="COMENTSL" type="d3p1:Строка_250" lowerBound="0"/>
+	</objectType>
+	<objectType name="USL">
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="IDSERV" type="d3p1:Число_8"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="LPU" type="d3p1:Строка_6"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="LPU_1" type="d3p1:Строка_6" lowerBound="0"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="PODR" type="d3p1:Число_8" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="PROFIL" type="d3p1:Число_3"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="DET" type="d3p1:Число_1"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="DATE_IN" type="d3p1:Дата_ГГГГ_ММ_ДД"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="DATE_OUT" type="d3p1:Дата_ГГГГ_ММ_ДД"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="DS" type="d3p1:Строка_10"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="CODE_USL" type="d3p1:Строка_16"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="KOL_USL" type="d3p1:Число_6_2"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="TARIF" type="d3p1:Число_15_2"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="SUMV_USL" type="d3p1:Число_15_2"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="PRVS" type="d3p1:Число_9"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="CODE_MD" type="d3p1:Строка_16"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="COMENTU" type="d3p1:Строка_250" lowerBound="0"/>
+	</objectType>
+	<objectType name="PERS_LIST">
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="ZGLV" type="d3p1:ZGLV_PERS_LIST"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="PERS" type="d3p1:PERS" upperBound="-1"/>
+	</objectType>
+	<objectType name="ZGLV_PERS_LIST">
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="VERSION" type="d3p1:Строка_5"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="DATA" type="d3p1:Дата_ГГГГ_ММ_ДД"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="FILENAME" type="d3p1:Строка_26"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="FILENAME1" type="d3p1:Строка_26"/>
+	</objectType>
+	<objectType name="PERS">
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="ID_PAC" type="d3p1:Строка_36"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="FAM" type="d3p1:Строка_40"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="IM" type="d3p1:Строка_40"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="OT" type="d3p1:Строка_40"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="W" type="d3p1:Число_1"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="DR" type="d3p1:Дата_ГГГГ_ММ_ДД"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="FAM_P" type="d3p1:Строка_40" lowerBound="0"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="IM_P" type="d3p1:Строка_40" lowerBound="0"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="OT_P" type="d3p1:Строка_40" lowerBound="0"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="W_P" type="d3p1:Число_1" lowerBound="0"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="DR_P" type="d3p1:Дата_ГГГГ_ММ_ДД" lowerBound="0"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="MR" type="d3p1:Строка_100" lowerBound="0"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="DOCTYPE" type="d3p1:Строка_2" lowerBound="0"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="DOCSER" type="d3p1:Строка_10" lowerBound="0"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="DOCNUM" type="d3p1:Строка_20" lowerBound="0"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="SNILS" type="d3p1:Строка_14" lowerBound="0"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="OKATOG" type="d3p1:Строка_11" lowerBound="0"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="OKATOP" type="d3p1:Строка_11" lowerBound="0"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="COMENTP" type="d3p1:Строка_250" lowerBound="0"/>
+	</objectType>
+	<objectType name="FLK_P">
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="FNAME" type="d3p1:Строка_24"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="FNAME_I" type="d3p1:Строка_24"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="PR" type="d3p1:PR" lowerBound="0"/>
+	</objectType>
+	<objectType name="PR">
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="OSHIB" type="d3p1:Число_3"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="IM_POL" type="d3p1:Строка_20" lowerBound="0"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="BAS_EL" type="d3p1:Строка_20" lowerBound="0"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="N_ZAP" type="d3p1:Число_4" lowerBound="0"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="COMMENT" type="d3p1:Строка_250" lowerBound="0"/>
+	</objectType>
+	<objectType name="QBP">
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="ZP1" type="d3p1:ZP1"/>
+	</objectType>
+	<objectType name="ZP1">
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="QBP_ZP1" type="d3p1:QBP_ZP1"/>
+	</objectType>
+	<objectType name="QBP_ZP1">
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="MSH" type="d3p1:Строка_50"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="QPD" type="d3p1:QPD"/>
+	</objectType>
+	<objectType name="QPD">
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="QPD_1" type="d3p1:Строка_50" localName="QPD.1"/>
+		<property name="QPD_3" localName="QPD.3"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="QPD_4" type="d3p1:Дата_ГГГГ_ММ_ДД" lowerBound="0" localName="QPD.4"/>
+		<property name="QPD_5" lowerBound="0" upperBound="-1" localName="QPD.5"/>
+		<property name="QPD_6" localName="QPD.6"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="QPD_7" type="d3p1:Дата_ГГГГ_ММ_ДД" localName="QPD.7"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="QPD_8" type="d3p1:Число_1" localName="QPD.8"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="QPD_9" type="d3p1:Строка_250" lowerBound="0" localName="QPD.9"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="QPD_10" type="d3p1:Число_1" lowerBound="0" localName="QPD.10"/>
+		<property xmlns:d3p1="ffoms:order:79:2011-04-07" name="QPD_11" type="d3p1:Строка_50" lowerBound="0" localName="QPD.11"/>
+	</objectType>
+</package>

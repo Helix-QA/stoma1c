@@ -322,7 +322,7 @@
 								
 		ИначеЕсли Метод = НРег("sync_appointment") Тогда  
 			
-			Ответ1с = MobileApp_v1.sync_appointment(ПараметрыJSON, СтруктурнаяЕдиница);
+			Ответ1с = MobileApp_v1.sync_appointment(ПараметрыJSON, СтруктурнаяЕдиница, Сотрудник);
 						
 		Иначе                  
 			Возврат MobileApp_v1.ПолучитьСтруктуруОтвета(, 2004);

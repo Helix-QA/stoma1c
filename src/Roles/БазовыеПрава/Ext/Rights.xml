@@ -52422,6 +52422,13 @@
 	<object>
 		<name>Catalog.Заявки</name>
 		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#Заявки</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
 			<name>Insert</name>
 			<value>false</value>
 		</right>
@@ -81172,6 +81179,25 @@
                 
  
        Конец</condition>
+	</restrictionTemplate>
+	<restrictionTemplate>
+		<name>Заявки</name>
+		<condition>    ТекущаяТаблица ИЗ #ТекущаяТаблица КАК ТекущаяТаблица      
+ГДЕ  
+   
+    ТекущаяТаблица.СтруктурнаяЕдиница В (
+    ВЫБРАТЬ
+	ДоступныеСтруктурныеЕдиницы.СтруктурнаяЕдиница КАК СтруктурнаяЕдиница
+ИЗ
+	Справочник.Сотрудники.ДоступныеСтруктурныеЕдиницы КАК ДоступныеСтруктурныеЕдиницы
+	Где
+	 ДоступныеСтруктурныеЕдиницы.Ссылка = &amp;ТекущийСотрудник	
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ЗНАЧЕНИЕ(Справочник.СтруктурныеЕдиницы.ПустаяСсылка)
+)</condition>
 	</restrictionTemplate>
 	<restrictionTemplate>
 		<name>ЛицевойСчет</name>

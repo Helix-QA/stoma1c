@@ -5981,18 +5981,30 @@
 		<right>
 			<name>Read</name>
 			<value>true</value>
+			<restrictionByCondition>
+				<condition>#Заявки</condition>
+			</restrictionByCondition>
 		</right>
 		<right>
 			<name>Insert</name>
 			<value>true</value>
+			<restrictionByCondition>
+				<condition>#Заявки</condition>
+			</restrictionByCondition>
 		</right>
 		<right>
 			<name>Update</name>
 			<value>true</value>
+			<restrictionByCondition>
+				<condition>#Заявки</condition>
+			</restrictionByCondition>
 		</right>
 		<right>
 			<name>Delete</name>
 			<value>true</value>
+			<restrictionByCondition>
+				<condition>#Заявки</condition>
+			</restrictionByCondition>
 		</right>
 		<right>
 			<name>View</name>
@@ -9490,6 +9502,25 @@
 			<value>false</value>
 		</right>
 	</object>
+	<restrictionTemplate>
+		<name>Заявки</name>
+		<condition>    ТекущаяТаблица ИЗ #ТекущаяТаблица КАК ТекущаяТаблица      
+ГДЕ  
+   
+    ТекущаяТаблица.СтруктурнаяЕдиница В (
+    ВЫБРАТЬ
+	ДоступныеСтруктурныеЕдиницы.СтруктурнаяЕдиница КАК СтруктурнаяЕдиница
+ИЗ
+	Справочник.Сотрудники.ДоступныеСтруктурныеЕдиницы КАК ДоступныеСтруктурныеЕдиницы
+	Где
+	 ДоступныеСтруктурныеЕдиницы.Ссылка = &amp;ТекущийСотрудник	
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ЗНАЧЕНИЕ(Справочник.СтруктурныеЕдиницы.ПустаяСсылка)
+)</condition>
+	</restrictionTemplate>
 	<restrictionTemplate>
 		<name>СпрСтруктурныеЕдиницы</name>
 		<condition>   ТекущаяТаблица ИЗ #ТекущаяТаблица КАК ТекущаяТаблица 

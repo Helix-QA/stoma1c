@@ -8009,6 +8009,37 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.Заявки</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#Заявки</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#Заявки</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ИзменениеЗаявок</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Delete</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ИзменениеЗаявок</condition>
+			</restrictionByCondition>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.Заявки.StandardAttribute.PredefinedDataName</name>
 		<right>
 			<name>View</name>
@@ -12495,6 +12526,34 @@
 					КОНЕЦ
 			ИНАЧЕ ИСТИНА
 		КОНЕЦ</condition>
+	</restrictionTemplate>
+	<restrictionTemplate>
+		<name>Заявки</name>
+		<condition>    ТекущаяТаблица ИЗ #ТекущаяТаблица КАК ТекущаяТаблица      
+ГДЕ  
+   
+    ТекущаяТаблица.СтруктурнаяЕдиница В (
+    ВЫБРАТЬ
+    ДоступныеСтруктурныеЕдиницы.СтруктурнаяЕдиница КАК СтруктурнаяЕдиница
+ИЗ
+    Справочник.Сотрудники.ДоступныеСтруктурныеЕдиницы КАК ДоступныеСтруктурныеЕдиницы
+    Где
+     ДоступныеСтруктурныеЕдиницы.Ссылка = &amp;ТекущийСотрудник 
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+    ЗНАЧЕНИЕ(Справочник.СтруктурныеЕдиницы.ПустаяСсылка)
+)</condition>
+	</restrictionTemplate>
+	<restrictionTemplate>
+		<name>ИзменениеЗаявок</name>
+		<condition>ТекущаяТаблица ИЗ #ТекущаяТаблица КАК ТекущаяТаблица,
+Справочник.Сотрудники.ДоступныеСтруктурныеЕдиницы КАК ДоступныеСтруктурныеЕдиницы
+ГДЕ (ТекущаяТаблица.ОсновнойМенеджер = &amp;ТекущийСотрудник
+        ИЛИ ТекущаяТаблица.ОсновнойМенеджер = ЗНАЧЕНИЕ(Справочник.Сотрудники.ПустаяСсылка))
+    И ДоступныеСтруктурныеЕдиницы.Ссылка = &amp;ТекущийСотрудник
+    И ТекущаяТаблица.СтруктурнаяЕдиница = ДоступныеСтруктурныеЕдиницы.СтруктурнаяЕдиница</condition>
 	</restrictionTemplate>
 	<restrictionTemplate>
 		<name>Клиенты</name>

@@ -2276,11 +2276,6 @@
 						<xr:Ref>CommonPicture.ИконкиДляСписка</xr:Ref>
 						<xr:LoadTransparent>true</xr:LoadTransparent>
 					</RowsPicture>
-					<CommandSet>
-						<ExcludedCommand>Copy</ExcludedCommand>
-						<ExcludedCommand>Create</ExcludedCommand>
-						<ExcludedCommand>Delete</ExcludedCommand>
-					</CommandSet>
 					<AutoRefresh>false</AutoRefresh>
 					<AutoRefreshPeriod>60</AutoRefreshPeriod>
 					<Period>
@@ -3092,7 +3087,7 @@
 			</UseAlways>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
-				<DynamicDataRead>true</DynamicDataRead>
+				<DynamicDataRead>false</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ РАЗРЕШЕННЫЕ
 	Сделки.ДатаСделки КАК ДатаСделки,
 	Сделки.Ссылка КАК Сделка,
@@ -3125,14 +3120,11 @@
 			ТОГДА Сделки.ПричинаОтказа
 		ИНАЧЕ """"
 	КОНЕЦ КАК ЗавершающийЭтапПояснение,
-	КонтрагентыСведенияДляСписка.Статус КАК СтатусПациента
+	Сделки.СтатусПациента КАК СтатусПациента
 ИЗ
 	Справочник.Сделки КАК Сделки
-		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.КонтрагентыСведенияДляСписка КАК КонтрагентыСведенияДляСписка
-		ПО Сделки.Контрагент = КонтрагентыСведенияДляСписка.Контрагент
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СделкиСведенияДляСписка КАК СделкиСведенияДляСписка
 		ПО Сделки.Ссылка = СделкиСведенияДляСписка.Сделка</QueryText>
-				<MainTable>Catalog.Сделки</MainTable>
 				<ListSettings>
 					<dcsset:filter>
 						<dcsset:viewMode>Normal</dcsset:viewMode>

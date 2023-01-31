@@ -12,6 +12,7 @@
 	<Events>
 		<Event name="AfterWrite">ПослеЗаписи</Event>
 		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 		<Event name="OnWriteAtServer">ПриЗаписиНаСервере</Event>
 	</Events>
@@ -1820,6 +1821,9 @@
 											<CheckBoxType>Switcher</CheckBoxType>
 											<ContextMenu name="ВиджетОнлайнЗаписиАвторизацияБезСМСКонтекстноеМеню" id="819"/>
 											<ExtendedTooltip name="ВиджетОнлайнЗаписиАвторизацияБезСМСРасширеннаяПодсказка" id="820"/>
+											<Events>
+												<Event name="OnChange">ВиджетОнлайнЗаписиАвторизацияБезСМСПриИзменении</Event>
+											</Events>
 										</CheckBoxField>
 										<UsualGroup name="ГруппаКнопокУправленияТипамиАвторизации" id="826">
 											<ToolTip>

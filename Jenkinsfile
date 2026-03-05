@@ -22,6 +22,7 @@ pipeline {
                 stage('Синхронизация хранилища 1С с git-репозиторием') {
                     steps {
                         bat """
+                        chcp 65001
                         gitsync --v8version ${env.VERSION_PLATFORM} sync 
                         ${env.repositoryReleaseStom} ./cf
                         """
@@ -33,6 +34,7 @@ pipeline {
             steps {
                 script {
                   bat """
+                  chcp 65001
                   vrunner compile --src ./src --out "./cf/${new_version}.cf" --v8version "${env.VERSION_PLATFORM}"
                   """
                 }

@@ -40,4 +40,15 @@ pipeline {
             }
         }    
     }
+    post {
+        success {  
+            script {
+                if (env.BRANCH_NAME == 'main') { 
+                    sshagent(credentials: ['keygen']) {
+                        sh 'git push origin main'  
+                    }
+                }
+            }
+        }
+    }
 }

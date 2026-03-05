@@ -6,27 +6,13 @@ pipeline {
     }
     stages {
         stage('Синхронизация с релизным хранилищем') {
-            parallel {
-                stage('Инициализация') {
-                    steps {
-                        bat """
-                        chcp 65001
-                        set GITSYNC_V8VERSION=${env.VERSION_PLATFORM}
-                        gitsync init ^
-                            --storage-user ${STORAGE_CREDS_USR} ^
-                            --storage-pwd ${STORAGE_CREDS_PSW} ^
-                            ${env.repositoryReleaseStom} ./src
-                        """
-                    }
-                }
-                stage('Синхронизация хранилища 1С с git-репозиторием') {
-                    steps {
-                        bat """
-                        chcp 65001
-                        gitsync --v8version ${env.VERSION_PLATFORM} sync "${env.repositoryReleaseStom}" "./src"
-                        """
-                    }
-                }
+            steps {
+                bat """
+                chcp 65001
+                gitsync --v8version ${env.VERSION_PLATFORM} sync "${env.repositoryReleaseStom}" "./src"
+                """
+            }
+
             }
         }
         stage('Создание .cf файла') {

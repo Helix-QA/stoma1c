@@ -28,8 +28,14 @@ pipeline {
         success {
             script {
                 if (env.GIT_BRANCH == 'origin/main') {
-                    sshagent(['keygen']) {
-                        sh 'git push origin main'
+                    withCredentials([sshUserPrivateKey(
+                        credentialsId: 'keygen',
+                        keyFileVariable: 'SSH_KEY'
+                    )]) {
+                        bat '''
+                        set GIT_SSH_COMMAND=ssh -i %SSH_KEY% -o StrictHostKeyChecking=no
+                        git push origin main
+                        '''
                     }
                 }
             }

@@ -12,8 +12,6 @@ pipeline {
                 gitsync --v8version ${env.VERSION_PLATFORM} sync "${env.repositoryReleaseStom}" "./src"
                 """
             }
-
-            }
         }
         stage('Создание .cf файла') {
             steps {

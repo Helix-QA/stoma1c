@@ -23,8 +23,7 @@ pipeline {
                     steps {
                         bat """
                         chcp 65001
-                        gitsync --v8version ${env.VERSION_PLATFORM} sync 
-                        ${env.repositoryReleaseStom} ./cf
+                        gitsync --v8version ${env.VERSION_PLATFORM} sync "${env.repositoryReleaseStom}" "./cf"
                         """
                     }
                 }

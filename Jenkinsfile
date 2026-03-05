@@ -34,6 +34,11 @@ pipeline {
                     )]) {
                         bat '''
                         set GIT_SSH_COMMAND=ssh -i %SSH_KEY% -o StrictHostKeyChecking=no
+            
+                        git fetch origin
+                        
+                        git checkout -b main origin/main || git checkout main
+                        
                         git push origin main
                         '''
                     }

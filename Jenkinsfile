@@ -15,7 +15,7 @@ pipeline {
                         gitsync init ^
                             --storage-user ${STORAGE_CREDS_USR} ^
                             --storage-pwd ${STORAGE_CREDS_PSW} ^
-                            ${env.repositoryReleaseStom} ./cf
+                            ${env.repositoryReleaseStom} ./src
                         """
                     }
                 }

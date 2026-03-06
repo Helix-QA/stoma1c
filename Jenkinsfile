@@ -1,9 +1,6 @@
 pipeline {
 
     agent { label "OneS" }
-    environment {
-       STORAGE_CREDS = credentials('userRelis')
-    }
     stages {
         stage('Синхронизация с релизным хранилищем') {
             steps {
@@ -26,9 +23,9 @@ pipeline {
     }
     post {
         success {
-            withCredentials([sshUserPrivateKey(credentialsId: 'keygen', keyFileVariable: 'SSHKEY', passphraseVariable: '')]) {
-                sh 'GIT_SSH_COMMAND="ssh -i $SSHKEY -o StrictHostKeyChecking=no" git push git@github.com:Helix-QA/stoma1c.git HEAD:main'
+            sshagent(credentials: ['keygen']) {
+                sh 'git push git@github.com:Helix-QA/stoma1c.git HEAD:main'
             }
         }
-    }       
+}  
 }

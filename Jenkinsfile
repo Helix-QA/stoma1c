@@ -26,9 +26,9 @@ pipeline {
     }
     post {
         success {
-            withCredentials([usernamePassword(credentialsId: 'keygen', usernameVariable: 'USER', passwordVariable: 'PASS')]) {
-                sh 'git push https://${USER}:${PASS}@github.com/Helix-QA/stoma1c.git HEAD:main'
+            withCredentials([sshUserPrivateKey(credentialsId: 'keygen', keyFileVariable: 'SSHKEY', passphraseVariable: '')]) {
+                sh 'GIT_SSH_COMMAND="ssh -i $SSHKEY -o StrictHostKeyChecking=no" git push git@github.com:Helix-QA/stoma1c.git HEAD:main'
             }
         }
-    }
+    }       
 }

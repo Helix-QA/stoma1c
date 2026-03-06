@@ -26,7 +26,7 @@ pipeline {
     }
     post {
         success {
-            withCredentials([usernamePassword(credentialsId: 'github-helix-qa', usernameVariable: 'USER', passwordVariable: 'PASS')]) {
+            withCredentials([usernamePassword(credentialsId: 'keygen', usernameVariable: 'USER', passwordVariable: 'PASS')]) {
                 sh 'git push https://${USER}:${PASS}@github.com/Helix-QA/stoma1c.git HEAD:main'
             }
         }

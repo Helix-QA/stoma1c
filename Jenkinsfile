@@ -6,7 +6,7 @@ pipeline {
             steps {
                 bat """
                 chcp 65001
-                REM gitsync --v8version ${env.VERSION_PLATFORM} sync "${env.repositoryReleaseStom}" "./src"
+                gitsync --v8version ${env.VERSION_PLATFORM} sync "${env.repositoryReleaseStom}" "./src"
                 """
             }
         }
@@ -15,7 +15,7 @@ pipeline {
                 script {
                   bat """
                   chcp 65001
-                 REM vrunner compile --src ./src --out "./cf/${new_version}.cf" --v8version "${env.VERSION_PLATFORM}"
+                  vrunner compile --src ./src --out "./cf/${new_version}.cf" --v8version "${env.VERSION_PLATFORM}"
                   """
                 }
             }

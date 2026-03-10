@@ -22,10 +22,35 @@ pipeline {
         }    
     }
     post {
-        success {
-            sshagent(credentials: ['keygen']) {
-                sh 'git push git@github.com:Helix-QA/stoma1c.git HEAD:main'
+       success {
+            script {
+                def branch = env.BRANCH_NAME ?: 'main'   // работает и в Multibranch, и в обычном Pipeline
+
+                withCredentials([usernamePassword(
+                    credentialsId: 'git-credentials',          // ← ваш ID
+                    usernameVariable: 'GIT_USERNAME',
+                    passwordVariable: 'GIT_PASSWORD'
+                )]) {
+                    sh """
+                        git checkout -B ${branch}
+                        git config user.name "mishan3581"
+                        git config user.email "mishan358.h@gmail.com"
+
+                        git add .
+                        if ! git diff --cached --quiet; then
+                            git commit -m "Автоматический коммит от Jenkins [skip ci]"
+                            
+                            # Временный credential helper (без проблем со спецсимволами)
+                            git config --local credential.helper "!f() { echo username=\\\${GIT_USERNAME}; echo password=\\\${GIT_PASSWORD}; }; f"
+                            
+                            git push origin HEAD:${branch}
+                            echo "✅ Изменения закоммичены и запушены в ${branch}"
+                        else
+                            echo "ℹ️ Нет изменений для коммита"
+                        fi
+                    """
+                }
             }
-        }
-}  
+        } 
+    }
 }

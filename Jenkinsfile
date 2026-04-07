@@ -11,20 +11,20 @@ pipeline {
                 }
             }
         }   
-        stage('Выгрузка конфигурации из хранилища') {
-            steps {
-                script {
-                    bat """
-                    chcp 65001
-                    @call vrunner session kill --db ${env.releaseBase} --db-user Админ --v8version "${env.VERSION_PLATFORM}" --uccode BUILDER
-                    @call vrunner loadrepo --storage-name ${env.repository} --storage-user ${env.VATest2} --ibconnection /Slocalhost/${env.releaseBase} --db-user Админ  --v8version "${env.VERSION_PLATFORM}" --uccode BUILDER
-                    @call vrunner updatedb --ibconnection /Slocalhost/${env.releaseBase} --db-user Админ --v8version "${env.VERSION_PLATFORM}" --uccode BUILDER
-                    @call vrunner decompile --out ${env.dumpPathRelease} --current --ibconnection /Slocalhost/${env.releaseBase} --db-user Админ --v8version "${env.VERSION_PLATFORM}" --uccode BUILDER
-                    @call vrunner unload "${env.cfPath}/stoma1c.cf" --ibconnection /Slocalhost/${env.releaseBase} --v8version "${env.VERSION_PLATFORM}" --db-user Админ --uccode BUILDER
-                    """
-                }
-            }
-        }
+        // stage('Выгрузка конфигурации из хранилища') {
+        //     steps {
+        //         script {
+        //             bat """
+        //             chcp 65001
+        //             @call vrunner session kill --db ${env.releaseBase} --db-user Админ --v8version "${env.VERSION_PLATFORM}" --uccode BUILDER
+        //             @call vrunner loadrepo --storage-name ${env.repository} --storage-user ${env.VATest2} --ibconnection /Slocalhost/${env.releaseBase} --db-user Админ  --v8version "${env.VERSION_PLATFORM}" --uccode BUILDER
+        //             @call vrunner updatedb --ibconnection /Slocalhost/${env.releaseBase} --db-user Админ --v8version "${env.VERSION_PLATFORM}" --uccode BUILDER
+        //             @call vrunner decompile --out ${env.dumpPathRelease} --current --ibconnection /Slocalhost/${env.releaseBase} --db-user Админ --v8version "${env.VERSION_PLATFORM}" --uccode BUILDER
+        //             @call vrunner unload "${env.cfPath}/stoma1c.cf" --ibconnection /Slocalhost/${env.releaseBase} --v8version "${env.VERSION_PLATFORM}" --db-user Админ --uccode BUILDER
+        //             """
+        //         }
+        //     }
+        // }
         stage('Создание .cf файла') {
             steps {
                 script {

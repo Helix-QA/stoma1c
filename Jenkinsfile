@@ -2,7 +2,7 @@ pipeline {
 
     agent { label "OneS" }
     stages {
-        stage('Обновление конфигурации из хранилища') {
+        stage('Выгрузка конфигурации из хранилища') {
             steps {
                 script {
                     env.releaseBase = "VAStoma"

@@ -1,5 +1,4 @@
 pipeline {
-
     agent { label "OneS" }
     stages {
         stage('Выгрузка конфигурации из хранилища') {
@@ -16,7 +15,10 @@ pipeline {
                     """
                 }
             }
-        }
+        }  
+    }
+}
+
         // stage('Создание .cf файла') {
         //     steps {
         //         script {
@@ -26,13 +28,4 @@ pipeline {
         //           """
         //         }
         //     }
-        // }    
-    }
-    post {
-       success {
-            script {
-            
-            }
-        } 
-    }
-}
+        // }  

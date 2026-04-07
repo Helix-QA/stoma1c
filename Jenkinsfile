@@ -25,16 +25,16 @@ pipeline {
                 }
             }
         }
-        // stage('Создание .cf файла') {
-        //     steps {
-        //         script {
-        //           bat """
-        //           chcp 65001
-        //           vrunner compile --src ${env.dumpPathRelease} --out "${env.cfPath}/xml.cf" --v8version "${env.VERSION_PLATFORM}" --uccode BUILDER
-        //           """
-        //         }
-        //     }
-        // }   
+        stage('Создание .cf файла') {
+            steps {
+                script {
+                    bat """
+                    chcp 65001
+                    @call vrunner compile --src ${env.dumpPathRelease} --out "${env.cfPath}/xml.cf" --v8version "${env.VERSION_PLATFORM}" --uccode BUILDER
+                    """
+                }
+            }
+        }   
     }
 }
 

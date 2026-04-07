@@ -4,10 +4,10 @@ pipeline {
      stage('Инициализация данных') {
             steps {
                 script {
-                    env.releaseBase = "VAStoma"
-                    env.dumpPathRelease = "./src"    
-                    env.cfPath = "./cf"
-                    env.repository = "http://192.168.2.16/hran1c/repository.1ccr/stomatology2_release"
+                    env.releaseBase      = "VAStoma"
+                    env.dumpPathRelease  = "./src"
+                    env.cfPath           = "./cf"
+                    env.repository       = "http://192.168.2.16/hran1c/repository.1ccr/stomatology2_release"
                 }
             }
         }   
@@ -25,22 +25,12 @@ pipeline {
                 }
             }
         }
-        // stage('Перенос модуля helix') {
-        //     steps {
-        //         script {
-        //           bat """
-        //           chcp 65001
-                 
-        //           """
-        //         }
-        //     }
-        // }   
         stage('Создание .cf файла') {
             steps {
                 script {
                   bat """
                   chcp 65001
-                  vrunner compile --src ${env.dumpPathRelease} --out "${env.cfPath}/${new_version}.cf" --v8version "${env.VERSION_PLATFORM}" --uccode BUILDER
+                  vrunner compile --src ${env.dumpPathRelease} --out "${env.cfPath}/xml.cf" --v8version "${env.VERSION_PLATFORM}" --uccode BUILDER
                   """
                 }
             }

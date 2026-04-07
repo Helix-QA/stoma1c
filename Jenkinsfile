@@ -5,8 +5,8 @@ pipeline {
             steps {
                 script {
                     env.releaseBase = "VAStoma"
-                    env.dumpPathRelease = "${env.WORKSPACE}/src"    
-                    env.cfPath = "${env.WORKSPACE}/cf"
+                    env.dumpPathRelease = "./src"    
+                    env.cfPath = "./cf"
                     env.repository = "http://192.168.2.16/hran1c/repository.1ccr/stomatology2_release"
                 }
             }

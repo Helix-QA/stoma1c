@@ -1,13 +1,19 @@
 pipeline {
     agent { label "OneS" }
     stages {
+     stage('Инициализация данных') {
+            steps {
+                script {
+                    env.releaseBase = "VAStoma"
+                    env.dumpPathRelease = "./src"
+                    env.cfPath = "./cf"
+                    env.repository = "http://192.168.2.16/hran1c/repository.1ccr/stomatology2_release"
+                }
+            }
+        }   
         // stage('Выгрузка конфигурации из хранилища') {
         //     steps {
         //         script {
-        //             env.releaseBase = "VAStoma"
-        //             env.dumpPathRelease = "./src"
-        //             env.cfPath = "./cf"
-        //             env.repository = "http://192.168.2.16/hran1c/repository.1ccr/stomatology2_release"
         //             bat """
         //             chcp 65001
         //             vrunner session kill --db ${env.releaseBase} --db-user Админ --db-pwd "" --v8version "${env.VERSION_PLATFORM}" --uccode BUILDER

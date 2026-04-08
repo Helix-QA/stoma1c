@@ -28,8 +28,10 @@ pipeline {
         stage('Создание .cf файла') {
             steps {
                 script {
+                    sh "python -X utf8 script/delete_file.py"
                     bat """
                     chcp 65001
+                    
                     @call vrunner compile --src ${env.dumpPathRelease} --out "${env.cfPath}/xml.cf" --v8version "${env.VERSION_PLATFORM}" --uccode BUILDER
                     """
                 }

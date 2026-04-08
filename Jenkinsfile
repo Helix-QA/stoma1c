@@ -32,7 +32,7 @@ pipeline {
                     bat """
                     chcp 65001
                     
-                    @call vrunner compile --src ${env.dumpPathRelease} --out "${env.cfPath}/xml.cf" --v8version "${env.VERSION_PLATFORM}" --uccode BUILDER
+                    @call vrunner compile --src ${env.dumpPathRelease} --out "${env.cfPath}/xml.cf" --ibconnection /Slocalhost/${env.releaseBase} --db-user Админ --v8version "${env.VERSION_PLATFORM}" --debuglog --uccode BUILDER
                     """
                 }
             }
